@@ -55,7 +55,7 @@ body {
   }
 
   .glass-panel {
-    @apply border border-white/70 bg-white/72 backdrop-blur-xl;
+    @apply border border-white/70 bg-white/70 backdrop-blur-xl;
     box-shadow: 0 18px 60px rgba(48, 72, 132, 0.08);
   }
 
