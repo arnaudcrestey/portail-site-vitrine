@@ -60,7 +60,8 @@ body {
   }
 
   .section-eyebrow {
-    @apply inline-flex items-center gap-2 rounded-full border border-primary/12 bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary;
+    @apply inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary;
+    border: 1px solid rgba(59, 99, 243, 0.12);
   }
 
   .text-balance {
