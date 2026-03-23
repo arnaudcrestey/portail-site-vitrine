@@ -1,6 +1,6 @@
 import { DeviceCard } from '@/components/cards';
 import { HomeHero } from '@/components/hero';
-import { ButtonLink, Surface } from '@/components/ui';
+import { Surface } from '@/components/ui';
 import { deviceExamples } from '@/data/site';
 
 export default function HomePage() {
@@ -50,53 +50,26 @@ export default function HomePage() {
       </section>
 
       <section className="pb-8 pt-2">
-        <div className="container-layout">
-          <div className="max-w-3xl">
-            <span className="section-eyebrow">Exemples concrets</span>
+  <div className="container-layout">
+    <div className="max-w-3xl">
+      <span className="section-eyebrow">Exemples concrets</span>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Des dispositifs concrets, conçus pour attirer et convertir.
-            </h2>
-          </div>
+      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+        Des dispositifs concrets, conçus pour attirer et convertir.
+      </h2>
+    </div>
 
-          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {deviceExamples.map((item) => (
-              <DeviceCard key={item.title} item={item} />
-            ))}
-          </div>
-        </div>
-      </section>
+    <Surface className="relative mt-8 overflow-hidden rounded-[32px] px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
+      <div className="absolute inset-0 bg-hero-radial opacity-90" />
 
-      <section className="section-spacing">
-        <div className="container-layout">
-          <Surface className="relative overflow-hidden rounded-[32px] px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
-            <div className="absolute inset-0 bg-hero-radial opacity-90" />
-
-            <div className="relative grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
-              <div>
-                <span className="section-eyebrow">Contact</span>
-
-                <h2 className="mt-5 max-w-3xl text-balance text-3xl font-semibold sm:text-4xl lg:text-5xl">
-                  Votre offre mérite mieux qu’une simple présence en ligne.
-                </h2>
-
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-slate">
-                  Je vous aide à en faire un dispositif numérique clair, crédible et réellement
-                  engageant.
-                </p>
-              </div>
-
-              <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start lg:justify-end">
-                <ButtonLink href="/contact">Me parler de votre projet</ButtonLink>
-
-                <ButtonLink href="/diagnostics-automatisations" variant="secondary">
-                  Découvrir mon approche
-                </ButtonLink>
-              </div>
-            </div>
-          </Surface>
-        </div>
-      </section>
-    </>
+      <div className="relative grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+        {deviceExamples.map((item) => (
+          <DeviceCard key={item.title} item={item} />
+        ))}
+      </div>
+    </Surface>
+  </div>
+</section>
+     </>
   );
 }
