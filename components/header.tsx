@@ -15,17 +15,17 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/70 bg-white/78 backdrop-blur-xl">
       <div className="container-layout flex h-20 items-center justify-between gap-6">
         <Link
-          href="/"
-          className="group flex shrink-0 flex-col leading-tight"
-          aria-label="Retour à l’accueil"
-        >
-          <span className="text-[15px] font-semibold tracking-[0.08em] text-ink transition group-hover:text-primary sm:text-[17px]">
-            Arnaud Crestey
-          </span>
-          <span className="mt-1 text-[11px] tracking-[0.12em] text-slate/80 sm:text-xs">
-            Concepteur de systèmes numériques
-          </span>
-        </Link>
+  href="/"
+  className="group flex shrink-0 flex-col leading-tight"
+  aria-label="Retour à l’accueil"
+>
+  <span className="text-[16px] font-medium tracking-[0.08em] text-ink transition group-hover:text-primary sm:text-[18px]">
+    Arnaud Crestey
+  </span>
+  <span className="mt-1 text-[12px] tracking-[0.12em] text-slate/80 sm:text-sm">
+    Concepteur de systèmes numériques
+  </span>
+</Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
           {navigation.map((item) => {
