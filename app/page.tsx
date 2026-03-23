@@ -8,7 +8,6 @@ export default function HomePage() {
     <>
       <HomeHero />
 
-      {/* CONSTAT */}
       <section className="section-spacing pt-4 pb-6">
         <div className="container-layout">
           <div className="relative overflow-hidden rounded-[36px] border border-primary/10 bg-gradient-to-br from-white to-primary/5 px-6 py-10 shadow-[0_25px_80px_rgba(15,23,42,0.06)] sm:px-8 sm:py-12 lg:px-10">
@@ -20,54 +19,54 @@ export default function HomePage() {
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 Votre expertise est là. Mais aujourd’hui, elle ne donne pas encore toute sa valeur.
               </h2>
+
               <p className="mt-4 text-lg leading-8 text-slate">
-                Mon travail consiste à structurer cette expertise pour en faire un dispositif lisible, engageant et capable de déclencher une prise de contact.
+                Mon travail consiste à structurer cette expertise pour en faire un dispositif
+                lisible, engageant et capable de déclencher une prise de contact.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* EXPERTISE */}
-     <section className="pb-6 pt-2">
-  <div className="container-layout">
-    <div className="rounded-[36px] border border-slate-200 bg-white px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
-      <div className="max-w-3xl">
-        <span className="section-eyebrow">Expertise</span>
+      <section className="pb-6 pt-2">
+        <div className="container-layout">
+          <div className="rounded-[36px] border border-slate-200 bg-white px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
+            <div className="max-w-3xl">
+              <span className="section-eyebrow">Expertise</span>
 
-        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-          Des dispositifs digitaux conçus pour attirer, guider et déclencher des prises de contact.
-        </h2>
+              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+                Des dispositifs digitaux conçus pour attirer, guider et déclencher des prises de
+                contact.
+              </h2>
 
-        <p className="mt-5 text-lg leading-8 text-slate">
-          Diagnostics interactifs, mini-sites, parcours utilisateurs, automatisations et systèmes de conversion :
-          chaque dispositif répond à une logique précise et à un objectif concret.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+              <p className="mt-5 text-lg leading-8 text-slate">
+                Chaque dispositif est conçu pour rendre votre message plus clair, guider vos
+                visiteurs et faciliter la prise de contact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-      {/* EXEMPLES */}
-     <section className="pb-8 pt-2">
-  <div className="container-layout">
-    <div className="max-w-3xl">
-      <span className="section-eyebrow">Exemples concrets</span>
+      <section className="pb-8 pt-2">
+        <div className="container-layout">
+          <div className="max-w-3xl">
+            <span className="section-eyebrow">Exemples concrets</span>
 
-      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-        Des exemples conçus comme preuves de méthode.
-      </h2>
-    </div>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              Des dispositifs concrets, conçus pour attirer et convertir.
+            </h2>
+          </div>
 
-    <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-      {deviceExamples.map((item) => (
-        <DeviceCard key={item.title} item={item} />
-      ))}
-    </div>
-  </div>
-</section>
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {deviceExamples.map((item) => (
+              <DeviceCard key={item.title} item={item} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-      {/* CTA FINAL */}
       <section className="section-spacing">
         <div className="container-layout">
           <Surface className="relative overflow-hidden rounded-[32px] px-6 py-10 sm:px-10 sm:py-12 lg:px-14 lg:py-14">
@@ -77,6 +76,15 @@ export default function HomePage() {
               <div>
                 <span className="section-eyebrow">Contact</span>
 
+                <h2 className="mt-5 max-w-3xl text-balance text-3xl font-semibold sm:text-4xl lg:text-5xl">
+                  Votre offre mérite mieux qu’une simple présence en ligne.
+                </h2>
+
+                <p className="mt-5 max-w-2xl text-lg leading-8 text-slate">
+                  Je vous aide à en faire un dispositif numérique clair, crédible et réellement
+                  engageant.
+                </p>
+              </div>
 
               <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start lg:justify-end">
                 <ButtonLink href="/contact">Me parler de votre projet</ButtonLink>
