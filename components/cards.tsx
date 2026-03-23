@@ -40,7 +40,7 @@ export function DeviceCard({ item }: { item: DeviceExample }) {
           </div>
 
           <span className="mt-6 inline-flex rounded-full border border-primary/15 bg-primary/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.20em] text-primary">
-            Dispositif
+          SYSTÈME
           </span>
 
           <h3 className="mt-4 text-xl font-semibold leading-7 text-ink transition duration-300 group-hover:text-primary">
