@@ -49,28 +49,23 @@ export default function HomePage() {
 </section>
 
       {/* EXEMPLES */}
-      <section className="pb-8 pt-2">
-        <div className="container-layout">
-          <div className="max-w-3xl">
-            <span className="section-eyebrow">Exemples concrets</span>
+     <section className="pb-8 pt-2">
+  <div className="container-layout">
+    <div className="max-w-3xl">
+      <span className="section-eyebrow">Exemples concrets</span>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Des exemples conçus comme preuves de méthode.
-            </h2>
+      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+        Des exemples conçus comme preuves de méthode.
+      </h2>
+    </div>
 
-            <p className="mt-5 text-lg leading-8 text-slate">
-              Ces dispositifs montrent comment une expertise peut devenir une expérience plus lisible,
-              plus fluide et plus convaincante.
-            </p>
-          </div>
-
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {deviceExamples.map((item) => (
-              <DeviceCard key={item.title} item={item} />
-            ))}
-          </div>
-        </div>
-      </section>
+    <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      {deviceExamples.map((item) => (
+        <DeviceCard key={item.title} item={item} />
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* CTA FINAL */}
       <section className="section-spacing">
