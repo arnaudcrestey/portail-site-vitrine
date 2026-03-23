@@ -51,8 +51,8 @@ export default function HomePage() {
 
       <section className="pb-8 pt-2">
   <div className="container-layout">
-    <div className="mx-auto max-w-6xl">
-      <div className="max-w-3xl">
+    <div className="mx-auto flex max-w-6xl flex-col items-center">
+      <div className="max-w-3xl text-center">
         <span className="section-eyebrow">Exemples concrets</span>
 
         <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
@@ -60,7 +60,7 @@ export default function HomePage() {
         </h2>
       </div>
 
-      <Surface className="relative mt-8 overflow-hidden rounded-[32px] px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
+      <Surface className="relative mt-8 w-full overflow-hidden rounded-[32px] px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
         <div className="absolute inset-0 bg-hero-radial opacity-90" />
 
         <div className="relative grid gap-6 md:grid-cols-2 xl:grid-cols-4">
