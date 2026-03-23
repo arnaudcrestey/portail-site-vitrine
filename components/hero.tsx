@@ -68,10 +68,7 @@ export function HomeHero() {
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-600">
                 Arnaud Crestey
               </p>
-              <p className="mt-3 text-lg font-semibold leading-8 text-ink sm:text-xl">
-                Architecture digitale, diagnostics interactifs et dispositifs conçus pour rendre une
-                offre plus claire, plus crédible et plus engageante.
-              </p>
+              
             </div>
           </div>
         </Surface>
