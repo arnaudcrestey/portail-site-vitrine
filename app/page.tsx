@@ -8,27 +8,29 @@ export default function HomePage() {
     <>
       <HomeHero />
 
-      <section className="section-spacing pt-0">
-        <div className="container-layout">
-          <div className="rounded-[32px] border border-line bg-white px-6 py-8 shadow-[0_16px_50px_rgba(15,23,42,0.04)] sm:px-8 sm:py-10 lg:px-10">
-            <div className="max-w-3xl">
-              <span className="section-eyebrow">Constat</span>
+      <section className="section-spacing pt-6">
+  <div className="container-layout">
+    <div className="relative overflow-hidden rounded-[36px] border border-primary/10 bg-gradient-to-br from-white to-primary/5 px-6 py-10 shadow-[0_25px_80px_rgba(15,23,42,0.06)] sm:px-8 sm:py-12 lg:px-10">
+      <div className="absolute -top-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-primary/20 blur-3xl opacity-70" />
 
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Beaucoup d’experts ont de la valeur, mais pas encore le bon dispositif pour la montrer.
-              </h2>
+      <div className="relative max-w-3xl">
+        <span className="section-eyebrow">Constat</span>
 
-              <p className="mt-5 text-lg leading-8 text-slate">
-                Leur offre reste floue, dispersée ou trop statique. Le visiteur comprend partiellement, hésite, puis quitte la page sans aller plus loin.
-              </p>
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          Votre expertise a de la valeur… mais elle n’est pas encore perçue comme telle.
+        </h2>
 
-              <p className="mt-4 text-lg leading-8 text-slate">
-                Mon travail consiste à transformer cette expertise en système numérique plus clair, plus structuré et plus engageant.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+        <p className="mt-5 text-lg leading-8 text-slate">
+          Une offre floue, dispersée ou trop statique réduit immédiatement l’impact perçu. Le visiteur comprend partiellement, hésite, puis quitte la page sans aller plus loin.
+        </p>
+
+        <p className="mt-4 text-lg leading-8 text-slate">
+          Mon travail consiste à transformer cette expertise en système numérique plus clair, plus structuré et plus engageant.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       <section className="section-spacing">
         <div className="container-layout">
