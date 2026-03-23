@@ -47,31 +47,34 @@ export function HomeHero() {
           </dl>
         </div>
 
-        <Surface className="relative overflow-hidden rounded-[32px] p-4 sm:p-5">
-          <div className="absolute -top-10 left-10 right-10 h-28 rounded-full bg-[#e8e2d8]/60 blur-3xl" />
+       <Surface className="relative overflow-hidden rounded-[32px] p-5 sm:p-6">
+  {/* halo chaud */}
+  <div className="absolute -top-16 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-[#e8e2d8]/70 blur-3xl" />
 
-          <div className="relative overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-white via-[#f8f6f2] to-[#f1ede6]">
-            <div className="relative aspect-[4/5]">
-              <SmartImage
-                src="/arnaud-crestey-photo.png"
-                alt="Portrait d’Arnaud Crestey"
-                fallbackTitle="Photo principale à ajouter"
-                fallbackLabel="Ajoutez votre portrait dans public/arnaud-crestey-photo.png pour afficher votre photo ici."
-                priority
-                sizes="(min-width: 1024px) 42vw, 100vw"
-              />
-            </div>
+  {/* fond légèrement chaud */}
+  <div className="relative overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-white via-[#faf7f2] to-[#f3eee6] shadow-[0_25px_70px_rgba(15,23,42,0.08)]">
+    
+    {/* image */}
+    <div className="relative aspect-[4/5]">
+      <SmartImage
+        src="/arnaud-crestey-photo.png"
+        alt="Portrait d’Arnaud Crestey"
+        priority
+        sizes="(min-width: 1024px) 42vw, 100vw"
+      />
+    </div>
 
-            <div className="border-t border-line/80 bg-white/85 p-6 backdrop-blur-sm sm:p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-600">
-                Arnaud Crestey
-              </p>
-              <p className="mt-3 text-lg font-semibold leading-8 text-ink sm:text-xl">
-                Architecture digitale, diagnostics interactifs et dispositifs conçus pour rendre une offre plus claire, plus crédible et plus engageante.
-              </p>
-            </div>
-          </div>
-        </Surface>
+    {/* légende */}
+    <div className="border-t border-line/70 bg-white/90 p-6 backdrop-blur-sm sm:p-7">
+      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-600">
+        Arnaud Crestey
+      </p>
+      <p className="mt-3 text-lg font-semibold leading-8 text-ink sm:text-xl">
+        Architecture digitale, diagnostics interactifs et dispositifs conçus pour rendre une offre plus claire, plus crédible et plus engageante.
+      </p>
+    </div>
+  </div>
+</Surface>
       </div>
     </section>
   );
