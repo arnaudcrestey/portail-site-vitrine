@@ -48,30 +48,30 @@ export function HomeHero() {
         </div>
 
         <Surface className="relative overflow-hidden rounded-[32px] p-4 sm:p-5">
-          <div className="absolute -top-10 left-10 right-10 h-28 rounded-full bg-secondary/20 blur-3xl" />
+  <div className="absolute -top-10 left-10 right-10 h-28 rounded-full bg-[#e8e2d8]/60 blur-3xl" />
 
-          <div className="relative overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-white to-mist">
-            <div className="relative aspect-[4/5]">
-              <SmartImage
-                src="/arnaud-crestey-photo.png"
-                alt="Portrait d’Arnaud Crestey"
-                fallbackTitle="Photo principale à ajouter"
-                fallbackLabel="Ajoutez votre portrait dans public/arnaud-crestey-photo.png pour afficher votre photo ici."
-                priority
-                sizes="(min-width: 1024px) 42vw, 100vw"
-              />
-            </div>
+  <div className="relative overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-white via-[#f8f6f2] to-[#f1ede6]">
+    <div className="relative aspect-[4/5]">
+      <SmartImage
+        src="/arnaud-crestey-photo.png"
+        alt="Portrait d’Arnaud Crestey"
+        fallbackTitle="Photo principale à ajouter"
+        fallbackLabel="Ajoutez votre portrait dans public/arnaud-crestey-photo.png pour afficher votre photo ici."
+        priority
+        sizes="(min-width: 1024px) 42vw, 100vw"
+      />
+    </div>
 
-            <div className="border-t border-line/80 bg-white/85 p-6 backdrop-blur-sm sm:p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate">
-                Arnaud Crestey
-              </p>
-              <p className="mt-3 text-xl font-semibold leading-8 text-ink">
-                Architecture digitale, diagnostics interactifs et dispositifs conçus pour rendre une offre plus claire, plus crédible et plus engageante.
-              </p>
-            </div>
-          </div>
-        </Surface>
+    <div className="border-t border-line/80 bg-white/85 p-6 backdrop-blur-sm sm:p-7">
+      <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-600">
+        Arnaud Crestey
+      </p>
+      <p className="mt-3 text-xl font-semibold leading-8 text-ink">
+        Architecture digitale, diagnostics interactifs et dispositifs conçus pour rendre une offre plus claire, plus crédible et plus engageante.
+      </p>
+    </div>
+  </div>
+</Surface>
       </div>
     </section>
   );
