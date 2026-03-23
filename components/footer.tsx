@@ -4,45 +4,80 @@ import { contactDetails, navigation } from '@/data/site';
 
 export function Footer() {
   return (
-    <footer className="border-t border-line/80 bg-white/75">
-      <div className="container-layout grid gap-10 py-12 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
-        <div className="space-y-4">
-          <div className="flex flex-col leading-tight">
-            <p className="text-sm font-semibold tracking-[0.16em] text-ink sm:text-base">
-              Arnaud Crestey
-            </p>
-            <p className="text-[11px] tracking-[0.14em] text-slate/80 sm:text-xs">
-              arnaudcrestey.com
+    <footer className="relative border-t border-line/80 bg-white">
+      <div className="container-layout py-14 sm:py-16">
+        <div className="grid gap-12 lg:grid-cols-[1.3fr_0.85fr_0.85fr] lg:gap-16">
+          <div className="max-w-md">
+            <div className="flex flex-col leading-tight">
+              <p className="text-[18px] font-medium tracking-[0.08em] text-ink sm:text-[20px]">
+                Arnaud Crestey
+              </p>
+              <p className="mt-1 text-[12px] tracking-[0.14em] text-slate/80 sm:text-[13px]">
+                arnaudcrestey.com
+              </p>
+            </div>
+
+            <div className="mt-6 h-px w-16 bg-line" />
+
+            <p className="mt-6 text-sm leading-8 text-slate sm:text-[15px]">
+              Je conçois des dispositifs digitaux pensés pour attirer, guider et transformer des
+              visiteurs en clients.
             </p>
           </div>
 
-          <p className="max-w-md text-sm leading-7 text-slate">
-            Conception de systèmes numériques clairs, crédibles et engageants pour transformer une
-            expertise en expérience lisible, structurée et convaincante.
-          </p>
-        </div>
+          <div>
+            <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink">
+              Navigation
+            </h2>
 
-        <div>
-          <h2 className="text-sm font-semibold text-ink">Navigation</h2>
-          <ul className="mt-4 space-y-3 text-sm text-slate">
-            {navigation.map((item) => (
-              <li key={item.href}>
-                <Link href={item.href} className="transition hover:text-ink">
-                  {item.label}
-                </Link>
+            <ul className="mt-5 space-y-3 text-sm text-slate sm:text-[15px]">
+              {navigation.map((item) => (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className="transition duration-300 hover:text-ink"
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink">
+              Coordonnées
+            </h2>
+
+            <ul className="mt-5 space-y-3 text-sm text-slate sm:text-[15px]">
+              <li>
+                <a
+                  href={`mailto:${contactDetails.email}`}
+                  className="transition duration-300 hover:text-ink"
+                >
+                  {contactDetails.email}
+                </a>
               </li>
-            ))}
-          </ul>
+              <li>
+                <a
+                  href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}
+                  className="transition duration-300 hover:text-ink"
+                >
+                  {contactDetails.phone}
+                </a>
+              </li>
+              <li>{contactDetails.location}</li>
+              <li>
+                <span>Mentions légales</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div>
-          <h2 className="text-sm font-semibold text-ink">Coordonnées</h2>
-          <ul className="mt-4 space-y-3 text-sm text-slate">
-            <li>{contactDetails.email}</li>
-            <li>{contactDetails.phone}</li>
-            <li>{contactDetails.location}</li>
-            <li>Mentions légales — à compléter</li>
-          </ul>
+        <div className="mt-12 border-t border-line/70 pt-6">
+          <p className="text-xs tracking-[0.08em] text-slate/70 sm:text-sm">
+            © {new Date().getFullYear()} Arnaud Crestey. Tous droits réservés.
+          </p>
         </div>
       </div>
     </footer>
