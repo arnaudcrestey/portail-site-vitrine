@@ -4,22 +4,16 @@ import { ButtonLink, Surface } from '@/components/ui';
 export function HomeHero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="container-layout section-spacing grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+      <div className="container-layout section-spacing grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
         <div>
           <span className="section-eyebrow">Concepteur de systèmes numériques</span>
 
-          <h1 className="mt-6 max-w-3xl text-balance text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-            Je transforme votre expertise en système numérique clair, structuré et convaincant.
+          <h1 className="mt-6 max-w-3xl text-balance text-5xl font-semibold leading-[0.98] sm:text-6xl lg:text-7xl">
+            Je transforme une expertise floue en dispositif numérique clair et convaincant.
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate sm:text-xl">
-            J’aide en priorité les coachs, thérapeutes, formateurs et indépendants à passer d’une offre floue ou
-            dispersée à un dispositif concret, lisible et engageant.
-          </p>
-
-          <p className="mt-4 max-w-2xl text-base leading-8 text-slate sm:text-lg">
-            Diagnostics interactifs, mini-sites, parcours utilisateurs, automatisations et expériences digitales : je
-            conçois des systèmes utiles pour mieux présenter une offre, mieux capter l’attention et mieux convertir.
+            Pour les coachs, thérapeutes, formateurs et indépendants qui veulent mieux présenter leur valeur, mieux engager et mieux convertir.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
@@ -30,27 +24,27 @@ export function HomeHero() {
             </ButtonLink>
           </div>
 
-          <dl className="mt-12 grid gap-5 sm:grid-cols-3">
+          <dl className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
-              ['Clarté', 'Rendre une offre plus lisible et plus compréhensible'],
-              ['Structure', 'Transformer une expertise en parcours concret'],
-              ['Conversion', 'Créer des dispositifs plus engageants et crédibles'],
+              ['Clarté', 'Une offre plus lisible'],
+              ['Structure', 'Un parcours plus cohérent'],
+              ['Conversion', 'Une expérience plus engageante'],
             ].map(([label, value]) => (
               <div
                 key={label}
-                className="rounded-3xl border border-line/90 bg-white/65 p-5 backdrop-blur-sm"
+                className="rounded-[24px] border border-line/90 bg-white px-5 py-5 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
               >
-                <dt className="text-xs font-semibold uppercase tracking-[0.18em] text-slate">{label}</dt>
+                <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate">{label}</dt>
                 <dd className="mt-3 text-sm font-medium leading-6 text-ink">{value}</dd>
               </div>
             ))}
           </dl>
         </div>
 
-        <Surface className="relative overflow-hidden p-4 sm:p-5">
-          <div className="absolute inset-x-8 top-0 h-24 rounded-full bg-secondary/18 blur-3xl" />
+        <Surface className="relative overflow-hidden rounded-[32px] p-4 sm:p-5">
+          <div className="absolute -top-10 left-10 right-10 h-28 rounded-full bg-secondary/20 blur-3xl" />
 
-          <div className="relative overflow-hidden rounded-[26px] border border-white/70 bg-gradient-to-br from-white to-mist">
+          <div className="relative overflow-hidden rounded-[28px] border border-white/70 bg-gradient-to-br from-white to-mist">
             <div className="relative aspect-[4/5]">
               <SmartImage
                 src="/arnaud-crestey-photo.png"
@@ -62,11 +56,10 @@ export function HomeHero() {
               />
             </div>
 
-            <div className="border-t border-line/80 bg-white/80 p-6 backdrop-blur-sm sm:p-7">
+            <div className="border-t border-line/80 bg-white/85 p-6 backdrop-blur-sm sm:p-7">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate">Arnaud Crestey</p>
-              <p className="mt-3 text-xl font-semibold text-ink">
-                Architecture digitale, diagnostics interactifs et dispositifs numériques pensés pour rendre une
-                expertise plus claire, plus crédible et plus engageante.
+              <p className="mt-3 text-xl font-semibold leading-8 text-ink">
+                Architecture digitale, diagnostics interactifs et dispositifs conçus pour rendre une offre plus claire, plus crédible et plus engageante.
               </p>
             </div>
           </div>
