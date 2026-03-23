@@ -13,7 +13,7 @@ export function HomeHero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate sm:text-xl">
-            Je conçois des systèmes numériques qui transforment une offre floue en expérience claire, engageante et crédible.
+            Je conçois des dispositifs digitaux pour attirer, engager et convertir de nouveaux clients.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
