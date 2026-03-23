@@ -93,7 +93,8 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'love-scan',
     number: '01',
     title: 'Love Scan',
-    description: 'Un dispositif relationnel pensé pour révéler rapidement les dynamiques les plus utiles.',
+    description:
+      'Un dispositif relationnel pensé pour révéler rapidement les dynamiques les plus utiles.',
     image: '/projects/love-scan.jpg',
     href: '#',
   },
@@ -101,7 +102,8 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'personality-scan',
     number: '02',
     title: 'Personality Scan',
-    description: 'Un parcours de découverte conçu pour rendre un fonctionnement intérieur plus lisible.',
+    description:
+      'Un parcours de découverte conçu pour rendre un fonctionnement intérieur plus lisible.',
     image: '/projects/personality-scan.jpg',
     href: '#',
   },
@@ -109,7 +111,8 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'life-decision',
     number: '03',
     title: 'Life Decision',
-    description: 'Une expérience qui aide à clarifier les choix de vie et les directions possibles.',
+    description:
+      'Une expérience qui aide à clarifier les choix de vie et les directions possibles.',
     image: '/projects/life-decision.jpg',
     href: '#',
   },
@@ -117,7 +120,8 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'blocages-de-vie',
     number: '04',
     title: 'Blocages de vie',
-    description: 'Un concept pensé pour faire émerger les freins réels derrière une situation confuse.',
+    description:
+      'Un concept pensé pour faire émerger les freins réels derrière une situation confuse.',
     image: '/projects/blocages-de-vie.jpg',
     href: '#',
   },
@@ -125,7 +129,8 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'miroir-intuition',
     number: '05',
     title: 'Miroir d’Intuition',
-    description: 'Un dispositif narratif qui transforme une expression libre en lecture structurée.',
+    description:
+      'Un dispositif narratif qui transforme une expression libre en lecture structurée.',
     image: '/projects/miroir-intuition.jpg',
     href: '#',
   },
@@ -133,7 +138,8 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'procoach',
     number: '06',
     title: 'Procoach',
-    description: 'Un outil pensé pour identifier ce qui freine une évolution ou un repositionnement professionnel.',
+    description:
+      'Un outil pensé pour identifier ce qui freine une évolution ou un repositionnement professionnel.',
     image: '/projects/procoach.jpg',
     href: '#',
   },
@@ -142,24 +148,28 @@ export const conceptProjects: ProjectCard[] = [
 export const reserveConcepts: ReserveConcept[] = [
   {
     title: 'Boussole intérieure',
-    description: 'Un diagnostic narratif pour faire émerger une direction plus claire et plus alignée.',
+    description:
+      'Un diagnostic narratif pour faire émerger une direction plus claire et plus alignée.',
   },
   {
     title: 'Décodeur de message',
-    description: 'Une expérience qui reformule une situation confuse en lecture structurée et actionnable.',
+    description:
+      'Une expérience qui reformule une situation confuse en lecture structurée et actionnable.',
   },
   {
     title: 'Traducteur émotionnel',
-    description: 'Un parcours qui transforme un ressenti diffus en compréhension utile et partageable.',
+    description:
+      'Un parcours qui transforme un ressenti diffus en compréhension utile et partageable.',
   },
   {
     title: 'Radar de dynamique',
-    description: 'Un dispositif court pour identifier les forces et tensions d’une situation donnée.',
+    description:
+      'Un dispositif court pour identifier les forces et tensions d’une situation donnée.',
   },
 ];
 
 export const contactDetails = {
   email: 'demande@arnaudcrestey.com',
   phone: '+33 6 81 95 23 45',
-  location: 'VIRE, Normandie, France',
+  location: 'Vire, Normandie, France',
 };
