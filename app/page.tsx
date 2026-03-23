@@ -82,14 +82,6 @@ export default function HomePage() {
               <div>
                 <span className="section-eyebrow">Contact</span>
 
-                <h2 className="mt-5 max-w-3xl text-balance text-3xl font-semibold sm:text-4xl lg:text-5xl">
-                  Votre offre mérite mieux qu’une simple présence en ligne.
-                </h2>
-
-                <p className="mt-5 max-w-2xl text-lg leading-8 text-slate">
-                  Je vous aide à en faire un dispositif numérique clair, crédible et réellement engageant.
-                </p>
-              </div>
 
               <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start lg:justify-end">
                 <ButtonLink href="/contact">Me parler de votre projet</ButtonLink>
