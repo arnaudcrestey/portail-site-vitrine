@@ -60,15 +60,13 @@ export default function HomePage() {
         </h2>
       </div>
 
-     <Surface className="relative mt-8 w-full overflow-hidden rounded-[36px] border border-primary/10 bg-gradient-to-br from-white to-[#f6f8ff] px-6 py-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] sm:px-8 sm:py-10 lg:px-10">
-        <div className="absolute inset-0 bg-hero-radial opacity-90" />
-
-        <div className="relative grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-          {deviceExamples.map((item) => (
-            <DeviceCard key={item.title} item={item} />
-          ))}
-        </div>
-      </Surface>
+    <Surface className="relative mt-8 w-full overflow-hidden rounded-[36px] border border-slate-200 bg-white px-5 py-5 shadow-[0_18px_50px_rgba(15,23,42,0.05)] sm:px-6 sm:py-6 lg:px-8 lg:py-8">
+  <div className="relative grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+    {deviceExamples.map((item) => (
+      <DeviceCard key={item.title} item={item} />
+    ))}
+  </div>
+</Surface>
     </div>
   </div>
 </section>
