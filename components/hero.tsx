@@ -63,11 +63,10 @@ export function HomeHero() {
             </div>
 
             <div className="border-t border-line/70 bg-white p-6 sm:p-7">
-              <p className="text-sm font-medium uppercase tracking-[0.18em] text-slate-600">
-                Arnaud Crestey
-              </p>
-              
-            </div>
+  <p className="text-[16px] font-medium tracking-[0.08em] text-ink sm:text-[18px]">
+    Arnaud Crestey
+  </p>
+</div>
           </div>
         </Surface>
       </div>
