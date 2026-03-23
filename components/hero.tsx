@@ -52,7 +52,7 @@ export function HomeHero() {
         <Surface className="relative overflow-hidden rounded-[32px] p-5 sm:p-6">
           <div className="absolute -top-16 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-[#e8e2d8]/70 blur-3xl" />
 
-          <div className="relative overflow-hidden rounded-[28px] border border-white/50 bg-gradient-to-br from-white via-[#faf7f2] to-[#f3eee6] shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
+          <div className="relative overflow-hidden rounded-[28px] border border-white/50 bg-white shadow-[0_20px_60px_rgba(15,23,42,0.06)]">
             <div className="relative aspect-[4/5]">
               <SmartImage
                 src="/arnaud-crestey-photo.png"
