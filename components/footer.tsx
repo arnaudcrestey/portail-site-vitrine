@@ -4,12 +4,21 @@ import { contactDetails, navigation } from '@/data/site';
 
 export function Footer() {
   return (
-    <footer className="border-t border-line/80 bg-white/70">
+    <footer className="border-t border-line/80 bg-white/75">
       <div className="container-layout grid gap-10 py-12 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
         <div className="space-y-4">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-ink">arnaudcrestey.com</p>
+          <div className="flex flex-col leading-tight">
+            <p className="text-sm font-semibold tracking-[0.16em] text-ink sm:text-base">
+              Arnaud Crestey
+            </p>
+            <p className="text-[11px] tracking-[0.14em] text-slate/80 sm:text-xs">
+              arnaudcrestey.com
+            </p>
+          </div>
+
           <p className="max-w-md text-sm leading-7 text-slate">
-            Un portail clair pour présenter Cabinet Astrae, les dispositifs digitaux conçus pour les professionnels et un laboratoire de concepts prêt à évoluer.
+            Conception de systèmes numériques clairs, crédibles et engageants pour transformer une
+            expertise en expérience lisible, structurée et convaincante.
           </p>
         </div>
 
