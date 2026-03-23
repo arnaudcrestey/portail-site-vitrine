@@ -5,6 +5,29 @@ import { SmartImage } from '@/components/smart-image';
 import { Surface } from '@/components/ui';
 import type { DeviceExample, ProjectCard, ReserveConcept, UniverseCard } from '@/data/site';
 
+export function UniverseCardView({ item }: { item: UniverseCard }) {
+  return (
+    <Surface className="group relative overflow-hidden p-8 sm:p-10">
+      <div className={`absolute inset-0 bg-gradient-to-br ${item.accent}`} />
+      <div className="relative flex h-full flex-col">
+        <span className="section-eyebrow w-fit bg-white/70">{item.audience}</span>
+
+        <h3 className="mt-6 text-2xl font-semibold text-ink">{item.title}</h3>
+
+        <p className="mt-4 max-w-md text-base leading-7 text-slate">{item.description}</p>
+
+        <Link
+          href={item.href}
+          className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-ink transition duration-300 ease-premium group-hover:translate-x-1 group-hover:text-primary"
+        >
+          {item.cta}
+          <span aria-hidden="true">→</span>
+        </Link>
+      </div>
+    </Surface>
+  );
+}
+
 export function DeviceCard({ item }: { item: DeviceExample }) {
   return (
     <Link href="/diagnostics-automatisations" className="block h-full">
@@ -24,9 +47,7 @@ export function DeviceCard({ item }: { item: DeviceExample }) {
             {item.title}
           </h3>
 
-          <p className="mt-5 text-[15px] leading-8 text-slate">
-            {item.description}
-          </p>
+          <p className="mt-5 text-[15px] leading-8 text-slate">{item.description}</p>
 
           <div className="mt-auto pt-8">
             <span className="inline-flex items-center gap-2 text-sm font-semibold text-ink">
@@ -40,41 +61,6 @@ export function DeviceCard({ item }: { item: DeviceExample }) {
   );
 }
 
-export function DeviceCard({ item }: { item: DeviceExample }) {
-  return (
-    <Link href="/diagnostics-automatisations" className="block h-full">
-      <article className="group flex h-full flex-col rounded-[28px] border border-slate-200 bg-white p-6 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 ease-premium hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_18px_45px_rgba(15,23,42,0.08)] sm:p-7">
-        <div className="flex h-14 w-14 items-center justify-center rounded-[18px] border border-primary/10 bg-[#f5f7ff] text-primary transition duration-300 group-hover:bg-primary group-hover:text-white">
-          <DeviceIcon type={item.icon} />
-        </div>
-
-        <span className="mt-5 inline-flex w-fit rounded-full border border-primary/12 bg-primary/5 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
-          Système
-        </span>
-
-        <h3 className="mt-5 text-[26px] font-semibold leading-tight text-ink transition duration-300 group-hover:text-primary sm:text-[28px]">
-          {item.title}
-        </h3>
-
-        <p className="mt-4 text-[15px] leading-8 text-slate">
-          {item.description}
-        </p>
-
-        <div className="mt-auto pt-8">
-          <span className="inline-flex items-center gap-2 text-sm font-semibold text-ink transition duration-300 group-hover:text-primary">
-            Découvrir
-            <span
-              aria-hidden="true"
-              className="transition duration-300 group-hover:translate-x-1"
-            >
-              →
-            </span>
-          </span>
-        </div>
-      </article>
-    </Link>
-  );
-}
 export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
   return (
     <Surface className="group h-full overflow-hidden p-0">
