@@ -31,12 +31,11 @@ export function UniverseCardView({ item }: { item: UniverseCard }) {
 export function DeviceCard({ item }: { item: DeviceExample }) {
   return (
     <Link href="/diagnostics-automatisations" className="block h-full">
-      <Surface className="group relative flex h-full flex-col justify-between overflow-hidden rounded-[30px] border border-slate-200/90 bg-white px-7 py-7 shadow-[0_14px_40px_rgba(15,23,42,0.05)] transition-all duration-300 ease-premium hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]">
-        <div className="absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-primary/6 to-transparent opacity-80" />
+      <Surface className="group relative flex h-full flex-col justify-between overflow-hidden rounded-[30px] border border-slate-200/90 bg-white px-7 py-7 shadow-[0_10px_30px_rgba(15,23,42,0.05)] transition-all duration-300 ease-premium hover:-translate-y-1 hover:border-primary/20 hover:shadow-[0_24px_60px_rgba(15,23,42,0.08)]">
         <div className="absolute -right-10 -top-10 h-28 w-28 rounded-full bg-primary/8 blur-3xl opacity-0 transition duration-300 group-hover:opacity-100" />
 
         <div className="relative">
-          <div className="flex h-16 w-16 items-center justify-center rounded-[22px] border border-primary/10 bg-gradient-to-br from-[#eef2ff] to-[#f8faff] shadow-[0_10px_24px_rgba(59,99,243,0.08)] transition duration-300 group-hover:scale-[1.03] group-hover:shadow-[0_16px_34px_rgba(59,99,243,0.12)]">
+          <div className="flex h-14 w-14 items-center justify-center rounded-[22px] border border-primary/10 bg-gradient-to-br from-white to-[#f5f7ff] shadow-[0_10px_24px_rgba(59,99,243,0.08)] transition duration-300 group-hover:scale-[1.03] group-hover:shadow-[0_16px_34px_rgba(59,99,243,0.12)]">
             <DeviceIcon type={item.icon} />
           </div>
 
