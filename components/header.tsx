@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useState } from 'react';
@@ -16,15 +17,17 @@ export function Header() {
       <div className="container-layout flex h-20 items-center justify-between gap-6">
         <Link
           href="/"
-          className="group flex shrink-0 flex-col leading-tight"
+          className="group flex shrink-0 items-center"
           aria-label="Retour à l’accueil"
         >
-          <span className="text-sm font-semibold tracking-[0.16em] text-ink transition group-hover:text-primary sm:text-base">
-            Arnaud Crestey
-          </span>
-          <span className="text-[11px] tracking-[0.14em] text-slate/80 sm:text-xs">
-            arnaudcrestey.com
-          </span>
+          <Image
+            src="/logo-arnaud-crestey.png"
+            alt="Arnaud Crestey - Concepteur de systèmes numériques"
+            width={260}
+            height={72}
+            className="h-auto w-[180px] sm:w-[210px]"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
@@ -76,8 +79,13 @@ export function Header() {
         <div className="border-t border-line lg:hidden">
           <div className="container-layout flex flex-col gap-2 py-4">
             <div className="mb-2 rounded-[24px] border border-line bg-white/70 px-4 py-4">
-              <p className="text-sm font-semibold tracking-[0.12em] text-ink">Arnaud Crestey</p>
-              <p className="mt-1 text-xs text-slate/80">arnaudcrestey.com</p>
+              <Image
+                src="/logo-arnaud-crestey.png"
+                alt="Arnaud Crestey - Concepteur de systèmes numériques"
+                width={220}
+                height={60}
+                className="h-auto w-[180px]"
+              />
             </div>
 
             {navigation.map((item) => {
