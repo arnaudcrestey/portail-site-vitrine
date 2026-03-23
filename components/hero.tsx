@@ -9,11 +9,11 @@ export function HomeHero() {
           <span className="section-eyebrow">Concepteur de systèmes numériques</span>
 
           <h1 className="mt-6 max-w-3xl text-balance text-5xl font-semibold leading-[0.98] sm:text-6xl lg:text-7xl">
-  Développez votre activité avec des dispositifs digitaux conçus pour attirer, engager et convertir vos clients.
+  Développez votre activité avec des dispositifs digitaux qui attirent, engagent et transforment vos visiteurs en clients.ients.
 </h1>
 
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate sm:text-xl">
-          Je conçois des dispositifs digitaux qui vous aident à transformer vos visiteurs en clients.
+          Je conçois des parcours digitaux sur mesure, pensés pour structurer votre présence en ligne et faciliter la prise de contact.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
