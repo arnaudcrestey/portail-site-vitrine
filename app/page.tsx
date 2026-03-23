@@ -18,15 +18,10 @@ export default function HomePage() {
               <span className="section-eyebrow">Constat</span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Votre expertise est là. Mais en ligne, elle ne donne pas encore toute sa valeur.
+                Votre expertise est là. Mais aujourd’hui, elle ne donne pas encore toute sa valeur.
               </h2>
-
-              <p className="mt-5 text-lg leading-8 text-slate">
-               Le visiteur arrive, parcourt votre site, hésite… et repart sans aller plus loin.
-              </p>
-
               <p className="mt-4 text-lg leading-8 text-slate">
-                Mon travail consiste à transformer cette présence en un dispositif digital clair, structuré et engageant, qui donne envie de vous contacter.
+                Mon travail consiste à structurer cette expertise pour en faire un dispositif lisible, engageant et capable de déclencher une prise de contact.
               </p>
             </div>
           </div>
