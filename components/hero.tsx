@@ -24,6 +24,10 @@ export function HomeHero() {
             </ButtonLink>
           </div>
 
+          <p className="mt-4 text-sm text-slate/80">
+            +25 dispositifs conçus • Diagnostics interactifs • Automatisation intelligente
+          </p>
+
           <dl className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
               ['Clarté', 'Une offre plus lisible'],
