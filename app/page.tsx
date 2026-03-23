@@ -60,7 +60,7 @@ export default function HomePage() {
         </h2>
       </div>
 
-     <Surface className="relative mt-8 w-full overflow-hidden rounded-[36px] border border-primary/10 bg-gradient-to-br from-white to-primary/5 px-6 py-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] sm:px-8 sm:py-10 lg:px-10">
+     <Surface className="relative mt-8 w-full overflow-hidden rounded-[36px] border border-primary/10 bg-gradient-to-br from-white to-[#f6f8ff] px-6 py-8 shadow-[0_20px_60px_rgba(15,23,42,0.05)] sm:px-8 sm:py-10 lg:px-10">
         <div className="absolute inset-0 bg-hero-radial opacity-90" />
 
         <div className="relative grid gap-6 md:grid-cols-2 xl:grid-cols-4">
