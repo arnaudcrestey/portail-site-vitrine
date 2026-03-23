@@ -31,23 +31,23 @@ export function UniverseCardView({ item }: { item: UniverseCard }) {
 export function DeviceCard({ item }: { item: DeviceExample }) {
   return (
     <Link href="/concepts" className="block h-full">
-      <Surface className="group relative flex h-full flex-col justify-between overflow-hidden rounded-[28px] border border-line bg-white p-7 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 ease-premium hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(15,23,42,0.08)]">
-        <div className="absolute -top-10 left-1/2 h-32 w-32 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl opacity-0 transition duration-300 group-hover:opacity-100" />
+      <Surface className="group relative flex h-full flex-col overflow-hidden rounded-[30px] border border-line bg-white p-7 shadow-[0_12px_30px_rgba(15,23,42,0.05)] transition-all duration-300 ease-premium hover:-translate-y-2 hover:shadow-[0_24px_70px_rgba(15,23,42,0.10)]">
+        <div className="absolute inset-x-6 top-0 h-24 rounded-full bg-primary/10 blur-3xl opacity-0 transition duration-300 group-hover:opacity-100" />
 
-        <div className="relative">
-          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary/8 ring-1 ring-primary/10 transition duration-300 group-hover:bg-primary/12 group-hover:ring-primary/20">
+        <div className="relative flex-1">
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10 ring-1 ring-primary/15 transition duration-300 group-hover:scale-105 group-hover:bg-primary/15">
             <DeviceIcon type={item.icon} />
           </div>
 
-          <p className="mb-2 mt-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+          <span className="mt-6 inline-flex rounded-full border border-primary/15 bg-primary/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.20em] text-primary">
             Dispositif
-          </p>
+          </span>
 
-          <h3 className="text-xl font-semibold text-ink transition duration-300 group-hover:text-primary">
+          <h3 className="mt-4 text-xl font-semibold leading-7 text-ink transition duration-300 group-hover:text-primary">
             {item.title}
           </h3>
 
-          <p className="mt-3 text-sm leading-7 text-slate">{item.description}</p>
+          <p className="mt-4 text-sm leading-7 text-slate">{item.description}</p>
         </div>
 
         <div className="relative mt-8 inline-flex items-center gap-2 text-sm font-semibold text-ink transition duration-300 group-hover:text-primary">
