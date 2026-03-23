@@ -6,27 +6,32 @@ export function HomeHero() {
     <section className="relative overflow-hidden">
       <div className="container-layout section-spacing grid items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
         <div>
-          <span className="section-eyebrow">Portail principal</span>
+          <span className="section-eyebrow">Concepteur de systèmes numériques</span>
+
           <h1 className="mt-6 max-w-3xl text-balance text-5xl font-semibold leading-[1.02] sm:text-6xl lg:text-7xl">
-            Concepteur de systèmes numériques au service de l’humain.
+            Je transforme votre expertise en système numérique clair, structuré et convaincant.
           </h1>
+
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate sm:text-xl">
-            Je conçois des dispositifs digitaux intelligents pour clarifier, orienter, engager et transformer.
+            J’aide en priorité les coachs, thérapeutes, formateurs et indépendants à passer d’une offre floue ou dispersée à un dispositif concret, lisible et engageant.
           </p>
+
           <p className="mt-4 max-w-2xl text-base leading-8 text-slate sm:text-lg">
-            Entre diagnostics interactifs, mini-sites, automatisations et expériences digitales, je développe des outils utiles pour les particuliers comme pour les professionnels.
+            Diagnostics interactifs, mini-sites, parcours utilisateurs, automatisations et expériences digitales : je conçois des systèmes utiles pour mieux présenter une offre, mieux capter l’attention et mieux convertir.
           </p>
+
           <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <ButtonLink href="/cabinet-astrae">Découvrir Cabinet Astrae</ButtonLink>
+            <ButtonLink href="/contact">Me parler de votre projet</ButtonLink>
             <ButtonLink href="/diagnostics-automatisations" variant="secondary">
-              Voir les solutions professionnelles
+              Voir mes réalisations
             </ButtonLink>
           </div>
+
           <dl className="mt-12 grid gap-5 sm:grid-cols-3">
             {[
-              ['Positionnement', 'Clarté, stratégie, transformation'],
-              ['Double expertise', 'Particuliers et professionnels'],
-              ['Approche', 'Dispositifs utiles, lisibles et crédibles'],
+              ['Clarté', 'Rendre une offre plus lisible et plus compréhensible'],
+              ['Structure', 'Transformer une expertise en parcours concret'],
+              ['Conversion', 'Créer des dispositifs plus engageants et crédibles'],
             ].map(([label, value]) => (
               <div key={label} className="rounded-3xl border border-line/90 bg-white/65 p-5 backdrop-blur-sm">
                 <dt className="text-xs font-semibold uppercase tracking-[0.18em] text-slate">{label}</dt>
@@ -51,7 +56,9 @@ export function HomeHero() {
             </div>
             <div className="border-t border-line/80 bg-white/80 p-6 backdrop-blur-sm sm:p-7">
               <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate">Arnaud Crestey</p>
-              <p className="mt-3 text-xl font-semibold text-ink">Architecture digitale, diagnostics interactifs et dispositifs de conversion premium.</p>
+              <p className="mt-3 text-xl font-semibold text-ink">
+                Architecture digitale, diagnostics interactifs et dispositifs numériques pensés pour rendre une expertise plus claire, plus crédible et plus engageante.
+              </p>
             </div>
           </div>
         </Surface>
