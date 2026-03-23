@@ -8,16 +8,13 @@ export function HomeHero() {
         <div>
           <span className="section-eyebrow">Concepteur de systèmes numériques</span>
 
-          <h1 className="mt-6 max-w-4xl text-4xl font-semibold leading-[1.04] tracking-tight text-ink sm:text-5xl lg:text-7xl">
-            <span className="block">Développez votre activité</span>
-            <span className="mt-2 block">
-              avec des dispositifs digitaux qui attirent, engagent et transforment vos visiteurs en clients.
-            </span>
-          </h1>
+         <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+  Développez votre activité avec des dispositifs digitaux qui attirent, engagent et transforment vos visiteurs en clients.
+</h1>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate sm:text-lg lg:text-xl">
-            Je conçois des parcours digitaux sur mesure, pensés pour structurer votre présence en ligne et faciliter la prise de contact.
-          </p>
+  Je conçois des parcours digitaux sur mesure, pensés pour structurer votre présence en ligne et faciliter la prise de contact.
+</p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/contact">Me parler de votre projet</ButtonLink>
