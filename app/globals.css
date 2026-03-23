@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-cloud text-ink antialiased;
+  background-image:
+    radial-gradient(circle at top left, rgba(124, 108, 242, 0.12), transparent 22%),
+    radial-gradient(circle at top right, rgba(59, 99, 243, 0.12), transparent 22%),
+    radial-gradient(circle at 50% 20%, rgba(255, 255, 255, 0.9), transparent 34%),
+    linear-gradient(180deg, #ffffff 0%, #f7f9fe 100%);
+}
+
+::selection {
+  background: rgba(59, 99, 243, 0.18);
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply tracking-tight text-ink;
+  }
+
+  p {
+    @apply text-slate;
+  }
+
+  a,
+  button {
+    @apply outline-none;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply ring-2 ring-primary/40 ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .container-layout {
+    @apply mx-auto w-full max-w-layout px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-20 sm:py-24 lg:py-32;
+  }
+
+  .glass-panel {
+    @apply border border-white/80 bg-white/78 backdrop-blur-xl;
+    box-shadow:
+      0 20px 70px rgba(48, 72, 132, 0.08),
+      inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  }
+
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-primary/12 bg-white/78 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary shadow-[0_8px_22px_rgba(85,106,170,0.08)];
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
