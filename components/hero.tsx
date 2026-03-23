@@ -25,8 +25,8 @@ export function HomeHero() {
           </div>
 
           <p className="mt-4 text-sm text-slate/80">
-            +25 dispositifs conçus • Diagnostics interactifs • Automatisation intelligente
-          </p>
+  Diagnostics interactifs • Parcours utilisateurs • Automatisation intelligente
+</p>
 
           <dl className="mt-12 grid gap-4 sm:grid-cols-3">
             {[
