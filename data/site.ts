@@ -63,27 +63,27 @@ export const homeUniverses: UniverseCard[] = [
 
 export const deviceExamples: DeviceExample[] = [
   {
-    title: 'Love Scan',
+    title: 'Diagnostic interactif',
     description:
-      'Un diagnostic interactif conçu pour capter l’attention immédiatement et engager l’utilisateur dans une expérience personnalisée.',
+      'Un dispositif interactif conçu pour capter l’attention dès les premières secondes et engager immédiatement le visiteur.',
     icon: 'scan',
   },
   {
     title: 'Parcours d’entrée',
     description:
-      'Un dispositif structuré qui aide un visiteur à mieux comprendre sa situation avant même une prise de contact.',
+      'Un parcours structuré qui guide naturellement vos visiteurs et facilite le passage à la prise de contact.',
     icon: 'flow',
   },
   {
     title: 'Diagnostic personnalisé',
     description:
-      'Un système conçu pour transformer une problématique floue en analyse claire avec des pistes concrètes.',
+      'Un système pensé pour transformer une problématique complexe en lecture claire, utile et engageante.',
     icon: 'spark',
   },
   {
-    title: 'Automatisation d’emails',
+    title: 'Automatisations',
     description:
-      'Un parcours optimisé pour capter, qualifier et orienter les demandes sans friction inutile.',
+      'Un dispositif conçu pour capter, qualifier et relancer automatiquement les contacts.',
     icon: 'mail',
   },
 ];
