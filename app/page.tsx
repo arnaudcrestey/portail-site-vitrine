@@ -51,23 +51,25 @@ export default function HomePage() {
 
       <section className="pb-8 pt-2">
   <div className="container-layout">
-    <div className="mx-auto max-w-3xl text-center">
-      <span className="section-eyebrow">Exemples concrets</span>
+    <div className="mx-auto max-w-6xl">
+      <div className="max-w-3xl">
+        <span className="section-eyebrow">Exemples concrets</span>
 
-      <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-        Des dispositifs concrets, conçus pour attirer et convertir.
-      </h2>
-    </div>
-
-    <Surface className="relative mx-auto mt-8 max-w-6xl overflow-hidden rounded-[32px] px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
-      <div className="absolute inset-0 bg-hero-radial opacity-90" />
-
-      <div className="relative grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-        {deviceExamples.map((item) => (
-          <DeviceCard key={item.title} item={item} />
-        ))}
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          Des dispositifs concrets, conçus pour attirer et convertir.
+        </h2>
       </div>
-    </Surface>
+
+      <Surface className="relative mt-8 overflow-hidden rounded-[32px] px-6 py-8 sm:px-8 sm:py-10 lg:px-10">
+        <div className="absolute inset-0 bg-hero-radial opacity-90" />
+
+        <div className="relative grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {deviceExamples.map((item) => (
+            <DeviceCard key={item.title} item={item} />
+          ))}
+        </div>
+      </Surface>
+    </div>
   </div>
 </section>
      </>
