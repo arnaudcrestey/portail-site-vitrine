@@ -56,13 +56,15 @@ export function HomeHero() {
     
     {/* image */}
     <div className="relative aspect-[4/5]">
-      <SmartImage
-        src="/arnaud-crestey-photo.png"
-        alt="Portrait d’Arnaud Crestey"
-        priority
-        sizes="(min-width: 1024px) 42vw, 100vw"
-      />
-    </div>
+  <SmartImage
+    src="/arnaud-crestey-photo.png"
+    alt="Portrait d’Arnaud Crestey"
+    fallbackTitle="Photo principale à ajouter"
+    fallbackLabel="Ajoutez votre portrait dans public/arnaud-crestey-photo.png pour afficher votre photo ici."
+    priority
+    sizes="(min-width: 1024px) 42vw, 100vw"
+  />
+</div>
 
     {/* légende */}
     <div className="border-t border-line/70 bg-white/90 p-6 backdrop-blur-sm sm:p-7">
