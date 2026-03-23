@@ -32,9 +32,9 @@ export function HomeHero() {
 
           <dl className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
-              ['Clarté', 'Une offre plus lisible'],
-              ['Structure', 'Un parcours plus cohérent'],
-              ['Conversion', 'Une expérience plus engageante'],
+              ['Clarté', 'Votre offre comprise en quelques secondes'],
+              ['Structure', 'Un parcours qui guide naturellement vos visiteurs'],
+              ['Conversion', 'Plus de prises de contact, plus de clients'],
             ].map(([label, value]) => (
               <div
                 key={label}
