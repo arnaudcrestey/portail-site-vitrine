@@ -75,7 +75,7 @@ export const deviceExamples: DeviceExample[] = [
     icon: 'flow',
   },
   {
-    title: 'Diagnostic personnalisé',
+    title: 'Diagnostic sur mesure',
     description:
       'Un système pensé pour transformer une problématique complexe en lecture claire, utile et engageante.',
     icon: 'spark',
