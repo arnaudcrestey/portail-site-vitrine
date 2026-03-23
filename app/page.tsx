@@ -18,17 +18,15 @@ export default function HomePage() {
               <span className="section-eyebrow">Constat</span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Votre expertise a de la valeur… mais elle n’est pas encore perçue comme telle.
+                Votre expertise est là. Mais en ligne, elle ne donne pas encore toute sa valeur.
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-slate">
-                Une offre floue, dispersée ou trop statique réduit immédiatement l’impact perçu.
-                Le visiteur comprend partiellement, hésite, puis quitte la page sans aller plus loin.
+               Le visiteur arrive, parcourt votre site, hésite… et repart sans aller plus loin.
               </p>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                Mon travail consiste à transformer cette expertise en système numérique plus clair,
-                plus structuré et plus engageant.
+                Mon travail consiste à transformer cette présence en un dispositif digital clair, structuré et engageant, qui donne envie de vous contacter.
               </p>
             </div>
           </div>
