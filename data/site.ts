@@ -34,8 +34,8 @@ export type ReserveConcept = {
 
 export const navigation: NavItem[] = [
   { href: '/', label: 'Accueil' },
-  { href: '/cabinet-astrae', label: 'Cabinet Astrae' },
   { href: '/diagnostics-automatisations', label: 'Diagnostics & Automatisations' },
+  { href: '/concepts', label: 'Concepts' },
   { href: '/a-propos', label: 'À propos' },
   { href: '/contact', label: 'Contact' },
 ];
@@ -43,18 +43,18 @@ export const navigation: NavItem[] = [
 export const homeUniverses: UniverseCard[] = [
   {
     title: 'Cabinet Astrae',
-    audience: 'Pour les particuliers',
+    audience: 'Exemple de dispositif conçu',
     description:
-      'Des diagnostics clairs, des analyses fines et un accompagnement structuré pour mieux comprendre ce que vous vivez et retrouver un cap.',
+      'Un cas concret de système pensé pour structurer une offre, clarifier une promesse et créer une expérience plus lisible.',
     href: '/cabinet-astrae',
-    cta: 'Découvrir Astrae',
+    cta: 'Découvrir le cas Astrae',
     accent: 'from-secondary/18 via-secondary/8 to-white',
   },
   {
     title: 'Diagnostics & Automatisations',
-    audience: 'Pour les coachs, thérapeutes et formateurs',
+    audience: 'Dispositifs pour professionnels',
     description:
-      'Des mini-sites, diagnostics interactifs et systèmes d’acquisition conçus pour capter, qualifier et engager avec élégance.',
+      'Des mini-sites, diagnostics interactifs et systèmes d’acquisition conçus pour capter, qualifier et engager avec cohérence.',
     href: '/diagnostics-automatisations',
     cta: 'Voir les solutions',
     accent: 'from-primary/18 via-primary/8 to-white',
@@ -64,22 +64,26 @@ export const homeUniverses: UniverseCard[] = [
 export const deviceExamples: DeviceExample[] = [
   {
     title: 'Love Scan',
-    description: 'Une porte d’entrée relationnelle pensée pour révéler rapidement les dynamiques les plus utiles.',
+    description:
+      'Un diagnostic interactif conçu pour capter l’attention immédiatement et engager l’utilisateur dans une expérience personnalisée.',
     icon: 'scan',
   },
   {
     title: 'Parcours d’entrée',
-    description: 'Un mini-site qui qualifie, prépare la relation et améliore la qualité des prises de contact.',
+    description:
+      'Un dispositif structuré qui aide un visiteur à mieux comprendre sa situation avant même une prise de contact.',
     icon: 'flow',
   },
   {
     title: 'Diagnostic personnalisé',
-    description: 'Une expérience éditoriale et interactive qui transforme une expertise en dispositif compréhensible.',
+    description:
+      'Un système conçu pour transformer une problématique floue en analyse claire avec des pistes concrètes.',
     icon: 'spark',
   },
   {
     title: 'Automatisation d’emails',
-    description: 'Une séquence claire et structurée pour prolonger la conversation sans alourdir l’expérience.',
+    description:
+      'Un parcours optimisé pour capter, qualifier et orienter les demandes sans friction inutile.',
     icon: 'mail',
   },
 ];
@@ -89,7 +93,7 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'love-scan',
     number: '01',
     title: 'Love Scan',
-    description: 'Des relations plus claires. Une analyse qui révèle l’essentiel.',
+    description: 'Un dispositif relationnel pensé pour révéler rapidement les dynamiques les plus utiles.',
     image: '/projects/love-scan.jpg',
     href: '#',
   },
@@ -97,7 +101,7 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'personality-scan',
     number: '02',
     title: 'Personality Scan',
-    description: 'Mieux comprendre votre fonctionnement intérieur.',
+    description: 'Un parcours de découverte conçu pour rendre un fonctionnement intérieur plus lisible.',
     image: '/projects/personality-scan.jpg',
     href: '#',
   },
@@ -105,7 +109,7 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'life-decision',
     number: '03',
     title: 'Life Decision',
-    description: 'Découvrez ce qui guide vraiment vos choix de vie.',
+    description: 'Une expérience qui aide à clarifier les choix de vie et les directions possibles.',
     image: '/projects/life-decision.jpg',
     href: '#',
   },
@@ -113,7 +117,7 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'blocages-de-vie',
     number: '04',
     title: 'Blocages de vie',
-    description: 'Ce qui vous bloque aujourd’hui n’est peut-être pas ce que vous pensez.',
+    description: 'Un concept pensé pour faire émerger les freins réels derrière une situation confuse.',
     image: '/projects/blocages-de-vie.jpg',
     href: '#',
   },
@@ -121,7 +125,7 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'miroir-intuition',
     number: '05',
     title: 'Miroir d’Intuition',
-    description: 'Exprimez ce que vous traversez et découvrez ce qui se révèle en vous.',
+    description: 'Un dispositif narratif qui transforme une expression libre en lecture structurée.',
     image: '/projects/miroir-intuition.jpg',
     href: '#',
   },
@@ -129,7 +133,7 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'procoach',
     number: '06',
     title: 'Procoach',
-    description: 'Identifiez ce qui freine votre évolution professionnelle.',
+    description: 'Un outil pensé pour identifier ce qui freine une évolution ou un repositionnement professionnel.',
     image: '/projects/procoach.jpg',
     href: '#',
   },
@@ -155,7 +159,7 @@ export const reserveConcepts: ReserveConcept[] = [
 ];
 
 export const contactDetails = {
-  email: 'contact@arnaudcrestey.com',
-  phone: '+33 6 00 00 00 00',
-  location: 'Bretagne, France',
+  email: 'demande@arnaudcrestey.com',
+  phone: '+33 6 81 95 23 45',
+  location: 'VIRE, Normandie, France',
 };
