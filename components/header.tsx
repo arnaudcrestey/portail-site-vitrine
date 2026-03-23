@@ -20,12 +20,12 @@ export function Header() {
   className="group flex shrink-0 flex-col justify-center"
   aria-label="Retour à l’accueil"
 >
-  <span className="text-[15px] font-semibold tracking-[0.08em] text-ink transition group-hover:text-primary sm:text-[17px]">
+  <span className="text-[28px] font-medium leading-none tracking-[-0.03em] text-ink transition group-hover:text-primary sm:text-[34px]">
     Arnaud Crestey
   </span>
 
-  <span className="mt-2 flex items-center gap-2 text-[11px] tracking-[0.14em] text-slate/80 sm:text-xs">
-    <span className="h-px w-8 bg-ink/70" />
+  <span className="mt-2 flex items-center gap-3 text-[13px] font-normal tracking-[0.02em] text-slate/90 sm:text-[15px]">
+    <span className="h-px w-16 bg-ink/70" />
     <span>Concepteur de systèmes numériques</span>
   </span>
 </Link>
