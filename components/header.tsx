@@ -12,15 +12,25 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/70 bg-white/72 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-white/70 bg-white/78 backdrop-blur-xl">
       <div className="container-layout flex h-20 items-center justify-between gap-6">
-        <Link href="/" className="text-sm font-semibold tracking-[0.2em] text-ink sm:text-base">
-          arnaudcrestey.com
+        <Link
+          href="/"
+          className="group flex shrink-0 flex-col leading-tight"
+          aria-label="Retour à l’accueil"
+        >
+          <span className="text-sm font-semibold tracking-[0.16em] text-ink transition group-hover:text-primary sm:text-base">
+            Arnaud Crestey
+          </span>
+          <span className="text-[11px] tracking-[0.14em] text-slate/80 sm:text-xs">
+            arnaudcrestey.com
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
           {navigation.map((item) => {
             const active = pathname === item.href;
+
             return (
               <Link
                 key={item.href}
@@ -50,7 +60,13 @@ export function Header() {
           aria-expanded={open}
           aria-label={open ? 'Fermer le menu' : 'Ouvrir le menu'}
         >
-          <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <svg
+            viewBox="0 0 24 24"
+            className="h-5 w-5"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.8"
+          >
             {open ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
           </svg>
         </button>
@@ -59,8 +75,14 @@ export function Header() {
       {open ? (
         <div className="border-t border-line lg:hidden">
           <div className="container-layout flex flex-col gap-2 py-4">
+            <div className="mb-2 rounded-[24px] border border-line bg-white/70 px-4 py-4">
+              <p className="text-sm font-semibold tracking-[0.12em] text-ink">Arnaud Crestey</p>
+              <p className="mt-1 text-xs text-slate/80">arnaudcrestey.com</p>
+            </div>
+
             {navigation.map((item) => {
               const active = pathname === item.href;
+
               return (
                 <Link
                   key={item.href}
@@ -74,7 +96,13 @@ export function Header() {
                 </Link>
               );
             })}
-            <ButtonLink href="/contact" variant="secondary" className="mt-2 w-full" onClick={() => setOpen(false)}>
+
+            <ButtonLink
+              href="/contact"
+              variant="secondary"
+              className="mt-2 w-full"
+              onClick={() => setOpen(false)}
+            >
               Entrer en contact
             </ButtonLink>
           </div>
