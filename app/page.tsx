@@ -29,22 +29,24 @@ export default function HomePage() {
       </section>
 
       {/* EXPERTISE */}
-      <section className="pb-6 pt-2">
-        <div className="container-layout">
-          <div className="max-w-3xl">
-            <span className="section-eyebrow">Expertise</span>
+     <section className="pb-6 pt-2">
+  <div className="container-layout">
+    <div className="rounded-[36px] border border-slate-200 bg-white px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
+      <div className="max-w-3xl">
+        <span className="section-eyebrow">Expertise</span>
 
-            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Des dispositifs pensés pour clarifier, engager et faire avancer.
-            </h2>
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          Des dispositifs digitaux conçus pour attirer, guider et déclencher des prises de contact.
+        </h2>
 
-            <p className="mt-5 text-lg leading-8 text-slate">
-              Diagnostics interactifs, mini-sites, parcours utilisateurs, automatisations et systèmes
-              de conversion : chaque dispositif sert une logique claire.
-            </p>
-          </div>
-        </div>
-      </section>
+        <p className="mt-5 text-lg leading-8 text-slate">
+          Diagnostics interactifs, mini-sites, parcours utilisateurs, automatisations et systèmes de conversion :
+          chaque dispositif répond à une logique précise et à un objectif concret.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* EXEMPLES */}
       <section className="pb-8 pt-2">
