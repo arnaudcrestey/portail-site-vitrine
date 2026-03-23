@@ -1,6 +1,6 @@
 import { DeviceCard } from '@/components/cards';
 import { HomeHero } from '@/components/hero';
-import { ButtonLink, SectionHeading, Surface } from '@/components/ui';
+import { ButtonLink, Surface } from '@/components/ui';
 import { deviceExamples } from '@/data/site';
 
 export default function HomePage() {
@@ -33,21 +33,35 @@ export default function HomePage() {
 
       <section className="section-spacing pt-4">
         <div className="container-layout">
-          <SectionHeading
-            eyebrow="Expertise"
-            title="Des dispositifs pensés pour transformer une expertise en expérience claire et engageante"
-            description="Je conçois des systèmes qui permettent à un visiteur de comprendre rapidement votre valeur, de s’impliquer et de passer naturellement à l’étape suivante."
-          />
+          <div className="max-w-3xl">
+            <span className="section-eyebrow">Expertise</span>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              Des dispositifs pensés pour transformer une expertise en expérience claire et engageante
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-slate">
+              Je conçois des systèmes qui permettent à un visiteur de comprendre rapidement votre valeur, de
+              s’impliquer et de passer naturellement à l’étape suivante.
+            </p>
+          </div>
         </div>
       </section>
 
       <section className="section-spacing pt-0">
         <div className="container-layout">
-          <SectionHeading
-            eyebrow="Exemples concrets"
-            title="Des dispositifs concrets qui transforment une expertise en expérience engageante"
-            description="Chaque dispositif est pensé pour capter l’attention, structurer la réflexion et créer une suite logique vers la prise de contact."
-          />
+          <div className="max-w-3xl">
+            <span className="section-eyebrow">Exemples concrets</span>
+
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              Des dispositifs concrets qui transforment une expertise en expérience engageante
+            </h2>
+
+            <p className="mt-5 text-lg leading-8 text-slate">
+              Chaque dispositif est pensé pour capter l’attention, structurer la réflexion et créer une suite logique
+              vers la prise de contact.
+            </p>
+          </div>
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {deviceExamples.map((item) => (
@@ -79,8 +93,8 @@ export default function HomePage() {
               <div className="flex flex-col gap-4 sm:flex-row lg:flex-col lg:items-start lg:justify-end">
                 <ButtonLink href="/contact">Me parler de votre projet</ButtonLink>
 
-                <ButtonLink href="/realisations" variant="secondary">
-                  Voir mes réalisations
+                <ButtonLink href="/diagnostics-automatisations" variant="secondary">
+                  Voir comment je travaille
                 </ButtonLink>
               </div>
             </div>
