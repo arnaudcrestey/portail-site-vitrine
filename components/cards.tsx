@@ -39,7 +39,11 @@ export function DeviceCard({ item }: { item: DeviceExample }) {
             <DeviceIcon type={item.icon} />
           </div>
 
-          <h3 className="mt-6 text-xl font-semibold text-ink transition duration-300 group-hover:text-primary">
+          <p className="mb-2 mt-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+            Dispositif
+          </p>
+
+          <h3 className="text-xl font-semibold text-ink transition duration-300 group-hover:text-primary">
             {item.title}
           </h3>
 
