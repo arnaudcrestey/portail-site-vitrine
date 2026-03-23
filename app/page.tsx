@@ -60,7 +60,7 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="mt-14 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
             {deviceExamples.map((item) => (
               <DeviceCard key={item.title} item={item} />
             ))}
