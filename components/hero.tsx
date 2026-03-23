@@ -49,11 +49,9 @@ export function HomeHero() {
           </dl>
         </div>
 
-        <Surface className="relative overflow-hidden rounded-[32px] p-5 sm:p-6">
-          <div className="absolute -top-16 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-[#e8e2d8]/70 blur-3xl" />
-
-          <div className="relative overflow-hidden rounded-[28px] border border-white/50 bg-white shadow-[0_12px_40px_rgba(15,23,42,0.05)]">
-            <div className="relative aspect-[4/5]">
+        <Surface className="relative overflow-hidden rounded-[32px] bg-white p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] sm:p-6">
+          <div className="relative overflow-hidden rounded-[28px] border border-slate-100 bg-white">
+            <div className="relative aspect-[4/5] bg-[#f7f7f5]">
               <SmartImage
                 src="/arnaud-crestey-photo.png"
                 alt="Portrait d’Arnaud Crestey"
@@ -64,11 +62,14 @@ export function HomeHero() {
               />
             </div>
 
-            <div className="border-t border-line/70 bg-white/90 p-6 backdrop-blur-sm sm:p-7">
-              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-600">
+            <div className="border-t border-line/70 bg-white p-6 sm:p-7">
+              <p className="text-sm font-medium uppercase tracking-[0.18em] text-slate-600">
                 Arnaud Crestey
               </p>
-              
+              <p className="mt-3 text-lg font-semibold leading-8 text-ink sm:text-xl">
+                Architecture digitale, diagnostics interactifs et dispositifs conçus pour rendre
+                votre offre plus crédible et plus engageante.
+              </p>
             </div>
           </div>
         </Surface>
