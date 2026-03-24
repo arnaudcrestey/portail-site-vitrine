@@ -89,12 +89,7 @@ export function Footer() {
 
               <p>Vire, Normandie, France</p>
 
-              <Link
-                href="/mentions-legales"
-                className="transition hover:text-[#1d4ed8]"
-              >
-                Mentions légales
-              </Link>
+              
             </div>
           </div>
         </div>
