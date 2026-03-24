@@ -1,83 +1,124 @@
 import Link from 'next/link';
 
-import { contactDetails, navigation } from '@/data/site';
-
 export function Footer() {
   return (
-    <footer className="relative border-t border-line/80 bg-white">
-      <div className="container-layout py-14 sm:py-16">
-        <div className="grid gap-12 lg:grid-cols-[1.3fr_0.85fr_0.85fr] lg:gap-16">
+    <footer className="mt-24 border-t border-[#d9def8] bg-[#f8faff]">
+      <div className="mx-auto max-w-7xl px-6 py-16 sm:px-8 lg:px-10">
+        <div className="grid gap-12 md:grid-cols-3 md:gap-10">
+          {/* Bloc identité */}
           <div className="max-w-md">
-            <div className="flex flex-col leading-tight">
-              <p className="text-[18px] font-medium tracking-[0.08em] text-ink sm:text-[20px]">
-                Arnaud Crestey
-              </p>
-              <p className="mt-1 text-[12px] tracking-[0.14em] text-slate/80 sm:text-[13px]">
-                arnaudcrestey.com
-              </p>
-            </div>
+            <Link href="/" className="inline-block">
+              <div className="flex flex-col leading-tight">
+                <span className="text-[26px] font-semibold tracking-[-0.02em] text-[#0f172a]">
+                  Arnaud Crestey
+                </span>
+                <span className="mt-1 text-sm tracking-[0.12em] text-[#6b7280] uppercase">
+                  arnaudcrestey.com
+                </span>
+              </div>
+            </Link>
 
-            <div className="mt-6 h-px w-16 bg-line" />
+            <div className="mt-6 h-px w-16 bg-[#cfd7f6]" />
 
-            <p className="mt-6 text-sm leading-8 text-slate sm:text-[15px]">
+            <p className="mt-6 text-[15px] leading-7 text-[#475569]">
               Je conçois des dispositifs digitaux pensés pour attirer, guider et transformer des
-              visiteurs en clients.
+              visiteurs en clients
             </p>
           </div>
 
+          {/* Navigation */}
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0f172a]">
               Navigation
-            </h2>
+            </h3>
 
-            <ul className="mt-5 space-y-3 text-sm text-slate sm:text-[15px]">
-              {navigation.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="transition duration-300 hover:text-ink"
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+            <nav className="mt-6 flex flex-col gap-4">
+              <Link
+                href="/"
+                className="text-[15px] text-[#475569] transition hover:text-[#1d4ed8]"
+              >
+                Accueil
+              </Link>
+              <Link
+                href="/diagnostics-automatisations"
+                className="text-[15px] text-[#475569] transition hover:text-[#1d4ed8]"
+              >
+                Diagnostics & Automatisations
+              </Link>
+              <Link
+                href="/concepts"
+                className="text-[15px] text-[#475569] transition hover:text-[#1d4ed8]"
+              >
+                Concepts
+              </Link>
+              <Link
+                href="/a-propos"
+                className="text-[15px] text-[#475569] transition hover:text-[#1d4ed8]"
+              >
+                À propos
+              </Link>
+              <Link
+                href="/contact"
+                className="text-[15px] text-[#475569] transition hover:text-[#1d4ed8]"
+              >
+                Contact
+              </Link>
+            </nav>
           </div>
 
+          {/* Coordonnées */}
           <div>
-            <h2 className="text-sm font-semibold uppercase tracking-[0.14em] text-ink">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.22em] text-[#0f172a]">
               Coordonnées
-            </h2>
+            </h3>
 
-            <ul className="mt-5 space-y-3 text-sm text-slate sm:text-[15px]">
-              <li>
-                <a
-                  href={`mailto:${contactDetails.email}`}
-                  className="transition duration-300 hover:text-ink"
-                >
-                  {contactDetails.email}
-                </a>
-              </li>
-              <li>
-                <a
-                  href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}
-                  className="transition duration-300 hover:text-ink"
-                >
-                  {contactDetails.phone}
-                </a>
-              </li>
-              <li>{contactDetails.location}</li>
-              <li>
-                <span>Mentions légales</span>
-              </li>
-            </ul>
+            <div className="mt-6 flex flex-col gap-4 text-[15px] text-[#475569]">
+              <a
+                href="mailto:demande@arnaudcrestey.com"
+                className="transition hover:text-[#1d4ed8]"
+              >
+                demande@arnaudcrestey.com
+              </a>
+
+              <a
+                href="tel:+33681952345"
+                className="transition hover:text-[#1d4ed8]"
+              >
+                +33 6 81 95 23 45
+              </a>
+
+              <p>Vire, Normandie, France</p>
+
+              <Link
+                href="/mentions-legales"
+                className="transition hover:text-[#1d4ed8]"
+              >
+                Mentions légales
+              </Link>
+            </div>
           </div>
         </div>
 
-        <div className="mt-12 border-t border-line/70 pt-6">
-          <p className="text-xs tracking-[0.08em] text-slate/70 sm:text-sm">
-            © {new Date().getFullYear()} Arnaud Crestey. Tous droits réservés.
-          </p>
+        {/* Bas de footer */}
+        <div className="mt-14 border-t border-[#d9def8] pt-6">
+          <div className="flex flex-col gap-3 text-sm text-[#64748b] sm:flex-row sm:items-center sm:justify-between">
+            <p>© 2026 Arnaud Crestey. Tous droits réservés.</p>
+
+            <div className="flex flex-wrap items-center gap-4">
+              <Link
+                href="/mentions-legales"
+                className="transition hover:text-[#1d4ed8]"
+              >
+                Mentions légales
+              </Link>
+              <Link
+                href="/contact"
+                className="transition hover:text-[#1d4ed8]"
+              >
+                Contact
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
