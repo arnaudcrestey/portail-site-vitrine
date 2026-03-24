@@ -142,6 +142,198 @@ export default function SystemePage() {
         </div>
       </section>
 
+<section className="pb-10 pt-3">
+  <div className="container-layout">
+    <div className="relative overflow-hidden rounded-[36px] border border-[#d9def8] bg-[linear-gradient(180deg,#f7f8fe_0%,#f2f5ff_100%)] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,99,243,0.06),transparent_38%)]" />
+
+      <div className="relative mx-auto max-w-3xl text-center">
+        <span className="section-eyebrow">Vision du système</span>
+
+        <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          Un système structuré autour de plusieurs points d’entrée
+        </h2>
+
+        <p className="mt-4 text-lg leading-8 text-slate">
+          Chaque point d’entrée capte un besoin différent, engage le visiteur et le redirige vers
+          un système central pensé pour clarifier, qualifier et faciliter la prise de contact.
+        </p>
+      </div>
+
+      <div className="relative mt-14">
+        <div className="grid gap-8 lg:grid-cols-[1fr_360px_1fr] lg:grid-rows-[auto_auto_auto] lg:items-center">
+          {/* Haut gauche */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="group w-full max-w-[240px] rounded-[24px] border border-[#d9def8] bg-white/95 px-5 py-5 shadow-[0_12px_32px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(59,99,243,0.10)]">
+              <div className="inline-flex rounded-full border border-primary/15 bg-primary/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Point d’entrée
+              </div>
+              <h3 className="mt-4 text-lg font-semibold text-ink">Miroir d’intuition</h3>
+              <p className="mt-3 text-sm leading-7 text-slate">
+                Une entrée libre et engageante pour capter une situation personnelle dès les premières secondes.
+              </p>
+            </div>
+          </div>
+
+          {/* Centre haut */}
+          <div className="hidden lg:flex items-center justify-center">
+            <div className="flex items-center gap-3">
+              <div className="h-px w-12 bg-primary/25" />
+              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/15 bg-white text-primary shadow-[0_8px_20px_rgba(59,99,243,0.08)]">
+                ↘
+              </div>
+              <div className="h-px w-12 bg-primary/25" />
+            </div>
+          </div>
+
+          {/* Haut droite */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="group w-full max-w-[240px] rounded-[24px] border border-[#d9def8] bg-white/95 px-5 py-5 shadow-[0_12px_32px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(59,99,243,0.10)]">
+              <div className="inline-flex rounded-full border border-primary/15 bg-primary/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Point d’entrée
+              </div>
+              <h3 className="mt-4 text-lg font-semibold text-ink">Blocages de vie</h3>
+              <p className="mt-3 text-sm leading-7 text-slate">
+                Un diagnostic ciblé pour faire émerger rapidement un frein, un besoin ou une tension.
+              </p>
+            </div>
+          </div>
+
+          {/* Milieu gauche */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="group w-full max-w-[240px] rounded-[24px] border border-[#d9def8] bg-white/95 px-5 py-5 shadow-[0_12px_32px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(59,99,243,0.10)]">
+              <div className="inline-flex rounded-full border border-primary/15 bg-primary/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Point d’entrée
+              </div>
+              <h3 className="mt-4 text-lg font-semibold text-ink">Personality Scan</h3>
+              <p className="mt-3 text-sm leading-7 text-slate">
+                Une porte d’entrée simple pour engager un visiteur à travers une lecture plus personnelle.
+              </p>
+            </div>
+          </div>
+
+          {/* Centre */}
+          <div className="relative flex justify-center">
+            <div className="absolute inset-0 -z-10 flex items-center justify-center">
+              <div className="h-[280px] w-[280px] rounded-full bg-[radial-gradient(circle,rgba(59,99,243,0.10)_0%,rgba(59,99,243,0.04)_38%,transparent_70%)] blur-xl" />
+            </div>
+
+            <div className="w-full max-w-[360px] rounded-[32px] border border-[#d9def8] bg-white px-8 py-8 text-center shadow-[0_24px_70px_rgba(15,23,42,0.08)]">
+              <div className="mx-auto inline-flex rounded-full border border-primary/15 bg-primary/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Système central
+              </div>
+
+              <h3 className="mt-5 text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+                Cabinet Astrae
+              </h3>
+
+              <p className="mx-auto mt-4 max-w-[250px] text-sm leading-7 text-slate">
+                Une structure centrale qui accueille les visiteurs, rend l’offre plus lisible
+                et transforme l’intérêt en prise de contact qualifiée.
+              </p>
+
+              <div className="mt-6 grid grid-cols-2 gap-3 text-left">
+                <div className="rounded-[18px] border border-[#e4e9fb] bg-[#f8faff] px-4 py-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate">
+                    Clarté
+                  </p>
+                  <p className="mt-2 text-sm font-medium text-ink">
+                    Offre mieux comprise
+                  </p>
+                </div>
+
+                <div className="rounded-[18px] border border-[#e4e9fb] bg-[#f8faff] px-4 py-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate">
+                    Engagement
+                  </p>
+                  <p className="mt-2 text-sm font-medium text-ink">
+                    Parcours plus actif
+                  </p>
+                </div>
+
+                <div className="rounded-[18px] border border-[#e4e9fb] bg-[#f8faff] px-4 py-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate">
+                    Qualification
+                  </p>
+                  <p className="mt-2 text-sm font-medium text-ink">
+                    Demandes mieux ciblées
+                  </p>
+                </div>
+
+                <div className="rounded-[18px] border border-[#e4e9fb] bg-[#f8faff] px-4 py-3">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate">
+                    Conversion
+                  </p>
+                  <p className="mt-2 text-sm font-medium text-ink">
+                    Contact facilité
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Milieu droite */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="group w-full max-w-[240px] rounded-[24px] border border-[#d9def8] bg-white/95 px-5 py-5 shadow-[0_12px_32px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(59,99,243,0.10)]">
+              <div className="inline-flex rounded-full border border-primary/15 bg-primary/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Point d’entrée
+              </div>
+              <h3 className="mt-4 text-lg font-semibold text-ink">ProCoach</h3>
+              <p className="mt-3 text-sm leading-7 text-slate">
+                Un dispositif orienté clarté professionnelle pour attirer un autre angle de besoin.
+              </p>
+            </div>
+          </div>
+
+          {/* Bas gauche */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="group w-full max-w-[240px] rounded-[24px] border border-[#d9def8] bg-white/95 px-5 py-5 shadow-[0_12px_32px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(59,99,243,0.10)]">
+              <div className="inline-flex rounded-full border border-primary/15 bg-primary/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Point d’entrée
+              </div>
+              <h3 className="mt-4 text-lg font-semibold text-ink">Love Scan</h3>
+              <p className="mt-3 text-sm leading-7 text-slate">
+                Une entrée plus émotionnelle pour capter un public sensible à la dimension relationnelle.
+              </p>
+            </div>
+          </div>
+
+          {/* Centre bas */}
+          <div className="hidden lg:flex items-center justify-center">
+            <div className="flex items-center gap-3">
+              <div className="h-px w-12 bg-primary/25" />
+              <div className="flex h-11 w-11 items-center justify-center rounded-full border border-primary/15 bg-white text-primary shadow-[0_8px_20px_rgba(59,99,243,0.08)]">
+                ↗
+              </div>
+              <div className="h-px w-12 bg-primary/25" />
+            </div>
+          </div>
+
+          {/* Bas droite */}
+          <div className="flex justify-center lg:justify-start">
+            <div className="group w-full max-w-[240px] rounded-[24px] border border-[#d9def8] bg-white/95 px-5 py-5 shadow-[0_12px_32px_rgba(15,23,42,0.05)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(59,99,243,0.10)]">
+              <div className="inline-flex rounded-full border border-primary/15 bg-primary/6 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+                Point d’entrée
+              </div>
+              <h3 className="mt-4 text-lg font-semibold text-ink">Life Decision</h3>
+              <p className="mt-3 text-sm leading-7 text-slate">
+                Une autre entrée ciblée pour transformer une hésitation ou une réflexion en engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative mx-auto mt-10 max-w-3xl rounded-[24px] border border-[#d9def8] bg-white/75 px-6 py-5 text-center shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
+        <p className="text-sm leading-7 text-slate sm:text-[15px]">
+          Le système ne repose pas sur une seule page, mais sur plusieurs entrées complémentaires
+          qui attirent, qualifient et orientent vers un centre clair, cohérent et actif.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+      
       <section id="exemple" className="pb-8 pt-2">
         <div className="container-layout">
           <div className="rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
