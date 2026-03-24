@@ -7,7 +7,7 @@ import type { DeviceExample, ProjectCard, ReserveConcept, UniverseCard } from '@
 
 export function UniverseCardView({ item }: { item: UniverseCard }) {
   return (
-    <Surface className="group relative overflow-hidden p-8 sm:p-10">
+    <Surface className="group relative overflow-hidden rounded-[30px] border border-[#d9def8] bg-white p-8 sm:p-10">
       <div className={`absolute inset-0 bg-gradient-to-br ${item.accent}`} />
       <div className="relative flex h-full flex-col">
         <span className="section-eyebrow w-fit bg-white/70">{item.audience}</span>
@@ -31,15 +31,15 @@ export function UniverseCardView({ item }: { item: UniverseCard }) {
 export function DeviceCard({ item }: { item: DeviceExample }) {
   return (
     <Link href="/diagnostics-automatisations" className="block h-full">
-      <Surface className="group flex h-full flex-col overflow-hidden rounded-[30px] border border-slate-200 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 ease-premium hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(15,23,42,0.06)]">
-        <div className="h-24 border-b border-slate-100 bg-[#f8f9ff] px-7 pt-7 sm:h-28 sm:px-8 sm:pt-8">
-          <div className="flex h-16 w-16 items-center justify-center rounded-[20px] border border-primary/10 bg-[#eef2ff] text-primary shadow-[0_8px_20px_rgba(59,99,243,0.06)]">
+      <Surface className="group flex h-full flex-col overflow-hidden rounded-[30px] border border-[#d9def8] bg-white shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 ease-premium hover:-translate-y-0.5 hover:shadow-[0_16px_40px_rgba(15,23,42,0.06)]">
+        <div className="h-24 border-b border-[#e8ebfb] bg-[#f8f9ff] px-7 pt-7 sm:h-28 sm:px-8 sm:pt-8">
+          <div className="flex h-16 w-16 items-center justify-center rounded-[20px] border border-[#d9def8] bg-[#eef2ff] text-primary shadow-[0_8px_20px_rgba(59,99,243,0.06)]">
             <DeviceIcon type={item.icon} />
           </div>
         </div>
 
         <div className="flex flex-1 flex-col px-7 py-7 sm:px-8 sm:py-8">
-          <span className="inline-flex w-fit rounded-full border border-primary/12 bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+          <span className="inline-flex w-fit rounded-full border border-[#d9def8] bg-white px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
             Système
           </span>
 
@@ -63,7 +63,7 @@ export function DeviceCard({ item }: { item: DeviceExample }) {
 
 export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
   return (
-    <Surface className="group h-full overflow-hidden p-0">
+    <Surface className="group h-full overflow-hidden rounded-[30px] border border-[#d9def8] bg-white p-0">
       <div className="relative aspect-[4/3] overflow-hidden rounded-t-[28px]">
         <SmartImage
           src={project.image}
@@ -98,7 +98,7 @@ export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
 
 export function ReserveConceptCard({ concept }: { concept: ReserveConcept }) {
   return (
-    <Surface className="h-full p-7">
+    <Surface className="h-full rounded-[30px] border border-[#d9def8] bg-white p-7">
       <span className="inline-flex rounded-full border border-secondary/14 bg-secondary/8 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-secondary">
         Concept en réserve
       </span>
