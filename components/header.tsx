@@ -48,10 +48,10 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <ButtonLink href="/contact" variant="secondary">
-            Entrer en contact
-          </ButtonLink>
-        </div>
+  <ButtonLink href="/contact">
+    Entrer en contact
+  </ButtonLink>
+</div>
 
         <button
           type="button"
@@ -98,13 +98,12 @@ export function Header() {
             })}
 
             <ButtonLink
-              href="/contact"
-              variant="secondary"
-              className="mt-2 w-full"
-              onClick={() => setOpen(false)}
-            >
-              Entrer en contact
-            </ButtonLink>
+  href="/contact"
+  className="mt-2 w-full"
+  onClick={() => setOpen(false)}
+>
+  Entrer en contact
+</ButtonLink>
           </div>
         </div>
       ) : null}
