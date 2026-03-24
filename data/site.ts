@@ -34,10 +34,10 @@ export type ReserveConcept = {
 
 export const navigation: NavItem[] = [
   { href: '/', label: 'Accueil' },
-  { href: '/diagnostics-automatisations', label: 'Diagnostics & Automatisations' },
+  { href: '/systeme', label: 'Le système' },
   { href: '/concepts', label: 'Concepts' },
   { href: '/a-propos', label: 'À propos' },
- ];
+];
 
 export const homeUniverses: UniverseCard[] = [
   {
@@ -50,12 +50,12 @@ export const homeUniverses: UniverseCard[] = [
     accent: 'from-secondary/18 via-secondary/8 to-white',
   },
   {
-    title: 'Diagnostics & Automatisations',
-    audience: 'Dispositifs pour professionnels',
+    title: 'Le système',
+    audience: 'Dispositif d’acquisition concret',
     description:
-      'Des mini-sites, diagnostics interactifs et systèmes d’acquisition conçus pour capter, qualifier et engager avec cohérence.',
-    href: '/diagnostics-automatisations',
-    cta: 'Voir les solutions',
+      'Une démonstration visuelle de la manière dont une expertise peut être transformée en système digital clair, structuré et orienté conversion.',
+    href: '/systeme',
+    cta: 'Découvrir le système',
     accent: 'from-primary/18 via-primary/8 to-white',
   },
 ];
@@ -153,7 +153,7 @@ export const reserveConcepts: ReserveConcept[] = [
   {
     title: 'Décodeur de message',
     description:
-      'Une expérience qui reformule une situation confuse en lecture structurée et actionnable.',
+      'Une expérience qui reformule une situation confuse en lecture structurée et exploitable.',
   },
   {
     title: 'Traducteur émotionnel',
@@ -163,7 +163,7 @@ export const reserveConcepts: ReserveConcept[] = [
   {
     title: 'Radar de dynamique',
     description:
-      'Un dispositif court pour identifier les forces et tensions d’une situation donnée.',
+      'Un dispositif court pour identifier les forces et les tensions d’une situation donnée.',
   },
 ];
 
