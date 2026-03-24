@@ -37,8 +37,7 @@ export const navigation: NavItem[] = [
   { href: '/diagnostics-automatisations', label: 'Diagnostics & Automatisations' },
   { href: '/concepts', label: 'Concepts' },
   { href: '/a-propos', label: 'À propos' },
-  { href: '/contact', label: 'Contact' },
-];
+ ];
 
 export const homeUniverses: UniverseCard[] = [
   {
