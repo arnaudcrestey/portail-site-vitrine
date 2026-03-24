@@ -38,7 +38,7 @@ export function ButtonLink({
 }) {
   const variants = {
   primary:
-    'bg-[linear-gradient(180deg,#0f172a_0%,#0b1220_100%)] text-white border border-[#26324d] shadow-[0_16px_36px_rgba(15,23,42,0.26),inset_0_1px_0_rgba(255,255,255,0.12),inset_0_-1px_0_rgba(0,0,0,0.18)] hover:-translate-y-0.5 hover:bg-[linear-gradient(180deg,#162033_0%,#0f172a_100%)] hover:shadow-[0_22px_46px_rgba(15,23,42,0.32),inset_0_1px_0_rgba(255,255,255,0.14),inset_0_-1px_0_rgba(0,0,0,0.22)]',
+  'bg-[#2563eb] text-white border border-[#1d4ed8] shadow-[0_14px_30px_rgba(37,99,235,0.35)] hover:-translate-y-0.5 hover:bg-[#1d4ed8]',
   secondary:
     'border border-[#d9def8] bg-white text-[#0f172a] shadow-[0_8px_24px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-[#c7d2fe] hover:bg-[#f8faff]',
   ghost:
