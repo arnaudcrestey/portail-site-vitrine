@@ -15,17 +15,17 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/70 bg-white/78 backdrop-blur-xl">
       <div className="container-layout flex h-20 items-center justify-between gap-6">
         <Link
-  href="/"
-  className="group flex shrink-0 flex-col leading-tight"
-  aria-label="Retour à l’accueil"
->
-  <span className="text-[16px] font-medium tracking-[0.08em] text-ink transition group-hover:text-primary sm:text-[18px]">
-    Arnaud Crestey
-  </span>
-  <span className="mt-1 text-[12px] tracking-[0.12em] text-slate/80 sm:text-sm">
-    Concepteur de systèmes numériques
-  </span>
-</Link>
+          href="/"
+          className="group flex shrink-0 flex-col leading-tight"
+          aria-label="Retour à l’accueil"
+        >
+          <span className="text-[16px] font-medium tracking-[0.08em] text-ink transition group-hover:text-primary sm:text-[18px]">
+            Arnaud Crestey
+          </span>
+          <span className="mt-1 text-[12px] tracking-[0.12em] text-slate/80 sm:text-sm">
+            Concepteur de systèmes numériques
+          </span>
+        </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
           {navigation.map((item) => {
@@ -48,10 +48,8 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-  <ButtonLink href="/contact">
-    Entrer en contact
-  </ButtonLink>
-</div>
+          <ButtonLink href="/contact">Entrer en contact</ButtonLink>
+        </div>
 
         <button
           type="button"
@@ -75,11 +73,6 @@ export function Header() {
       {open ? (
         <div className="border-t border-line lg:hidden">
           <div className="container-layout flex flex-col gap-2 py-4">
-            <div className="mb-2 rounded-[24px] border border-line bg-white/70 px-4 py-4">
-              <p className="text-sm font-semibold tracking-[0.08em] text-ink">Arnaud Crestey</p>
-              <p className="mt-1 text-xs text-slate/80">Concepteur de systèmes numériques</p>
-            </div>
-
             {navigation.map((item) => {
               const active = pathname === item.href;
 
@@ -98,12 +91,12 @@ export function Header() {
             })}
 
             <ButtonLink
-  href="/contact"
-  className="mt-2 w-full"
-  onClick={() => setOpen(false)}
->
-  Entrer en contact
-</ButtonLink>
+              href="/contact"
+              className="mt-2 w-full"
+              onClick={() => setOpen(false)}
+            >
+              Entrer en contact
+            </ButtonLink>
           </div>
         </div>
       ) : null}
