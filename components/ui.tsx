@@ -38,9 +38,9 @@ export function ButtonLink({
 }) {
   const variants = {
     primary:
-      'bg-ink text-white shadow-card hover:-translate-y-0.5 hover:bg-ink/92',
+      'bg-[#0f172a] text-white shadow-[0_14px_34px_rgba(15,23,42,0.18)] hover:-translate-y-0.5 hover:bg-[#1e293b]',
     secondary:
-      'border border-line bg-white/88 text-ink hover:-translate-y-0.5 hover:border-primary/25 hover:bg-white',
+      'border border-[#d9def8] bg-white text-[#0f172a] shadow-[0_8px_24px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-[#c7d2fe] hover:bg-[#f8faff]',
     ghost:
       'text-ink hover:text-primary',
   } as const;
@@ -57,7 +57,5 @@ export function ButtonLink({
 }
 
 export function Surface({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return (
-    <div className={`glass-panel rounded-[28px] ${className}`}>{children}</div>
-  );
+  return <div className={`glass-panel rounded-[28px] ${className}`}>{children}</div>;
 }
