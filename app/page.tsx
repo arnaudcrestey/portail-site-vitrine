@@ -38,7 +38,7 @@ export default function HomePage() {
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-slate">
-                Chaque dispositif transforme votre expertise en un parcours clair, structuré et orienté prise de contact.
+                Chaque dispositif transforme votre expertise en un parcours clair, structuré et conçu pour faciliter le passage à l’action.
               </p>
             </div>
           </div>
