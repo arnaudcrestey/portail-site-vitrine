@@ -114,8 +114,7 @@ export default function SystemePage() {
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                L’idée n’est pas seulement de créer un site, mais de relier plusieurs éléments pour former
-                un système cohérent qui attire, engage et facilite la prise de contact.
+                L’idée n’est pas seulement d’être présent en ligne, mais d’organiser un ensemble de dispositifs — site, réseaux, contenus et parcours — pour créer un système cohérent qui attire, engage et génère des demandes.
               </p>
             </div>
 
