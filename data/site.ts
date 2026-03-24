@@ -16,6 +16,7 @@ export type DeviceExample = {
   title: string;
   description: string;
   icon: 'scan' | 'flow' | 'spark' | 'mail';
+  href: string;
 };
 
 export type ProjectCard = {
@@ -66,24 +67,28 @@ export const deviceExamples: DeviceExample[] = [
     description:
       'Un dispositif interactif conçu pour capter l’attention dès les premières secondes et engager immédiatement le visiteur.',
     icon: 'scan',
+    href: '/systeme',
   },
   {
     title: 'Parcours d’entrée',
     description:
       'Un parcours structuré qui guide naturellement vos visiteurs et facilite le passage à la prise de contact.',
     icon: 'flow',
+    href: '/systeme',
   },
   {
     title: 'Analyse sur mesure',
     description:
       'Un système pensé pour transformer une problématique complexe en lecture claire, utile et engageante.',
     icon: 'spark',
+    href: '/systeme',
   },
   {
     title: 'Automatisations',
     description:
       'Un dispositif conçu pour capter, qualifier et relancer automatiquement les contacts.',
     icon: 'mail',
+    href: '/systeme',
   },
 ];
 
