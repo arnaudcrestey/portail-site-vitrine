@@ -38,7 +38,7 @@ export function HomeHero() {
             ].map(([label, value]) => (
               <div
                 key={label}
-                className="rounded-[24px] border border-line/90 bg-white px-5 py-5 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
+                className="rounded-[24px] border border-[#d9def8] bg-[#f7f8fe] px-5 py-5 shadow-[0_10px_30px_rgba(15,23,42,0.04)]"
               >
                 <dt className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate">
                   {label}
@@ -49,9 +49,9 @@ export function HomeHero() {
           </dl>
         </div>
 
-        <Surface className="relative overflow-hidden rounded-[32px] border border-[#d9def8] bg-white p-4 shadow-[0_12px_40px_rgba(15,23,42,0.05)] sm:p-5 lg:p-6">
-          <div className="relative overflow-hidden rounded-[28px] border border-[#e8ebfb] bg-white">
-            <div className="relative aspect-[4/5] bg-[#f7f7f5]">
+        <Surface className="relative overflow-hidden rounded-[32px] border border-[#d9def8] bg-[#f7f8fe] p-4 shadow-[0_12px_40px_rgba(15,23,42,0.05)] sm:p-5 lg:p-6">
+          <div className="relative overflow-hidden rounded-[28px] border border-[#e7eafb] bg-[#f7f8fe]">
+            <div className="relative aspect-[4/5] bg-[#f3f4fb]">
               <SmartImage
                 src="/arnaud-crestey-photo.png"
                 alt="Portrait d’Arnaud Crestey"
@@ -62,7 +62,7 @@ export function HomeHero() {
               />
             </div>
 
-            <div className="border-t border-[#e8ebfb] bg-white px-5 py-5 sm:px-6 sm:py-6">
+            <div className="border-t border-[#e7eafb] bg-[#f7f8fe] px-5 py-5 sm:px-6 sm:py-6">
               <p className="text-[15px] font-medium tracking-[0.04em] text-ink sm:text-[16px]">
                 Arnaud Crestey
               </p>
