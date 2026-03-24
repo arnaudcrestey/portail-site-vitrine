@@ -37,13 +37,13 @@ export function ButtonLink({
   className?: string;
 }) {
   const variants = {
-    primary:
-      'bg-[linear-gradient(180deg,#111827_0%,#0f172a_100%)] text-white border border-[#1f2a44] shadow-[0_14px_30px_rgba(15,23,42,0.22),inset_0_1px_0_rgba(255,255,255,0.08)] hover:-translate-y-0.5 hover:shadow-[0_20px_40px_rgba(15,23,42,0.28),inset_0_1px_0_rgba(255,255,255,0.10)] hover:bg-[linear-gradient(180deg,#172033_0%,#111827_100%)]',
-    secondary:
-      'border border-[#d9def8] bg-white text-[#0f172a] shadow-[0_8px_24px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-[#c7d2fe] hover:bg-[#f8faff]',
-    ghost:
-      'text-ink hover:text-primary',
-  } as const;
+  primary:
+    'bg-[linear-gradient(180deg,#0f172a_0%,#0b1220_100%)] text-white border border-[#26324d] shadow-[0_16px_36px_rgba(15,23,42,0.26),inset_0_1px_0_rgba(255,255,255,0.12),inset_0_-1px_0_rgba(0,0,0,0.18)] hover:-translate-y-0.5 hover:bg-[linear-gradient(180deg,#162033_0%,#0f172a_100%)] hover:shadow-[0_22px_46px_rgba(15,23,42,0.32),inset_0_1px_0_rgba(255,255,255,0.14),inset_0_-1px_0_rgba(0,0,0,0.22)]',
+  secondary:
+    'border border-[#d9def8] bg-white text-[#0f172a] shadow-[0_8px_24px_rgba(15,23,42,0.04)] hover:-translate-y-0.5 hover:border-[#c7d2fe] hover:bg-[#f8faff]',
+  ghost:
+    'text-ink hover:text-primary',
+} as const;
 
   return (
     <Link
