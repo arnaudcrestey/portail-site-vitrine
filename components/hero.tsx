@@ -49,8 +49,8 @@ export function HomeHero() {
           </dl>
         </div>
 
-        <Surface className="relative overflow-hidden rounded-[32px] bg-white p-5 shadow-[0_12px_40px_rgba(15,23,42,0.05)] sm:p-6">
-          <div className="relative overflow-hidden rounded-[28px] border border-slate-100 bg-white">
+        <Surface className="relative overflow-hidden rounded-[32px] border border-[#d9def8] bg-white p-4 shadow-[0_12px_40px_rgba(15,23,42,0.05)] sm:p-5 lg:p-6">
+          <div className="relative overflow-hidden rounded-[28px] border border-[#e8ebfb] bg-white">
             <div className="relative aspect-[4/5] bg-[#f7f7f5]">
               <SmartImage
                 src="/arnaud-crestey-photo.png"
@@ -62,11 +62,11 @@ export function HomeHero() {
               />
             </div>
 
-            <div className="border-t border-line/70 bg-white p-6 sm:p-7">
-  <p className="text-[16px] font-medium tracking-[0.08em] text-ink sm:text-[18px]">
-    Arnaud Crestey
-  </p>
-</div>
+            <div className="border-t border-[#e8ebfb] bg-white px-5 py-5 sm:px-6 sm:py-6">
+              <p className="text-[15px] font-medium tracking-[0.04em] text-ink sm:text-[16px]">
+                Arnaud Crestey
+              </p>
+            </div>
           </div>
         </Surface>
       </div>
