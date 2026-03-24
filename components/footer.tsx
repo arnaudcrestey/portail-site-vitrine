@@ -5,14 +5,13 @@ export function Footer() {
     <footer className="mt-20 border-t border-[#d9def8] bg-[#f8faff]">
       <div className="mx-auto max-w-7xl px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
         <div className="grid gap-10 sm:gap-12 md:grid-cols-3 md:gap-10">
-          {/* Bloc identité */}
           <div className="max-w-md">
             <Link href="/" className="inline-block">
               <div className="flex flex-col leading-tight">
                 <span className="text-[22px] font-semibold tracking-[-0.02em] text-[#0f172a] sm:text-[24px] lg:text-[26px]">
                   Arnaud Crestey
                 </span>
-                <span className="mt-1 text-[11px] tracking-[0.14em] text-[#6b7280] uppercase sm:text-xs">
+                <span className="mt-1 text-[11px] uppercase tracking-[0.14em] text-[#6b7280] sm:text-xs">
                   arnaudcrestey.com
                 </span>
               </div>
@@ -21,11 +20,11 @@ export function Footer() {
             <div className="mt-4 h-px w-14 bg-[#cfd7f6] sm:mt-5 sm:w-16" />
 
             <p className="mt-4 max-w-sm text-[14px] leading-6 text-[#475569] sm:mt-5 sm:text-[15px] sm:leading-7">
-              Je conçois des systèmes digitaux pensés pour structurer votre message et générer des prises de contact.
+              Je conçois des systèmes digitaux pensés pour structurer une offre,
+              engager les bons visiteurs et faciliter la prise de contact.
             </p>
           </div>
 
-          {/* Navigation */}
           <div>
             <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
               Navigation
@@ -39,10 +38,10 @@ export function Footer() {
                 Accueil
               </Link>
               <Link
-                href="/diagnostics-automatisations"
+                href="/systeme"
                 className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
               >
-                Diagnostics & Automatisations
+                Le système
               </Link>
               <Link
                 href="/concepts"
@@ -65,7 +64,6 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Coordonnées */}
           <div>
             <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
               Coordonnées
@@ -91,7 +89,6 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Bas de footer */}
         <div className="mt-10 border-t border-[#d9def8] pt-5 sm:mt-12 sm:pt-6">
           <div className="flex flex-col gap-3 text-[13px] text-[#64748b] sm:text-sm md:flex-row md:items-center md:justify-between">
             <p>© 2026 Arnaud Crestey. Tous droits réservés.</p>
