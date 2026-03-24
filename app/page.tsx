@@ -34,13 +34,11 @@ export default function HomePage() {
               <span className="section-eyebrow">Expertise</span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Des dispositifs digitaux conçus pour attirer, guider et déclencher des prises de
-                contact.
+               Des dispositifs digitaux conçus pour transformer votre expertise en système de conversion.
               </h2>
 
               <p className="mt-5 text-lg leading-8 text-slate">
-                Chaque dispositif est conçu pour rendre votre message plus clair, guider vos
-                visiteurs et faciliter la prise de contact.
+                Chaque dispositif transforme votre expertise en un parcours clair, structuré et orienté prise de contact.
               </p>
             </div>
           </div>
@@ -54,7 +52,7 @@ export default function HomePage() {
               <span className="section-eyebrow">Exemples concrets</span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Des dispositifs concrets, conçus pour attirer et convertir.
+                Des dispositifs concrets, pensés pour générer des résultats.
               </h2>
             </div>
 
