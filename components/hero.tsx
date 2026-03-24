@@ -14,8 +14,7 @@ export function HomeHero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate sm:text-lg lg:text-xl">
-            Je conçois des parcours digitaux sur mesure, pensés pour structurer votre présence en
-            ligne et faciliter la prise de contact.
+            Je conçois des dispositifs digitaux pour attirer, engager et transformer vos visiteurs en clients.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
