@@ -114,7 +114,7 @@ export default function SystemePage() {
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                L’idée n’est pas seulement d’être présent en ligne, mais de créer un système cohérent qui attire, engage et génère des demandes.
+                Ce qui compte, ce n’est pas d’être présent en ligne, mais de structurer un système qui attire, engage et génère des demandes.
               </p>
             </div>
 
