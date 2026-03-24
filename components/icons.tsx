@@ -1,5 +1,5 @@
 export function DeviceIcon({ type }: { type: 'scan' | 'flow' | 'spark' | 'mail' }) {
-  const common = 'h-5 w-5 text-primary';
+  const common = 'h-[22px] w-[22px] text-primary';
 
   switch (type) {
     case 'scan':
