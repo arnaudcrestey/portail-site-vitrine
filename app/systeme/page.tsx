@@ -17,7 +17,7 @@ const astraeBlocks = [
   },
   {
     number: '02',
-    title: 'Ajouter plusieurs points d’entrée',
+    title: 'Ajouter un ou plusieurs points d’entrée',
     description:
       'Des points d’entrée ciblés pour attirer différentes personnes selon leur situation, leur besoin ou leur question.',
   },
@@ -31,7 +31,7 @@ const astraeBlocks = [
   number: '04',
   title: 'Fluidifier le suivi',
   description:
-    'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et sans friction.',
+    'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et fluide.',
 },
 ];
 export default function SystemePage() {
@@ -138,7 +138,7 @@ export default function SystemePage() {
             <span className="section-eyebrow">Passer à l’action</span>
 
             <h2 className="mx-auto mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Vous avez une expertise forte, mais pas encore le système qui la transforme en demandes
+              Votre expertise existe déjà. Mais elle ne travaille pas encore pour vous.
             </h2>
 
             <div className="mt-8 flex justify-center">
