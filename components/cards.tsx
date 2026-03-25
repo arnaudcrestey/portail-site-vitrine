@@ -82,7 +82,12 @@ export function DeviceCard({ item }: { item: DeviceExample }) {
 
 export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
   return (
-    <Link href={project.href} className="block h-full">
+    <Link
+  href={project.href}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="block h-full"
+>
       <Surface className="group flex h-full flex-col overflow-hidden rounded-[30px] border border-[#d9def8] bg-white p-0 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 ease-premium hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_24px_60px_rgba(59,99,243,0.10)]">
         <div className="relative h-[220px] overflow-hidden rounded-t-[28px] border-b border-[#e7eafb] bg-[#f7f8fe]">
           <SmartImage
