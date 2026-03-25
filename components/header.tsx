@@ -48,7 +48,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <ButtonLink href="/contact">Echanger ensemble</ButtonLink>
+          <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
         </div>
 
         <button
@@ -95,7 +95,7 @@ export function Header() {
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Echanger ensemble
+              Parler de votre projet
             </ButtonLink>
           </div>
         </div>
