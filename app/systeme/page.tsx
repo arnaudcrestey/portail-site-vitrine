@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Le système | Arnaud Crestey',
   description:
-    "Comment Arnaud Crestey transforme une expertise en système digital clair, structuré et orienté acquisition.",
+    "Comment Arnaud Crestey structure un système digital clair, cohérent et orienté acquisition.",
 };
 
 const astraeBlocks = [
@@ -45,71 +45,17 @@ const benefits = [
 export default function SystemePage() {
   return (
     <>
-      <section className="section-spacing pb-8">
-        <div className="container-layout">
-          <div className="relative overflow-hidden rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-6 py-10 shadow-[0_25px_80px_rgba(15,23,42,0.06)] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
-            <div className="relative max-w-4xl">
-              <span className="section-eyebrow">Le système</span>
-
-              <h1 className="mt-4 max-w-4xl text-4xl font-semibold tracking-tight text-ink sm:text-5xl">
-                Comment je transforme une expertise en système digital d’acquisition
-              </h1>
-
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-slate">
-                Voici concrètement comment je conçois un dispositif structuré pour rendre une offre
-                plus lisible, plus engageante et plus active.
-              </p>
-
-              <div className="mt-8 flex flex-wrap gap-4">
-                <Link
-                  href="#schema"
-                  className="inline-flex items-center justify-center rounded-full bg-primary px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
-                >
-                  Voir le schéma
-                </Link>
-
-                <Link
-                  href="/#contact"
-                  className="inline-flex items-center justify-center rounded-full border border-[#d9def8] bg-white px-6 py-3 text-sm font-semibold text-ink transition hover:border-primary/30 hover:text-primary"
-                >
-                  Parler de mon projet
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="pb-8 pt-2">
-        <div className="container-layout">
-          <div className="rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
-            <div className="mx-auto max-w-3xl text-center">
-              <span className="section-eyebrow">Logique d’ensemble</span>
-
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Une expertise devient vraiment utile lorsqu’elle est structurée
-              </h2>
-
-              <p className="mt-4 text-lg leading-8 text-slate">
-                Ce qui compte, ce n’est pas seulement d’être visible en ligne, mais de structurer un
-                système qui attire, engage et génère des demandes.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="schema" className="pb-8 pt-2">
+      <section id="schema" className="section-spacing pb-8">
         <div className="container-layout">
           <div className="relative overflow-hidden rounded-[36px] border border-[#d9def8] bg-[linear-gradient(180deg,#f7f8fe_0%,#f2f5ff_100%)] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,99,243,0.06),transparent_38%)]" />
 
             <div className="relative mx-auto max-w-3xl text-center">
-              <span className="section-eyebrow">Vision du système</span>
+              <span className="section-eyebrow">Le système</span>
 
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+              <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 Un système structuré autour de plusieurs points d’entrée
-              </h2>
+              </h1>
 
               <p className="mt-4 text-lg leading-8 text-slate">
                 Chaque point d’entrée attire un besoin différent, engage le visiteur et le redirige
@@ -118,14 +64,14 @@ export default function SystemePage() {
             </div>
 
             <div className="relative mt-14">
-              <div className="overflow-hidden rounded-[32px] border border-[#d9def8] bg-white shadow-[0_24px_70px_rgba(15,23,42,0.08)]">
+              <div className="overflow-hidden rounded-[28px] bg-transparent">
                 <Image
                   src="/images/schema-cabinet-astrae.png"
                   alt="Schéma du système digital d’acquisition autour de plusieurs points d’entrée"
                   width={1680}
                   height={945}
                   priority
-                  className="h-auto w-full object-contain"
+                  className="h-auto w-full object-cover"
                 />
               </div>
             </div>
@@ -136,6 +82,15 @@ export default function SystemePage() {
                 complémentaires qui attirent, qualifient et orientent vers un centre clair,
                 cohérent et actif.
               </p>
+            </div>
+
+            <div className="mt-8 flex justify-center">
+              <Link
+                href="/#contact"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
+              >
+                Parler de mon projet
+              </Link>
             </div>
           </div>
         </div>
