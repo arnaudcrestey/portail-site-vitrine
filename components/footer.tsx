@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="mt-20 border-t border-[#d9def8] bg-[#f8faff]">
       <div className="mx-auto max-w-7xl px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
-        <div className="grid gap-10 sm:gap-12 md:grid-cols-3 md:gap-10">
+        <div className="grid gap-10 sm:gap-12 md:grid-cols-[1.2fr_0.8fr_1fr] md:gap-10">
           <div className="max-w-md">
             <Link href="/" className="inline-block">
               <div className="flex flex-col leading-tight">
@@ -25,43 +25,45 @@ export function Footer() {
             </p>
           </div>
 
-          <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
-              Navigation
-            </h3>
+          <div className="md:flex md:justify-center">
+            <div className="md:w-[150px]">
+              <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
+                Navigation
+              </h3>
 
-            <nav className="mt-4 flex flex-col gap-3 sm:mt-5 sm:gap-4">
-              <Link
-                href="/"
-                className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
-              >
-                Accueil
-              </Link>
-              <Link
-                href="/systeme"
-                className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
-              >
-                Le système
-              </Link>
-              <Link
-                href="/concepts"
-                className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
-              >
-                Concepts
-              </Link>
-              <Link
-                href="/a-propos"
-                className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
-              >
-                À propos
-              </Link>
-              <Link
-                href="/contact"
-                className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
-              >
-                Contact
-              </Link>
-            </nav>
+              <nav className="mt-4 flex flex-col gap-3 sm:mt-5 sm:gap-4">
+                <Link
+                  href="/"
+                  className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
+                >
+                  Accueil
+                </Link>
+                <Link
+                  href="/systeme"
+                  className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
+                >
+                  Le système
+                </Link>
+                <Link
+                  href="/concepts"
+                  className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
+                >
+                  Concepts
+                </Link>
+                <Link
+                  href="/a-propos"
+                  className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
+                >
+                  À propos
+                </Link>
+                <Link
+                  href="/contact"
+                  className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
+                >
+                  Contact
+                </Link>
+              </nav>
+            </div>
           </div>
 
           <div>
@@ -77,10 +79,7 @@ export function Footer() {
                 demande@arnaudcrestey.com
               </a>
 
-              <a
-                href="tel:+33681952345"
-                className="transition hover:text-[#1d4ed8]"
-              >
+              <a href="tel:+33681952345" className="transition hover:text-[#1d4ed8]">
                 +33 6 81 95 23 45
               </a>
 
@@ -94,16 +93,10 @@ export function Footer() {
             <p>© 2026 Arnaud Crestey. Tous droits réservés.</p>
 
             <div className="flex flex-wrap items-center gap-3 sm:gap-4">
-              <Link
-                href="/mentions-legales"
-                className="transition hover:text-[#1d4ed8]"
-              >
+              <Link href="/mentions-legales" className="transition hover:text-[#1d4ed8]">
                 Mentions légales
               </Link>
-              <Link
-                href="/contact"
-                className="transition hover:text-[#1d4ed8]"
-              >
+              <Link href="/contact" className="transition hover:text-[#1d4ed8]">
                 Contact
               </Link>
             </div>
