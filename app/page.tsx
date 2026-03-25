@@ -32,9 +32,10 @@ export default function HomePage() {
             <div className="max-w-3xl text-center">
               <span className="section-eyebrow">Exemples concrets</span>
 
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Des dispositifs concrets, pensés pour générer des résultats.
-              </h2>
+             <h2 className="...">
+  Des dispositifs concrets,<br />
+  pensés pour générer des résultats.
+</h2>
             </div>
 
             <Surface className="relative mt-8 w-full overflow-hidden rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-5 py-5 shadow-[0_18px_50px_rgba(15,23,42,0.05)] sm:px-6 sm:py-6 lg:px-8 lg:py-8">
