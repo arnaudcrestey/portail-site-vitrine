@@ -48,7 +48,7 @@ export function Header() {
         </nav>
 
         <div className="hidden lg:block">
-          <ButtonLink href="/contact">Entrer en contact</ButtonLink>
+          <ButtonLink href="/contact">Echanger ensemble</ButtonLink>
         </div>
 
         <button
