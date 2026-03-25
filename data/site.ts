@@ -23,9 +23,12 @@ export type ProjectCard = {
   slug: string;
   number: string;
   title: string;
+  hook: string;
   description: string;
+  proof: string;
   image: string;
   href: string;
+  cta: string;
 };
 
 export type ReserveConcept = {
@@ -97,55 +100,73 @@ export const conceptProjects: ProjectCard[] = [
     slug: 'love-scan',
     number: '01',
     title: 'Love Scan',
+    hook: 'Votre relation est-elle vraiment équilibrée ?',
     description:
-      'Un dispositif relationnel pensé pour révéler rapidement les dynamiques les plus utiles.',
+      'Obtenez un score clair et une lecture immédiate de votre dynamique relationnelle.',
+    proof: 'Test rapide • Résultat en 2 minutes',
     image: '/projects/love-scan.jpg',
-    href: '#',
+    href: '/love-scan',
+    cta: 'Faire le test',
   },
   {
     slug: 'personality-scan',
     number: '02',
     title: 'Personality Scan',
+    hook: 'Comprenez enfin votre fonctionnement profond',
     description:
-      'Un parcours de découverte conçu pour rendre un fonctionnement intérieur plus lisible.',
+      'Découvrez vos traits dominants, vos forces et vos zones de tension en quelques minutes.',
+    proof: 'Simple • Rapide • Immédiat',
     image: '/projects/personality-scan.jpg',
-    href: '#',
+    href: '/personality-scan',
+    cta: 'Découvrir',
   },
   {
     slug: 'life-decision',
     number: '03',
     title: 'Life Decision',
+    hook: 'Prenez une décision sans rester bloqué',
     description:
-      'Une expérience qui aide à clarifier les choix de vie et les directions possibles.',
+      'Faites émerger plus clairement les options, les hésitations et la direction la plus juste.',
+    proof: 'Lecture guidée • Impact immédiat',
     image: '/projects/life-decision.jpg',
-    href: '#',
+    href: '/life-decision',
+    cta: 'Explorer',
   },
   {
     slug: 'blocages-de-vie',
     number: '04',
     title: 'Blocages de vie',
+    hook: 'Ce qui vous bloque n’est pas toujours visible',
     description:
-      'Un concept pensé pour faire émerger les freins réels derrière une situation confuse.',
+      'Identifiez les freins réels derrière une situation confuse et commencez à les clarifier.',
+    proof: 'Diagnostic court • Lecture directe',
     image: '/projects/blocages-de-vie.jpg',
-    href: '#',
+    href: '/blocages-de-vie',
+    cta: 'Identifier mes blocages',
   },
   {
     slug: 'miroir-intuition',
     number: '05',
     title: 'Miroir d’Intuition',
+    hook: 'Exprimez votre situation, obtenez une lecture immédiate',
     description:
-      'Un dispositif narratif qui transforme une expression libre en lecture structurée.',
+      'Transformez un texte libre en première lecture structurée, claire et exploitable.',
+    proof: 'Expression libre • Retour instantané',
     image: '/projects/miroir-intuition.jpg',
-    href: '#',
+    href: '/miroir-intuition',
+    cta: 'Commencer',
   },
   {
     slug: 'procoach',
     number: '06',
     title: 'Procoach',
+    hook: 'Êtes-vous vraiment aligné dans votre vie pro ?',
     description:
-      'Un outil pensé pour identifier ce qui freine une évolution ou un repositionnement professionnel.',
+      'Repérez ce qui freine votre évolution ou votre repositionnement professionnel.',
+    proof: 'Diagnostic pro • Résultat immédiat',
     image: '/projects/procoach.jpg',
-    href: '#',
+    href: '/procoach',
+    cta: 'Voir mon score',
   },
 ];
 
