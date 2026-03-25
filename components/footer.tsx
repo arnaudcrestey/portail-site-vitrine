@@ -3,8 +3,8 @@ import Link from 'next/link';
 export function Footer() {
   return (
     <footer className="mt-20 border-t border-[#d9def8] bg-[#f8faff]">
-      <div className="mx-auto max-w-7xl px-5 py-10 sm:px-6 sm:py-12 lg:px-10 lg:py-16">
-        <div className="grid gap-10 sm:gap-12 md:grid-cols-[1.2fr_0.8fr_1fr] md:gap-10">
+      <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <div className="grid gap-10 sm:gap-12 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:justify-between md:gap-16">
           <div className="max-w-md">
             <Link href="/" className="inline-block">
               <div className="flex flex-col leading-tight">
@@ -25,8 +25,8 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="md:flex md:justify-center">
-            <div className="md:w-[150px]">
+          <div className="md:justify-self-center">
+            <div className="w-[180px]">
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
                 Navigation
               </h3>
@@ -66,24 +66,26 @@ export function Footer() {
             </div>
           </div>
 
-          <div>
-            <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
-              Coordonnées
-            </h3>
+          <div className="md:justify-self-end">
+            <div className="w-[220px]">
+              <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
+                Coordonnées
+              </h3>
 
-            <div className="mt-4 flex flex-col gap-3 text-[14px] text-[#475569] sm:mt-5 sm:gap-4 sm:text-[15px]">
-              <a
-                href="mailto:demande@arnaudcrestey.com"
-                className="break-all transition hover:text-[#1d4ed8]"
-              >
-                demande@arnaudcrestey.com
-              </a>
+              <div className="mt-4 flex flex-col gap-3 text-[14px] text-[#475569] sm:mt-5 sm:gap-4 sm:text-[15px]">
+                <a
+                  href="mailto:demande@arnaudcrestey.com"
+                  className="break-all transition hover:text-[#1d4ed8]"
+                >
+                  demande@arnaudcrestey.com
+                </a>
 
-              <a href="tel:+33681952345" className="transition hover:text-[#1d4ed8]">
-                +33 6 81 95 23 45
-              </a>
+                <a href="tel:+33681952345" className="transition hover:text-[#1d4ed8]">
+                  +33 6 81 95 23 45
+                </a>
 
-              <p>Vire, Normandie, France</p>
+                <p>Vire, Normandie, France</p>
+              </div>
             </div>
           </div>
         </div>
