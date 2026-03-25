@@ -146,7 +146,7 @@ export default function SystemePage() {
                 href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
               >
-                Echanger ensemble
+                Parler de votre projet
               </Link>
             </div>
           </div>
