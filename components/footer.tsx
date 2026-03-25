@@ -21,7 +21,7 @@ export function Footer() {
               <div className="mx-auto mt-5 h-px w-16 bg-[#cfd7f6]" />
 
               <p className="mt-5 text-[14px] leading-8 text-[#475569] sm:text-[15px] sm:leading-8">
-                Je conçois des systèmes numériques qui attirent, engagent et transforment vos visiteurs en clients.
+                Des systèmes numériques qui attirent, engagent et transforment vos visiteurs en clients.
               </p>
             </div>
           </div>
