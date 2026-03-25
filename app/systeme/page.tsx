@@ -22,16 +22,17 @@ const astraeBlocks = [
       'Des points d’entrée ciblés pour attirer différentes personnes selon leur situation, leur besoin ou leur question.',
   },
   {
-    number: '03',
-    title: 'Engager et qualifier',
-    description:
-       'Chaque dispositif capte l’attention, implique la personne et permet de mieux comprendre sa situation.',
-  {
-    number: '04',
-    title: 'Fluidifier le suivi',
-    description:
-      'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et sans friction.',
-];
+  number: '03',
+  title: 'Engager et qualifier',
+  description:
+    'Chaque dispositif capte l’attention, implique la personne et permet de mieux comprendre sa situation.',
+},
+{
+  number: '04',
+  title: 'Fluidifier le suivi',
+  description:
+    'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et sans friction.',
+},
 
 export default function SystemePage() {
   return (
