@@ -17,37 +17,41 @@ export function Footer() {
     <footer className="mt-20 border-t border-[#d9def8] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fe_100%)]">
       <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid gap-12 sm:gap-14 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:justify-between md:gap-16">
+          {/* Bloc gauche centré */}
           <div className="flex justify-center md:justify-start">
-            <div className="max-w-sm text-center md:text-left">
-              <Link href="/" className="inline-block">
-                <div className="flex flex-col items-center md:items-start leading-none">
-                  <div className={`${monogramFont.className} relative flex items-center justify-center md:justify-start`}>
-                    <span className="text-[58px] font-medium tracking-[-0.06em] text-[#111827] sm:text-[66px] lg:text-[74px]">
-                      A
-                    </span>
-                    <span className="-ml-2 text-[58px] font-medium tracking-[-0.08em] text-[#111827] sm:text-[66px] lg:text-[74px]">
-                      C
+            <div className="w-full max-w-sm">
+              <div className="mx-auto flex w-full flex-col items-center text-center md:mx-0 md:items-center md:text-center">
+                <Link href="/" className="inline-block">
+                  <div className="flex flex-col items-center leading-none">
+                    <div className={`${monogramFont.className} relative flex items-center justify-center`}>
+                      <span className="text-[58px] font-medium tracking-[-0.06em] text-[#111827] sm:text-[66px] lg:text-[74px]">
+                        A
+                      </span>
+                      <span className="-ml-2 text-[58px] font-medium tracking-[-0.08em] text-[#111827] sm:text-[66px] lg:text-[74px]">
+                        C
+                      </span>
+                    </div>
+
+                    <span
+                      className={`${monogramFont.className} mt-2 text-[24px] font-medium tracking-[-0.03em] text-[#0f172a] sm:text-[26px] lg:text-[28px]`}
+                    >
+                      arnaudcrestey.com
                     </span>
                   </div>
+                </Link>
 
-                  <span
-                    className={`${monogramFont.className} mt-2 text-[24px] font-medium tracking-[-0.03em] text-[#0f172a] sm:text-[26px] lg:text-[28px]`}
-                  >
-                    arnaudcrestey.com
-                  </span>
-                </div>
-              </Link>
+                <div className="mx-auto mt-5 h-px w-20 bg-[#d7dceb]" />
 
-              <div className="mx-auto mt-5 h-px w-20 bg-[#d7dceb] md:mx-0" />
-
-              <p
-                className={`${monogramFont.className} mx-auto mt-5 max-w-[30rem] text-[18px] italic leading-8 text-[#5b6474] sm:text-[20px] md:mx-0`}
-              >
-                Des systèmes numériques qui attirent, engagent et transforment des visiteurs en clients.
-              </p>
+                <p
+                  className={`${monogramFont.className} mx-auto mt-5 max-w-[30rem] text-center text-[18px] italic leading-8 text-[#5b6474] sm:text-[20px]`}
+                >
+                  Des systèmes numériques qui attirent, engagent et transforment des visiteurs en clients.
+                </p>
+              </div>
             </div>
           </div>
 
+          {/* Navigation */}
           <div className="flex justify-center md:block md:justify-self-center">
             <div className="w-full max-w-[220px] text-center md:w-[180px] md:text-left">
               <h3
@@ -91,6 +95,7 @@ export function Footer() {
             </div>
           </div>
 
+          {/* Coordonnées */}
           <div className="flex justify-center md:block md:justify-self-end">
             <div className="w-full max-w-[260px] text-center md:w-[220px] md:text-left">
               <h3
@@ -119,6 +124,7 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Bas de footer */}
         <div className="mt-12 border-t border-[#d9def8] pt-6">
           <div
             className={`${textFont.className} flex flex-col gap-3 text-center text-[14px] text-[#64748b] md:flex-row md:items-center md:justify-between md:text-left`}
