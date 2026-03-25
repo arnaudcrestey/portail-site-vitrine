@@ -15,12 +15,11 @@ export default function HomePage() {
               <span className="section-eyebrow">Constat</span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Votre expertise est là. Mais aujourd’hui, elle ne donne pas encore toute sa valeur.
+                Votre expertise existe déjà. Mais elle ne travaille pas encore pour vous.
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                Mon travail consiste à structurer cette expertise pour en faire un dispositif
-                lisible, engageant et capable de déclencher une prise de contact.
+                Mon travail consiste à structurer cette expertise pour la rendre lisible, visible et capable de créer un mouvement naturel vers vous.
               </p>
             </div>
           </div>
