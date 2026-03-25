@@ -77,7 +77,7 @@ export default function ConceptsPage() {
                 href="/contact"
                 className="mt-8 inline-flex items-center justify-center rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-ink/92"
               >
-                Me parler d’un projet digital
+                Parler de votre projet
               </a>
             </div>
           </Surface>
