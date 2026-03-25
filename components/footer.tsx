@@ -1,140 +1,80 @@
 import Link from 'next/link';
 import { Cormorant_Garamond, Inter } from 'next/font/google';
 
-const serif = Cormorant_Garamond({
+const monogramFont = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
   style: ['normal'],
 });
 
-const sans = Inter({
+const textFont = Inter({
   subsets: ['latin'],
   weight: ['400', '500', '600'],
 });
 
-function MonogramAC() {
-  return (
-    <div className="flex items-center justify-center md:justify-start" aria-label="Monogramme AC">
-      <svg
-        viewBox="0 0 220 120"
-        className="h-[72px] w-[132px] sm:h-[80px] sm:w-[148px]"
-        role="img"
-        aria-hidden="true"
-      >
-        <g fill="none" stroke="#0f172a" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
-          {/* A */}
-          <path d="M44 98 L78 18 L112 98" />
-          <path d="M58 66 H98" />
-
-          {/* C */}
-          <path d="M176 34
-                   C167 23, 152 20, 139 22
-                   C116 25, 101 44, 101 60
-                   C101 76, 116 95, 139 98
-                   C152 100, 167 97, 176 86" />
-
-          {/* liaison discrète A/C */}
-          <path d="M103 61 C111 58, 118 56, 126 56" opacity="0.9" />
-        </g>
-      </svg>
-    </div>
-  );
-}
-
 export function Footer() {
   return (
     <footer className="mt-20 border-t border-[#d9def8] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fe_100%)]">
-      <div className="mx-auto max-w-6xl px-5 py-12 sm:px-6 sm:py-14 lg:px-8 lg:py-16">
-        <div className="grid gap-12 md:grid-cols-[minmax(0,1.15fr)_170px_220px] md:items-start md:gap-16">
+      <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <div className="grid gap-12 sm:gap-14 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:justify-between md:gap-16">
           <div className="flex justify-center md:justify-start">
-            <div className="max-w-[470px] text-center md:text-left">
-              <Link href="/" className="inline-flex flex-col items-center md:items-start">
-                <MonogramAC />
+            <div className="max-w-sm text-center">
+              <Link href="/" className="inline-block">
+                <div className="flex flex-col items-center leading-none">
+                  <div className={`${monogramFont.className} relative flex items-center justify-center`}>
+                    <span className="text-[58px] font-medium tracking-[-0.06em] text-[#111827] sm:text-[66px] lg:text-[74px]">
+                      A
+                    </span>
+                    <span className="-ml-2 text-[58px] font-medium tracking-[-0.08em] text-[#111827] sm:text-[66px] lg:text-[74px]">
+                      C
+                    </span>
+                  </div>
 
-                <span
-                  className={`${serif.className} mt-1 text-[18px] font-medium leading-none tracking-[-0.03em] text-[#1e293b] sm:text-[20px]`}
-                >
-                  arnaudcrestey.com
-                </span>
+                  <span
+                    className={`${monogramFont.className} mt-2 text-[24px] font-medium tracking-[-0.03em] text-[#0f172a] sm:text-[26px] lg:text-[28px]`}
+                  >
+                    arnaudcrestey.com
+                  </span>
+                </div>
               </Link>
 
-              <div className="mx-auto mt-5 h-px w-20 bg-[#d7def8] md:mx-0" />
+              <div className="mx-auto mt-5 h-px w-20 bg-[#d7dceb]" />
 
               <p
-                className={`${serif.className} mt-6 text-[24px] leading-[1.6] tracking-[-0.01em] text-[#667085] sm:text-[28px] md:max-w-[560px]`}
+                className={`${monogramFont.className} mx-auto mt-5 max-w-[30rem] text-[18px] italic leading-8 text-[#5b6474] sm:text-[20px]`}
               >
                 Des systèmes numériques qui attirent, engagent et transforment des visiteurs en clients.
               </p>
             </div>
           </div>
 
-          <div className="flex justify-center md:block">
-            <div className="w-full max-w-[220px] text-center md:text-left">
-              <h3 className={`${sans.className} text-[12px] font-semibold uppercase tracking-[0.24em] text-[#0f172a]`}>
+          <div className="flex justify-center md:block md:justify-self-center">
+            <div className="w-full max-w-[220px] text-center md:w-[180px] md:text-left">
+              <h3
+                className={`${textFont.className} text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs`}
+              >
                 Navigation
               </h3>
 
-              <nav className={`${sans.className} mt-6 flex flex-col items-center gap-5 md:items-start`}>
-                <Link href="/" className="text-[15px] text-[#334155] transition hover:text-[#1d4ed8]">
+              <nav className="mt-5 flex flex-col items-center gap-4 md:items-start">
+                <Link
+                  href="/"
+                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+                >
                   Accueil
                 </Link>
-                <Link href="/systeme" className="text-[15px] text-[#334155] transition hover:text-[#1d4ed8]">
+                <Link
+                  href="/systeme"
+                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+                >
                   Le système
                 </Link>
-                <Link href="/concepts" className="text-[15px] text-[#334155] transition hover:text-[#1d4ed8]">
+                <Link
+                  href="/concepts"
+                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+                >
                   Concepts
                 </Link>
-                <Link href="/a-propos" className="text-[15px] text-[#334155] transition hover:text-[#1d4ed8]">
-                  À propos
-                </Link>
-                <Link href="/contact" className="text-[15px] text-[#334155] transition hover:text-[#1d4ed8]">
-                  Contact
-                </Link>
-              </nav>
-            </div>
-          </div>
-
-          <div className="flex justify-center md:block">
-            <div className="w-full max-w-[260px] text-center md:text-left">
-              <h3 className={`${sans.className} text-[12px] font-semibold uppercase tracking-[0.24em] text-[#0f172a]`}>
-                Coordonnées
-              </h3>
-
-              <div className={`${sans.className} mt-6 flex flex-col items-center gap-5 text-[15px] text-[#334155] md:items-start`}>
-                <a
-                  href="mailto:demande@arnaudcrestey.com"
-                  className="break-all transition hover:text-[#1d4ed8]"
-                >
-                  demande@arnaudcrestey.com
-                </a>
-
-                <a href="tel:+33681952345" className="transition hover:text-[#1d4ed8]">
-                  +33 6 81 95 23 45
-                </a>
-
-                <p>Vire, Normandie, France</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-12 border-t border-[#d9def8] pt-6">
-          <div
-            className={`${sans.className} flex flex-col gap-3 text-center text-[14px] text-[#64748b] md:flex-row md:items-center md:justify-between md:text-left`}
-          >
-            <p>© 2026 Arnaud Crestey. Tous droits réservés.</p>
-
-            <div className="flex flex-wrap items-center justify-center gap-4 md:justify-end">
-              <Link href="/mentions-legales" className="transition hover:text-[#1d4ed8]">
-                Mentions légales
-              </Link>
-              <Link href="/contact" className="transition hover:text-[#1d4ed8]">
-                Contact
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-  );
-}
+                <Link
+                  href="/a-propos"
+                  className={`${textFont
