@@ -14,7 +14,7 @@ export function HomeHero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate sm:text-lg lg:text-xl">
-            Je conçois des dispositifs digitaux pour attirer, engager et transformer vos visiteurs en clients.
+            Je conçois des points d’entrée digitaux pensés pour capter l’attention et déclencher le passage à l’action.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
