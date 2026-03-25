@@ -33,8 +33,8 @@ export default function HomePage() {
               <span className="section-eyebrow">Exemples concrets</span>
 
              <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl lg:text-4xl">
-  Des dispositifs concrets,<br className="hidden sm:block" />
-  pensés pour générer des résultats.
+  <span className="block">Des dispositifs concrets,</span>
+  <span className="block">pensés pour générer des résultats.</span>
 </h2>
             </div>
 
