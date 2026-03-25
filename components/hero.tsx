@@ -21,7 +21,7 @@ export function HomeHero() {
             <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
 
             <ButtonLink href="/systeme" variant="secondary">
-              Découvrir le système
+              Comprendre le système
             </ButtonLink>
           </div>
 
