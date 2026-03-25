@@ -14,7 +14,7 @@ export default function ConceptsPage() {
     <>
       <PageHero
         eyebrow="Laboratoire"
-        title="Laboratoire de concepts"
+        title="Des points d’entrée conçus pour transformer une expertise en clients"
         description="Un catalogue vivant de points d'entrée. Chaque activité peut avoir le ou les siens : voici une sélection de concepts déjà lancés, ainsi que d’autres idées prêtes à être transformées en expériences à fort impact."
         primaryCta={{ href: '#concepts-grid', label: 'Découvrir les concepts' }}
         secondaryCta={{ href: '/contact', label: 'Me parler d’un projet digital' }}
@@ -25,7 +25,7 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow="En ligne"
             title="Déjà imaginés et mis en ligne"
-            description="Une base de projets démonstrateurs pensée comme un catalogue premium, simple à enrichir au fil de nouvelles idées et nouveaux dispositifs."
+            description="Des points d’entrée déjà en ligne, conçus pour capter l’attention et générer des demandes"
           />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {conceptProjects.map((project) => (
@@ -40,8 +40,7 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow="Réserve créative"
             title="Autres concepts dans le laboratoire"
-            description="Des pistes déjà formulées, prêtes à être déclinées selon un univers, une promesse et un objectif précis."
-          />
+           />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {reserveConcepts.map((concept) => (
               <ReserveConceptCard key={concept.title} concept={concept} />
@@ -54,10 +53,10 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <Surface className="px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
             <SectionHeading
-              eyebrow="Positionnement"
-              title="Un piège à trafic n’est pas un simple test"
-              description="C’est une porte d’entrée. Une manière de capter l’attention juste, d’éveiller la curiosité, de créer de la résonance et d’ouvrir naturellement vers une suite. Le dispositif devient alors un outil stratégique, éditorial et relationnel à part entière."
-            />
+  eyebrow="Positionnement"
+  title="Un point d’entrée n’est pas un simple test"
+  description="C’est un dispositif conçu pour capter l’attention, créer un engagement immédiat et ouvrir vers une prise de contact. Bien structuré, il devient un levier central d’acquisition."
+/>
           </Surface>
         </div>
       </section>
