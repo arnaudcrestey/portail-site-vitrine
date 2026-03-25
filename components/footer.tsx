@@ -6,24 +6,26 @@ export function Footer() {
       <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="grid gap-10 sm:gap-12 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:justify-between md:gap-16">
           <div className="max-w-md">
-            <Link href="/" className="inline-block">
-              <div className="flex flex-col leading-tight">
-                <span className="text-[22px] font-semibold tracking-[-0.02em] text-[#0f172a] sm:text-[24px] lg:text-[26px]">
-                  Arnaud Crestey
-                </span>
-                <span className="mt-1 text-[11px] uppercase tracking-[0.14em] text-[#6b7280] sm:text-xs">
-                  arnaudcrestey.com
-                </span>
-              </div>
-            </Link>
+  <div className="max-w-sm">
+    <Link href="/" className="inline-block">
+      <div className="flex flex-col leading-none">
+        <span className="text-[22px] font-semibold tracking-[-0.03em] text-[#0f172a] sm:text-[24px] lg:text-[26px]">
+          Arnaud Crestey
+        </span>
+        <span className="mt-3 text-[12px] tracking-[0.12em] text-[#64748b] sm:text-[13px]">
+          arnaudcrestey.com
+        </span>
+      </div>
+    </Link>
 
-            <div className="mt-4 h-px w-14 bg-[#cfd7f6] sm:mt-5 sm:w-16" />
+    <div className="mt-5 h-px w-16 bg-[#cfd7f6]" />
 
-            <p className="mt-4 max-w-sm text-[14px] leading-6 text-[#475569] sm:mt-5 sm:text-[15px] sm:leading-7">
-              Je conçois des systèmes digitaux pensés pour structurer une offre,
-              engager les bons visiteurs et faciliter la prise de contact.
-            </p>
-          </div>
+    <p className="mt-5 max-w-sm text-[14px] leading-8 text-[#475569] sm:text-[15px] sm:leading-8">
+      Je conçois des systèmes digitaux pensés pour structurer une offre,
+      engager les bons visiteurs et faciliter la prise de contact.
+    </p>
+  </div>
+</div>>
 
           <div className="md:justify-self-center">
             <div className="w-[180px]">
