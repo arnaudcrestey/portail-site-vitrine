@@ -50,16 +50,22 @@ export default function SystemePage() {
           <div className="relative overflow-hidden rounded-[36px] border border-[#d9def8] bg-[linear-gradient(180deg,#f7f8fe_0%,#f2f5ff_100%)] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,99,243,0.06),transparent_38%)]" />
 
-            <div className="relative mx-auto max-w-3xl text-center">
+            <div className="relative mx-auto max-w-4xl text-center">
               <span className="section-eyebrow">Le système</span>
 
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Un système structuré autour de plusieurs points d’entrée
+                Un système structuré autour de points d’entrée ciblés
               </h1>
 
-              <p className="mt-4 text-lg leading-8 text-slate">
-                Chaque point d’entrée attire un besoin différent, engage le visiteur et le redirige
-                vers un centre plus clair, plus cohérent et plus actif.
+              <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
+                Pour le Cabinet Astraé, j’ai conçu plusieurs points d’entrée adaptés à son activité
+                et aux problématiques que ses visiteurs rencontrent.
+              </p>
+
+              <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
+                Un point d’entrée est un dispositif ciblé conçu pour capter une situation précise,
+                engager la personne au bon niveau, puis l’orienter vers un système central plus
+                clair, plus cohérent et plus actif.
               </p>
             </div>
 
@@ -78,9 +84,9 @@ export default function SystemePage() {
 
             <div className="relative mx-auto mt-10 max-w-3xl rounded-[24px] border border-[#d9def8] bg-white/75 px-6 py-5 text-center shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <p className="text-sm leading-7 text-slate sm:text-[15px]">
-                Le système ne repose pas sur une seule page, mais sur plusieurs entrées
-                complémentaires qui attirent, qualifient et orientent vers un centre clair,
-                cohérent et actif.
+                Dans le cas d’Astraé, ces points d’entrée permettent d’amener progressivement vers
+                la mission du cabinet&nbsp;: aider chacun à mettre en lumière ce qui reste flou dans
+                une situation de vie, pour retrouver clarté, direction et capacité de décision.
               </p>
             </div>
 
