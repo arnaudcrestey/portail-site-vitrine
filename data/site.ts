@@ -105,7 +105,7 @@ export const conceptProjects: ProjectCard[] = [
       'Obtenez un score clair et une lecture immédiate de votre dynamique relationnelle.',
     proof: 'Test rapide • Résultat en 2 minutes',
     image: '/projects/love-scan.jpg',
-    href: '/love-scan',
+    href: 'https://love-scan-three.vercel.app/',
     cta: 'Faire le test',
   },
   {
@@ -117,7 +117,7 @@ export const conceptProjects: ProjectCard[] = [
       'Découvrez vos traits dominants, vos forces et vos zones de tension en quelques minutes.',
     proof: 'Simple • Rapide • Immédiat',
     image: '/projects/personality-scan.jpg',
-    href: '/personality-scan',
+    href: 'https://personnality-scan.vercel.app/',
     cta: 'Découvrir',
   },
   {
@@ -129,7 +129,7 @@ export const conceptProjects: ProjectCard[] = [
       'Faites émerger plus clairement les options, les hésitations et la direction la plus juste.',
     proof: 'Lecture guidée • Impact immédiat',
     image: '/projects/life-decision.jpg',
-    href: '/life-decision',
+    href: 'https://life-decision-six.vercel.app/',
     cta: 'Explorer',
   },
   {
@@ -141,7 +141,7 @@ export const conceptProjects: ProjectCard[] = [
       'Identifiez les freins réels derrière une situation confuse et commencez à les clarifier.',
     proof: 'Diagnostic court • Lecture directe',
     image: '/projects/blocages-de-vie.jpg',
-    href: '/blocages-de-vie',
+    href: 'https://blocage-scan-s1lw.vercel.app/',
     cta: 'Identifier mes blocages',
   },
   {
@@ -153,7 +153,7 @@ export const conceptProjects: ProjectCard[] = [
       'Transformez un texte libre en première lecture structurée, claire et exploitable.',
     proof: 'Expression libre • Retour instantané',
     image: '/projects/miroir-intuition.jpg',
-    href: '/miroir-intuition',
+    href: 'https://parlez-moi-de-votre-situation.vercel.app/',
     cta: 'Commencer',
   },
   {
@@ -165,7 +165,7 @@ export const conceptProjects: ProjectCard[] = [
       'Repérez ce qui freine votre évolution ou votre repositionnement professionnel.',
     proof: 'Diagnostic pro • Résultat immédiat',
     image: '/projects/procoach.jpg',
-    href: '/procoach',
+    href: 'https://procoach-taap.vercel.app/',
     cta: 'Voir mon score',
   },
 ];
