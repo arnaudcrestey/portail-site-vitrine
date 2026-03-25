@@ -44,7 +44,7 @@ export default function SystemePage() {
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,99,243,0.06),transparent_38%)]" />
 
             <div className="relative mx-auto max-w-4xl text-center">
-              <span className="section-eyebrow">Un exemple concret : le Cabinet Astraé</span>
+              <span className="section-eyebrow">Exemple concret - Cabinet Astraé</span>
 
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 Un système structuré autour de points d’entrée ciblés
@@ -102,11 +102,11 @@ export default function SystemePage() {
               <span className="section-eyebrow">Lecture concrète</span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Comment ce système prend forme concrètement
+                Comment ce système se construit en pratiqu
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                À partir d’une activité comme Cabinet Astrae, il devient possible de structurer un
+                À partir d’une activité comme Cabinet Astraé, il devient possible de structurer un
                 ensemble plus lisible, plus engageant et plus orienté demande.
               </p>
             </div>
@@ -141,7 +141,7 @@ export default function SystemePage() {
             <span className="section-eyebrow">Passer à l’action</span>
 
             <h2 className="mx-auto mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Vous avez une expertise forte, mais pas encore le système qui la rend vraiment active ?
+              Vous avez une expertise forte, mais pas encore le système qui la transforme en demandes
             </h2>
 
             <div className="mt-8 flex justify-center">
