@@ -70,7 +70,7 @@ export const deviceExamples: DeviceExample[] = [
     href: '/systeme',
   },
   {
-    title: 'Parcours d’entrée',
+    title: 'Points d’entrée',
     description:
       'Un parcours structuré qui guide naturellement vos visiteurs et facilite le passage à la prise de contact.',
     icon: 'flow',
