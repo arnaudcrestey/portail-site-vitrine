@@ -84,7 +84,7 @@ export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
   return (
     <Link href={project.href} className="block h-full">
       <Surface className="group h-full overflow-hidden rounded-[30px] border border-[#d9def8] bg-white p-0 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 ease-premium hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_24px_60px_rgba(59,99,243,0.10)]">
-        <div className="relative aspect-[4/3] overflow-hidden rounded-t-[28px] border-b border-[#e7eafb] bg-[#f7f8fe]">
+        <div className="relative h-[220px] overflow-hidden rounded-t-[28px] border-b border-[#e7eafb] bg-[#f7f8fe]">
           <SmartImage
             src={project.image}
             alt={`Miniature du projet ${project.title}`}
@@ -94,12 +94,8 @@ export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
             className="transition duration-500 ease-premium group-hover:scale-[1.04]"
           />
 
-          <div className="absolute left-5 top-5 rounded-full border border-white/80 bg-white/88 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] text-ink backdrop-blur">
-            {project.number}
-          </div>
-
-          <div className="absolute right-5 top-5 rounded-full border border-primary/12 bg-white/88 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-primary backdrop-blur">
-            Point d’entrée
+          <div className="absolute bottom-4 left-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-ink backdrop-blur">
+            Test rapide
           </div>
         </div>
 
@@ -136,7 +132,6 @@ export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
     </Link>
   );
 }
-
 export function ReserveConceptCard({ concept }: { concept: ReserveConcept }) {
   return (
     <Surface className="h-full rounded-[30px] border border-[#d9def8] bg-[#f7f8fe] p-7">
