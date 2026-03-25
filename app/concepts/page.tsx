@@ -74,11 +74,11 @@ export default function ConceptsPage() {
                 Je conçois des points d’entrée adaptés à votre activité pour capter l’attention et générer des demandes qualifiées.
               </p>
               <a
-                href="/contact"
-                className="mt-8 inline-flex items-center justify-center rounded-full bg-ink px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-ink/92"
-              >
-                Parler de votre projet
-              </a>
+  href="/contact"
+  className="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
+>
+  Parler de votre projet
+</a>
             </div>
           </Surface>
         </div>
