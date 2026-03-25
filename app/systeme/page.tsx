@@ -19,20 +19,18 @@ const astraeBlocks = [
     number: '02',
     title: 'Ajouter plusieurs points d’entrée',
     description:
-      'Des entrées ciblées permettent d’attirer différents profils selon leur besoin, leur curiosité ou leur problématique.',
+      'Des points d’entrée ciblés pour attirer différentes personnes selon leur situation, leur besoin ou leur question.',
   },
   {
     number: '03',
     title: 'Engager et qualifier',
     description:
-      'Chaque dispositif capte davantage l’attention, implique le visiteur et prépare une demande plus claire.',
-  },
+       'Chaque dispositif capte l’attention, implique la personne et permet de mieux comprendre sa situation.',
   {
     number: '04',
     title: 'Fluidifier le suivi',
     description:
-      'Les informations utiles, les demandes et les prises de contact sont organisées pour rendre le suivi plus simple et plus fluide.',
-  },
+      'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et sans friction.',
 ];
 
 export default function SystemePage() {
@@ -77,7 +75,7 @@ export default function SystemePage() {
 
             <div className="relative mx-auto mt-10 max-w-3xl rounded-[24px] border border-[#d9def8] bg-white/75 px-6 py-5 text-center shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <p className="text-sm leading-7 text-slate sm:text-[15px]">
-                Dans le cas d’Astraé, ces points d’entrée permettent d’amener progressivement vers
+                Dans le cas d’Astraé, ces points d’entrée conduisent progressivement vers
                 la mission du cabinet&nbsp;: aider à y voir plus clair quand quelque chose reste flou, pour avancer plus sereinement.
               </p>
             </div>
