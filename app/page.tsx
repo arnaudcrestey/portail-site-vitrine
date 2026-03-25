@@ -25,25 +25,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
-
-      <section className="pb-6 pt-2">
-        <div className="container-layout">
-          <div className="rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
-            <div className="max-w-3xl">
-              <span className="section-eyebrow">Expertise</span>
-
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-               Des dispositifs digitaux conçus pour transformer votre expertise en système de conversion.
-              </h2>
-
-              <p className="mt-5 text-lg leading-8 text-slate">
-                Chaque dispositif transforme votre expertise en un parcours clair, structuré et pensé pour faciliter le passage à l’action.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      </section>      
 
       <section className="pb-8 pt-2">
         <div className="container-layout">
