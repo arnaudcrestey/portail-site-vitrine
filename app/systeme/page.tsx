@@ -104,8 +104,7 @@ export default function SystemePage() {
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                À partir d’une activité comme Cabinet Astraé, il devient possible de structurer un
-                ensemble plus lisible, plus engageant et plus orienté demande.
+                Comme pour le Cabinet Astraé, chaque activité d’accompagnement et de conseil peut s’appuyer sur un système structuré, avec des points d’entrée et une automatisation adaptés.
               </p>
             </div>
 
