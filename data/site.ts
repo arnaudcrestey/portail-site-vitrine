@@ -65,21 +65,21 @@ export const deviceExamples: DeviceExample[] = [
   {
     title: 'Diagnostic interactif',
     description:
-      'Un dispositif interactif conçu pour capter l’attention dès les premières secondes et engager immédiatement le visiteur.',
+      'Un dispositif interactif conçu pour capter l’attention dès les premières secondes et engager naturellement la personne.',
     icon: 'scan',
     href: '/systeme',
   },
   {
     title: 'Points d’entrée',
     description:
-      'Un parcours structuré qui guide naturellement vos visiteurs et facilite le passage à la prise de contact.',
+      'Des parcours pensés pour capter différentes situations et guider naturellement vers une prise de contact.',
     icon: 'flow',
     href: '/systeme',
   },
   {
-    title: 'Analyse sur mesure',
+    title: 'Analyse et adaptation',
     description:
-      'Un système pensé pour transformer une problématique complexe en lecture claire, utile et engageante.',
+      'Chaque dispositif est pensé à partir de l’expertise, du système existant et de l’activité, afin de créer des points d’entrée cohérents et une automatisation utile.',
     icon: 'spark',
     href: '/systeme',
   },
