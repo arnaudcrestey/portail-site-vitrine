@@ -78,8 +78,7 @@ export default function SystemePage() {
             <div className="relative mx-auto mt-10 max-w-3xl rounded-[24px] border border-[#d9def8] bg-white/75 px-6 py-5 text-center shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <p className="text-sm leading-7 text-slate sm:text-[15px]">
                 Dans le cas d’Astraé, ces points d’entrée permettent d’amener progressivement vers
-                la mission du cabinet&nbsp;: aider chacun à mettre en lumière ce qui reste flou dans
-                une situation de vie, pour retrouver clarté, direction et capacité de décision.
+                la mission du cabinet&nbsp;: aider à y voir plus clair quand quelque chose reste flou, pour avancer plus sereinement.
               </p>
             </div>
 
