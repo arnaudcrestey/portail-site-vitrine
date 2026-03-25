@@ -85,10 +85,10 @@ export default function SystemePage() {
 
             <div className="mt-8 flex justify-center">
               <Link
-                href="/contact"
+                href="/concepts"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
               >
-                Parler de mon projet
+                Découvrir le laboratoire
               </Link>
             </div>
           </div>
