@@ -18,7 +18,7 @@ export function HomeHero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <ButtonLink href="/contact">Me parler de votre projet</ButtonLink>
+            <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
 
             <ButtonLink href="/systeme" variant="secondary">
               Découvrir le système
