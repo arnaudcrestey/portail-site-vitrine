@@ -4,7 +4,7 @@ export function Footer() {
   return (
     <footer className="mt-20 border-t border-[#d9def8] bg-[#f8faff]">
       <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        <div className="grid gap-10 sm:gap-12 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:justify-between md:gap-16">
+        <div className="grid gap-12 sm:gap-14 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:justify-between md:gap-16">
           <div className="flex justify-center md:justify-start">
             <div className="max-w-sm text-center">
               <Link href="/" className="inline-block">
@@ -27,13 +27,13 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:justify-self-center">
-            <div className="max-w-[180px] text-center md:w-[180px] md:text-left">
+          <div className="flex justify-center md:block md:justify-self-center">
+            <div className="w-full max-w-[220px] text-center md:w-[180px] md:text-left">
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
                 Navigation
               </h3>
 
-              <nav className="mt-4 flex flex-col gap-3 sm:mt-5 sm:gap-4">
+              <nav className="mt-5 flex flex-col items-center gap-4 md:items-start">
                 <Link
                   href="/"
                   className="text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]"
@@ -68,13 +68,13 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="md:justify-self-end">
-            <div className="max-w-[220px] text-center md:w-[220px] md:text-left">
+          <div className="flex justify-center md:block md:justify-self-end">
+            <div className="w-full max-w-[260px] text-center md:w-[220px] md:text-left">
               <h3 className="text-[11px] font-semibold uppercase tracking-[0.2em] text-[#0f172a] sm:text-xs">
                 Coordonnées
               </h3>
 
-              <div className="mt-4 flex flex-col gap-3 text-[14px] text-[#475569] sm:mt-5 sm:gap-4 sm:text-[15px]">
+              <div className="mt-5 flex flex-col items-center gap-4 text-[14px] text-[#475569] sm:text-[15px] md:items-start">
                 <a
                   href="mailto:demande@arnaudcrestey.com"
                   className="break-all transition hover:text-[#1d4ed8]"
@@ -93,10 +93,10 @@ export function Footer() {
         </div>
 
         <div className="mt-10 border-t border-[#d9def8] pt-5 sm:mt-12 sm:pt-6">
-          <div className="flex flex-col gap-3 text-[13px] text-[#64748b] sm:text-sm md:flex-row md:items-center md:justify-between">
+          <div className="flex flex-col gap-3 text-center text-[13px] text-[#64748b] sm:text-sm md:flex-row md:items-center md:justify-between md:text-left">
             <p>© 2026 Arnaud Crestey. Tous droits réservés.</p>
 
-            <div className="flex flex-wrap items-center gap-3 sm:gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 md:justify-end">
               <Link href="/mentions-legales" className="transition hover:text-[#1d4ed8]">
                 Mentions légales
               </Link>
