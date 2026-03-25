@@ -85,7 +85,7 @@ export default function SystemePage() {
 
             <div className="mt-8 flex justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
               >
                 Parler de mon projet
@@ -102,7 +102,7 @@ export default function SystemePage() {
               <span className="section-eyebrow">Lecture concrète</span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Comment ce système se construit en pratiqu
+                Comment ce système se construit en pratique
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
@@ -146,7 +146,7 @@ export default function SystemePage() {
 
             <div className="mt-8 flex justify-center">
               <Link
-                href="/#contact"
+                href="/contact"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
               >
                 Entrer en contact
