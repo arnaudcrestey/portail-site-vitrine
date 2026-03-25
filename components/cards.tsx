@@ -82,36 +82,58 @@ export function DeviceCard({ item }: { item: DeviceExample }) {
 
 export function ProjectShowcaseCard({ project }: { project: ProjectCard }) {
   return (
-    <Surface className="group h-full overflow-hidden rounded-[30px] border border-[#d9def8] bg-[#f7f8fe] p-0">
-      <div className="relative aspect-[4/3] overflow-hidden rounded-t-[28px]">
-        <SmartImage
-          src={project.image}
-          alt={`Miniature du projet ${project.title}`}
-          fallbackTitle={`Miniature à ajouter : ${project.title}`}
-          fallbackLabel={`Ajoutez une image dans public${project.image} pour remplacer ce visuel.`}
-          sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
-          className="transition duration-500 ease-premium group-hover:scale-[1.02]"
-        />
+    <Link href={project.href} className="block h-full">
+      <Surface className="group h-full overflow-hidden rounded-[30px] border border-[#d9def8] bg-white p-0 shadow-[0_10px_30px_rgba(15,23,42,0.04)] transition-all duration-300 ease-premium hover:-translate-y-2 hover:border-primary/30 hover:shadow-[0_24px_60px_rgba(59,99,243,0.10)]">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-t-[28px] border-b border-[#e7eafb] bg-[#f7f8fe]">
+          <SmartImage
+            src={project.image}
+            alt={`Miniature du projet ${project.title}`}
+            fallbackTitle={`Miniature à ajouter : ${project.title}`}
+            fallbackLabel={`Ajoutez une image dans public${project.image} pour remplacer ce visuel.`}
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            className="transition duration-500 ease-premium group-hover:scale-[1.04]"
+          />
 
-        <div className="absolute left-5 top-5 rounded-full border border-white/80 bg-white/82 px-3 py-1 text-xs font-semibold tracking-[0.18em] text-ink backdrop-blur">
-          {project.number}
+          <div className="absolute left-5 top-5 rounded-full border border-white/80 bg-white/88 px-3 py-1 text-[11px] font-semibold tracking-[0.18em] text-ink backdrop-blur">
+            {project.number}
+          </div>
+
+          <div className="absolute right-5 top-5 rounded-full border border-primary/12 bg-white/88 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.14em] text-primary backdrop-blur">
+            Point d’entrée
+          </div>
         </div>
-      </div>
 
-      <div className="p-6 sm:p-7">
-        <h3 className="text-xl font-semibold text-ink">{project.title}</h3>
+        <div className="flex h-[300px] flex-col p-6 sm:p-7">
+          <span className="inline-flex w-fit rounded-full border border-[#d9def8] bg-[#f8f9ff] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-primary">
+            {project.title}
+          </span>
 
-        <p className="mt-3 text-sm leading-7 text-slate">{project.description}</p>
+          <h3 className="mt-4 text-[22px] font-semibold leading-tight text-ink transition-colors duration-300 group-hover:text-primary">
+            {project.hook}
+          </h3>
 
-        <Link
-          href={project.href}
-          className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-ink transition duration-300 ease-premium group-hover:text-primary"
-        >
-          Voir la landing
-          <span aria-hidden="true">→</span>
-        </Link>
-      </div>
-    </Surface>
+          <p className="mt-4 text-[15px] leading-7 text-slate">
+            {project.description}
+          </p>
+
+          <p className="mt-4 text-xs font-medium uppercase tracking-[0.12em] text-[#7d89a6]">
+            {project.proof}
+          </p>
+
+          <div className="mt-auto pt-6">
+            <span className="inline-flex items-center rounded-full bg-primary px-4 py-2 text-sm font-semibold text-white transition-all duration-300 group-hover:-translate-y-0.5 group-hover:bg-primary/90">
+              {project.cta}
+              <span
+                aria-hidden="true"
+                className="ml-2 transition-transform duration-300 group-hover:translate-x-1"
+              >
+                →
+              </span>
+            </span>
+          </div>
+        </div>
+      </Surface>
+    </Link>
   );
 }
 
