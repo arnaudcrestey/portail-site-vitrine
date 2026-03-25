@@ -35,13 +35,6 @@ const astraeBlocks = [
   },
 ];
 
-const benefits = [
-  'Offre plus lisible',
-  'Visiteurs mieux engagés',
-  'Demandes plus qualifiées',
-  'Contact facilité',
-];
-
 export default function SystemePage() {
   return (
     <>
@@ -51,7 +44,7 @@ export default function SystemePage() {
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,99,243,0.06),transparent_38%)]" />
 
             <div className="relative mx-auto max-w-4xl text-center">
-              <span className="section-eyebrow">Le système</span>
+              <span className="section-eyebrow">Un exemple concret : le Cabinet Astraé</span>
 
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 Un système structuré autour de points d’entrée ciblés
@@ -142,35 +135,6 @@ export default function SystemePage() {
         </div>
       </section>
 
-      <section className="pb-8 pt-2">
-        <div className="container-layout">
-          <div className="rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
-            <div className="mx-auto max-w-3xl text-center">
-              <span className="section-eyebrow">Résultat</span>
-
-              <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Ce que ce type de système permet
-              </h2>
-            </div>
-
-            <div className="mt-8 grid gap-5 sm:grid-cols-2 xl:grid-cols-4">
-              {benefits.map((item, index) => (
-                <div
-                  key={item}
-                  className="rounded-[28px] border border-white/80 bg-white px-5 py-6 text-center shadow-[0_16px_40px_rgba(15,23,42,0.04)]"
-                >
-                  <div className="mx-auto mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-base font-semibold text-primary">
-                    {index + 1}
-                  </div>
-
-                  <p className="text-base font-semibold text-ink">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="pb-16 pt-2">
         <div className="container-layout">
           <div className="rounded-[36px] border border-[#d9def8] bg-[linear-gradient(180deg,#f7f8fe_0%,#eef3ff_100%)] px-6 py-10 text-center shadow-[0_24px_70px_rgba(15,23,42,0.06)] sm:px-8 sm:py-12 lg:px-10">
@@ -179,11 +143,6 @@ export default function SystemePage() {
             <h2 className="mx-auto mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
               Vous avez une expertise forte, mais pas encore le système qui la rend vraiment active ?
             </h2>
-
-            <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-slate">
-              Je conçois des dispositifs clairs, ciblés et cohérents pour transformer une présence
-              en ligne en véritable levier de contact.
-            </p>
 
             <div className="mt-8 flex justify-center">
               <Link
