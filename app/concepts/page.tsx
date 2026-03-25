@@ -71,7 +71,7 @@ export default function ConceptsPage() {
                 Vous avez une activité, une audience ou une idée à faire émerger ?
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate">
-                Je peux imaginer un piège à trafic adapté à votre univers, à votre promesse et à votre manière de convertir.
+                Je conçois des points d’entrée adaptés à votre activité pour capter l’attention et générer des demandes qualifiées.
               </p>
               <a
                 href="/contact"
