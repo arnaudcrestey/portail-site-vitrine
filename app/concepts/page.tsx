@@ -25,7 +25,7 @@ export default function ConceptsPage() {
     <SectionHeading
       eyebrow="En ligne"
       title="Déjà imaginés et mis en ligne"
-      description="Ces dispositifs constituent les points d’entrée du cabinet Astrae. Chacun est conçu pour capter une situation précise, engager immédiatement et ...et ouvrir naturellement vers une demande."
+      description="Ces dispositifs constituent les points d’entrée du cabinet Astrae. Chacun est conçu pour capter une situation précise, engager immédiatement et ouvrir naturellement vers une demande."
     />
     <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {conceptProjects.map((project) => (
