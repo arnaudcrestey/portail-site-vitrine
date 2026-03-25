@@ -16,11 +16,11 @@ export function Footer() {
   return (
     <footer className="mt-20 border-t border-[#d9def8] bg-[linear-gradient(180deg,#ffffff_0%,#f7f9fe_100%)]">
       <div className="mx-auto max-w-6xl px-5 py-10 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
-        <div className="grid gap-12 sm:gap-14 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:justify-between md:gap-16">
-          {/* Bloc gauche centré */}
+        <div className="grid gap-12 sm:gap-14 md:grid-cols-[minmax(0,1.35fr)_180px_220px] md:items-start md:justify-between md:gap-16">
+          {/* Bloc gauche */}
           <div className="flex justify-center md:justify-start">
-            <div className="w-full max-w-sm">
-              <div className="mx-auto flex w-full flex-col items-center text-center md:mx-0 md:items-center md:text-center">
+            <div className="w-full max-w-[420px] md:max-w-[500px]">
+              <div className="mx-auto flex w-full flex-col items-center text-center md:-mt-1">
                 <Link href="/" className="inline-block">
                   <div className="flex flex-col items-center leading-none">
                     <div className={`${monogramFont.className} relative flex items-center justify-center`}>
@@ -43,9 +43,10 @@ export function Footer() {
                 <div className="mx-auto mt-5 h-px w-20 bg-[#d7dceb]" />
 
                 <p
-                  className={`${monogramFont.className} mx-auto mt-5 max-w-[30rem] text-center text-[18px] italic leading-8 text-[#5b6474] sm:text-[20px]`}
+                  className={`${monogramFont.className} mx-auto mt-5 max-w-[26rem] text-center text-[17px] italic leading-[1.7] text-[#5b6474] sm:max-w-[30rem] sm:text-[20px]`}
                 >
-                  Des systèmes numériques qui attirent, engagent et transforment des visiteurs en clients.
+                  <span className="block">Des systèmes numériques qui attirent, engagent</span>
+                  <span className="block">et transforment des visiteurs en clients.</span>
                 </p>
               </div>
             </div>
