@@ -15,7 +15,7 @@ export default function ConceptsPage() {
       <PageHero
         eyebrow="Laboratoire"
         title="Laboratoire de concepts"
-        description="Un catalogue vivant de pièges à trafic intelligents. Chaque activité peut avoir son propre point d’entrée : voici une sélection de concepts déjà lancés, ainsi que d’autres idées prêtes à être transformées en expériences à fort impact."
+        description="Un catalogue vivant de points d'entrée. Chaque activité peut avoir le ou les siens : voici une sélection de concepts déjà lancés, ainsi que d’autres idées prêtes à être transformées en expériences à fort impact."
         primaryCta={{ href: '#concepts-grid', label: 'Découvrir les concepts' }}
         secondaryCta={{ href: '/contact', label: 'Me parler d’un projet digital' }}
       />
