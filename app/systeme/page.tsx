@@ -33,7 +33,7 @@ const astraeBlocks = [
   description:
     'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et sans friction.',
 },
-
+];
 export default function SystemePage() {
   return (
     <>
