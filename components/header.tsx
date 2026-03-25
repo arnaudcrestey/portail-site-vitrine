@@ -95,7 +95,7 @@ export function Header() {
               className="mt-2 w-full"
               onClick={() => setOpen(false)}
             >
-              Entrer en contact
+              Echanger ensemble
             </ButtonLink>
           </div>
         </div>
