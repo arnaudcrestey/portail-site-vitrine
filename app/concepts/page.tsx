@@ -21,19 +21,19 @@ export default function ConceptsPage() {
       />
 
       <section id="concepts-grid" className="section-spacing pt-4">
-        <div className="container-layout">
-          <SectionHeading
-            eyebrow="En ligne"
-            title="Déjà imaginés et mis en ligne"
-            description="Des points d’entrée déjà en ligne, conçus pour capter l’attention et générer des demandes"
-          />
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {conceptProjects.map((project) => (
-              <ProjectShowcaseCard key={project.slug} project={project} />
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className="container-layout">
+    <SectionHeading
+      eyebrow="En ligne"
+      title="Déjà imaginés et mis en ligne"
+      description="Ces dispositifs constituent les points d’entrée du cabinet Astrae. Chacun est conçu pour capter une situation précise, engager immédiatement et ...et ouvrir naturellement vers une demande."
+    />
+    <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+      {conceptProjects.map((project) => (
+        <ProjectShowcaseCard key={project.slug} project={project} />
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="section-spacing pt-4">
         <div className="container-layout">
