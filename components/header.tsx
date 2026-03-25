@@ -16,7 +16,7 @@ export function Header() {
       <div className="container-layout flex h-20 items-center justify-between gap-6">
         <Link
           href="/"
-          className="group flex shrink-0 flex-col leading-tight"
+          className="group flex shrink-0 flex-col items-center text-center leading-tight"
           aria-label="Retour à l’accueil"
         >
           <span className="text-[16px] font-medium tracking-[0.08em] text-ink transition group-hover:text-primary sm:text-[18px]">
