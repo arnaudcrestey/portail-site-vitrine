@@ -12,19 +12,32 @@ export async function POST(req: Request) {
       );
     }
 
+    const host = process.env.EMAIL_HOST;
+    const port = Number(process.env.EMAIL_PORT || 465);
+    const user = process.env.EMAIL_USER;
+    const pass = process.env.EMAIL_PASS;
+    const to = process.env.CONTACT_TO_EMAIL;
+
+    if (!host || !user || !pass || !to) {
+      return NextResponse.json(
+        { success: false, error: 'Variables email manquantes.' },
+        { status: 500 }
+      );
+    }
+
     const transporter = nodemailer.createTransport({
-      host: process.env.EMAIL_HOST,
-      port: Number(process.env.EMAIL_PORT || 465),
-      secure: true,
+      host,
+      port,
+      secure: port === 465,
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
+        user,
+        pass,
       },
     });
 
     await transporter.sendMail({
-      from: `"Site Arnaud Crestey" <${process.env.EMAIL_USER}>`,
-      to: process.env.CONTACT_TO_EMAIL,
+      from: `"Site Arnaud Crestey" <${user}>`,
+      to,
       subject: 'Nouveau message depuis arnaudcrestey.com',
       text: message,
       html: `
