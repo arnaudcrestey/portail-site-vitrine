@@ -40,8 +40,8 @@ export const navigation: NavItem[] = [
   { href: '/', label: 'Accueil' },
   { href: '/systeme', label: 'Le système' },
   { href: '/concepts', label: 'Concepts' },
-  { href: '/tarifs', label: 'Tarifs' },
   { href: '/a-propos', label: 'À propos' },
+  { href: '/tarifs', label: 'Tarifs' },
 ];
 
 export const homeUniverses: UniverseCard[] = [
