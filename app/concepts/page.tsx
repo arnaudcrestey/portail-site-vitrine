@@ -6,10 +6,12 @@ import { conceptProjects, featuredLabProject, reserveConcepts } from '@/data/sit
 export const metadata = {
   title: 'Laboratoire de concepts',
   description:
-    'Un catalogue vivant de pièges à trafic intelligents, démonstrateurs de savoir-faire, mini-sites et dispositifs digitaux premium.',
+    'Un catalogue vivant de points d’entrée intelligents, démonstrateurs de savoir-faire, mini-sites et dispositifs digitaux premium.',
 };
 
 export default function ConceptsPage() {
+  const sectorProjects = [featuredLabProject];
+
   return (
     <>
       <PageHero
@@ -21,48 +23,60 @@ export default function ConceptsPage() {
       />
 
       <section id="concepts-grid" className="section-spacing pt-4">
-  <div className="container-layout">
-    <SectionHeading
-      eyebrow="En ligne"
-      title="Déjà imaginés et mis en ligne"
-      description="D’autres points d’entrée peuvent être conçus pour des contextes plus spécifiques : accompagnement professionnel, situations sensibles au travail, activités juridiques, médiation, information ou orientation."
-    />
-    <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-      {conceptProjects.map((project) => (
-        <ProjectShowcaseCard key={project.slug} project={project} />
-      ))}
-    </div>
-  </div>
-</section>
+        <div className="container-layout">
+          <SectionHeading
+            eyebrow="En ligne"
+            title="Déjà imaginés et mis en ligne"
+            description="Des points d’entrée conçus pour des professionnels de l’accompagnement, du conseil et du droit, afin de capter des situations réelles et générer des demandes concrètes."
+          />
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {conceptProjects.map((project) => (
+              <ProjectShowcaseCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-    <section className="section-spacing pt-4">
-  <div className="container-layout">
-    <SectionHeading
-      eyebrow="Réserve créative"
-      title="Autres concepts dans le laboratoire"
-      description="Le laboratoire explore aussi des points d’entrée pensés pour des métiers comme avocat, juriste, médiateur, consultant RH ou professionnel de l’accompagnement au travail."
-    />
+      <section className="section-spacing pt-4">
+        <div className="container-layout">
+          <SectionHeading
+            eyebrow="Déclinaisons métier"
+            title="Des points d’entrée adaptés à des secteurs spécifiques"
+            description="Des dispositifs conçus pour des environnements professionnels précis, avec une logique adaptée à leurs enjeux, leurs publics et à leurs situations."
+          />
 
-    <div className="mt-12 max-w-sm">
-      <ProjectShowcaseCard project={featuredLabProject} />
-    </div>
+          <div className="mt-12 max-w-sm">
+            {sectorProjects.map((project) => (
+              <ProjectShowcaseCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </div>
+      </section>
 
-    <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-      {reserveConcepts.map((concept) => (
-        <ReserveConceptCard key={concept.title} concept={concept} />
-      ))}
-    </div>
-  </div>
-</section>
+      <section className="section-spacing pt-4">
+        <div className="container-layout">
+          <SectionHeading
+            eyebrow="Réserve créative"
+            title="Autres concepts en cours de développement"
+            description="Des briques et concepts prêts à être développés pour enrichir ou adapter un point d’entrée selon les besoins."
+          />
+
+          <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+            {reserveConcepts.map((concept) => (
+              <ReserveConceptCard key={concept.title} concept={concept} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section className="section-spacing pt-4">
         <div className="container-layout">
           <Surface className="px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
             <SectionHeading
-  eyebrow="Positionnement"
-  title="Un point d’entrée n’est pas un simple test"
-  description="C’est un dispositif conçu pour capter l’attention, créer un engagement immédiat et ouvrir vers une prise de contact. Bien structuré, il devient un levier central d’acquisition."
-/>
+              eyebrow="Positionnement"
+              title="Un point d’entrée n’est pas un simple test"
+              description="C’est un dispositif conçu pour capter l’attention, créer un engagement immédiat et ouvrir vers une prise de contact. Bien structuré, il devient un levier central d’acquisition."
+            />
           </Surface>
         </div>
       </section>
@@ -77,14 +91,15 @@ export default function ConceptsPage() {
                 Vous avez une activité, une audience ou une idée à faire émerger ?
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate">
-                Je conçois des points d’entrée adaptés à votre activité pour capter l’attention et générer des demandes qualifiées.
+                Je conçois des points d’entrée adaptés à votre activité pour capter
+                l’attention et générer des demandes qualifiées.
               </p>
               <a
-  href="/contact"
-  className="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
->
-  Parler de votre projet
-</a>
+                href="/contact"
+                className="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
+              >
+                Parler de votre projet
+              </a>
             </div>
           </Surface>
         </div>
