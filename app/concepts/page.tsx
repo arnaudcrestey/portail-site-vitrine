@@ -25,7 +25,7 @@ export default function ConceptsPage() {
     <SectionHeading
       eyebrow="En ligne"
       title="Déjà imaginés et mis en ligne"
-      description="Ces dispositifs constituent les points d’entrée du cabinet Astrae. Chacun est conçu pour capter une situation précise, engager immédiatement et ouvrir naturellement vers une demande."
+      description="D’autres points d’entrée peuvent être conçus pour des contextes plus spécifiques : accompagnement professionnel, situations sensibles au travail, activités juridiques, médiation, information ou orientation."
     />
     <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
       {conceptProjects.map((project) => (
@@ -35,11 +35,12 @@ export default function ConceptsPage() {
   </div>
 </section>
 
-      <section className="section-spacing pt-4">
+    <section className="section-spacing pt-4">
   <div className="container-layout">
     <SectionHeading
       eyebrow="Réserve créative"
       title="Autres concepts dans le laboratoire"
+      description="Le laboratoire explore aussi des points d’entrée adaptés à d’autres contextes : accompagnement professionnel, situations sensibles au travail, information juridique, médiation ou orientation."
     />
 
     <div className="mt-12 max-w-sm">
