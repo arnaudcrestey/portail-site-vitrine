@@ -13,11 +13,9 @@ export function HomeHero() {
             transforment vos visiteurs en clients.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate sm:text-lg lg:text-xl">
-           Je conçois des points d’entrée qui captent l’attention et transforment une expertise en prises de contact qualifiées,
-<br className="hidden sm:block" />
-à destination des professionnels de l’accompagnement, du conseil et du secteur juridique..
-          </p>
+          <p className="mt-6 max-w-xl text-base leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-xl">
+  Je conçois des points d’entrée qui captent l’attention et transforment une expertise en prises de contact qualifiées, à destination des professionnels de l’accompagnement, du conseil et du secteur juridique.
+</p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
