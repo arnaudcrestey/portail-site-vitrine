@@ -178,17 +178,19 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
                 </div>
 
                 <div className="rounded-[24px] border border-[#a9c0fb] bg-white/88 p-3 shadow-[0_16px_42px_rgba(70,97,161,0.05)] sm:rounded-[30px] sm:p-4">
-                  <textarea
-                    id="project-message"
-                    value={message}
-                    onChange={(e) => handleMessageChange(e.target.value)}
-                    onFocus={() => setIsExpanded(true)}
-                    rows={isExpanded ? 8 : 5}
-                    placeholder={placeholderMessage}
-                    className={`scrollbar-none w-full resize-none overflow-auto rounded-[18px] border border-transparent bg-[#fcfdff] px-4 py-4 text-[15px] leading-7 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[24px] sm:px-6 sm:py-5 sm:text-base sm:leading-8 ${
-                      isExpanded ? 'min-h-[210px] sm:min-h-[250px]' : 'min-h-[145px] sm:min-h-[170px]'
-                    }`}
-                  />
+                 <textarea
+  id="project-message"
+  value={message}
+  onChange={(e) => handleMessageChange(e.target.value)}
+  onFocus={() => setIsExpanded(true)}
+  rows={isExpanded ? 7 : 4}
+  placeholder={placeholderMessage}
+  className={`scrollbar-none w-full resize-none overflow-auto rounded-[16px] border border-transparent bg-[#fcfdff] px-4 py-3 text-[14px] leading-6 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[24px] sm:px-6 sm:py-5 sm:text-base sm:leading-8 ${
+    isExpanded
+      ? 'min-h-[180px] sm:min-h-[250px]'
+      : 'min-h-[120px] sm:min-h-[170px]'
+  }`}
+/>
                 </div>
               </div>
 
