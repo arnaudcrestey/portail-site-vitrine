@@ -39,13 +39,7 @@ export default function ConceptsPage() {
     <SectionHeading
       eyebrow="Déclinaisons métier"
       title="Une adaptation concrète à un métier"
-      description={
-        <>
-          Ces points d’entrée peuvent être adaptés à un métier,
-          <br className="hidden md:block" />
-          à ses contraintes et aux situations qu’il rencontre.
-        </>
-      }
+      description="Ces points d’entrée peuvent être adaptés à un métier, à ses contraintes et aux situations qu’il rencontre."
     />
 
     <div className="mt-12 max-w-sm">
