@@ -40,8 +40,8 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <SectionHeading
             eyebrow="Déclinaisons métier"
-            title="Des points d’entrée adaptés à des secteurs spécifiques"
-            description="Des dispositifs conçus pour des environnements professionnels précis, avec une logique adaptée à leurs enjeux, leurs publics et à leurs situations."
+            title="Une adaptation concrète à un métier"
+            description="Ces points d’entrée peuvent être adaptés à un métier, à ses contraintes et aux situations qu’il rencontre au quotidien."
           />
 
           <div className="mt-12 max-w-sm">
