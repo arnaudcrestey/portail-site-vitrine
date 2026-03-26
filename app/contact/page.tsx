@@ -171,10 +171,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
                 <div className="mb-3 flex flex-col gap-1">
                   <label htmlFor="project-message" className="text-sm font-medium text-ink">
                     Votre message
-                  </label>
-                  <span className="text-xs leading-6 text-slate">
-                    Quelques lignes suffisent pour comprendre votre besoin
-                  </span>
+                  </label>                  
                 </div>
 
                 <div className="rounded-[24px] border border-[#a9c0fb] bg-white/88 p-3 shadow-[0_16px_42px_rgba(70,97,161,0.05)] sm:rounded-[30px] sm:p-4">
