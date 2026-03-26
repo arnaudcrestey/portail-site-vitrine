@@ -38,13 +38,7 @@ Délais éventuels :`);
               concevoir.
             </p>
 
-            <p className="mt-10 max-w-3xl text-sm leading-7 text-slate sm:text-base sm:leading-8">
-              Quelques lignes suffisent pour me permettre de comprendre votre demande : votre
-              activité, ce que vous souhaitez créer ou améliorer, l’objectif recherché, ainsi que
-              le contexte utile pour avancer dans la bonne direction.
-            </p>
-
-            <div className="mt-8">
+            <div className="mt-10">
               <label htmlFor="project-message" className="sr-only">
                 Votre message
               </label>
@@ -54,11 +48,11 @@ Délais éventuels :`);
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 rows={10}
-                className="w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-6 py-6 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
+                className="w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-5 py-5 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
               />
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex justify-center">
               <button
                 type="button"
                 onClick={handleSendEmail}
@@ -68,18 +62,18 @@ Délais éventuels :`);
               </button>
             </div>
 
-            <div className="mt-8 border-t border-[#d8e2ff] pt-6 text-sm leading-7 text-slate">
+            <div className="mt-8 border-t border-[#d8e2ff] pt-6 text-center text-sm leading-7 text-slate">
               <span className="font-medium text-ink">Contact direct :</span>{' '}
               <a
                 href={`mailto:${contactDetails.email}`}
-                className="transition-colors duration-200 hover:text-ink"
+                className="break-words transition-colors duration-200 hover:text-ink"
               >
                 {contactDetails.email}
               </a>{' '}
-              <span className="text-[#9db4ee]">·</span>{' '}
+              <span className="hidden text-[#9db4ee] sm:inline">·</span>{' '}
               <a
                 href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}
-                className="transition-colors duration-200 hover:text-ink"
+                className="block transition-colors duration-200 hover:text-ink sm:inline"
               >
                 {contactDetails.phone}
               </a>
