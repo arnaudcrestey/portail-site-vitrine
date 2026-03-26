@@ -25,6 +25,7 @@ const messageTemplates: {
 Je souhaite créer un point d’entrée pour mon activité.
 
 Mon activité :
+Mon rôle / statut (coach, thérapeute, indépendant, entreprise…) :
 Mon besoin :
 L’objectif recherché :
 Contexte ou éléments utiles :`,
@@ -37,6 +38,7 @@ Contexte ou éléments utiles :`,
 Je souhaite clarifier mon positionnement et mieux structurer mon offre.
 
 Mon activité :
+Mon rôle / statut :
 Ma situation actuelle :
 Ce que je souhaite améliorer :
 Contexte ou éléments utiles :`,
@@ -49,6 +51,7 @@ Contexte ou éléments utiles :`,
 Je souhaite automatiser une partie de mon activité ou de mon parcours client.
 
 Mon activité :
+Mon rôle / statut :
 Le processus à automatiser :
 Le résultat attendu :
 Contexte ou éléments utiles :`,
@@ -61,6 +64,7 @@ Contexte ou éléments utiles :`,
 Je souhaite refondre ou améliorer mon site.
 
 Mon activité :
+Mon rôle / statut :
 Mon site actuel :
 Ce que je souhaite améliorer :
 Contexte ou éléments utiles :`,
