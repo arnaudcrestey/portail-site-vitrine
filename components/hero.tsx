@@ -6,7 +6,9 @@ export function HomeHero() {
     <section className="relative overflow-hidden">
       <div className="container-layout section-spacing grid items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
         <div>
-          <span className="section-eyebrow">Concepteur de systèmes numériques</span>
+          <span className="inline-flex max-w-full whitespace-nowrap rounded-full border border-[#cfd7ff] bg-[#eef2ff] px-3 py-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[#4f67ff] sm:px-4 sm:text-xs">
+        Concepteur de systèmes numériques
+      </span>
 
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-tight text-ink sm:text-5xl lg:text-6xl">
             Développez votre activité avec des dispositifs digitaux qui attirent, engagent et
