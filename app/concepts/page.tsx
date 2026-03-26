@@ -57,8 +57,7 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow="Réserve créative"
             title="Autres concepts en cours de développement"
-            description="Des briques et concepts prêts à être développés pour enrichir ou adapter un point d’entrée selon les besoins."
-          />
+            />
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {reserveConcepts.map((concept) => (
