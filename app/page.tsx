@@ -1,5 +1,6 @@
 import { DeviceCard } from '@/components/cards';
 import { HomeHero } from '@/components/hero';
+import { PricingSection } from '@/components/pricing';
 import { Surface } from '@/components/ui';
 import { deviceExamples } from '@/data/site';
 
@@ -24,7 +25,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>      
+      </section>
 
       <section className="pb-8 pt-2">
         <div className="container-layout">
@@ -32,10 +33,10 @@ export default function HomePage() {
             <div className="max-w-3xl text-center">
               <span className="section-eyebrow">Exemples concrets</span>
 
-             <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl lg:text-4xl">
-  <span className="block">Des dispositifs concrets,</span>
-  <span className="block">pensés pour générer des résultats.</span>
-</h2>
+              <h2 className="mt-4 text-2xl font-semibold tracking-tight text-ink sm:text-3xl lg:text-4xl">
+                <span className="block">Des dispositifs concrets,</span>
+                <span className="block">pensés pour générer des résultats.</span>
+              </h2>
             </div>
 
             <Surface className="relative mt-8 w-full overflow-hidden rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-5 py-5 shadow-[0_18px_50px_rgba(15,23,42,0.05)] sm:px-6 sm:py-6 lg:px-8 lg:py-8">
@@ -48,6 +49,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <PricingSection />
     </>
   );
 }
