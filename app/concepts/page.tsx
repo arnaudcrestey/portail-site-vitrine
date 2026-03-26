@@ -10,8 +10,6 @@ export const metadata = {
 };
 
 export default function ConceptsPage() {
-  const sectorProjects = [featuredLabProject];
-
   return (
     <>
       <PageHero
@@ -27,7 +25,7 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow="En ligne"
             title="Déjà imaginés et mis en ligne"
-           />
+          />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {conceptProjects.map((project) => (
               <ProjectShowcaseCard key={project.slug} project={project} />
@@ -41,17 +39,11 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow="Déclinaisons métier"
             title="Une adaptation concrète à un métier"
-            <p className="mt-4 max-w-2xl text-slate leading-relaxed">
-  Ces points d’entrée peuvent être adaptés à un métier,
-  <br className="hidden sm:block" />
-  à ses contraintes et aux situations qu’il rencontre.
-</p>
+            description="Ces points d’entrée peuvent être adaptés à un métier, à ses contraintes et aux situations qu’il rencontre."
           />
 
           <div className="mt-12 max-w-sm">
-            {sectorProjects.map((project) => (
-              <ProjectShowcaseCard key={project.slug} project={project} />
-            ))}
+            <ProjectShowcaseCard project={featuredLabProject} />
           </div>
         </div>
       </section>
@@ -60,8 +52,8 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <SectionHeading
             eyebrow="Réserve créative"
-            title="Autres concepts en cours de développement"
-            />
+            title="Concepts en cours de développement"
+          />
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {reserveConcepts.map((concept) => (
@@ -70,29 +62,28 @@ export default function ConceptsPage() {
           </div>
         </div>
       </section>
-     <section className="section-spacing pt-4">
-  <div className="container-layout">
-    <Surface className="relative overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
-      <div className="absolute inset-0 bg-hero-radial opacity-90" />
-      <div className="relative mx-auto max-w-4xl text-center">
-        <span className="section-eyebrow">Projet digital</span>
 
-        <h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
-          Vous avez une expertise à transformer en dispositif concret ?
-        </h2>
-
-        <div className="mt-8 flex justify-center">
-          <a
-            href="/contact"
-            className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
-          >
-            Parler de votre projet
-          </a>
+      <section className="section-spacing pt-4">
+        <div className="container-layout">
+          <Surface className="relative overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
+            <div className="absolute inset-0 bg-hero-radial opacity-90" />
+            <div className="relative mx-auto max-w-4xl text-center">
+              <span className="section-eyebrow">Projet digital</span>
+              <h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
+                Vous avez une expertise à transformer en dispositif concret ?
+              </h2>
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
+                >
+                  Parler de votre projet
+                </a>
+              </div>
+            </div>
+          </Surface>
         </div>
-      </div>
-    </Surface>
-  </div>
-</section>
+      </section>
     </>
   );
 }
