@@ -5,18 +5,20 @@ import { contactDetails } from '@/data/site';
 import { Surface } from '@/components/ui';
 
 export default function ContactPage() {
-  const [message, setMessage] = useState(`Bonjour Arnaud,
+  const [message, setMessage] = useState('');
+
+  const placeholderMessage = `Bonjour Arnaud,
 
 Je vous contacte au sujet de...
 
 Activité :
 Besoin / objectif :
 Contexte :
-Délais éventuels :`);
+Délais éventuels :`;
 
   const handleSendEmail = () => {
     const subject = encodeURIComponent('Demande de contact depuis arnaudcrestey.com');
-    const body = encodeURIComponent(message);
+    const body = encodeURIComponent(message || '');
     window.location.href = `mailto:${contactDetails.email}?subject=${subject}&body=${body}`;
   };
 
@@ -48,7 +50,8 @@ Délais éventuels :`);
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 rows={10}
-                className="w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-5 py-5 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
+                placeholder={placeholderMessage}
+                className="w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-5 py-5 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate/70 focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
               />
             </div>
 
