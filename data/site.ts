@@ -172,6 +172,11 @@ export const conceptProjects: ProjectCard[] = [
 
 export const reserveConcepts: ReserveConcept[] = [
   {
+    title: 'B.E.S.T.',
+    description:
+      'Un point d’entrée confidentiel pour aider les salariés à clarifier une situation professionnelle difficile et identifier les premières options possibles.',
+  },
+  {
     title: 'Boussole intérieure',
     description:
       'Un diagnostic narratif pour faire émerger une direction plus claire et plus alignée.',
