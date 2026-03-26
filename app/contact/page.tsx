@@ -95,10 +95,15 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
 
   const handleMessageChange = (value: string) => {
     setMessage(value);
-    if (status !== 'idle') setStatus('idle');
+
+    if (status !== 'idle') {
+      setStatus('idle');
+    }
+
     if (value.trim().length > 0 && !isExpanded) {
       setIsExpanded(true);
     }
+
     if (value.trim().length === 0) {
       setSelectedType('autre');
     }
@@ -144,8 +149,10 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
   return (
     <section className="section-spacing">
       <div className="container-layout">
-        <div className="mx-auto max-w-5xl">
-          <Surface className="overflow-hidden rounded-[28px] border border-white/60 bg-[linear-gradient(135deg,#eef2ff_0%,#f8f9fe_42%,#edf3ff_100%)] px-5 py-7 shadow-[0_28px_80px_rgba(51,78,140,0.08)] sm:rounded-[34px] sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+        <Surface className="relative overflow-hidden rounded-[32px] px-5 py-7 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+          <div className="absolute inset-0 bg-hero-radial opacity-90" />
+
+          <div className="relative mx-auto max-w-5xl">
             <div className="mx-auto max-w-[860px]">
               <span className="inline-flex rounded-full border border-[#c8d6ff] bg-white/55 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#3b82f6]">
                 Contact
@@ -165,7 +172,6 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
                   <p className="text-sm font-medium text-ink">
                     Vous pouvez utiliser un modèle de message
                   </p>
-                 
                 </div>
 
                 <div className="mt-4 grid grid-cols-1 gap-2.5 sm:mt-5 sm:flex sm:flex-wrap sm:gap-3">
@@ -195,23 +201,23 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
                 <div className="mb-3 flex flex-col gap-1">
                   <label htmlFor="project-message" className="text-sm font-medium text-ink">
                     Votre message
-                  </label>                  
+                  </label>
                 </div>
 
                 <div className="rounded-[24px] border border-[#a9c0fb] bg-white/88 p-3 shadow-[0_16px_42px_rgba(70,97,161,0.05)] sm:rounded-[30px] sm:p-4">
-                 <textarea
-  id="project-message"
-  value={message}
-  onChange={(e) => handleMessageChange(e.target.value)}
-  onFocus={() => setIsExpanded(true)}
-  rows={isExpanded ? 7 : 4}
-  placeholder={placeholderMessage}
-  className={`scrollbar-none w-full resize-none overflow-auto rounded-[16px] border border-transparent bg-[#fcfdff] px-4 py-3 text-[14px] leading-6 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[22px] sm:px-5 sm:py-4 sm:text-[15px] sm:leading-7 lg:rounded-[24px] lg:px-6 lg:py-4 lg:text-base lg:leading-7 ${
-    isExpanded
-      ? 'min-h-[180px] sm:min-h-[210px] lg:min-h-[220px]'
-      : 'min-h-[120px] sm:min-h-[145px] lg:min-h-[150px]'
-  }`}
-/>
+                  <textarea
+                    id="project-message"
+                    value={message}
+                    onChange={(e) => handleMessageChange(e.target.value)}
+                    onFocus={() => setIsExpanded(true)}
+                    rows={isExpanded ? 7 : 4}
+                    placeholder={placeholderMessage}
+                    className={`scrollbar-none w-full resize-none overflow-auto rounded-[16px] border border-transparent bg-[#fcfdff] px-4 py-3 text-[14px] leading-6 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:rounded-[22px] sm:px-5 sm:py-4 sm:text-[15px] sm:leading-7 lg:rounded-[24px] lg:px-6 lg:py-4 lg:text-base lg:leading-7 ${
+                      isExpanded
+                        ? 'min-h-[180px] sm:min-h-[210px] lg:min-h-[220px]'
+                        : 'min-h-[120px] sm:min-h-[145px] lg:min-h-[150px]'
+                    }`}
+                  />
                 </div>
               </div>
 
@@ -251,8 +257,8 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
                 </a>
               </div>
             </div>
-          </Surface>
-        </div>
+          </div>
+        </Surface>
       </div>
     </section>
   );
