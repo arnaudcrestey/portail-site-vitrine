@@ -5,7 +5,7 @@ import { Surface } from '@/components/ui';
 export const metadata = {
   title: 'Contact',
   description:
-    'Coordonnées et base de page contact pour échanger autour de Cabinet Astrae ou d’un projet de diagnostics et automatisations.',
+    'Page de contact pour présenter un projet, un besoin ou une demande autour d’un dispositif numérique.',
 };
 
 export default function ContactPage() {
@@ -13,32 +13,44 @@ export default function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Un besoin, une idée, un projet à clarifier ?"
-        description="Vous pouvez utiliser cette page comme base pour un futur formulaire, une prise de rendez-vous ou des liens vers vos outils de contact. Les coordonnées ci-dessous sont facilement modifiables depuis les données du projet."
+        title="Parlons de votre projet"
+        description="Décrivez simplement votre besoin, votre idée ou le dispositif que vous souhaitez concevoir."
       />
+
       <section className="section-spacing pt-4">
-        <div className="container-layout grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-          <Surface className="p-8">
-            <h2 className="text-2xl font-semibold text-ink">Coordonnées</h2>
-            <ul className="mt-6 space-y-4 text-base text-slate">
-              <li>
-                <span className="font-semibold text-ink">Email :</span> {contactDetails.email}
-              </li>
-              <li>
-                <span className="font-semibold text-ink">Téléphone :</span> {contactDetails.phone}
-              </li>
-              <li>
-                <span className="font-semibold text-ink">Localisation :</span> {contactDetails.location}
-              </li>
-            </ul>
-          </Surface>
-          <Surface className="p-8">
-            <h2 className="text-2xl font-semibold text-ink">Base de message</h2>
+        <div className="container-layout max-w-4xl">
+          <Surface className="p-8 sm:p-10">
+            <h2 className="text-2xl font-semibold text-ink">Votre message</h2>
+
             <p className="mt-4 text-base leading-8 text-slate">
-              Bonjour Arnaud, je vous contacte au sujet de…
+              Quelques lignes suffisent pour me permettre de comprendre votre demande :
+              votre activité, ce que vous souhaitez créer ou améliorer, l’objectif recherché,
+              ainsi que le contexte utile pour avancer dans la bonne direction.
             </p>
-            <div className="mt-6 rounded-[24px] border border-dashed border-line bg-white/60 p-6 text-sm leading-7 text-slate">
-              Vous pouvez remplacer ce bloc par un formulaire, un lien Calendly, un embed ou un module de prise de rendez-vous selon votre préférence.
+
+            <div className="mt-8 rounded-[24px] border border-dashed border-line bg-white/60 p-6 sm:p-8">
+              <p className="text-base leading-8 text-slate">
+                Bonjour Arnaud,
+                <br />
+                <br />
+                Je vous contacte au sujet de…
+              </p>
+            </div>
+
+            <p className="mt-6 text-sm leading-7 text-slate">
+              Je réponds personnellement aux demandes liées à un projet, une collaboration
+              ou une réflexion autour d’un dispositif numérique.
+            </p>
+
+            <div className="mt-6 text-sm leading-7 text-slate">
+              <span className="font-medium text-ink">Contact direct :</span>{' '}
+              <a
+                href={`mailto:${contactDetails.email}`}
+                className="transition-colors duration-200 hover:text-ink"
+              >
+                {contactDetails.email}
+              </a>{' '}
+              · {contactDetails.phone}
             </div>
           </Surface>
         </div>
