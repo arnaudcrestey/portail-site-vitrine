@@ -160,20 +160,12 @@ Mes délais éventuels :`;
                 concevoir.
               </p>
 
-              <p className="mt-3 max-w-3xl text-sm leading-7 text-slate/90 sm:text-[15px]">
-                Je conçois des points d’entrée et des systèmes numériques adaptés à votre activité
-                pour clarifier une offre, structurer un parcours ou générer des demandes qualifiées.
-              </p>
-
-              <div className="mt-10 rounded-[30px] border border-[#d9e3ff] bg-white/50 p-5 shadow-[0_16px_40px_rgba(80,110,180,0.05)] backdrop-blur-[2px] sm:p-6">
+                <div className="mt-10 rounded-[30px] border border-[#d9e3ff] bg-white/50 p-5 shadow-[0_16px_40px_rgba(80,110,180,0.05)] backdrop-blur-[2px] sm:p-6">
                 <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
                   <p className="text-sm font-medium text-ink">
                     Vous pouvez partir d’un modèle de message
                   </p>
-                  <p className="text-xs text-slate">
-                    Un simple point de départ suffit
-                  </p>
-                </div>
+                 </div>
 
                 <div className="mt-5 flex flex-wrap gap-3">
                   {messageTemplates.map((template) => {
