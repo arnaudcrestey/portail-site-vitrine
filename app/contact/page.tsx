@@ -6,6 +6,8 @@ import { Surface } from '@/components/ui';
 
 export default function ContactPage() {
   const [message, setMessage] = useState('');
+  const [isSending, setIsSending] = useState(false);
+  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const placeholderMessage = `Bonjour Arnaud,
 
@@ -16,10 +18,36 @@ Mon besoin :
 Le contexte :
 Mes délais éventuels :`;
 
-  const handleSendEmail = () => {
-    const subject = encodeURIComponent('Demande de contact depuis arnaudcrestey.com');
-    const body = encodeURIComponent(message || '');
-    window.location.href = `mailto:${contactDetails.email}?subject=${subject}&body=${body}`;
+  const handleSendEmail = async () => {
+    if (!message.trim()) {
+      setStatus('error');
+      return;
+    }
+
+    try {
+      setIsSending(true);
+      setStatus('idle');
+
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ message }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Erreur envoi');
+      }
+
+      setStatus('success');
+      setMessage('');
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -59,11 +87,24 @@ Mes délais éventuels :`;
               <button
                 type="button"
                 onClick={handleSendEmail}
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#2563eb] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_32px_rgba(37,99,235,0.26)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1d4ed8] sm:px-7"
+                disabled={isSending}
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#2563eb] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_32px_rgba(37,99,235,0.26)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1d4ed8] disabled:cursor-not-allowed disabled:opacity-70 sm:px-7"
               >
-                Envoyer votre message
+                {isSending ? 'Envoi en cours...' : 'Envoyer votre message'}
               </button>
             </div>
+
+            {status === 'success' && (
+              <p className="mt-4 text-center text-sm text-[#2563eb]">
+                Votre message a bien été envoyé.
+              </p>
+            )}
+
+            {status === 'error' && (
+              <p className="mt-4 text-center text-sm text-red-500">
+                Impossible d’envoyer le message pour le moment.
+              </p>
+            )}
 
             <div className="mt-8 border-t border-[#d8e2ff] pt-6 text-center text-sm leading-7 text-slate">
               <span className="font-medium text-ink">Contact direct :</span>{' '}
