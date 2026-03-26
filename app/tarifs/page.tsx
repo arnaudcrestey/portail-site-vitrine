@@ -55,9 +55,9 @@ export default function TarifsPage() {
             Des formats clairs selon votre besoin
           </h1>
 
-          <<p className="mt-6 max-w-4xl text-sm leading-7 text-slate sm:text-base sm:leading-8 md:text-lg">
-  Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous faire avancer concrètement.
-</p>
+          <p className="mt-6 max-w-4xl text-sm leading-7 text-slate sm:text-base sm:leading-8 md:text-lg">
+            Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous faire avancer concrètement.
+          </p>
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -72,9 +72,9 @@ export default function TarifsPage() {
                 <div className="flex items-start justify-between gap-4">
                   <h2 className="text-xl font-semibold text-ink">{item.title}</h2>
                   {item.featured ? (
-                    <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-  Recommandé
-</span>
+                    <span className="rounded-full bg-[#2f6df6]/10 px-3 py-1 text-xs font-semibold text-[#2f6df6]">
+                      Recommandé
+                    </span>
                   ) : null}
                 </div>
 
@@ -106,48 +106,48 @@ export default function TarifsPage() {
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
-              Chaque projet n’a pas le même niveau de personnalisation, ni les
-              mêmes enjeux. Le devis permet donc d’ajuster précisément la
-              proposition selon votre activité, vos objectifs et la structure à
-              concevoir.
+              Chaque projet n’a pas le même niveau de personnalisation, ni les mêmes enjeux.
+              Le devis permet donc d’ajuster précisément la proposition selon votre activité,
+              vos objectifs et la structure à concevoir.
             </p>
 
             <div className="mt-6 space-y-4 text-sm leading-7 text-slate sm:text-base">
               <p>
-                <strong className="text-ink">1.</strong> Vous présentez votre
-                besoin, votre activité et votre contexte.
+                <strong className="text-ink">1.</strong> Vous présentez votre besoin,
+                votre activité et votre contexte.
               </p>
               <p>
-                <strong className="text-ink">2.</strong> J’identifie le format le
-                plus pertinent et le niveau de complexité du dispositif.
+                <strong className="text-ink">2.</strong> J’identifie le format le plus
+                pertinent et le niveau de complexité du dispositif.
               </p>
               <p>
-                <strong className="text-ink">3.</strong> Vous recevez une
-                proposition claire, adaptée à votre situation.
+                <strong className="text-ink">3.</strong> Vous recevez une proposition
+                claire, adaptée à votre situation.
               </p>
             </div>
           </Surface>
 
           <Surface className="rounded-[28px] px-6 py-8 sm:px-8 sm:py-10">
-           <h2 className="text-2xl font-semibold text-ink">
-  Un besoin plus spécifique{' ?'}
-</h2>
+            <h2 className="text-2xl font-semibold text-ink">
+              Un besoin plus spécifique&nbsp;?
+            </h2>
+
             <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
-              Certaines demandes nécessitent un cadrage plus large :
-              adaptation métier, plusieurs points d’entrée, automatisations,
-              refonte partielle ou logique d’ensemble plus avancée.
+              Certaines demandes nécessitent un cadrage plus large : adaptation métier,
+              plusieurs points d’entrée, automatisations, refonte partielle ou logique
+              d’ensemble plus avancée.
             </p>
 
             <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
-              Dans ce cas, un échange permet de définir le dispositif le plus
-              juste pour votre situation.
+              Dans ce cas, un échange permet de définir le dispositif le plus juste pour
+              votre situation.
             </p>
 
             <Link
               href="/contact"
               className="mt-6 inline-flex items-center justify-center rounded-full bg-[#2f6df6] px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:opacity-95"
             >
-              Parler de mon projet
+              Clarifier mon projet
             </Link>
           </Surface>
         </div>
