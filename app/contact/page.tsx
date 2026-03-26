@@ -8,26 +8,12 @@ export const metadata = {
 };
 
 export default function ContactPage() {
-  const mailSubject = encodeURIComponent('Demande de contact depuis arnaudcrestey.com');
-  const mailBody = encodeURIComponent(
-    `Bonjour Arnaud,
-
-Je vous contacte au sujet de...
-
-Activité :
-Besoin / objectif :
-Contexte :
-Délais éventuels :
-
-Bien cordialement,`
-  );
-
   return (
     <section className="section-spacing">
       <div className="container-layout">
         <div className="mx-auto max-w-5xl">
-          <Surface className="rounded-[32px] border border-white/60 bg-[linear-gradient(180deg,#eef1ff_0%,#edf1fb_100%)] px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
-            <span className="inline-flex rounded-full border border-brand/20 bg-white/40 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-brand">
+          <Surface className="rounded-[32px] border border-white/60 bg-[#EEF2FF] px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+            <span className="inline-flex rounded-full border border-[#C9D4FF] bg-white/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#3B82F6]">
               Contact
             </span>
 
@@ -40,36 +26,54 @@ Bien cordialement,`
               concevoir.
             </p>
 
-            <div className="mt-10">
+            <form
+              action={`mailto:${contactDetails.email}`}
+              method="post"
+              encType="text/plain"
+              className="mt-10"
+            >
               <p className="max-w-3xl text-sm leading-7 text-slate sm:text-base sm:leading-8">
                 Quelques lignes suffisent pour me permettre de comprendre votre demande :
                 votre activité, ce que vous souhaitez créer ou améliorer, l’objectif recherché,
                 ainsi que le contexte utile pour avancer dans la bonne direction.
               </p>
 
-              <div className="mt-8 rounded-[28px] border border-line/80 bg-white/45 p-5 sm:p-6 lg:p-7">
-                <div className="min-h-[220px] text-sm leading-7 text-slate sm:text-base sm:leading-8">
-                  <p>Bonjour Arnaud,</p>
-                  <p className="mt-5">Je vous contacte au sujet de...</p>
-                </div>
-              </div>
-            </div>
+              <div className="mt-8">
+                <label htmlFor="message" className="sr-only">
+                  Votre message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={9}
+                  placeholder={`Bonjour Arnaud,
 
-            <div className="mt-8">
-              <a
-                href={`mailto:${contactDetails.email}?subject=${mailSubject}&body=${mailBody}`}
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(37,99,235,0.22)] transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-brand/92 sm:px-7"
-              >
-                Envoyer votre message
-              </a>
-            </div>
+Je vous contacte au sujet de...
+
+Activité :
+Besoin / objectif :
+Contexte :
+Délais éventuels :`}
+                  className="w-full resize-none rounded-[28px] border border-[#9DB3EE] bg-white/55 px-6 py-6 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate focus:border-[#2563EB] focus:bg-white focus:ring-4 focus:ring-[#2563EB]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
+                />
+              </div>
+
+              <div className="mt-8">
+                <button
+                  type="submit"
+                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white shadow-[0_14px_30px_rgba(37,99,235,0.28)] transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-[#1D4ED8] sm:px-7"
+                >
+                  Envoyer votre message
+                </button>
+              </div>
+            </form>
 
             <p className="mt-8 max-w-2xl text-sm leading-7 text-slate">
               Je réponds personnellement aux demandes liées à un projet, une collaboration
               ou une réflexion autour d’un dispositif numérique.
             </p>
 
-            <div className="mt-8 border-t border-brand/30 pt-6 text-sm leading-7 text-slate">
+            <div className="mt-8 border-t border-[#D8E2FF] pt-6 text-sm leading-7 text-slate">
               <span className="font-medium text-ink">Contact direct :</span>{' '}
               <a
                 href={`mailto:${contactDetails.email}`}
@@ -77,7 +81,7 @@ Bien cordialement,`
               >
                 {contactDetails.email}
               </a>{' '}
-              <span className="text-brand/40">·</span>{' '}
+              <span className="text-[#9DB3EE]">·</span>{' '}
               <a
                 href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}
                 className="transition-colors duration-200 hover:text-ink"
