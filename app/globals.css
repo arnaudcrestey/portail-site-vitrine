@@ -13,7 +13,117 @@ html {
 body {
   @apply bg-cloud text-ink antialiased;
   background-image:
-    radial-gradient(circle at top left, rgba(124, 108, 242, 0.10), transparent 24%),
+    radial-gra@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+/* =========================
+   BASE
+========================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply text-ink antialiased;
+
+  /* Fond principal (léger, premium, non plat) */
+  background: #F5F7FB;
+
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(59, 99, 243, 0.06), transparent 40%),
+    radial-gradient(circle at 80% 0%, rgba(124, 108, 242, 0.06), transparent 40%),
+    linear-gradient(180deg, #ffffff 0%, #f7f9fe 100%);
+}
+
+/* Sélection texte */
+::selection {
+  background: rgba(59, 99, 243, 0.18);
+}
+
+/* Scrollbar clean */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* =========================
+   TYPOGRAPHIE
+========================= */
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply tracking-tight text-ink;
+  }
+
+  p {
+    @apply text-slate;
+  }
+
+  a,
+  button {
+    @apply outline-none;
+  }
+
+  a:focus-visible,
+  button:focus-visible {
+    @apply ring-2 ring-primary/40 ring-offset-2 ring-offset-white;
+  }
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+@layer components {
+  .container-layout {
+    @apply mx-auto w-full max-w-layout px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-spacing {
+    @apply py-16 sm:py-20 lg:py-24;
+  }
+
+  /* =========================
+     SURFACES (IMPORTANT)
+  ========================= */
+
+  .surface {
+    @apply bg-white border border-black/5 rounded-2xl;
+    box-shadow: 0 10px 30px rgba(48, 72, 132, 0.06);
+  }
+
+  /* Version glass (optionnelle) */
+  .glass-panel {
+    @apply border border-white/70 bg-white/70 backdrop-blur-xl;
+    box-shadow: 0 18px 60px rgba(48, 72, 132, 0.08);
+  }
+
+  /* =========================
+     UI ELEMENTS
+  ========================= */
+
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full bg-primary/5 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-primary;
+    border: 1px solid rgba(59, 99, 243, 0.12);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}dient(circle at top left, rgba(124, 108, 242, 0.10), transparent 24%),
     radial-gradient(circle at top right, rgba(59, 99, 243, 0.10), transparent 24%),
     linear-gradient(180deg, #ffffff 0%, #f7f9fe 100%);
 }
