@@ -66,29 +66,27 @@ export default function ConceptsPage() {
           </div>
         </div>
       </section>
-      <section className="section-spacing pt-4">
-        <div className="container-layout">
-          <Surface className="relative overflow-hidden px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
-            <div className="absolute inset-0 bg-hero-radial opacity-90" />
-            <div className="relative max-w-3xl">
-              <span className="section-eyebrow">Projet digital</span>
-              <h2 className="mt-5 text-balance text-3xl font-semibold sm:text-4xl lg:text-5xl">
-                Vous avez une activité, une audience ou une idée à faire émerger ?
-              </h2>
-              <p className="mt-5 text-lg leading-8 text-slate">
-                Je conçois des points d’entrée adaptés à votre activité pour capter
-                l’attention et générer des demandes qualifiées.
-              </p>
-              <a
-                href="/contact"
-                className="mt-8 inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
-              >
-                Parler de votre projet
-              </a>
-            </div>
-          </Surface>
+     <section className="section-spacing pt-4">
+  <div className="container-layout">
+    <Surface className="relative overflow-hidden px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
+      <div className="absolute inset-0 bg-hero-radial opacity-90" />
+      <div className="relative max-w-3xl">
+        <span className="section-eyebrow">Projet digital</span>
+        <h2 className="mt-5 text-balance text-3xl font-semibold sm:text-4xl lg:text-5xl">
+          Vous avez une expertise à transformer en dispositif concret ?
+        </h2>
+        <div className="mt-8">
+          <a
+            href="/contact"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
+          >
+            Parler de votre projet
+          </a>
         </div>
-      </section>
+      </div>
+    </Surface>
+  </div>
+</section>
     </>
   );
 }
