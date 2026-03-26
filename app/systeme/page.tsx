@@ -42,8 +42,10 @@ export default function SystemePage() {
           <div className="relative overflow-hidden rounded-[36px] border border-[#d9def8] bg-[linear-gradient(180deg,#f7f8fe_0%,#f2f5ff_100%)] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,99,243,0.06),transparent_38%)]" />
 
-            <div className="relative mx-auto max-w-4xl text-center">
-              <span className="section-eyebrow">Exemple concret - Cabinet Astraé</span>
+            <span className="section-eyebrow">
+  Exemple concret <br className="sm:hidden" />
+  Cabinet Astraé
+</span>
 
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 Un système structuré autour de points d’entrée ciblés
