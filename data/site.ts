@@ -142,7 +142,7 @@ export const conceptProjects: ProjectCard[] = [
     proof: 'Diagnostic court • Lecture directe',
     image: '/projects/blocages-de-vie.jpg',
     href: 'https://blocage-scan-s1lw.vercel.app/',
-    cta: 'Identifier mes blocages',
+    cta: 'Découvrir',
   },
   {
     slug: 'miroir-intuition',
@@ -166,7 +166,7 @@ export const conceptProjects: ProjectCard[] = [
     proof: 'Diagnostic pro • Résultat immédiat',
     image: '/projects/procoach.jpg',
     href: 'https://procoach-taap.vercel.app/',
-    cta: 'Voir mon score',
+    cta: 'Découvrir',
   },
 ];
 
@@ -176,7 +176,7 @@ export const featuredLabProject: ProjectCard = {
   title: 'B.E.S.T.',
   hook: 'Aide confidentielle pour les salariés en difficulté',
   description:
-    'Un point d’entrée conçu pour clarifier une situation professionnelle sensible et identifier les premières options possibles.',
+    'Un point d’entrée pensé pour capter des situations sensibles au travail et proposer une première lecture claire, structurée et utile.',
   proof: 'Confidentiel • Gratuit • Réponse structurée',
   image: '/projects/best.jpg',
   href: 'https://best-v4rk.vercel.app/',
@@ -184,7 +184,6 @@ export const featuredLabProject: ProjectCard = {
 };
 
 export const reserveConcepts: ReserveConcept[] = [
-  
   {
     title: 'Boussole intérieure',
     description:
@@ -193,12 +192,12 @@ export const reserveConcepts: ReserveConcept[] = [
   {
     title: 'Décodeur de message',
     description:
-      'Une expérience qui reformule une situation confuse en lecture structurée et exploitable.',
+      'Une expérience conçue pour reformuler une situation confuse en lecture structurée et exploitable.',
   },
   {
     title: 'Traducteur émotionnel',
     description:
-      'Un parcours qui transforme un ressenti diffus en compréhension utile et partageable.',
+      'Un parcours pensé pour transformer un ressenti diffus en compréhension utile et partageable.',
   },
   {
     title: 'Radar de dynamique',
@@ -212,3 +211,4 @@ export const contactDetails = {
   phone: '+33 6 81 95 23 45',
   location: 'Vire, Normandie, France',
 };
+mais ca je le mets pas?
