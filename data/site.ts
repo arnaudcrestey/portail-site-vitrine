@@ -170,12 +170,21 @@ export const conceptProjects: ProjectCard[] = [
   },
 ];
 
+export const featuredLabProject: ProjectCard = {
+  slug: 'best',
+  number: '01',
+  title: 'B.E.S.T.',
+  hook: 'Aide confidentielle pour les salariés en difficulté',
+  description:
+    'Un point d’entrée conçu pour clarifier une situation professionnelle sensible et identifier les premières options possibles.',
+  proof: 'Confidentiel • Gratuit • Réponse structurée',
+  image: '/projects/best.jpg',
+  href: 'https://best-v4rk.vercel.app/',
+  cta: 'Découvrir B.E.S.T.',
+};
+
 export const reserveConcepts: ReserveConcept[] = [
-  {
-    title: 'B.E.S.T.',
-    description:
-      'Un point d’entrée confidentiel pour aider les salariés à clarifier une situation professionnelle difficile et identifier les premières options possibles.',
-  },
+  
   {
     title: 'Boussole intérieure',
     description:
