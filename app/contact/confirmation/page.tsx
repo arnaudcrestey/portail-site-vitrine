@@ -25,13 +25,12 @@ export default function ContactConfirmationPage() {
               </p>
 
               <p className="mt-4 text-base leading-8 text-slate">
-                Je reviendrai vers vous dès que possible avec une réponse adaptée à votre besoin,
-                à votre contexte et à ce que vous souhaitez construire.
+               Je reviendrai vers vous rapidement avec une réponse adaptée à votre besoin.
               </p>
 
               <div className="mt-8 rounded-[24px] border border-[#dbe5ff] bg-white/68 px-6 py-4 text-sm leading-7 text-[#5f6b85] shadow-[0_16px_40px_rgba(37,99,235,0.05)]">
                 Un accusé de réception ou une réponse peut parfois apparaître dans vos messages
-                indésirables selon votre messagerie.
+                indésirables.
               </div>
 
               <div className="mt-10 flex justify-center">
