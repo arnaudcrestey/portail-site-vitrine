@@ -24,7 +24,7 @@ Délais éventuels :`);
     <section className="section-spacing">
       <div className="container-layout">
         <div className="mx-auto max-w-5xl">
-          <Surface className="rounded-[32px] border border-white/70 bg-[linear-gradient(135deg,#f3f5ff_0%,#eef2ff_52%,#e9edfb_100%)] px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
+          <Surface className="rounded-[32px] px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
             <span className="inline-flex rounded-full border border-[#c9d5ff] bg-white/35 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#3b82f6]">
               Contact
             </span>
@@ -68,12 +68,7 @@ Délais éventuels :`);
               </button>
             </div>
 
-            <p className="mt-8 max-w-2xl text-sm leading-7 text-slate">
-              Je réponds personnellement aux demandes liées à un projet, une collaboration ou une
-              réflexion autour d’un dispositif numérique.
-            </p>
-
-            <div className="mt-8 border-t border-[#d8e2ff] pt-6 text-sm leading-7 text-slate">
+              <div className="mt-8 border-t border-[#d8e2ff] pt-6 text-sm leading-7 text-slate">
               <span className="font-medium text-ink">Contact direct :</span>{' '}
               <a
                 href={`mailto:${contactDetails.email}`}
