@@ -4,6 +4,57 @@ import { useState } from 'react';
 import { contactDetails } from '@/data/site';
 import { Surface } from '@/components/ui';
 
+const messageTemplates = [
+  {
+    label: 'Créer un point d’entrée',
+    content: `Bonjour Arnaud,
+
+Je souhaite vous parler de la création d’un point d’entrée pour mon activité.
+
+Mon activité :
+Mon besoin :
+Le contexte actuel :
+L’objectif recherché :
+Mes délais éventuels :`,
+  },
+  {
+    label: 'Refondre mon site',
+    content: `Bonjour Arnaud,
+
+Je souhaite vous parler d’une refonte ou amélioration de mon site.
+
+Mon activité :
+Mon site actuel :
+Ce que je souhaite améliorer :
+Le contexte :
+Mes délais éventuels :`,
+  },
+  {
+    label: 'Automatiser un parcours',
+    content: `Bonjour Arnaud,
+
+Je souhaite vous parler d’une automatisation pour mon activité.
+
+Mon activité :
+Le parcours ou la tâche à automatiser :
+Le problème actuel :
+Le résultat attendu :
+Mes délais éventuels :`,
+  },
+  {
+    label: 'Clarifier une idée',
+    content: `Bonjour Arnaud,
+
+Je souhaite vous parler d’une idée ou d’un projet à clarifier.
+
+Mon activité :
+Mon idée :
+L’état actuel du projet :
+Ce que je cherche à construire :
+Mes délais éventuels :`,
+  },
+];
+
 export default function ContactPage() {
   const [message, setMessage] = useState('');
   const [isSending, setIsSending] = useState(false);
@@ -17,6 +68,11 @@ Mon activité :
 Mon besoin :
 Le contexte :
 Mes délais éventuels :`;
+
+  const handleSelectTemplate = (content: string) => {
+    setMessage(content);
+    setStatus('idle');
+  };
 
   const handleSendEmail = async () => {
     if (!message.trim()) {
@@ -50,6 +106,8 @@ Mes délais éventuels :`;
     }
   };
 
+  const isDisabled = isSending || !message.trim();
+
   return (
     <section className="section-spacing">
       <div className="container-layout">
@@ -68,15 +126,42 @@ Mes délais éventuels :`;
               concevoir.
             </p>
 
-            <div className="mt-10">
-              <label htmlFor="project-message" className="sr-only">
-                Votre message
-              </label>
+            <div className="mt-10 rounded-[28px] border border-[#d7e2ff] bg-white/45 p-4 sm:p-5">
+              <p className="text-sm font-medium text-ink">
+                Vous pouvez partir d’un modèle de message :
+              </p>
+
+              <div className="mt-4 flex flex-wrap gap-3">
+                {messageTemplates.map((template) => (
+                  <button
+                    key={template.label}
+                    type="button"
+                    onClick={() => handleSelectTemplate(template.content)}
+                    className="inline-flex items-center rounded-full border border-[#c7d6ff] bg-white/80 px-4 py-2 text-sm font-medium text-[#2d4ea1] transition duration-200 hover:border-[#9db4ee] hover:bg-white hover:text-[#1d4ed8]"
+                  >
+                    {template.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <div className="mb-3 flex items-center justify-between gap-4">
+                <label htmlFor="project-message" className="text-sm font-medium text-ink">
+                  Votre message
+                </label>
+                <span className="text-xs text-slate">
+                  Quelques lignes suffisent pour expliquer votre besoin
+                </span>
+              </div>
 
               <textarea
                 id="project-message"
                 value={message}
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => {
+                  setMessage(e.target.value);
+                  if (status !== 'idle') setStatus('idle');
+                }}
                 rows={10}
                 placeholder={placeholderMessage}
                 className="w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-5 py-5 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate/70 focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
@@ -87,23 +172,27 @@ Mes délais éventuels :`;
               <button
                 type="button"
                 onClick={handleSendEmail}
-                disabled={isSending}
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#2563eb] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_32px_rgba(37,99,235,0.26)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1d4ed8] disabled:cursor-not-allowed disabled:opacity-70 sm:px-7"
+                disabled={isDisabled}
+                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#2563eb] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_32px_rgba(37,99,235,0.26)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1d4ed8] disabled:cursor-not-allowed disabled:opacity-60 sm:px-7"
               >
                 {isSending ? 'Envoi en cours...' : 'Envoyer votre message'}
               </button>
             </div>
 
             {status === 'success' && (
-              <p className="mt-4 text-center text-sm text-[#2563eb]">
-                Votre message a bien été envoyé.
-              </p>
+              <div className="mt-5 flex justify-center">
+                <div className="rounded-full border border-[#cfe0ff] bg-[#f4f8ff] px-5 py-2 text-sm text-[#2563eb]">
+                  Votre message a bien été envoyé.
+                </div>
+              </div>
             )}
 
             {status === 'error' && (
-              <p className="mt-4 text-center text-sm text-red-500">
-                Impossible d’envoyer le message pour le moment.
-              </p>
+              <div className="mt-5 flex justify-center">
+                <div className="rounded-full border border-red-200 bg-red-50 px-5 py-2 text-sm text-red-600">
+                  Merci de saisir un message ou de réessayer dans un instant.
+                </div>
+              </div>
             )}
 
             <div className="mt-8 border-t border-[#d8e2ff] pt-6 text-center text-sm leading-7 text-slate">
