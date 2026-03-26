@@ -25,7 +25,7 @@ const messageTemplates: {
 Je souhaite vous parler de la création d’un point d’entrée pour mon activité.`,
   },
   {
-    label: 'Refondre mon site',
+    label: 'Clarifier mon positionnement',
     type: 'refonte-site',
     content: `Bonjour Arnaud,
 
@@ -39,7 +39,7 @@ Je souhaite vous parler d’une refonte ou amélioration de mon site.`,
 Je souhaite vous parler d’une automatisation pour mon activité.`,
   },
   {
-    label: 'Clarifier une idée',
+    label: 'Refondre mon site',
     type: 'clarification',
     content: `Bonjour Arnaud,
 
