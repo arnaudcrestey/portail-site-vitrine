@@ -139,7 +139,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
               <div className="mt-8 rounded-[24px] border border-[#dbe4ff] bg-white/55 p-4 shadow-[0_14px_40px_rgba(72,102,170,0.04)] sm:mt-10 sm:rounded-[30px] sm:p-6">
                 <div className="flex flex-col gap-2">
                   <p className="text-sm font-medium text-ink">
-                    Vous pouvez partir d’un modèle de message
+                    Vous pouvez utiliser un modèle de message
                   </p>
                  
                 </div>
