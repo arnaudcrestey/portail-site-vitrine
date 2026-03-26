@@ -92,8 +92,7 @@ export default function SystemePage() {
               </Link>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       <section id="exemple" className="pb-8 pt-2">
         <div className="container-layout">
