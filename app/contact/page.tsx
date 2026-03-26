@@ -160,57 +160,62 @@ Mes délais éventuels :`;
                 concevoir.
               </p>
 
-                <div className="mt-10 rounded-[30px] border border-[#d9e3ff] bg-white/50 p-5 shadow-[0_16px_40px_rgba(80,110,180,0.05)] backdrop-blur-[2px] sm:p-6">
-                <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-                  <p className="text-sm font-medium text-ink">
-                    Vous pouvez partir d’un modèle de message
-                  </p>
-                 </div>
+               <div className="mt-8 rounded-[26px] border border-[#dbe4ff] bg-white/52 p-4 shadow-[0_14px_40px_rgba(72,102,170,0.04)] sm:mt-10 sm:rounded-[30px] sm:p-6">
+  <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+    <p className="text-sm font-medium text-ink">
+      Vous pouvez partir d’un modèle de message
+    </p>
+    <p className="text-xs text-slate">
+      Choisissez une base, puis adaptez-la librement
+    </p>
+  </div>
 
-                <div className="mt-5 flex flex-wrap gap-3">
-                  {messageTemplates.map((template) => {
-                    const isActive = selectedType === template.type && message === template.content;
+  <div className="mt-4 flex flex-wrap gap-2.5 sm:mt-5 sm:gap-3">
+    {messageTemplates.map((template) => {
+      const isActive = selectedType === template.type && message === template.content;
 
-                    return (
-                      <button
-                        key={template.label}
-                        type="button"
-                        onClick={() => handleSelectTemplate(template.content, template.type)}
-                        className={`inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 ${
-                          isActive
-                            ? 'border-[#7ea2ff] bg-[#edf4ff] text-[#1d4ed8] shadow-[0_10px_24px_rgba(37,99,235,0.10)]'
-                            : 'border-[#c7d6ff] bg-white/85 text-[#2d4ea1] hover:border-[#9db4ee] hover:bg-white hover:text-[#1d4ed8]'
-                        }`}
-                      >
-                        {template.label}
-                      </button>
-                    );
-                  })}
-                </div>
-              </div>
+      return (
+        <button
+          key={template.label}
+          type="button"
+          onClick={() => handleSelectTemplate(template.content, template.type)}
+          className={`inline-flex items-center rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200 hover:-translate-y-0.5 active:translate-y-0 ${
+            isActive
+              ? 'border-[#7ea2ff] bg-[#edf4ff] text-[#1d4ed8] shadow-[0_8px_20px_rgba(37,99,235,0.10)]'
+              : 'border-[#c9d7ff] bg-white/88 text-[#2d4ea1] hover:border-[#9db4ee] hover:bg-white hover:text-[#1d4ed8]'
+          }`}
+        >
+          {template.label}
+        </button>
+      );
+    })}
+  </div>
+</div>
 
-              <div className="mt-9">
-                <div className="mb-3 flex items-center justify-between gap-4">
-                  <label htmlFor="project-message" className="text-sm font-medium text-ink">
-                    Votre message
-                  </label>
-                  <span className="text-xs text-slate">
-                    Quelques lignes suffisent pour comprendre votre besoin
-                  </span>
-                </div>
+<div className="mt-8 sm:mt-9">
+  <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+    <label htmlFor="project-message" className="text-sm font-medium text-ink">
+      Votre message
+    </label>
+    <span className="text-xs leading-6 text-slate">
+      Quelques lignes suffisent pour comprendre votre besoin
+    </span>
+  </div>
 
-                <textarea
-                  id="project-message"
-                  value={message}
-                  onChange={(e) => handleMessageChange(e.target.value)}
-                  onFocus={() => setIsExpanded(true)}
-                  rows={isExpanded ? 10 : 5}
-                  placeholder={placeholderMessage}
-                  className={`w-full resize-none overflow-auto rounded-[30px] border border-[#9db4ee] bg-white/82 px-6 py-5 text-[15px] leading-8 text-ink outline-none transition-all duration-300 placeholder:text-slate/70 focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-6 sm:text-base ${
-                    isExpanded ? 'min-h-[260px]' : 'min-h-[168px]'
-                  }`}
-                />
-              </div>
+  <div className="rounded-[26px] border border-[#a9c0fb] bg-white/86 p-3 shadow-[0_16px_42px_rgba(70,97,161,0.05)] sm:rounded-[30px] sm:p-4">
+    <textarea
+      id="project-message"
+      value={message}
+      onChange={(e) => handleMessageChange(e.target.value)}
+      onFocus={() => setIsExpanded(true)}
+      rows={isExpanded ? 9 : 5}
+      placeholder={placeholderMessage}
+      className={`scrollbar-none w-full resize-none rounded-[20px] border border-transparent bg-[#fcfdff] px-5 py-4 text-[15px] leading-8 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[24px] sm:px-6 sm:py-5 sm:text-base ${
+        isExpanded ? 'min-h-[250px] sm:min-h-[280px]' : 'min-h-[160px] sm:min-h-[180px]'
+      }`}
+    />
+  </div>
+</div>>
 
               <div className="mt-8 flex justify-center">
                 <button
