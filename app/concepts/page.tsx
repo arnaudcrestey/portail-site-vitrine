@@ -14,8 +14,8 @@ export default function ConceptsPage() {
     <>
       <PageHero
         eyebrow="Laboratoire"
-        title="Des points d’entrée conçus pour transformer une expertise en clients"
-        description="Un catalogue vivant de points d'entrée. Chaque activité peut avoir le ou les siens : voici une sélection de concepts déjà lancés, ainsi que d’autres idées prêtes à être transformées en expériences à fort impact."
+        title="Des points d’entrée conçus pour transformer une expertise en demandes qualifiées"
+        description="Conçus pour les professionnels de l’accompagnement, du conseil et du droit, ces points d’entrée permettent de capter des situations réelles, d’apporter une première lecture utile et d’ouvrir vers une prise de contact qualifiée."
         primaryCta={{ href: '#concepts-grid', label: 'Découvrir les concepts' }}
         secondaryCta={{ href: '/contact', label: 'Me parler d’un projet digital' }}
       />
@@ -40,7 +40,7 @@ export default function ConceptsPage() {
     <SectionHeading
       eyebrow="Réserve créative"
       title="Autres concepts dans le laboratoire"
-      description="Le laboratoire explore aussi des points d’entrée adaptés à d’autres contextes : accompagnement professionnel, situations sensibles au travail, information juridique, médiation ou orientation."
+      description="Le laboratoire explore aussi des points d’entrée pensés pour des métiers comme avocat, juriste, médiateur, consultant RH ou professionnel de l’accompagnement au travail."
     />
 
     <div className="mt-12 max-w-sm">
