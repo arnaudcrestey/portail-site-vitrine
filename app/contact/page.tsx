@@ -4,9 +4,21 @@ import { useState } from 'react';
 import { contactDetails } from '@/data/site';
 import { Surface } from '@/components/ui';
 
-const messageTemplates = [
+type ContactType =
+  | 'point-entree'
+  | 'refonte-site'
+  | 'automatisation'
+  | 'clarification'
+  | 'autre';
+
+const messageTemplates: {
+  label: string;
+  type: ContactType;
+  content: string;
+}[] = [
   {
     label: 'Créer un point d’entrée',
+    type: 'point-entree',
     content: `Bonjour Arnaud,
 
 Je souhaite vous parler de la création d’un point d’entrée pour mon activité.
@@ -19,6 +31,7 @@ Mes délais éventuels :`,
   },
   {
     label: 'Refondre mon site',
+    type: 'refonte-site',
     content: `Bonjour Arnaud,
 
 Je souhaite vous parler d’une refonte ou amélioration de mon site.
@@ -31,6 +44,7 @@ Mes délais éventuels :`,
   },
   {
     label: 'Automatiser un parcours',
+    type: 'automatisation',
     content: `Bonjour Arnaud,
 
 Je souhaite vous parler d’une automatisation pour mon activité.
@@ -43,6 +57,7 @@ Mes délais éventuels :`,
   },
   {
     label: 'Clarifier une idée',
+    type: 'clarification',
     content: `Bonjour Arnaud,
 
 Je souhaite vous parler d’une idée ou d’un projet à clarifier.
@@ -57,6 +72,7 @@ Mes délais éventuels :`,
 
 export default function ContactPage() {
   const [message, setMessage] = useState('');
+  const [selectedType, setSelectedType] = useState<ContactType>('autre');
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
@@ -69,9 +85,15 @@ Mon besoin :
 Le contexte :
 Mes délais éventuels :`;
 
-  const handleSelectTemplate = (content: string) => {
+  const handleSelectTemplate = (content: string, type: ContactType) => {
     setMessage(content);
+    setSelectedType(type);
     setStatus('idle');
+  };
+
+  const handleMessageChange = (value: string) => {
+    setMessage(value);
+    if (status !== 'idle') setStatus('idle');
   };
 
   const handleSendEmail = async () => {
@@ -89,7 +111,10 @@ Mes délais éventuels :`;
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message }),
+        body: JSON.stringify({
+          message,
+          type: selectedType,
+        }),
       });
 
       if (!response.ok) {
@@ -98,6 +123,7 @@ Mes délais éventuels :`;
 
       setStatus('success');
       setMessage('');
+      setSelectedType('autre');
     } catch (error) {
       console.error(error);
       setStatus('error');
@@ -136,7 +162,7 @@ Mes délais éventuels :`;
                   <button
                     key={template.label}
                     type="button"
-                    onClick={() => handleSelectTemplate(template.content)}
+                    onClick={() => handleSelectTemplate(template.content, template.type)}
                     className="inline-flex items-center rounded-full border border-[#c7d6ff] bg-white/80 px-4 py-2 text-sm font-medium text-[#2d4ea1] transition duration-200 hover:border-[#9db4ee] hover:bg-white hover:text-[#1d4ed8]"
                   >
                     {template.label}
@@ -158,10 +184,7 @@ Mes délais éventuels :`;
               <textarea
                 id="project-message"
                 value={message}
-                onChange={(e) => {
-                  setMessage(e.target.value);
-                  if (status !== 'idle') setStatus('idle');
-                }}
+                onChange={(e) => handleMessageChange(e.target.value)}
                 rows={10}
                 placeholder={placeholderMessage}
                 className="w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-5 py-5 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate/70 focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
