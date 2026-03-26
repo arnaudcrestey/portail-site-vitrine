@@ -34,19 +34,25 @@ export default function ConceptsPage() {
         </div>
       </section>
 
-      <section className="section-spacing pt-4">
-        <div className="container-layout">
-          <SectionHeading
-            eyebrow="Déclinaisons métier"
-            title="Une adaptation concrète à un métier"
-            description="Ces points d’entrée peuvent être adaptés à un métier, à ses contraintes et aux situations qu’il rencontre."
-          />
+     <section className="section-spacing pt-4">
+  <div className="container-layout">
+    <SectionHeading
+      eyebrow="Déclinaisons métier"
+      title="Une adaptation concrète à un métier"
+      description={
+        <>
+          Ces points d’entrée peuvent être adaptés à un métier,
+          <br className="hidden md:block" />
+          à ses contraintes et aux situations qu’il rencontre.
+        </>
+      }
+    />
 
-          <div className="mt-12 max-w-sm">
-            <ProjectShowcaseCard project={featuredLabProject} />
-          </div>
-        </div>
-      </section>
+    <div className="mt-12 max-w-sm">
+      <ProjectShowcaseCard project={featuredLabProject} />
+    </div>
+  </div>
+</section>
 
       <section className="section-spacing pt-4">
         <div className="container-layout">
