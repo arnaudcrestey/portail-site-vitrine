@@ -50,8 +50,7 @@ export function PricingSection() {
 </h2>
 
 <p className="mt-5 text-base leading-8 text-slate sm:text-lg">
-  Selon votre situation, l’enjeu peut être de clarifier, de structurer ou de déployer un dispositif complet. 
-  Chaque niveau correspond à un besoin précis et à un degré d’accompagnement adapté.
+ Chaque format répond à un niveau de besoin, avec un objectif clair : vous faire avancer.
 </p>
         </div>
 
