@@ -14,7 +14,7 @@ export function HomeHero() {
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-8 text-slate sm:text-lg lg:text-xl">
-            Je conçois des points d’entrée pensés pour capter l’attention et déclencher le passage à l’action pour les professionnels de l’accompagnement, du conseil et du droit.
+           Je conçois des points d’entrée qui captent l’attention et transforment une expertise en prises de contact qualifiées, pour les professionnels de l’accompagnement, du conseil et du droit.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
