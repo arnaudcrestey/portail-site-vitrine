@@ -32,13 +32,11 @@ html {
 body {
   @apply text-ink antialiased;
 
-  /* Fond principal (léger, premium, non plat) */
-  background: #F5F7FB;
+  background-color: #F5F7FB;
 
   background-image:
     radial-gradient(circle at 20% 0%, rgba(59, 99, 243, 0.06), transparent 40%),
-    radial-gradient(circle at 80% 0%, rgba(124, 108, 242, 0.06), transparent 40%),
-    linear-gradient(180deg, #ffffff 0%, #f7f9fe 100%);
+    radial-gradient(circle at 80% 0%, rgba(124, 108, 242, 0.06), transparent 40%);
 }
 
 /* Sélection texte */
