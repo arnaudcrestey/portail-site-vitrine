@@ -68,14 +68,16 @@ export default function ConceptsPage() {
       </section>
      <section className="section-spacing pt-4">
   <div className="container-layout">
-    <Surface className="relative overflow-hidden px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
+    <Surface className="relative overflow-hidden px-6 py-12 sm:px-10 sm:py-14 lg:px-14 lg:py-16">
       <div className="absolute inset-0 bg-hero-radial opacity-90" />
-      <div className="relative max-w-3xl">
+      <div className="relative mx-auto max-w-4xl text-center">
         <span className="section-eyebrow">Projet digital</span>
-        <h2 className="mt-5 text-balance text-3xl font-semibold sm:text-4xl lg:text-5xl">
+
+        <h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
           Vous avez une expertise à transformer en dispositif concret ?
         </h2>
-        <div className="mt-8">
+
+        <div className="mt-8 flex justify-center">
           <a
             href="/contact"
             className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
