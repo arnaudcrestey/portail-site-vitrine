@@ -9,12 +9,12 @@ export default function ContactPage() {
 
   const placeholderMessage = `Bonjour Arnaud,
 
-Je vous contacte au sujet de...
+Je souhaite vous parler de...
 
-Activité :
-Besoin / objectif :
-Contexte :
-Délais éventuels :`;
+Mon activité :
+Mon besoin :
+Le contexte :
+Mes délais éventuels :`;
 
   const handleSendEmail = () => {
     const subject = encodeURIComponent('Demande de contact depuis arnaudcrestey.com');
