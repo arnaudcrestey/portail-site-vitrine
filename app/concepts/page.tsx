@@ -66,19 +66,6 @@ export default function ConceptsPage() {
           </div>
         </div>
       </section>
-
-      <section className="section-spacing pt-4">
-        <div className="container-layout">
-          <Surface className="px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
-            <SectionHeading
-              eyebrow="Positionnement"
-              title="Un point d’entrée n’est pas un simple test"
-              description="C’est un dispositif conçu pour capter l’attention, créer un engagement immédiat et ouvrir vers une prise de contact. Bien structuré, il devient un levier central d’acquisition."
-            />
-          </Surface>
-        </div>
-      </section>
-
       <section className="section-spacing pt-4">
         <div className="container-layout">
           <Surface className="relative overflow-hidden px-6 py-10 sm:px-10 lg:px-14 lg:py-14">
