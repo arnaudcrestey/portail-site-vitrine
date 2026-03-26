@@ -82,12 +82,9 @@ export default function ContactPage() {
 
   const placeholderMessage = `Bonjour Arnaud,
 
-Je souhaite vous parler de...
+Je souhaite vous parler de mon projet...
 
-Mon activité :
-Mon besoin :
-Le contexte :
-Mes délais éventuels :`;
+Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai éventuel.`;
 
   const handleSelectTemplate = (content: string, type: ContactType) => {
     setMessage(content);
@@ -192,51 +189,26 @@ Mes délais éventuels :`;
 
 <div className="mt-8 sm:mt-9">
   <div className="mb-3 flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
-    <label htmlFor="project-details" className="text-sm font-medium text-ink">
+    <label htmlFor="project-message" className="text-sm font-medium text-ink">
       Votre message
     </label>
     <span className="text-xs leading-6 text-slate">
-      Quelques éléments suffisent pour comprendre votre besoin
+      Quelques lignes suffisent pour comprendre votre besoin
     </span>
   </div>
 
   <div className="rounded-[26px] border border-[#a9c0fb] bg-white/86 p-3 shadow-[0_16px_42px_rgba(70,97,161,0.05)] sm:rounded-[30px] sm:p-4">
-    <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
-      <input
-        type="text"
-        placeholder="Activité"
-        className="h-12 rounded-[18px] border border-[#dbe5ff] bg-[#fcfdff] px-4 text-sm text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#bfd3ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8"
-      />
-      <input
-        type="text"
-        placeholder="Besoin"
-        className="h-12 rounded-[18px] border border-[#dbe5ff] bg-[#fcfdff] px-4 text-sm text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#bfd3ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8"
-      />
-      <input
-        type="text"
-        placeholder="Contexte"
-        className="h-12 rounded-[18px] border border-[#dbe5ff] bg-[#fcfdff] px-4 text-sm text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#bfd3ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8"
-      />
-      <input
-        type="text"
-        placeholder="Délai"
-        className="h-12 rounded-[18px] border border-[#dbe5ff] bg-[#fcfdff] px-4 text-sm text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#bfd3ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8"
-      />
-    </div>
-
-    <div className="mt-3">
-      <textarea
-        id="project-details"
-        value={message}
-        onChange={(e) => handleMessageChange(e.target.value)}
-        onFocus={() => setIsExpanded(true)}
-        rows={isExpanded ? 8 : 5}
-        placeholder={`Bonjour Arnaud,\n\nJe souhaite vous parler de mon projet...`}
-        className={`scrollbar-none w-full resize-none overflow-auto rounded-[20px] border border-[#dbe5ff] bg-[#fcfdff] px-5 py-4 text-[15px] leading-8 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#bfd3ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[24px] sm:px-6 sm:py-5 sm:text-base ${
-          isExpanded ? 'min-h-[220px] sm:min-h-[250px]' : 'min-h-[150px] sm:min-h-[170px]'
-        }`}
-      />
-    </div>
+    <textarea
+      id="project-message"
+      value={message}
+      onChange={(e) => handleMessageChange(e.target.value)}
+      onFocus={() => setIsExpanded(true)}
+      rows={isExpanded ? 8 : 5}
+      placeholder={placeholderMessage}
+      className={`scrollbar-none w-full resize-none overflow-auto rounded-[20px] border border-transparent bg-[#fcfdff] px-5 py-4 text-[15px] leading-8 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[24px] sm:px-6 sm:py-5 sm:text-base ${
+        isExpanded ? 'min-h-[220px] sm:min-h-[250px]' : 'min-h-[150px] sm:min-h-[170px]'
+      }`}
+    />
   </div>
 </div>
 
