@@ -41,12 +41,6 @@ export default function ContactConfirmationPage() {
                   Revenir à l’accueil
                 </Link>
 
-                <Link
-                  href="/concepts"
-                  className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#2563eb] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_32px_rgba(37,99,235,0.22)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#1d4ed8]"
-                >
-                  Voir les concepts
-                </Link>
               </div>
             </div>
           </Surface>
