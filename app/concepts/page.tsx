@@ -1,7 +1,7 @@
 import { ProjectShowcaseCard, ReserveConceptCard } from '@/components/cards';
 import { PageHero } from '@/components/page-hero';
 import { SectionHeading, Surface } from '@/components/ui';
-import { conceptProjects, reserveConcepts } from '@/data/site';
+import { conceptProjects, featuredLabProject, reserveConcepts } from '@/data/site';
 
 export const metadata = {
   title: 'Laboratoire de concepts',
@@ -36,18 +36,23 @@ export default function ConceptsPage() {
 </section>
 
       <section className="section-spacing pt-4">
-        <div className="container-layout">
-          <SectionHeading
-            eyebrow="Réserve créative"
-            title="Autres concepts dans le laboratoire"
-           />
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {reserveConcepts.map((concept) => (
-              <ReserveConceptCard key={concept.title} concept={concept} />
-            ))}
-          </div>
-        </div>
-      </section>
+  <div className="container-layout">
+    <SectionHeading
+      eyebrow="Réserve créative"
+      title="Autres concepts dans le laboratoire"
+    />
+
+    <div className="mt-12 max-w-sm">
+      <ProjectShowcaseCard project={featuredLabProject} />
+    </div>
+
+    <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+      {reserveConcepts.map((concept) => (
+        <ReserveConceptCard key={concept.title} concept={concept} />
+      ))}
+    </div>
+  </div>
+</section>
 
       <section className="section-spacing pt-4">
         <div className="container-layout">
