@@ -41,9 +41,9 @@ export async function POST(req: Request) {
       subject: 'Nouveau message depuis arnaudcrestey.com',
       text: message,
       html: `
-        <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #1f2937;">
+        <div style="font-family:Arial,sans-serif;line-height:1.6;color:#1f2937;">
           <h2>Nouveau message depuis arnaudcrestey.com</h2>
-          <pre style="white-space: pre-wrap; font-family: Arial, sans-serif;">${message}</pre>
+          <pre style="white-space:pre-wrap;font-family:Arial,sans-serif;">${message}</pre>
         </div>
       `,
     });
