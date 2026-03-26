@@ -14,7 +14,7 @@ export default function AboutPage() {
         eyebrow="À propos"
         title="Une approche à la croisée de la clarté, de l’expérience et de l’utilité réelle."
         description="Cette page introduit votre posture, votre parcours et votre manière de relier finesse humaine, structuration digitale et crédibilité de marque. Elle est prête à être enrichie avec votre biographie, vos principes de travail et vos références."
-        primaryCta={{ href: '/contact', label: 'Entrer en contact' }}
+        primaryCta={{ href: '/contact', label: 'Parler de votre projet' }}
       />
       <section className="section-spacing pt-4">
         <div className="container-layout grid gap-6 lg:grid-cols-2">
