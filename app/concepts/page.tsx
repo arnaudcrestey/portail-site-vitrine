@@ -27,8 +27,7 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow="En ligne"
             title="Déjà imaginés et mis en ligne"
-            description="Des points d’entrée conçus pour des professionnels de l’accompagnement, du conseil et du droit, afin de capter des situations réelles et générer des demandes concrètes."
-          />
+           />
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {conceptProjects.map((project) => (
               <ProjectShowcaseCard key={project.slug} project={project} />
