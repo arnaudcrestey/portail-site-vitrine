@@ -55,9 +55,9 @@ export default function TarifsPage() {
             Des formats clairs selon votre besoin
           </h1>
 
-          <p className="mt-6 max-w-4xl text-sm leading-7 text-slate sm:text-base sm:leading-8 md:text-lg">
-            Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous faire avancer concrètement.
-          </p>
+          <p className="mx-auto mt-6 max-w-3xl text-sm leading-7 text-slate sm:text-base sm:leading-8 lg:max-w-none lg:whitespace-nowrap lg:text-lg">
+  Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous faire avancer concrètement.
+</p>
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
