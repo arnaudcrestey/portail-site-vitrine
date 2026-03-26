@@ -182,10 +182,10 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
   onFocus={() => setIsExpanded(true)}
   rows={isExpanded ? 7 : 4}
   placeholder={placeholderMessage}
-  className={`scrollbar-none w-full resize-none overflow-auto rounded-[16px] border border-transparent bg-[#fcfdff] px-4 py-3 text-[14px] leading-6 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[24px] sm:px-6 sm:py-5 sm:text-base sm:leading-8 ${
+  className={`scrollbar-none w-full resize-none overflow-auto rounded-[16px] border border-transparent bg-[#fcfdff] px-4 py-3 text-[14px] leading-6 text-ink outline-none transition-all duration-300 placeholder:text-[#97a3bf] focus:border-[#d8e5ff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/8 sm:rounded-[22px] sm:px-5 sm:py-4 sm:text-[15px] sm:leading-7 lg:rounded-[24px] lg:px-6 lg:py-4 lg:text-base lg:leading-7 ${
     isExpanded
-      ? 'min-h-[180px] sm:min-h-[250px]'
-      : 'min-h-[120px] sm:min-h-[170px]'
+      ? 'min-h-[180px] sm:min-h-[210px] lg:min-h-[220px]'
+      : 'min-h-[120px] sm:min-h-[145px] lg:min-h-[150px]'
   }`}
 />
                 </div>
