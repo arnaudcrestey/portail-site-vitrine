@@ -55,7 +55,7 @@ export default function TarifsPage() {
             Des formats clairs selon votre besoin
           </h1>
 
-          <p className="mt-6 whitespace-nowrap text-sm text-slate sm:text-base md:text-lg">
+          <<p className="mt-6 max-w-4xl text-sm leading-7 text-slate sm:text-base sm:leading-8 md:text-lg">
   Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous faire avancer concrètement.
 </p>
         </div>
@@ -129,10 +129,9 @@ export default function TarifsPage() {
           </Surface>
 
           <Surface className="rounded-[28px] px-6 py-8 sm:px-8 sm:py-10">
-            <h2 className="text-2xl font-semibold text-ink">
-              Un besoin plus spécifique ?
-            </h2>
-
+           <h2 className="text-2xl font-semibold text-ink">
+  Un besoin plus spécifique{' ?'}
+</h2>
             <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
               Certaines demandes nécessitent un cadrage plus large :
               adaptation métier, plusieurs points d’entrée, automatisations,
