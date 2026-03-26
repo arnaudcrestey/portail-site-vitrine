@@ -22,28 +22,48 @@ const messageTemplates: {
     type: 'point-entree',
     content: `Bonjour Arnaud,
 
-Je souhaite vous parler de la création d’un point d’entrée pour mon activité.`,
+Je souhaite créer un point d’entrée pour mon activité.
+
+Mon activité :
+Mon besoin :
+L’objectif recherché :
+Contexte ou éléments utiles :`,
   },
   {
     label: 'Clarifier mon positionnement',
-    type: 'refonte-site',
+    type: 'clarification',
     content: `Bonjour Arnaud,
 
-Je souhaite vous parler d’une refonte ou amélioration de mon site.`,
+Je souhaite clarifier mon positionnement et mieux structurer mon offre.
+
+Mon activité :
+Ma situation actuelle :
+Ce que je souhaite améliorer :
+Contexte ou éléments utiles :`,
   },
   {
     label: 'Automatiser un parcours',
     type: 'automatisation',
     content: `Bonjour Arnaud,
 
-Je souhaite vous parler d’une automatisation pour mon activité.`,
+Je souhaite automatiser une partie de mon activité ou de mon parcours client.
+
+Mon activité :
+Le processus à automatiser :
+Le résultat attendu :
+Contexte ou éléments utiles :`,
   },
   {
     label: 'Refondre mon site',
-    type: 'clarification',
+    type: 'refonte-site',
     content: `Bonjour Arnaud,
 
-Je souhaite vous parler d’une idée ou d’un projet à clarifier.`,
+Je souhaite refondre ou améliorer mon site.
+
+Mon activité :
+Mon site actuel :
+Ce que je souhaite améliorer :
+Contexte ou éléments utiles :`,
   },
 ];
 
