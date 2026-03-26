@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import { contactDetails } from '@/data/site';
 import { Surface } from '@/components/ui';
 
@@ -71,10 +72,13 @@ Mes délais éventuels :`,
 ];
 
 export default function ContactPage() {
+  const router = useRouter();
+
   const [message, setMessage] = useState('');
   const [selectedType, setSelectedType] = useState<ContactType>('autre');
   const [isSending, setIsSending] = useState(false);
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'error'>('idle');
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const placeholderMessage = `Bonjour Arnaud,
 
@@ -89,16 +93,21 @@ Mes délais éventuels :`;
     setMessage(content);
     setSelectedType(type);
     setStatus('idle');
+    setIsExpanded(true);
   };
 
   const handleMessageChange = (value: string) => {
     setMessage(value);
     if (status !== 'idle') setStatus('idle');
+    if (value.trim().length > 0 && !isExpanded) {
+      setIsExpanded(true);
+    }
   };
 
   const handleSendEmail = async () => {
     if (!message.trim()) {
       setStatus('error');
+      setIsExpanded(true);
       return;
     }
 
@@ -121,9 +130,7 @@ Mes délais éventuels :`;
         throw new Error('Erreur envoi');
       }
 
-      setStatus('success');
-      setMessage('');
-      setSelectedType('autre');
+      router.push('/contact/confirmation');
     } catch (error) {
       console.error(error);
       setStatus('error');
@@ -185,9 +192,12 @@ Mes délais éventuels :`;
                 id="project-message"
                 value={message}
                 onChange={(e) => handleMessageChange(e.target.value)}
-                rows={10}
+                onFocus={() => setIsExpanded(true)}
+                rows={isExpanded ? 10 : 5}
                 placeholder={placeholderMessage}
-                className="w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-5 py-5 text-sm leading-7 text-ink outline-none transition duration-200 placeholder:text-slate/70 focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8"
+                className={`w-full resize-none rounded-[28px] border border-[#9db4ee] bg-white/78 px-5 py-5 text-sm leading-7 text-ink outline-none transition-all duration-300 placeholder:text-slate/70 focus:border-[#2563eb] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10 sm:px-7 sm:py-7 sm:text-base sm:leading-8 ${
+                  isExpanded ? 'min-h-[320px]' : 'min-h-[170px]'
+                }`}
               />
             </div>
 
@@ -201,14 +211,6 @@ Mes délais éventuels :`;
                 {isSending ? 'Envoi en cours...' : 'Envoyer votre message'}
               </button>
             </div>
-
-            {status === 'success' && (
-              <div className="mt-5 flex justify-center">
-                <div className="rounded-full border border-[#cfe0ff] bg-[#f4f8ff] px-5 py-2 text-sm text-[#2563eb]">
-                  Votre message a bien été envoyé.
-                </div>
-              </div>
-            )}
 
             {status === 'error' && (
               <div className="mt-5 flex justify-center">
