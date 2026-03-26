@@ -46,7 +46,7 @@ export function PricingSection() {
           <span className="section-eyebrow">Tarifs & devis</span>
 
 <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-  Une approche claire, du cadrage à un système complet
+ Des formats clairs selon votre besoin
 </h2>
 
 <p className="mt-5 text-base leading-8 text-slate sm:text-lg">
