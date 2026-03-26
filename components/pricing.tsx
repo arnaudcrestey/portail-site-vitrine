@@ -45,15 +45,14 @@ export function PricingSection() {
         <div className="mx-auto max-w-3xl text-center">
           <span className="section-eyebrow">Tarifs & devis</span>
 
-          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-            Des formats clairs selon le niveau de besoin
-          </h2>
+<h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+  Une approche claire, du cadrage à un système complet
+</h2>
 
-          <p className="mt-5 text-base leading-8 text-slate sm:text-lg">
-            Chaque projet n’a pas le même niveau de complexité. Je propose donc
-            des formats cadrés avec prix repère, ainsi que des accompagnements
-            sur devis pour les demandes plus sur mesure.
-          </p>
+<p className="mt-5 text-base leading-8 text-slate sm:text-lg">
+  Selon votre situation, l’enjeu peut être de clarifier, de structurer ou de déployer un dispositif complet. 
+  Chaque niveau correspond à un besoin précis et à un degré d’accompagnement adapté.
+</p>
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3">
