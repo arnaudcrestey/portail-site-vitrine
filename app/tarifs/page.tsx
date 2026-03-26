@@ -55,9 +55,9 @@ export default function TarifsPage() {
             Des formats clairs selon votre besoin
           </h1>
 
-          <p className="mt-6 text-base leading-8 text-slate sm:text-lg">
-            Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous faire avancer concrètement.
-          </p>
+          <p className="mt-6 whitespace-nowrap text-sm text-slate sm:text-base md:text-lg">
+  Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous faire avancer concrètement.
+</p>
         </div>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
@@ -72,9 +72,9 @@ export default function TarifsPage() {
                 <div className="flex items-start justify-between gap-4">
                   <h2 className="text-xl font-semibold text-ink">{item.title}</h2>
                   {item.featured ? (
-                    <span className="rounded-full bg-ink/5 px-3 py-1 text-xs font-semibold text-ink">
-                      Recommandé
-                    </span>
+                    <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+  Recommandé
+</span>
                   ) : null}
                 </div>
 
@@ -148,7 +148,7 @@ export default function TarifsPage() {
               href="/contact"
               className="mt-6 inline-flex items-center justify-center rounded-full bg-[#2f6df6] px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:opacity-95"
             >
-              Clarifier mon projet
+              Parler de mon projet
             </Link>
           </Surface>
         </div>
