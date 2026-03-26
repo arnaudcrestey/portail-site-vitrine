@@ -99,13 +99,12 @@ export function PricingSection() {
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-3xl">
                 <h3 className="text-xl font-semibold text-ink sm:text-2xl">
-                  Besoin plus spécifique ?
-                </h3>
-                <p className="mt-3 text-sm leading-7 text-slate sm:text-base">
-                  Un devis précis peut être établi selon le niveau de
-                  personnalisation, les intégrations nécessaires et l’ampleur du
-                  dispositif à concevoir.
-                </p>
+  Un besoin plus spécifique ?
+</h3>
+
+<p className="mt-3 text-sm leading-7 text-slate sm:text-base">
+  Chaque activité a ses spécificités. Un échange permet de définir le dispositif le plus juste pour votre situation, en fonction de vos objectifs et de votre contexte.
+</p>
               </div>
 
               <Link
