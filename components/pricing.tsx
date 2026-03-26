@@ -6,7 +6,7 @@ const pricingItems = [
     title: 'Cadrage stratégique',
     price: 'À partir de 290 €',
     description:
-      'Clarifier le besoin, l’angle, le point d’entrée pertinent et la logique de conversion avant toute conception.',
+    'Un point clair pour comprendre ce qui doit être structuré, priorisé et activé en premier.',
     details: [
       'Analyse du besoin',
       'Recommandation claire',
@@ -17,7 +17,7 @@ const pricingItems = [
     title: 'Point d’entrée sur mesure',
     price: 'À partir de 1 200 €',
     description:
-      'Conception d’un dispositif digital pensé pour attirer l’attention, engager le visiteur et générer des prises de contact qualifiées.',
+  'Le dispositif qui commence à générer des prises de contact qualifiées en structurant votre expertise.',
     details: [
       'Conception du point d’entrée',
       'Structure du parcours',
@@ -29,7 +29,7 @@ const pricingItems = [
     title: 'Système complet',
     price: 'Sur devis',
     description:
-      'Conception d’un dispositif plus global avec structure, automatisation, intégration et cohérence d’ensemble.',
+  'Une structure complète pensée pour soutenir votre activité dans la durée, avec cohérence et efficacité.',
     details: [
       'Point d’entrée + parcours',
       'Automatisation',
