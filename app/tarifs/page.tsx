@@ -129,11 +129,11 @@ export default function TarifsPage() {
                 </h2>
 
                 <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
-                 Chaque activité, chaque contexte mérite une approche adaptée.
+                 Chaque situation mérite d’être comprise avec justesse.
                 </p>
 
                 <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
-                  Un échange permet de poser les choses clairement et de définir ce qui est pertinent à mettre en place, simplement et efficacement.
+                 Un échange permet de clarifier et de définir la bonne direction
                 </p>
               </div>
 
