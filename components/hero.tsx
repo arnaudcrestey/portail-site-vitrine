@@ -27,12 +27,17 @@ export function HomeHero() {
             </ButtonLink>
           </div>
 
-        <p className="mt-4 max-w-2xl text-sm leading-6 text-slate/80 sm:text-[15px] sm:leading-7">
-  <span className="block sm:inline">Diagnostics interactifs</span>
-  <span className="hidden sm:inline"> • </span>
-  <span className="block sm:inline">Parcours utilisateurs</span>
-  <span className="hidden sm:inline"> • </span>
-  <span className="block sm:inline">Systèmes automatisés</span>
+       <p className="mt-4 text-sm leading-6 text-slate/80 sm:text-[15px] sm:leading-7">
+  <span className="block text-center sm:hidden">
+    <span className="inline-block text-center">
+      <span className="block">Diagnostics interactifs · Parcours utilisateurs</span>
+      <span className="block">Systèmes automatisés</span>
+    </span>
+  </span>
+
+  <span className="hidden sm:block max-w-2xl">
+    Diagnostics interactifs • Parcours utilisateurs • Systèmes automatisés
+  </span>
 </p>
 
           <dl className="mt-10 grid gap-4 sm:grid-cols-3">
