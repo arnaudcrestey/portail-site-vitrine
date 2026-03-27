@@ -147,7 +147,7 @@ export default function TarifsPage() {
               href="/contact"
               className="mt-6 inline-flex items-center justify-center rounded-full bg-[#2f6df6] px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:opacity-95"
             >
-              Clarifier mon projet
+              Parler de mon projet
             </Link>
           </Surface>
         </div>
