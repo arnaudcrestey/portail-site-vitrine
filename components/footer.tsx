@@ -62,31 +62,37 @@ export function Footer() {
               </h3>
 
               <nav className="mt-5 flex flex-col items-center gap-4 md:items-start">
-                <Link
-                  href="/"
-                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
-                >
-                  Accueil
-                </Link>
-                <Link
-                  href="/systeme"
-                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
-                >
-                  Le système
-                </Link>
-                <Link
-                  href="/concepts"
-                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
-                >
-                  Concepts
-                </Link>
-                <Link
-                  href="/a-propos"
-                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
-                >
-                  À propos
-                </Link>
-              </nav>
+  <Link
+    href="/"
+    className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+  >
+    Accueil
+  </Link>
+  <Link
+    href="/systeme"
+    className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+  >
+    Le système
+  </Link>
+  <Link
+    href="/concepts"
+    className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+  >
+    Concepts
+  </Link>
+  <Link
+    href="/a-propos"
+    className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+  >
+    À propos
+  </Link>
+  <Link
+    href="/tarifs"
+    className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+  >
+    Tarifs
+  </Link>
+</nav>
             </div>
           </div>
 
