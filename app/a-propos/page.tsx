@@ -14,11 +14,9 @@ export default function AboutPage() {
         eyebrow="À propos"
         title="Je conçois des systèmes numériques qui transforment une expertise en prises de contact qualifiées."
         description={"Mon travail consiste à mettre en valeur une activité pour la rendre plus visible.\nDes dispositifs simples, structurés et crédibles, pensés pour capter l’attention et engager un premier échange."}
-Des dispositifs simples, structurés et crédibles, pensés pour capter l’attention et engager un premier échange.`}
         primaryCta={{ href: '/contact', label: 'Parler de votre projet' }}
       />
 
-      {/* POSITIONNEMENT + MÉTHODE */}
       <section className="section-spacing pt-6">
         <div className="container-layout grid gap-5 sm:gap-6 lg:grid-cols-2">
           <Surface className="border border-black/5 bg-white p-6 sm:p-8">
@@ -62,7 +60,6 @@ Des dispositifs simples, structurés et crédibles, pensés pour capter l’atte
         </div>
       </section>
 
-      {/* PARCOURS */}
       <section className="section-spacing pt-0">
         <div className="container-layout">
           <Surface className="border border-black/5 bg-white p-6 sm:p-8 md:p-10">
@@ -101,7 +98,6 @@ Des dispositifs simples, structurés et crédibles, pensés pour capter l’atte
         </div>
       </section>
 
-      {/* 3 BLOCS */}
       <section className="section-spacing pt-0">
         <div className="container-layout grid gap-5 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
           <Surface className="border border-black/5 bg-white p-6 sm:p-8">
@@ -148,7 +144,6 @@ Des dispositifs simples, structurés et crédibles, pensés pour capter l’atte
         </div>
       </section>
 
-      {/* POUR QUI */}
       <section className="section-spacing pt-0 pb-16">
         <div className="container-layout">
           <Surface className="border border-black/5 bg-white p-6 sm:p-8 md:p-10">
