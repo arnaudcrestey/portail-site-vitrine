@@ -57,9 +57,7 @@ export default function SystemePage() {
               </p>
 
               <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
-                Un point d’entrée est un dispositif ciblé conçu pour capter une situation précise,
-                engager la personne au bon niveau, puis l’orienter vers un système central plus
-                clair, plus cohérent et plus actif.
+               Un point d’entrée est un dispositif conçu pour capter une situation précise, engager la personne et l’orienter vers une solution adaptée.
               </p>
             </div>
 
