@@ -1,6 +1,5 @@
 import { DeviceCard } from '@/components/cards';
 import { HomeHero } from '@/components/hero';
-import { PricingSection } from '@/components/pricing';
 import { Surface } from '@/components/ui';
 import { deviceExamples } from '@/data/site';
 
