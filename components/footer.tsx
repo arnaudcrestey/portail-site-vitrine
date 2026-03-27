@@ -87,10 +87,16 @@ export function Footer() {
                   À propos
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/politique-de-confidentialite"
                   className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
                 >
-                  Contact
+                  Confidentialité
+                </Link>
+                <Link
+                  href="/politique-de-cookies"
+                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
+                >
+                  Cookies
                 </Link>
               </nav>
             </div>
@@ -136,8 +142,11 @@ export function Footer() {
               <Link href="/mentions-legales" className="transition hover:text-[#1d4ed8]">
                 Mentions légales
               </Link>
-              <Link href="/contact" className="transition hover:text-[#1d4ed8]">
-                Contact
+              <Link href="/politique-de-confidentialite" className="transition hover:text-[#1d4ed8]">
+                Politique de confidentialité
+              </Link>
+              <Link href="/politique-de-cookies" className="transition hover:text-[#1d4ed8]">
+                Politique de cookies
               </Link>
             </div>
           </div>
