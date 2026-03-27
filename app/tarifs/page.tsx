@@ -62,12 +62,12 @@ export default function TarifsPage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate sm:text-lg">
-            Du besoin le plus simple au dispositif complet, chaque format est pensé pour
-            vous faire avancer concrètement, avec clarté, cohérence et utilité réelle.
+            Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous
+            faire avancer concrètement, avec clarté, cohérence et utilité réelle.
           </p>
         </div>
 
-                <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {pricingItems.map((item) => (
             <Surface
               key={item.title}
@@ -138,9 +138,13 @@ export default function TarifsPage() {
           <div className="lg:shrink-0">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(59,99,243,0.28)] transition hover:translate-y-[-1px] hover:shadow-[0_20px_44px_rgba(59,99,243,0.34)]"
+              className="inline-flex items-center justify-center rounded-full bg-[#2f6df6] px-7 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(59,99,243,0.28)] transition hover:translate-y-[-1px] hover:shadow-[0_20px_44px_rgba(59,99,243,0.34)]"
             >
               Parler de votre projet
             </Link>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
