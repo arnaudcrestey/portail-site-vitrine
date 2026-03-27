@@ -15,7 +15,7 @@ export default function ConceptsPage() {
       <PageHero
         eyebrow="Laboratoire"
         title="Des points d’entrée conçus pour transformer une expertise en demandes qualifiées"
-        description="Conçus pour les professionnels de l’accompagnement, du conseil et du droit, ces points d’entrée permettent de capter des situations réelles, d’apporter une première lecture utile et d’ouvrir vers une prise de contact qualifiée."
+        description="Conçus pour les professionnels de l’accompagnement, du conseil et du droit, ces points d’entrée permettent à leurs futurs clients de comprendre rapidement leur situation, puis de passer naturellement à un premier échange."
         primaryCta={{ href: '#concepts-grid', label: 'Découvrir les concepts' }}
         secondaryCta={{ href: '/contact', label: 'Me parler d’un projet digital' }}
       />
