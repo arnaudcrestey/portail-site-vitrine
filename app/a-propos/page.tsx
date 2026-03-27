@@ -4,7 +4,7 @@ import { Surface } from '@/components/ui';
 export const metadata = {
   title: 'À propos',
   description:
-    'Arnaud Crestey conçoit des systèmes numériques qui rendent une expertise visible, compréhensible et la transforment en prises de contact qualifiées.',
+    'Arnaud Crestey conçoit des systèmes numériques qui mettent une expertise en valeur et la transforment en prises de contact qualifiées.',
 };
 
 export default function AboutPage() {
@@ -13,15 +13,10 @@ export default function AboutPage() {
       <PageHero
         eyebrow="À propos"
         title="Je conçois des systèmes numériques qui transforment une expertise en prises de contact qualifiées."
-        description="Mon travail consiste à mettre en valeur une activité pour la rendre plus visible."
+        description={`Mon travail consiste à mettre en valeur une activité pour la rendre plus visible.
+Des dispositifs simples, structurés et crédibles, pensés pour capter l’attention et engager un premier échange.`}
         primaryCta={{ href: '/contact', label: 'Parler de votre projet' }}
       />
-
-      <div className="container-layout -mt-6 pb-6 sm:-mt-8">
-        <p className="max-w-3xl text-base leading-8 text-slate sm:text-lg">
-          Des dispositifs simples, structurés et crédibles, pensés pour capter l’attention et engager un premier échange.
-        </p>
-      </div>
 
       {/* POSITIONNEMENT + MÉTHODE */}
       <section className="section-spacing pt-6">
@@ -40,8 +35,8 @@ export default function AboutPage() {
             </p>
 
             <p className="mt-3 text-base leading-7 text-slate sm:leading-8">
-              Des dispositifs capables de capter l’attention, poser les bonnes questions
-              et transformer une expertise en demande concrète.
+              Des dispositifs capables de capter l’attention, de poser les bonnes
+              questions et de transformer une expertise en demande concrète.
             </p>
           </Surface>
 
@@ -60,7 +55,8 @@ export default function AboutPage() {
             </p>
 
             <p className="mt-3 text-base leading-7 text-slate sm:leading-8">
-              Chaque élément est pensé pour être compris immédiatement et utilisé concrètement.
+              Chaque élément est pensé pour être compris immédiatement et utilisé
+              concrètement.
             </p>
           </Surface>
         </div>
@@ -76,26 +72,29 @@ export default function AboutPage() {
               </h2>
 
               <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                Pendant plus de 25 ans, j’ai évolué dans des environnements humains exigeants,
-                où comprendre une situation fait toute la différence.
+                Pendant plus de 25 ans, j’ai évolué dans des environnements humains
+                exigeants, où comprendre une situation fait toute la différence.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                J’y ai développé une forte capacité d’écoute, d’analyse et de mise en clarté.
+                J’y ai développé une forte capacité d’écoute, d’analyse et de mise en
+                clarté.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                Aujourd’hui, j’applique cette exigence au numérique. Je ne sépare pas la technique,
-                la compréhension des personnes et la qualité de présentation.
+                Aujourd’hui, j’applique cette exigence au numérique. Je ne sépare pas la
+                technique, la compréhension des personnes et la qualité de présentation.
               </p>
 
               <p className="mt-4 text-base font-medium leading-7 text-ink sm:leading-8">
-                Mon objectif est simple : rendre une activité immédiatement lisible et accessible.
+                Mon objectif est simple : concevoir des systèmes utiles, lisibles et
+                cohérents.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                Je ne cherche pas à faire du digital pour faire moderne. Je conçois des systèmes utiles,
-                pensés pour orienter, clarifier et faciliter la prise de décision.
+                Je ne cherche pas à faire du digital pour faire moderne. Je conçois des
+                systèmes pensés pour orienter, clarifier et faciliter la prise de
+                décision.
               </p>
             </div>
           </Surface>
@@ -111,8 +110,9 @@ export default function AboutPage() {
             </h3>
 
             <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-              Des points d’entrée, mini-sites, diagnostics interactifs et parcours digitaux
-              pensés pour capter l’attention et déclencher un premier contact qualifié.
+              Des points d’entrée, mini-sites, diagnostics interactifs et parcours
+              digitaux pensés pour capter l’attention et déclencher un premier contact
+              qualifié.
             </p>
           </Surface>
 
@@ -122,8 +122,8 @@ export default function AboutPage() {
             </h3>
 
             <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-              Rendre une expertise visible, compréhensible et engageante,
-              sans complexité inutile.
+              Concevoir des dispositifs visibles, compréhensibles et engageants, sans
+              complexité inutile.
             </p>
 
             <p className="mt-3 text-base leading-7 text-slate sm:leading-8">
@@ -137,11 +137,12 @@ export default function AboutPage() {
             </h3>
 
             <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-              Une activité plus claire, plus crédible et plus sollicitée.
+              Une activité mieux présentée, plus crédible et plus sollicitée.
             </p>
 
             <p className="mt-3 text-base leading-7 text-slate sm:leading-8">
-              Un système qui travaille pour vous en continu et facilite la prise de contact.
+              Un système qui travaille pour vous en continu et facilite la prise de
+              contact.
             </p>
           </Surface>
         </div>
@@ -157,18 +158,20 @@ export default function AboutPage() {
               </h2>
 
               <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                J’interviens principalement auprès de professionnels dont l’activité repose sur l’humain :
-                accompagnement, conseil, juridique, formation, orientation.
+                J’interviens principalement auprès de professionnels dont l’activité
+                repose sur l’humain : accompagnement, conseil, juridique, formation,
+                orientation.
               </p>
 
               <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                Des métiers où la valeur est réelle… mais souvent difficile à rendre visible,
-                compréhensible et différenciante.
+                Des métiers où la valeur est réelle, mais pas toujours facile à présenter
+                de façon claire, solide et différenciante.
               </p>
 
               <p className="mt-6 text-base font-medium leading-7 text-ink sm:leading-8">
-                Si vous sentez que votre activité n’est pas comprise à sa juste valeur,
-                c’est probablement le bon moment pour en parler.
+                Si vous sentez qu’il y a un écart entre la valeur de votre activité et la
+                manière dont elle est perçue, c’est probablement le bon moment pour en
+                parler.
               </p>
             </div>
           </Surface>
