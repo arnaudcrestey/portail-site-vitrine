@@ -86,18 +86,6 @@ export function Footer() {
                 >
                   À propos
                 </Link>
-                <Link
-                  href="/politique-de-confidentialite"
-                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
-                >
-                  Confidentialité
-                </Link>
-                <Link
-                  href="/politique-de-cookies"
-                  className={`${textFont.className} text-[14px] text-[#475569] transition hover:text-[#1d4ed8] sm:text-[15px]`}
-                >
-                  Cookies
-                </Link>
               </nav>
             </div>
           </div>
