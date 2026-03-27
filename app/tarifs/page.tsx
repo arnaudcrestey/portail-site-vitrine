@@ -121,28 +121,32 @@ export default function TarifsPage() {
         </div>
 
         <div className="mt-10 rounded-[32px] border border-white/60 bg-white/55 px-8 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] backdrop-blur sm:px-10 lg:px-12">
-  <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
-    <div className="max-w-[720px]">
-      <h3 className="text-[34px] font-semibold tracking-tight text-ink sm:text-[38px]">
-        Parlons de votre situation
-      </h3>
+          <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
+            <div className="max-w-[720px]">
+              <h3 className="text-[34px] font-semibold tracking-tight text-ink sm:text-[38px]">
+                Parlons de votre situation
+              </h3>
 
-      <p className="mt-6 max-w-[560px] text-base leading-8 text-slate sm:text-[17px]">
-        Chaque situation mérite d’être comprise avec justesse.
-      </p>
+              <p className="mt-6 max-w-[560px] text-base leading-8 text-slate sm:text-[17px]">
+                Chaque situation mérite d’être comprise avec justesse.
+              </p>
 
-      <p className="mt-4 max-w-[620px] text-base leading-8 text-slate sm:text-[17px]">
-        Un échange permet de clarifier votre situation et de définir la bonne direction.
-      </p>
-    </div>
+              <p className="mt-4 max-w-[620px] text-base leading-8 text-slate sm:text-[17px]">
+                Un échange permet de clarifier votre situation et de définir la bonne direction.
+              </p>
+            </div>
 
-    <div className="lg:shrink-0">
-      <Link
-        href="/contact"
-        className="inline-flex items-center justify-center rounded-full bg-[#2f6df6] px-7 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(59,99,243,0.28)] transition hover:translate-y-[-1px] hover:shadow-[0_20px_44px_rgba(59,99,243,0.34)]"
-      >
-        Parler de votre projet
-      </Link>
-    </div>
-  </div>
-</div>
+            <div className="lg:shrink-0">
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-full bg-[#2f6df6] px-7 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(59,99,243,0.28)] transition hover:translate-y-[-1px] hover:shadow-[0_20px_44px_rgba(59,99,243,0.34)]"
+              >
+                Parler de votre projet
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
