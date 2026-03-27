@@ -10,13 +10,19 @@ export const metadata = {
 export default function AboutPage() {
   return (
     <div className="bg-[#F5F7FB]">
-      <PageHero
-        eyebrow="À propos"
-        title="Je conçois des systèmes numériques qui transforment une expertise en prises de contact qualifiées."
-        description="Mon travail consiste à mettre en valeur une activité pour la rendre plus visible. Des dispositifs simples, structurés et crédibles, pensés pour capter l’attention et engager un premier échange."
-        primaryCta={{ href: '/contact', label: 'Parler de votre projet' }}
-      />
-
+  <PageHero
+    eyebrow="À propos"
+    title="Je conçois des systèmes numériques qui transforment une expertise en prises de contact qualifiées."
+    description={
+      <>
+        Mon travail consiste à mettre en valeur une activité pour la rendre plus visible.
+        <br />
+        Des dispositifs simples, structurés et crédibles, pensés pour capter l’attention et engager un premier échange.
+      </>
+    }
+    primaryCta={{ href: '/contact', label: 'Parler de votre projet' }}
+  />
+</div>
       {/* POSITIONNEMENT + MÉTHODE */}
       <section className="section-spacing pt-6">
         <div className="container-layout grid gap-5 sm:gap-6 lg:grid-cols-2">
