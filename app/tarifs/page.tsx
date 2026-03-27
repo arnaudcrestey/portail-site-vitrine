@@ -125,18 +125,15 @@ export default function TarifsPage() {
             <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
               <div className="max-w-3xl">
                 <h2 className="text-2xl font-semibold tracking-tight text-ink">
-                  Un besoin plus spécifique&nbsp;?
+                  Parlons de votre situation
                 </h2>
 
                 <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
-                  Certaines demandes nécessitent un cadrage plus large : adaptation métier,
-                  plusieurs points d’entrée, automatisations, refonte partielle ou logique
-                  d’ensemble plus avancée.
+                 Chaque activité, chaque contexte mérite une approche adaptée.
                 </p>
 
                 <p className="mt-4 text-sm leading-7 text-slate sm:text-base">
-                  Dans ce cas, un échange permet de définir le dispositif le plus juste pour
-                  votre situation, sans surdimensionner inutilement la réponse.
+                  Un échange permet de poser les choses clairement et de définir ce qui est pertinent à mettre en place, simplement et efficacement.
                 </p>
               </div>
 
