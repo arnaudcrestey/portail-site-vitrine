@@ -2,7 +2,7 @@
 
 import type { ReactNode } from "react";
 import { usePathname } from "next/navigation";
-import { Footer } from "@/components/footer";
+import Footer from "@/components/footer";
 import { Header } from "@/components/header";
 
 export function SiteChrome({ children }: { children: ReactNode }) {
