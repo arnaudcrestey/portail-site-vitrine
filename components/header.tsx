@@ -15,7 +15,7 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-white/70 bg-white/78 backdrop-blur-xl">
       <div className="container-layout flex h-20 items-center justify-between gap-6">
         <Link
-          href="/"
+          href="/home"
           className="group flex shrink-0 flex-col items-center text-center leading-tight"
           aria-label="Retour à l’accueil"
         >
@@ -29,12 +29,13 @@ export function Header() {
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Navigation principale">
           {navigation.map((item) => {
-            const active = pathname === item.href;
+            const targetHref = item.href === '/' ? '/home' : item.href;
+            const active = pathname === targetHref;
 
             return (
               <Link
                 key={item.href}
-                href={item.href}
+                href={targetHref}
                 className={`rounded-full px-4 py-2 text-sm font-medium transition duration-300 ease-premium ${
                   active
                     ? 'bg-ink text-white shadow-card'
@@ -74,12 +75,13 @@ export function Header() {
         <div className="border-t border-line lg:hidden">
           <div className="container-layout flex flex-col gap-2 py-4">
             {navigation.map((item) => {
-              const active = pathname === item.href;
+              const targetHref = item.href === '/' ? '/home' : item.href;
+              const active = pathname === targetHref;
 
               return (
                 <Link
                   key={item.href}
-                  href={item.href}
+                  href={targetHref}
                   onClick={() => setOpen(false)}
                   className={`rounded-2xl px-4 py-3 text-sm font-medium ${
                     active ? 'bg-ink text-white' : 'bg-white/70 text-ink'
