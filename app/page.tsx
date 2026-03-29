@@ -20,7 +20,7 @@ export default function EntryPage() {
 
             <Link
               href="/home"
-              className="group mt-10 inline-flex min-w-[220px] items-center justify-center rounded-[22px] border border-[#d8dff0] bg-[linear-gradient(180deg,#fbfcff_0%,#eef1fa_100%)] px-10 py-5 font-serif text-[2.15rem] leading-none tracking-[-0.02em] text-[#223153] shadow-[0_18px_34px_rgba(108,120,164,0.18),0_28px_54px_rgba(170,177,210,0.18),inset_0_1px_0_rgba(255,255,255,0.95)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_40px_rgba(108,120,164,0.2),0_34px_60px_rgba(170,177,210,0.22),inset_0_1px_0_rgba(255,255,255,1)] focus:outline-none focus:ring-2 focus:ring-[#c9d3ee] focus:ring-offset-2 focus:ring-offset-[#eef0f7] sm:mt-12 sm:min-w-[280px] sm:px-14 sm:py-6 sm:text-[2.9rem]"
+              className="mt-10 inline-flex min-w-[220px] items-center justify-center rounded-[22px] border border-[#d8dff0] bg-[linear-gradient(180deg,#fbfcff_0%,#eef1fa_100%)] px-10 py-5 font-serif text-[2.15rem] leading-none tracking-[-0.02em] text-[#223153] shadow-[0_18px_34px_rgba(108,120,164,0.18),0_28px_54px_rgba(170,177,210,0.18),inset_0_1px_0_rgba(255,255,255,0.95)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_22px_40px_rgba(108,120,164,0.2),0_34px_60px_rgba(170,177,210,0.22),inset_0_1px_0_rgba(255,255,255,1)] focus:outline-none focus:ring-2 focus:ring-[#c9d3ee] focus:ring-offset-2 focus:ring-offset-[#eef0f7] sm:mt-12 sm:min-w-[280px] sm:px-14 sm:py-6 sm:text-[2.9rem]"
             >
               Entrer
             </Link>
