@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 
 import './globals.css';
-import { Footer } from '@/components/footer';
-import { Header } from '@/components/header';
+import { SiteChrome } from '@/components/site-chrome';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://arnaudcrestey.com'),
@@ -34,9 +33,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="fr">
       <body>
-        <Header />
-        <main>{children}</main>
-        <Footer />
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );
