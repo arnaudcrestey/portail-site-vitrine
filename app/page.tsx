@@ -1,44 +1,76 @@
 import Link from "next/link";
+import { Cormorant_Garamond } from "next/font/google";
+
+const serif = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  display: "swap",
+});
 
 export default function EntryPage() {
   return (
-    <main className="relative min-h-screen flex items-center justify-center bg-[#eef0f7] text-[#1f2740] px-4">
-      
-      {/* Background doux */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_38%,rgba(255,255,255,0.98)_0%,rgba(241,243,250,0.96)_50%,rgba(232,235,246,0.98)_100%)]" />
+    <main className="relative min-h-screen overflow-hidden bg-[#eef0f7] text-[#1f2740]">
+      {/* Fond principal */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(255,255,255,0.98)_0%,rgba(245,246,251,0.96)_34%,rgba(236,239,248,0.97)_68%,rgba(230,234,245,0.99)_100%)]" />
 
-      <div className="relative z-10 w-full max-w-[700px] text-center">
-        
-        {/* AC */}
-        <div className="font-serif text-[3.2rem] tracking-[-0.06em] text-[#1f2740] sm:text-[4.8rem] md:text-[6.5rem]">
-          AC
+      {/* Voile lumineux central */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.72)_0%,rgba(255,255,255,0.18)_36%,rgba(255,255,255,0)_68%)]" />
+
+      {/* Brume veloutée bas de page */}
+      <div className="absolute inset-x-0 bottom-[-8%] h-[34vh] bg-[radial-gradient(ellipse_at_center,rgba(198,206,234,0.36)_0%,rgba(220,225,243,0.16)_42%,rgba(238,241,248,0)_78%)] blur-2xl" />
+
+      {/* Halo latéral subtil */}
+      <div className="absolute right-[-8%] top-0 h-full w-[30%] bg-[linear-gradient(270deg,rgba(206,212,232,0.22)_0%,rgba(220,225,241,0.08)_38%,rgba(255,255,255,0)_100%)]" />
+
+      {/* Texture très légère */}
+      <div className="absolute inset-0 opacity-[0.08] [background-image:linear-gradient(rgba(255,255,255,0.45)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.35)_1px,transparent_1px)] [background-size:120px_120px]" />
+
+      <section className="relative z-10 flex min-h-screen items-center justify-center px-5 py-10 sm:px-6 sm:py-12">
+        <div className="w-full max-w-[920px]">
+          <div className="mx-auto flex min-h-[78vh] max-w-[900px] flex-col items-center justify-center text-center">
+            {/* Bloc signature */}
+            <div className="w-full max-w-[760px]">
+              <div
+                className={`${serif.className} text-[#223256] text-[clamp(4.7rem,10vw,8.6rem)] font-medium leading-none tracking-[-0.075em]`}
+              >
+                AC
+              </div>
+
+              <p
+                className={`${serif.className} mt-2 text-[clamp(1.95rem,4vw,3.25rem)] font-normal leading-none tracking-[-0.03em] text-[#4b5d86]`}
+              >
+                arnaudcrestey.com
+              </p>
+
+              <div className="mx-auto mt-8 h-px w-[120px] bg-[linear-gradient(90deg,rgba(198,207,228,0)_0%,rgba(198,207,228,0.95)_50%,rgba(198,207,228,0)_100%)] sm:mt-9 sm:w-[152px]" />
+
+              {/* Bouton premium */}
+              <div className="mt-10 sm:mt-12">
+                <Link
+                  href="/home"
+                  className={`${serif.className} group relative inline-flex min-w-[220px] items-center justify-center rounded-[22px] border border-[#d7ddef] bg-[linear-gradient(180deg,rgba(255,255,255,0.9)_0%,rgba(244,246,252,0.88)_100%)] px-10 py-4 text-[clamp(2rem,3.2vw,2.6rem)] font-medium leading-none tracking-[-0.025em] text-[#25345b] shadow-[0_24px_46px_rgba(86,98,140,0.14),0_8px_18px_rgba(86,98,140,0.08),inset_0_1px_0_rgba(255,255,255,0.92)] backdrop-blur-[6px] transition-all duration-500 hover:-translate-y-[2px] hover:shadow-[0_28px_56px_rgba(86,98,140,0.16),0_12px_24px_rgba(86,98,140,0.11),inset_0_1px_0_rgba(255,255,255,0.96)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#c9d2eb] focus-visible:ring-offset-2 focus-visible:ring-offset-[#eef0f7]`}
+                >
+                  <span className="absolute inset-[1px] rounded-[21px] bg-[linear-gradient(180deg,rgba(255,255,255,0.55)_0%,rgba(255,255,255,0.18)_100%)] opacity-80" />
+                  <span className="absolute -bottom-5 left-1/2 h-8 w-[72%] -translate-x-1/2 rounded-full bg-[rgba(142,154,193,0.24)] blur-xl transition-all duration-500 group-hover:w-[76%] group-hover:opacity-90" />
+                  <span className="relative z-10">Entrer</span>
+                </Link>
+              </div>
+            </div>
+
+            {/* Baseline */}
+            <div className="mt-16 w-full max-w-[760px] sm:mt-20 md:mt-24">
+              <p
+                className={`${serif.className} mx-auto max-w-[820px] text-balance text-[clamp(1.15rem,2.25vw,2rem)] leading-[1.6] tracking-[-0.015em] text-[#2b3d66]/95`}
+              >
+                Des systèmes numériques qui attirent,
+                <br className="hidden sm:block" />
+                <span className="sm:hidden"> </span>
+                engagent et transforment des visiteurs en clients.
+              </p>
+            </div>
+          </div>
         </div>
-
-        {/* Domaine */}
-        <div className="mt-3 font-serif text-[1.4rem] text-[#4b5e87] sm:text-[1.9rem] md:text-[2.3rem]">
-          arnaudcrestey.com
-        </div>
-
-        {/* Ligne */}
-        <div className="mx-auto mt-5 h-px w-14 bg-[#cfd7ea]" />
-
-        {/* Bouton discret (clé ici) */}
-        <Link
-          href="/home"
-          className="mt-8 inline-flex items-center justify-center rounded-[14px] border border-[#d9e1f2] bg-white/60 px-8 py-3 font-serif text-[1.2rem] text-[#1f2740] shadow-[0_6px_16px_rgba(31,39,64,0.08)] backdrop-blur transition-all duration-300 hover:-translate-y-[1px] hover:shadow-[0_10px_24px_rgba(31,39,64,0.12)] sm:text-[1.35rem] md:text-[1.5rem]"
-        >
-          Entrer
-        </Link>
-
-        {/* Baseline */}
-        <p className="mt-10 font-serif text-[0.95rem] leading-[1.7] text-[#2d426d] sm:text-[1.1rem] md:text-[1.25rem]">
-          Des systèmes numériques qui attirent,
-          <br className="hidden sm:block" />
-          <span className="sm:hidden"> </span>
-          engagent et transforment des visiteurs en clients.
-        </p>
-
-      </div>
+      </section>
     </main>
   );
 }
