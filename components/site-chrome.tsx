@@ -1,20 +1,23 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { usePathname } from "next/navigation";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 
-// Remplace ces imports par les tiens
-import { SiteHeader } from "@/components/site-header";
-import { SiteFooter } from "@/components/site-footer";
-
-export function SiteChrome({ children }: { children: React.ReactNode }) {
+export function SiteChrome({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const isEntryPage = pathname === "/";
 
+  if (isEntryPage) {
+    return <>{children}</>;
+  }
+
   return (
     <>
-      {!isEntryPage && <SiteHeader />}
-      {children}
-      {!isEntryPage && <SiteFooter />}
+      <Header />
+      <main>{children}</main>
+      <Footer />
     </>
   );
 }
