@@ -25,7 +25,12 @@ function buildAutoReplyHtml(firstName?: string) {
 
   return `
     <div style="margin:0;padding:0;background-color:#eef2f8;">
-      <table width="100%" cellspacing="0" cellpadding="0" style="padding:26px 12px;">
+      <table
+        width="100%"
+        cellspacing="0"
+        cellpadding="0"
+        style="border-collapse:collapse;background-color:#eef2f8;padding:26px 12px;"
+      >
         <tr>
           <td align="center">
             <table
@@ -34,6 +39,8 @@ function buildAutoReplyHtml(firstName?: string) {
               cellpadding="0"
               style="
                 max-width:600px;
+                border-collapse:separate;
+                border-spacing:0;
                 background:#ffffff;
                 border:1px solid #dbe3f0;
                 border-radius:20px;
@@ -73,7 +80,7 @@ function buildAutoReplyHtml(firstName?: string) {
               <tr>
                 <td
                   style="
-                    padding:24px 26px 10px 26px;
+                    padding:24px 26px 8px 26px;
                     font-family:Arial,sans-serif;
                     color:#33415c;
                     font-size:15px;
@@ -94,41 +101,24 @@ function buildAutoReplyHtml(firstName?: string) {
                     Je reviens vers vous rapidement avec une réponse claire et structurée.
                   </p>
 
-                  <p style="margin:0 0 16px 0;">
+                  <p style="margin:0 0 22px 0;">
                     Chaque demande est analysée avec attention afin d’apporter une réponse réellement utile.
                   </p>
-                </td>
-              </tr>
 
-              <tr>
-                <td style="padding:6px 26px 0 26px;">
-                  <div style="height:1px;background:#e5ebf5;"></div>
-                </td>
-              </tr>
-
-              <tr>
-                <td style="padding:20px 26px 26px 26px;text-align:center;">
-                  <div
-                    style="
-                      font-family:Arial,sans-serif;
-                      font-size:14px;
-                      color:#5b6b8c;
-                      margin-bottom:10px;
-                    "
-                  >
+                  <p style="margin:0 0 14px 0;color:#5b6b8c;">
                     Bien à vous,
-                  </div>
+                  </p>
 
                   <div
                     style="
                       font-family:Georgia,'Times New Roman',serif;
                       font-size:36px;
+                      line-height:0.95;
                       color:#1f4a8a;
-                      letter-spacing:-0.04em;
-                      margin-bottom:6px;
+                      margin-bottom:8px;
                     "
                   >
-                    AC
+                    <span style="display:inline-block;">A</span><span style="display:inline-block;margin-left:-7px;">C</span>
                   </div>
 
                   <div
@@ -190,9 +180,10 @@ function buildInternalEmailHtml(
           <h2
             style="
               margin:0;
-              font-family:Georgia,'Times New Roman',serif;
-              font-size:34px;
-              line-height:1.15;
+              font-family:Arial,sans-serif;
+              font-size:28px;
+              line-height:1.2;
+              font-weight:700;
               color:#1f2740;
               letter-spacing:-0.02em;
             "
