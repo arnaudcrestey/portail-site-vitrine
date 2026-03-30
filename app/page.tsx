@@ -10,66 +10,72 @@ const serif = Cormorant_Garamond({
 export default function EntryPage() {
   return (
     <main className="relative min-h-screen overflow-hidden bg-[#f5f7fb] text-[#1f2740]">
-      {/* fond global */}
+      {/* Fond global */}
       <div className="absolute inset-0 bg-[#f5f7fb]" />
 
-      {/* halos latéraux doux */}
-      <div className="pointer-events-none absolute left-[-8%] top-0 h-full w-[20%] bg-[linear-gradient(90deg,rgba(223,228,241,0.24)_0%,rgba(245,247,251,0)_100%)]" />
-      <div className="pointer-events-none absolute right-[-8%] top-0 h-full w-[20%] bg-[linear-gradient(270deg,rgba(223,228,241,0.24)_0%,rgba(245,247,251,0)_100%)]" />
+      {/* halos latéraux */}
+      <div className="pointer-events-none absolute left-[-10%] top-0 h-full w-[22%] bg-[linear-gradient(90deg,rgba(223,228,241,0.26)_0%,rgba(245,247,251,0)_100%)]" />
+      <div className="pointer-events-none absolute right-[-10%] top-0 h-full w-[22%] bg-[linear-gradient(270deg,rgba(223,228,241,0.26)_0%,rgba(245,247,251,0)_100%)]" />
+
+      {/* brume haute */}
+      <div className="pointer-events-none absolute inset-x-0 top-[-8%] h-[26vh] bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.50)_0%,rgba(245,247,251,0)_72%)] blur-3xl" />
 
       {/* brume basse */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-[-8%] h-[22vh] bg-[radial-gradient(ellipse_at_center,rgba(220,225,241,0.16)_0%,rgba(245,247,251,0)_74%)] blur-3xl" />
+      <div className="pointer-events-none absolute inset-x-0 bottom-[-10%] h-[28vh] bg-[radial-gradient(ellipse_at_center,rgba(220,225,241,0.18)_0%,rgba(245,247,251,0)_74%)] blur-3xl" />
 
-      <section className="relative z-10 flex min-h-screen items-center justify-center px-4 py-6 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
-        <div className="w-full max-w-[1500px]">
+      <section className="relative z-10 flex min-h-screen items-center justify-center px-4 py-5 sm:px-6 sm:py-8 lg:px-8 lg:py-10">
+        <div className="w-full max-w-[1440px]">
           <div
             className="
-              relative mx-auto w-full max-w-[860px]
-              lg:max-w-[1080px]
-              lg:rounded-[34px]
-              lg:border lg:border-[#d9def8]
-              lg:px-10 lg:py-10
-              lg:shadow-[0_14px_44px_rgba(15,23,42,0.045),inset_0_1px_0_rgba(255,255,255,0.92)]
-              xl:px-12 xl:py-12
+              relative mx-auto w-full max-w-[760px] overflow-hidden rounded-[28px]
+              border border-[#e3e8fb]
+              px-6 py-10
+              shadow-[0_14px_40px_rgba(15,23,42,0.04),inset_0_1px_0_rgba(255,255,255,0.88)]
+              sm:max-w-[820px] sm:rounded-[30px] sm:px-8 sm:py-12
+              lg:max-w-[1080px] lg:rounded-[34px] lg:px-12 lg:py-12
+              xl:px-14 xl:py-14
             "
           >
-            {/* base hero plus claire */}
-            <div className="absolute inset-0 hidden rounded-[34px] lg:block lg:bg-[#f7f8fe]" />
+            {/* base du cadre */}
+            <div className="absolute inset-0 bg-[#f7f8fe]" />
 
-            {/* brillance principale plus forte */}
-            <div className="absolute inset-0 hidden rounded-[34px] lg:block lg:bg-[radial-gradient(circle_at_50%_14%,rgba(255,255,255,0.9)_0%,rgba(255,255,255,0.46)_20%,rgba(255,255,255,0.14)_38%,rgba(255,255,255,0)_62%)]" />
-
-            {/* lumière centrale douce */}
-            <div className="absolute inset-0 hidden rounded-[34px] lg:block lg:bg-[radial-gradient(circle_at_50%_48%,rgba(255,255,255,0.34)_0%,rgba(255,255,255,0.16)_18%,rgba(247,248,254,0)_44%)]" />
-
-            {/* teinte interne hero */}
-            <div className="absolute inset-0 hidden rounded-[34px] lg:block lg:bg-[linear-gradient(180deg,rgba(255,255,255,0.42)_0%,rgba(247,248,254,0.12)_30%,rgba(243,244,251,0.18)_100%)]" />
-
-            {/* contour interne */}
-            <div className="pointer-events-none absolute inset-[1px] hidden rounded-[33px] lg:block lg:border lg:border-[#edf0fd]" />
-
-            {/* reflet haut gauche */}
-            <div className="pointer-events-none absolute left-[14%] top-[7%] hidden h-[12%] w-[18%] rounded-full bg-white/26 blur-3xl lg:block" />
+            {/* lumière générale */}
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.42)_0%,rgba(247,248,254,0.10)_34%,rgba(243,244,251,0.16)_100%)]" />
 
             {/* glow haut centre */}
-            <div className="pointer-events-none absolute left-1/2 top-[10%] hidden h-[20%] w-[34%] -translate-x-1/2 rounded-full bg-white/24 blur-3xl lg:block" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_16%,rgba(255,255,255,0.88)_0%,rgba(255,255,255,0.42)_20%,rgba(255,255,255,0.14)_36%,rgba(255,255,255,0)_60%)]" />
+
+            {/* glow central doux */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_46%,rgba(255,255,255,0.34)_0%,rgba(255,255,255,0.14)_18%,rgba(247,248,254,0)_42%)]" />
+
+            {/* nuance interne */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_65%,rgba(243,244,251,0.42)_0%,rgba(247,248,254,0)_36%)]" />
+
+            {/* reflet latéral léger */}
+            <div className="pointer-events-none absolute left-[10%] top-[8%] h-[12%] w-[18%] rounded-full bg-white/20 blur-3xl" />
+            <div className="pointer-events-none absolute right-[12%] bottom-[16%] h-[14%] w-[20%] rounded-full bg-white/10 blur-3xl" />
+
+            {/* contour interne */}
+            <div className="pointer-events-none absolute inset-[1px] rounded-[27px] border border-[#eef1fd] sm:rounded-[29px] lg:rounded-[33px]" />
 
             {/* ombre basse */}
-            <div className="pointer-events-none absolute inset-x-[18%] bottom-[-4%] hidden h-12 rounded-full bg-[rgba(15,23,42,0.04)] blur-3xl lg:block" />
+            <div className="pointer-events-none absolute inset-x-[18%] bottom-[-4%] h-12 rounded-full bg-[rgba(15,23,42,0.035)] blur-3xl" />
 
             <div
               className="
-                relative mx-auto flex max-w-[650px] flex-col items-center justify-center text-center
-                min-h-[78vh]
-                lg:min-h-[500px]
+                relative mx-auto flex flex-col items-center justify-center text-center
+                min-h-[72vh] max-w-[620px]
+                sm:min-h-[70vh] sm:max-w-[660px]
+                lg:min-h-[490px] lg:max-w-[700px]
               "
             >
               {/* Monogramme */}
               <div
                 className={`
                   ${serif.className}
-                  text-[clamp(4.2rem,9vw,7.4rem)] font-medium leading-none tracking-[-0.13em] text-[#1f315a]
-                  lg:text-[4.75rem] lg:tracking-[-0.15em] lg:text-[#18264a]
+                  text-[clamp(4rem,16vw,5.6rem)] font-medium leading-none tracking-[-0.14em] text-[#16264d]
+                  sm:text-[clamp(4.6rem,11vw,6.4rem)] sm:tracking-[-0.15em]
+                  lg:text-[5.15rem] lg:tracking-[-0.17em]
                 `}
               >
                 AC
@@ -79,22 +85,16 @@ export default function EntryPage() {
               <p
                 className={`
                   ${serif.className}
-                  mt-2 text-[clamp(1.75rem,3.6vw,2.95rem)] font-normal leading-none tracking-[-0.045em] text-[#1f315a]
-                  lg:mt-1 lg:text-[2.85rem] lg:tracking-[-0.055em] lg:text-[#1f315a]
+                  mt-2 text-[clamp(2rem,7.4vw,2.9rem)] font-normal leading-none tracking-[-0.05em] text-[#1f315a]
+                  sm:mt-1 sm:text-[clamp(2.2rem,6vw,3.2rem)] sm:tracking-[-0.055em]
+                  lg:text-[3rem] lg:tracking-[-0.06em]
                 `}
               >
                 arnaudcrestey.com
               </p>
 
               {/* Ligne */}
-              <div
-                className="
-                  mx-auto mt-7 h-px w-[118px]
-                  bg-[linear-gradient(90deg,rgba(231,234,251,0)_0%,rgba(217,222,248,0.92)_50%,rgba(231,234,251,0)_100%)]
-                  sm:mt-8 sm:w-[148px]
-                  lg:mt-8 lg:w-[120px]
-                "
-              />
+              <div className="mx-auto mt-7 h-px w-[108px] bg-[linear-gradient(90deg,rgba(231,234,251,0)_0%,rgba(217,222,248,0.96)_50%,rgba(231,234,251,0)_100%)] sm:mt-8 sm:w-[132px] lg:mt-8 lg:w-[122px]" />
 
               {/* Bouton */}
               <div className="mt-9 sm:mt-10 lg:mt-9">
@@ -102,32 +102,33 @@ export default function EntryPage() {
                   href="/home"
                   className={`
                     ${serif.className}
-                    group relative inline-flex min-w-[220px] items-center justify-center rounded-[22px]
-                    border border-[#d9def8]
+                    group relative inline-flex min-w-[190px] items-center justify-center overflow-hidden rounded-[20px]
+                    border border-[#dce2f7]
                     bg-[linear-gradient(180deg,#ffffff_0%,#f3f4fb_100%)]
-                    px-10 py-4 text-[clamp(1.9rem,2.8vw,2.35rem)] font-medium leading-none tracking-[-0.028em] text-[#243765]
-                    shadow-[0_18px_36px_rgba(15,23,42,0.05),0_8px_18px_rgba(15,23,42,0.025),inset_0_1px_0_rgba(255,255,255,0.98)]
+                    px-8 py-3.5 text-[clamp(1.8rem,6.2vw,2.2rem)] font-medium leading-none tracking-[-0.03em] text-[#20335f]
+                    shadow-[0_22px_44px_rgba(15,23,42,0.05),0_10px_22px_rgba(15,23,42,0.025),inset_0_1px_0_rgba(255,255,255,1)]
                     transition-all duration-500
                     hover:-translate-y-[2px]
-                    hover:shadow-[0_24px_44px_rgba(15,23,42,0.07),0_12px_22px_rgba(15,23,42,0.03),inset_0_1px_0_rgba(255,255,255,1)]
+                    hover:shadow-[0_28px_50px_rgba(15,23,42,0.065),0_12px_24px_rgba(15,23,42,0.03),inset_0_1px_0_rgba(255,255,255,1)]
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#cad3eb] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f5f7fb]
-                    lg:min-w-[220px] lg:text-[2.05rem] lg:text-[#1f315a]
+                    sm:min-w-[210px] sm:px-10 sm:py-4
+                    lg:min-w-[212px] lg:text-[2.1rem]
                   `}
                 >
-                  <span className="absolute inset-[1px] rounded-[21px] bg-[linear-gradient(180deg,rgba(255,255,255,0.78)_0%,rgba(255,255,255,0.26)_100%)] opacity-90" />
+                  <span className="absolute inset-[1px] rounded-[19px] bg-[linear-gradient(180deg,rgba(255,255,255,0.78)_0%,rgba(255,255,255,0.24)_100%)] opacity-95" />
                   <span className="absolute -bottom-4 left-1/2 h-7 w-[72%] -translate-x-1/2 rounded-full bg-[rgba(145,156,194,0.12)] blur-xl transition-all duration-500 group-hover:w-[76%]" />
                   <span className="relative z-10">Entrer</span>
                 </Link>
               </div>
 
               {/* Baseline */}
-              <div className="mt-14 w-full sm:mt-16 md:mt-20 lg:mt-16">
+              <div className="mt-14 w-full sm:mt-16 lg:mt-16">
                 <p
                   className={`
                     ${serif.className}
-                    mx-auto max-w-[760px] text-balance
-                    text-[clamp(1.02rem,1.85vw,1.6rem)] leading-[1.72] tracking-[-0.015em] text-[#5a6d96]
-                    lg:max-w-[720px] lg:text-[1.14rem] lg:leading-[1.9] lg:tracking-[-0.018em] lg:text-[#5a6d96]
+                    mx-auto max-w-[340px] text-balance text-[1.02rem] leading-[1.72] tracking-[-0.015em] text-[#5a6d96]
+                    sm:max-w-[520px] sm:text-[1.12rem] sm:leading-[1.86]
+                    lg:max-w-[700px] lg:text-[1.16rem] lg:leading-[1.92]
                   `}
                 >
                   Des systèmes numériques qui attirent,
