@@ -20,10 +20,7 @@ html {
 
 body {
   @apply text-ink antialiased;
-
-  /* Fond propre + léger effet premium */
-  background-color: #F5F7FB;
-
+  background-color: #f5f7fb;
   background-image:
     radial-gradient(circle at top left, rgba(124, 108, 242, 0.08), transparent 40%),
     radial-gradient(circle at top right, rgba(59, 99, 243, 0.08), transparent 40%);
@@ -42,6 +39,47 @@ body {
 .scrollbar-none {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.985);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.72s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.animate-fade-in-content {
+  animation: fadeInContent 0.82s cubic-bezier(0.22, 1, 0.36, 1) 0.12s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-in-up,
+  .animate-fade-in-content {
+    animation: none !important;
+  }
 }
 
 /* =========================
@@ -89,7 +127,7 @@ body {
   ========================= */
 
   .surface {
-    @apply bg-white border border-black/5 rounded-2xl;
+    @apply rounded-2xl border border-black/5 bg-white;
     box-shadow: 0 10px 30px rgba(48, 72, 132, 0.06);
   }
 
