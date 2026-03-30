@@ -10,6 +10,15 @@ function escapeHtml(value: string) {
     .replaceAll("'", "&#039;");
 }
 
+function capitalizeFirstName(value?: string) {
+  if (!value) return "";
+
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
+}
+
 function buildAutoReplyHtml(firstName?: string) {
   const safeFirstName = escapeHtml(capitalizeFirstName(firstName));
   const greeting = safeFirstName ? `Bonjour ${safeFirstName},` : "Bonjour,";
