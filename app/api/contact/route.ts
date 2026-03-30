@@ -30,7 +30,7 @@ function buildAutoReplyHtml(firstName?: string) {
         width="100%"
         cellspacing="0"
         cellpadding="0"
-        style="border-collapse:collapse;background-color:#eef2f8;padding:32px 16px;"
+        style="border-collapse:collapse;background-color:#eef2f8;padding:28px 14px;"
       >
         <tr>
           <td align="center">
@@ -40,20 +40,20 @@ function buildAutoReplyHtml(firstName?: string) {
               cellspacing="0"
               cellpadding="0"
               style="
-                max-width:720px;
+                max-width:640px;
                 border-collapse:separate;
                 border-spacing:0;
                 background:#ffffff;
                 border:1px solid #dbe3f0;
-                border-radius:24px;
+                border-radius:22px;
                 overflow:hidden;
-                box-shadow:0 18px 50px rgba(31,39,64,0.08);
+                box-shadow:0 14px 34px rgba(31,39,64,0.06);
               "
             >
               <tr>
                 <td
                   style="
-                    padding:32px 32px 20px 32px;
+                    padding:24px 28px 16px 28px;
                     background:linear-gradient(180deg,#ffffff 0%,#f8faff 100%);
                     border-bottom:1px solid #e5ebf5;
                   "
@@ -61,24 +61,24 @@ function buildAutoReplyHtml(firstName?: string) {
                   <div
                     style="
                       font-family:Arial,sans-serif;
-                      font-size:12px;
-                      letter-spacing:2.4px;
+                      font-size:11px;
+                      letter-spacing:2.2px;
                       text-transform:uppercase;
                       color:#6c7ea6;
-                      margin-bottom:14px;
+                      margin-bottom:10px;
                     "
                   >
-                    ARNAUDCRESTEY.COM
+                    Message reçu
                   </div>
 
                   <div
                     style="
                       font-family:Georgia,'Times New Roman',serif;
-                      font-size:42px;
-                      line-height:1.08;
+                      font-size:28px;
+                      line-height:1.15;
                       font-weight:700;
                       color:#1f2740;
-                      letter-spacing:-0.03em;
+                      letter-spacing:-0.02em;
                       margin:0;
                     "
                   >
@@ -90,78 +90,60 @@ function buildAutoReplyHtml(firstName?: string) {
               <tr>
                 <td
                   style="
-                    padding:34px 32px 10px 32px;
+                    padding:26px 28px 8px 28px;
                     font-family:Arial,sans-serif;
                     color:#33415c;
-                    font-size:18px;
-                    line-height:1.85;
+                    font-size:16px;
+                    line-height:1.8;
                   "
                 >
-                  <p style="margin:0 0 22px 0;">${greeting}</p>
+                  <p style="margin:0 0 18px 0;">${greeting}</p>
 
-                  <p style="margin:0 0 22px 0;">
+                  <p style="margin:0 0 18px 0;">
                     Merci pour votre message.
                   </p>
 
-                  <p style="margin:0 0 22px 0;">
-                    J’ai bien reçu votre demande transmise depuis arnaudcrestey.com.
+                  <p style="margin:0 0 18px 0;">
+                    J’ai bien reçu votre demande et je vais en prendre connaissance avec attention.
                   </p>
 
-                  <p style="margin:0 0 22px 0;">
-                    Je vais en prendre connaissance avec attention et revenir vers vous dès que possible avec une réponse adaptée à votre besoin.
+                  <p style="margin:0 0 18px 0;">
+                    Je reviendrai vers vous dès que possible avec une réponse adaptée à votre besoin.
                   </p>
-
-                  <div
-                    style="
-                      margin:30px 0 0 0;
-                      padding:16px 18px;
-                      border:1px solid #dbe3f0;
-                      border-radius:16px;
-                      background:#f8faff;
-                      color:#4b5e87;
-                      font-size:15px;
-                      line-height:1.7;
-                    "
-                  >
-                    Merci encore pour votre message.
-                  </div>
                 </td>
               </tr>
 
               <tr>
-                <td style="padding:14px 32px 0 32px;">
+                <td style="padding:8px 28px 0 28px;">
                   <div style="height:1px;background:#e5ebf5;"></div>
                 </td>
               </tr>
 
               <tr>
-                <td style="padding:30px 32px 36px 32px;text-align:center;">
+                <td style="padding:24px 28px 28px 28px;text-align:center;">
                   <div
                     style="
                       font-family:Georgia,'Times New Roman',serif;
-                      font-size:58px;
+                      font-size:44px;
                       line-height:1;
                       color:#1f4a8a;
-                      letter-spacing:-0.06em;
-                      margin-bottom:10px;
+                      letter-spacing:-0.05em;
+                      margin-bottom:8px;
                     "
                   >
                     AC
                   </div>
 
-                  <a
-                    href="https://arnaudcrestey.com"
+                  <div
                     style="
-                      display:inline-block;
-                      font-family:Georgia,'Times New Roman',serif;
-                      font-size:18px;
-                      color:#1f4a8a;
-                      text-decoration:underline;
-                      text-underline-offset:3px;
+                      font-family:Arial,sans-serif;
+                      font-size:14px;
+                      color:#5b6b8c;
+                      line-height:1.5;
                     "
                   >
                     arnaudcrestey.com
-                  </a>
+                  </div>
                 </td>
               </tr>
             </table>
