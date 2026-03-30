@@ -68,14 +68,14 @@ function buildAutoReplyHtml(firstName?: string) {
                       margin-bottom:10px;
                     "
                   >
-                    Message reçu
+                    MESSAGE REÇU
                   </div>
 
                   <div
                     style="
-                      font-family:Georgia,'Times New Roman',serif;
-                      font-size:28px;
-                      line-height:1.15;
+                      font-family:Arial,sans-serif;
+                      font-size:30px;
+                      line-height:1.2;
                       font-weight:700;
                       color:#1f2740;
                       letter-spacing:-0.02em;
@@ -104,11 +104,13 @@ function buildAutoReplyHtml(firstName?: string) {
                   </p>
 
                   <p style="margin:0 0 18px 0;">
-                    J’ai bien reçu votre demande et je vais en prendre connaissance avec attention.
+                    Votre demande est bien prise en compte.
+                    <br />
+                    Je reviens vers vous rapidement avec une réponse claire et structurée.
                   </p>
 
                   <p style="margin:0 0 18px 0;">
-                    Je reviendrai vers vous dès que possible avec une réponse adaptée à votre besoin.
+                    Chaque demande est analysée avec attention afin d’apporter une réponse réellement utile.
                   </p>
                 </td>
               </tr>
@@ -120,7 +122,23 @@ function buildAutoReplyHtml(firstName?: string) {
               </tr>
 
               <tr>
-                <td style="padding:24px 28px 28px 28px;text-align:center;">
+                <td
+                  style="
+                    padding:22px 28px 28px 28px;
+                    text-align:center;
+                    font-family:Arial,sans-serif;
+                  "
+                >
+                  <div
+                    style="
+                      font-size:15px;
+                      color:#5b6b8c;
+                      margin-bottom:14px;
+                    "
+                  >
+                    Bien à vous,
+                  </div>
+
                   <div
                     style="
                       font-family:Georgia,'Times New Roman',serif;
@@ -136,7 +154,6 @@ function buildAutoReplyHtml(firstName?: string) {
 
                   <div
                     style="
-                      font-family:Arial,sans-serif;
                       font-size:14px;
                       color:#5b6b8c;
                       line-height:1.5;
