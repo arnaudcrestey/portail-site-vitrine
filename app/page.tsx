@@ -13,11 +13,11 @@ export default function EntryPage() {
       {/* Fond global */}
       <div className="absolute inset-0 bg-[#f5f7fb]" />
 
-      {/* halos extérieurs */}
+      {/* Halos extérieurs */}
       <div className="pointer-events-none absolute left-[-10%] top-0 h-full w-[22%] bg-[linear-gradient(90deg,rgba(223,228,241,0.24)_0%,rgba(245,247,251,0)_100%)]" />
       <div className="pointer-events-none absolute right-[-10%] top-0 h-full w-[22%] bg-[linear-gradient(270deg,rgba(223,228,241,0.24)_0%,rgba(245,247,251,0)_100%)]" />
 
-      {/* brumes globales */}
+      {/* Brumes globales */}
       <div className="pointer-events-none absolute inset-x-0 top-[-8%] h-[26vh] bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.52)_0%,rgba(245,247,251,0)_72%)] blur-3xl" />
       <div className="pointer-events-none absolute inset-x-0 bottom-[-10%] h-[28vh] bg-[radial-gradient(ellipse_at_center,rgba(220,225,241,0.16)_0%,rgba(245,247,251,0)_74%)] blur-3xl" />
 
@@ -25,6 +25,7 @@ export default function EntryPage() {
         <div className="w-full max-w-[1440px]">
           <div
             className="
+              animate-fade-in-up
               relative mx-auto w-full max-w-[760px] overflow-hidden rounded-[28px]
               border border-[#e6e9fb]
               px-6 py-10
@@ -34,39 +35,40 @@ export default function EntryPage() {
               xl:px-14 xl:py-14
             "
           >
-            {/* base */}
+            {/* Base */}
             <div className="absolute inset-0 bg-[#f7f8fe]" />
 
-            {/* halos colorés premium */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(124,108,242,0.16)_0%,rgba(124,108,242,0.08)_16%,rgba(124,108,242,0)_36%)]" />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_22%,rgba(59,99,243,0.14)_0%,rgba(59,99,243,0.06)_18%,rgba(59,99,243,0)_40%)]" />
+            {/* Halos colorés premium */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_18%,rgba(124,108,242,0.12)_0%,rgba(124,108,242,0.06)_16%,rgba(124,108,242,0)_36%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_78%_22%,rgba(59,99,243,0.11)_0%,rgba(59,99,243,0.05)_18%,rgba(59,99,243,0)_40%)]" />
             <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(124,108,242,0.05)_0%,rgba(255,255,255,0)_40%,rgba(59,99,243,0.04)_100%)]" />
 
-            {/* lumière de surface */}
+            {/* Lumière de surface */}
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.44)_0%,rgba(247,248,254,0.10)_34%,rgba(243,244,251,0.16)_100%)]" />
 
-            {/* glow haut centre */}
+            {/* Glow haut centre */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_16%,rgba(255,255,255,0.90)_0%,rgba(255,255,255,0.44)_20%,rgba(255,255,255,0.14)_36%,rgba(255,255,255,0)_60%)]" />
 
-            {/* glow central vivant */}
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.52)_0%,rgba(255,255,255,0.22)_18%,rgba(247,248,254,0)_40%)]" />
+            {/* Glow central vivant */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_42%,rgba(255,255,255,0.68)_0%,rgba(255,255,255,0.24)_18%,rgba(247,248,254,0)_40%)]" />
 
-            {/* nuance basse interne */}
+            {/* Nuance basse interne */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_66%,rgba(243,244,251,0.42)_0%,rgba(247,248,254,0)_38%)]" />
 
-            {/* reflets de surface */}
+            {/* Reflets de surface */}
             <div className="pointer-events-none absolute left-[10%] top-[8%] h-[12%] w-[18%] rounded-full bg-white/22 blur-3xl" />
             <div className="pointer-events-none absolute right-[12%] bottom-[16%] h-[14%] w-[20%] rounded-full bg-white/10 blur-3xl" />
             <div className="pointer-events-none absolute left-1/2 top-[9%] h-[20%] w-[36%] -translate-x-1/2 rounded-full bg-white/18 blur-3xl" />
 
-            {/* contour interne */}
+            {/* Contour interne */}
             <div className="pointer-events-none absolute inset-[1px] rounded-[27px] border border-[#eef1fd] sm:rounded-[29px] lg:rounded-[33px]" />
 
-            {/* ombre basse */}
+            {/* Ombre basse */}
             <div className="pointer-events-none absolute inset-x-[18%] bottom-[-4%] h-12 rounded-full bg-[rgba(15,23,42,0.035)] blur-3xl" />
 
             <div
               className="
+                animate-fade-in-content
                 relative mx-auto flex flex-col items-center justify-center text-center
                 min-h-[72vh] max-w-[620px]
                 sm:min-h-[70vh] sm:max-w-[660px]
@@ -79,7 +81,7 @@ export default function EntryPage() {
                   ${serif.className}
                   text-[clamp(4rem,16vw,5.8rem)] font-medium leading-none tracking-[-0.15em] text-[#14254b]
                   sm:text-[clamp(4.6rem,11vw,6.5rem)] sm:tracking-[-0.16em]
-                  lg:text-[5.25rem] lg:tracking-[-0.18em]
+                  lg:text-[5.25rem] lg:tracking-[-0.18em] lg:text-[#0f2147]
                 `}
               >
                 AC
@@ -112,7 +114,7 @@ export default function EntryPage() {
                     px-8 py-3.5 text-[clamp(1.8rem,6.2vw,2.2rem)] font-medium leading-none tracking-[-0.03em] text-[#20335f]
                     shadow-[0_26px_52px_rgba(15,23,42,0.06),0_12px_26px_rgba(15,23,42,0.03),inset_0_1px_0_rgba(255,255,255,1)]
                     transition-all duration-500
-                    hover:-translate-y-[2px]
+                    hover:-translate-y-[2px] hover:scale-[1.02]
                     hover:shadow-[0_30px_56px_rgba(15,23,42,0.07),0_14px_28px_rgba(15,23,42,0.035),inset_0_1px_0_rgba(255,255,255,1)]
                     focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#cad3eb] focus-visible:ring-offset-2 focus-visible:ring-offset-[#f5f7fb]
                     sm:min-w-[210px] sm:px-10 sm:py-4
