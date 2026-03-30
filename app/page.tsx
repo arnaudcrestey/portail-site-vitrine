@@ -13,7 +13,7 @@ export default function EntryPage() {
       {/* Fond global */}
       <div className="absolute inset-0 bg-[#f5f7fb]" />
 
-      {/* halos latéraux */}
+      {/* halos latéraux extérieurs */}
       <div className="pointer-events-none absolute left-[-10%] top-0 h-full w-[22%] bg-[linear-gradient(90deg,rgba(223,228,241,0.26)_0%,rgba(245,247,251,0)_100%)]" />
       <div className="pointer-events-none absolute right-[-10%] top-0 h-full w-[22%] bg-[linear-gradient(270deg,rgba(223,228,241,0.26)_0%,rgba(245,247,251,0)_100%)]" />
 
@@ -39,6 +39,11 @@ export default function EntryPage() {
             {/* base du cadre */}
             <div className="absolute inset-0 bg-[#f7f8fe]" />
 
+            {/* voile coloré bleu-violet */}
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_18%_16%,rgba(124,108,242,0.12)_0%,rgba(124,108,242,0.06)_18%,rgba(124,108,242,0)_42%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_82%_20%,rgba(59,99,243,0.10)_0%,rgba(59,99,243,0.04)_20%,rgba(59,99,243,0)_44%)]" />
+            <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(124,108,242,0.04)_0%,rgba(255,255,255,0)_36%,rgba(59,99,243,0.035)_100%)]" />
+
             {/* lumière générale */}
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.42)_0%,rgba(247,248,254,0.10)_34%,rgba(243,244,251,0.16)_100%)]" />
 
@@ -51,7 +56,7 @@ export default function EntryPage() {
             {/* nuance interne */}
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_65%,rgba(243,244,251,0.42)_0%,rgba(247,248,254,0)_36%)]" />
 
-            {/* reflet latéral léger */}
+            {/* reflets subtils */}
             <div className="pointer-events-none absolute left-[10%] top-[8%] h-[12%] w-[18%] rounded-full bg-white/20 blur-3xl" />
             <div className="pointer-events-none absolute right-[12%] bottom-[16%] h-[14%] w-[20%] rounded-full bg-white/10 blur-3xl" />
 
