@@ -41,7 +41,8 @@ function buildAutoReplyHtml(firstName?: string) {
               cellpadding="0"
               style="
                 max-width:720px;
-                border-collapse:collapse;
+                border-collapse:separate;
+                border-spacing:0;
                 background:#ffffff;
                 border:1px solid #dbe3f0;
                 border-radius:24px;
@@ -52,7 +53,7 @@ function buildAutoReplyHtml(firstName?: string) {
               <tr>
                 <td
                   style="
-                    padding:32px 32px 18px 32px;
+                    padding:32px 32px 20px 32px;
                     background:linear-gradient(180deg,#ffffff 0%,#f8faff 100%);
                     border-bottom:1px solid #e5ebf5;
                   "
@@ -67,7 +68,7 @@ function buildAutoReplyHtml(firstName?: string) {
                       margin-bottom:14px;
                     "
                   >
-                    DIAGNOSTIC STRATÉGIQUE
+                    ARNAUDCRESTEY.COM
                   </div>
 
                   <div
@@ -77,11 +78,11 @@ function buildAutoReplyHtml(firstName?: string) {
                       line-height:1.08;
                       font-weight:700;
                       color:#1f2740;
-                      letter-spacing:-0.02em;
+                      letter-spacing:-0.03em;
                       margin:0;
                     "
                   >
-                    Votre demande a bien été reçue
+                    Votre message a bien été reçu
                   </div>
                 </td>
               </tr>
@@ -89,31 +90,31 @@ function buildAutoReplyHtml(firstName?: string) {
               <tr>
                 <td
                   style="
-                    padding:34px 32px 18px 32px;
+                    padding:34px 32px 10px 32px;
                     font-family:Arial,sans-serif;
                     color:#33415c;
                     font-size:18px;
-                    line-height:1.8;
+                    line-height:1.85;
                   "
                 >
                   <p style="margin:0 0 22px 0;">${greeting}</p>
 
                   <p style="margin:0 0 22px 0;">
-                    Merci pour votre demande.
+                    Merci pour votre message.
                   </p>
 
                   <p style="margin:0 0 22px 0;">
-                    J’ai bien reçu les éléments transmis via le diagnostic stratégique.
+                    J’ai bien reçu votre demande transmise depuis arnaudcrestey.com.
                   </p>
 
                   <p style="margin:0 0 22px 0;">
-                    Je vais reprendre votre situation avec attention afin d’en dégager les points essentiels, puis vous adresser un retour personnalisé.
+                    Je vais en prendre connaissance avec attention et revenir vers vous dès que possible avec une réponse adaptée à votre besoin.
                   </p>
 
                   <div
                     style="
                       margin:30px 0 0 0;
-                      padding:18px 20px;
+                      padding:16px 18px;
                       border:1px solid #dbe3f0;
                       border-radius:16px;
                       background:#f8faff;
@@ -122,47 +123,36 @@ function buildAutoReplyHtml(firstName?: string) {
                       line-height:1.7;
                     "
                   >
-                    Vous n’avez rien à faire de plus pour le moment. Votre demande est bien enregistrée.
+                    Merci encore pour votre message.
                   </div>
                 </td>
               </tr>
 
               <tr>
-                <td style="padding:8px 32px 0 32px;">
+                <td style="padding:14px 32px 0 32px;">
                   <div style="height:1px;background:#e5ebf5;"></div>
                 </td>
               </tr>
 
               <tr>
-                <td style="padding:28px 32px 34px 32px;text-align:center;">
+                <td style="padding:30px 32px 36px 32px;text-align:center;">
                   <div
                     style="
                       font-family:Georgia,'Times New Roman',serif;
-                      font-size:60px;
+                      font-size:58px;
                       line-height:1;
                       color:#1f4a8a;
                       letter-spacing:-0.06em;
-                      margin-bottom:14px;
+                      margin-bottom:10px;
                     "
                   >
                     AC
                   </div>
 
-                  <div
-                    style="
-                      font-family:Arial,sans-serif;
-                      font-size:16px;
-                      line-height:1.5;
-                      color:#4b5e87;
-                      margin-bottom:8px;
-                    "
-                  >
-                    Bien à vous,
-                  </div>
-
                   <a
                     href="https://arnaudcrestey.com"
                     style="
+                      display:inline-block;
                       font-family:Georgia,'Times New Roman',serif;
                       font-size:18px;
                       color:#1f4a8a;
@@ -178,6 +168,78 @@ function buildAutoReplyHtml(firstName?: string) {
           </td>
         </tr>
       </table>
+    </div>
+  `;
+}
+
+function buildInternalEmailHtml(
+  safeFirstName: string,
+  safeEmail: string,
+  safeMessage: string
+) {
+  return `
+    <div style="margin:0;padding:24px;background:#eef2f8;font-family:Arial,sans-serif;color:#1f2937;">
+      <div
+        style="
+          max-width:720px;
+          margin:0 auto;
+          background:#ffffff;
+          border:1px solid #dbe3f0;
+          border-radius:22px;
+          overflow:hidden;
+          box-shadow:0 18px 50px rgba(31,39,64,0.08);
+        "
+      >
+        <div
+          style="
+            padding:28px 30px 20px 30px;
+            background:linear-gradient(180deg,#ffffff 0%,#f8faff 100%);
+            border-bottom:1px solid #e5ebf5;
+          "
+        >
+          <div
+            style="
+              font-size:12px;
+              letter-spacing:2.2px;
+              text-transform:uppercase;
+              color:#6c7ea6;
+              margin-bottom:12px;
+            "
+          >
+            NOUVEAU MESSAGE
+          </div>
+
+          <h2
+            style="
+              margin:0;
+              font-family:Georgia,'Times New Roman',serif;
+              font-size:34px;
+              line-height:1.15;
+              color:#1f2740;
+              letter-spacing:-0.02em;
+            "
+          >
+            Nouveau message depuis arnaudcrestey.com
+          </h2>
+        </div>
+
+        <div style="padding:28px 30px 30px 30px;line-height:1.75;">
+          <p style="margin:0 0 10px 0;"><strong>Prénom :</strong> ${safeFirstName}</p>
+          <p style="margin:0 0 22px 0;"><strong>Email :</strong> ${safeEmail}</p>
+
+          <div
+            style="
+              padding:18px 20px;
+              border:1px solid #dbe3f0;
+              border-radius:16px;
+              background:#f8faff;
+            "
+          >
+            <div style="font-weight:700;margin-bottom:10px;color:#1f2740;">Message</div>
+            <div style="white-space:pre-wrap;line-height:1.75;color:#33415c;">${safeMessage}</div>
+          </div>
+        </div>
+      </div>
     </div>
   `;
 }
@@ -223,41 +285,25 @@ export async function POST(req: Request) {
       },
     });
 
-    const safeMessage = escapeHtml(String(message).trim());
+    const rawMessage = String(message).trim();
+    const safeMessage = escapeHtml(rawMessage);
     const safeEmail = escapeHtml(String(email).trim());
-    const safeFirstName = escapeHtml(capitalizeFirstName(firstName) || "Non renseigné");
+    const safeFirstName = escapeHtml(
+      capitalizeFirstName(firstName) || "Non renseigné"
+    );
 
     await transporter.sendMail({
       from: `"Site Arnaud Crestey" <${user}>`,
       to,
       subject: "Nouveau message depuis arnaudcrestey.com",
-      text: `Prénom : ${safeFirstName}\nEmail : ${safeEmail}\n\nMessage :\n${String(message).trim()}`,
-      html: `
-        <div style="font-family:Arial,sans-serif;line-height:1.7;color:#1f2937;">
-          <h2 style="margin:0 0 20px 0;color:#1f2740;">Nouveau message depuis arnaudcrestey.com</h2>
-
-          <p style="margin:0 0 10px 0;"><strong>Prénom :</strong> ${safeFirstName}</p>
-          <p style="margin:0 0 22px 0;"><strong>Email :</strong> ${safeEmail}</p>
-
-          <div
-            style="
-              padding:18px 20px;
-              border:1px solid #dbe3f0;
-              border-radius:14px;
-              background:#f8faff;
-            "
-          >
-            <div style="font-weight:700;margin-bottom:10px;">Message</div>
-            <div style="white-space:pre-wrap;">${safeMessage}</div>
-          </div>
-        </div>
-      `,
+      text: `Prénom : ${safeFirstName}\nEmail : ${safeEmail}\n\nMessage :\n${rawMessage}`,
+      html: buildInternalEmailHtml(safeFirstName, safeEmail, safeMessage),
     });
 
     await transporter.sendMail({
       from: `"Arnaud Crestey" <${user}>`,
       to: String(email).trim(),
-      subject: "Votre demande a bien été reçue",
+      subject: "Votre message a bien été reçu",
       html: buildAutoReplyHtml(firstName),
     });
 
