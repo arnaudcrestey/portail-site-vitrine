@@ -25,7 +25,7 @@ const messageTemplates: {
 Je souhaite créer un point d’entrée pour mon activité.
 
 Mon activité :
-Mon rôle / statut (coach, thérapeute, indépendant, entreprise…) :
+Mon rôle / statut (coach, thérapeute, indépendant, entreprise...) :
 Mon besoin :
 L’objectif recherché :
 Contexte ou éléments utiles :`,
@@ -74,10 +74,13 @@ Contexte ou éléments utiles :`,
 export default function ContactPage() {
   const router = useRouter();
 
+  const [firstName, setFirstName] = useState('');
+  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [selectedType, setSelectedType] = useState<ContactType>('autre');
   const [isSending, setIsSending] = useState(false);
   const [status, setStatus] = useState<'idle' | 'error'>('idle');
+  const [errorMessage, setErrorMessage] = useState('');
   const [isExpanded, setIsExpanded] = useState(false);
 
   const placeholderMessage = `Bonjour Arnaud,
@@ -90,6 +93,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
     setMessage(content);
     setSelectedType(type);
     setStatus('idle');
+    setErrorMessage('');
     setIsExpanded(true);
   };
 
@@ -98,6 +102,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
 
     if (status !== 'idle') {
       setStatus('idle');
+      setErrorMessage('');
     }
 
     if (value.trim().length > 0 && !isExpanded) {
@@ -109,9 +114,26 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
     }
   };
 
+  const isValidEmail = (value: string) => {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value.trim());
+  };
+
   const handleSendEmail = async () => {
+    if (!firstName.trim()) {
+      setStatus('error');
+      setErrorMessage('Merci de renseigner votre prénom.');
+      return;
+    }
+
+    if (!email.trim() || !isValidEmail(email)) {
+      setStatus('error');
+      setErrorMessage('Merci de renseigner une adresse email valide.');
+      return;
+    }
+
     if (!message.trim()) {
       setStatus('error');
+      setErrorMessage('Merci de saisir un message avant l’envoi.');
       setIsExpanded(true);
       return;
     }
@@ -119,6 +141,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
     try {
       setIsSending(true);
       setStatus('idle');
+      setErrorMessage('');
 
       const response = await fetch('/api/contact', {
         method: 'POST',
@@ -126,25 +149,31 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          message,
+          firstName: firstName.trim(),
+          email: email.trim(),
+          message: message.trim(),
           type: selectedType,
         }),
       });
 
+      const data = await response.json().catch(() => null);
+
       if (!response.ok) {
-        throw new Error('Erreur envoi');
+        throw new Error(data?.error || 'Erreur envoi');
       }
 
       router.push('/contact/confirmation');
     } catch (error) {
       console.error(error);
       setStatus('error');
+      setErrorMessage("Impossible d’envoyer votre message pour le moment. Merci de réessayer dans un instant.");
     } finally {
       setIsSending(false);
     }
   };
 
-  const isDisabled = isSending || !message.trim();
+  const isDisabled =
+    isSending || !firstName.trim() || !email.trim() || !message.trim();
 
   return (
     <section className="section-spacing">
@@ -166,6 +195,54 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
                 Décrivez simplement votre besoin, votre idée ou le dispositif que vous souhaitez
                 concevoir.
               </p>
+
+              <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2">
+                <div>
+                  <label
+                    htmlFor="contact-first-name"
+                    className="mb-2 block text-sm font-medium text-ink"
+                  >
+                    Votre prénom
+                  </label>
+                  <input
+                    id="contact-first-name"
+                    type="text"
+                    value={firstName}
+                    onChange={(e) => {
+                      setFirstName(e.target.value);
+                      if (status !== 'idle') {
+                        setStatus('idle');
+                        setErrorMessage('');
+                      }
+                    }}
+                    placeholder="Votre prénom"
+                    className="w-full rounded-[18px] border border-[#cddcff] bg-white/90 px-4 py-3 text-[15px] text-ink outline-none transition-all duration-200 placeholder:text-[#97a3bf] focus:border-[#9ebcff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10"
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="contact-email"
+                    className="mb-2 block text-sm font-medium text-ink"
+                  >
+                    Votre email
+                  </label>
+                  <input
+                    id="contact-email"
+                    type="email"
+                    value={email}
+                    onChange={(e) => {
+                      setEmail(e.target.value);
+                      if (status !== 'idle') {
+                        setStatus('idle');
+                        setErrorMessage('');
+                      }
+                    }}
+                    placeholder="vous@exemple.com"
+                    className="w-full rounded-[18px] border border-[#cddcff] bg-white/90 px-4 py-3 text-[15px] text-ink outline-none transition-all duration-200 placeholder:text-[#97a3bf] focus:border-[#9ebcff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10"
+                  />
+                </div>
+              </div>
 
               <div className="mt-8 rounded-[24px] border border-[#dbe4ff] bg-white/55 p-4 shadow-[0_14px_40px_rgba(72,102,170,0.04)] sm:mt-10 sm:rounded-[30px] sm:p-6">
                 <div className="flex flex-col gap-2">
@@ -235,7 +312,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
               {status === 'error' && (
                 <div className="mt-4 flex justify-center">
                   <div className="rounded-full border border-red-200 bg-red-50 px-4 py-2 text-center text-sm text-red-600 sm:px-5">
-                    Merci de saisir un message ou de réessayer dans un instant.
+                    {errorMessage}
                   </div>
                 </div>
               )}
