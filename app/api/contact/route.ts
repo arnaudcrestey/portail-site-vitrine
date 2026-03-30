@@ -10,75 +10,49 @@ function escapeHtml(value: string) {
     .replaceAll("'", "&#039;");
 }
 
-function capitalizeFirstName(value?: string) {
-  if (!value) return "";
-
-  const trimmed = value.trim();
-  if (!trimmed) return "";
-
-  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1).toLowerCase();
-}
-
 function buildAutoReplyHtml(firstName?: string) {
   const safeFirstName = escapeHtml(capitalizeFirstName(firstName));
   const greeting = safeFirstName ? `Bonjour ${safeFirstName},` : "Bonjour,";
 
   return `
     <div style="margin:0;padding:0;background-color:#eef2f8;">
-      <table
-        role="presentation"
-        width="100%"
-        cellspacing="0"
-        cellpadding="0"
-        style="border-collapse:collapse;background-color:#eef2f8;padding:28px 14px;"
-      >
+      <table width="100%" cellspacing="0" cellpadding="0" style="padding:26px 12px;">
         <tr>
           <td align="center">
             <table
-              role="presentation"
               width="100%"
               cellspacing="0"
               cellpadding="0"
               style="
-                max-width:640px;
-                border-collapse:separate;
-                border-spacing:0;
+                max-width:600px;
                 background:#ffffff;
                 border:1px solid #dbe3f0;
-                border-radius:22px;
+                border-radius:20px;
                 overflow:hidden;
-                box-shadow:0 14px 34px rgba(31,39,64,0.06);
+                box-shadow:0 10px 28px rgba(31,39,64,0.05);
               "
             >
               <tr>
-                <td
-                  style="
-                    padding:24px 28px 16px 28px;
-                    background:linear-gradient(180deg,#ffffff 0%,#f8faff 100%);
-                    border-bottom:1px solid #e5ebf5;
-                  "
-                >
+                <td style="padding:22px 26px 14px 26px;border-bottom:1px solid #e5ebf5;">
                   <div
                     style="
                       font-family:Arial,sans-serif;
                       font-size:11px;
-                      letter-spacing:2.2px;
+                      letter-spacing:2px;
                       text-transform:uppercase;
                       color:#6c7ea6;
-                      margin-bottom:10px;
+                      margin-bottom:8px;
                     "
                   >
-                    MESSAGE REÇU
+                    Message reçu
                   </div>
 
                   <div
                     style="
                       font-family:Arial,sans-serif;
-                      font-size:30px;
-                      line-height:1.2;
-                      font-weight:700;
+                      font-size:24px;
+                      font-weight:600;
                       color:#1f2740;
-                      letter-spacing:-0.02em;
                       margin:0;
                     "
                   >
@@ -90,50 +64,47 @@ function buildAutoReplyHtml(firstName?: string) {
               <tr>
                 <td
                   style="
-                    padding:26px 28px 8px 28px;
+                    padding:24px 26px 10px 26px;
                     font-family:Arial,sans-serif;
                     color:#33415c;
-                    font-size:16px;
-                    line-height:1.8;
+                    font-size:15px;
+                    line-height:1.75;
                   "
                 >
-                  <p style="margin:0 0 18px 0;">${greeting}</p>
+                  <p style="margin:0 0 16px 0;">${greeting}</p>
 
-                  <p style="margin:0 0 18px 0;">
+                  <p style="margin:0 0 16px 0;">
                     Merci pour votre message.
                   </p>
 
-                  <p style="margin:0 0 18px 0;">
+                  <p style="margin:0 0 16px 0;">
                     Votre demande est bien prise en compte.
-                    <br />
+                  </p>
+
+                  <p style="margin:0 0 16px 0;">
                     Je reviens vers vous rapidement avec une réponse claire et structurée.
                   </p>
 
-                  <p style="margin:0 0 18px 0;">
+                  <p style="margin:0 0 16px 0;">
                     Chaque demande est analysée avec attention afin d’apporter une réponse réellement utile.
                   </p>
                 </td>
               </tr>
 
               <tr>
-                <td style="padding:8px 28px 0 28px;">
+                <td style="padding:6px 26px 0 26px;">
                   <div style="height:1px;background:#e5ebf5;"></div>
                 </td>
               </tr>
 
               <tr>
-                <td
-                  style="
-                    padding:22px 28px 28px 28px;
-                    text-align:center;
-                    font-family:Arial,sans-serif;
-                  "
-                >
+                <td style="padding:20px 26px 26px 26px;text-align:center;">
                   <div
                     style="
-                      font-size:15px;
+                      font-family:Arial,sans-serif;
+                      font-size:14px;
                       color:#5b6b8c;
-                      margin-bottom:14px;
+                      margin-bottom:10px;
                     "
                   >
                     Bien à vous,
@@ -142,11 +113,10 @@ function buildAutoReplyHtml(firstName?: string) {
                   <div
                     style="
                       font-family:Georgia,'Times New Roman',serif;
-                      font-size:44px;
-                      line-height:1;
+                      font-size:36px;
                       color:#1f4a8a;
-                      letter-spacing:-0.05em;
-                      margin-bottom:8px;
+                      letter-spacing:-0.04em;
+                      margin-bottom:6px;
                     "
                   >
                     AC
@@ -154,9 +124,9 @@ function buildAutoReplyHtml(firstName?: string) {
 
                   <div
                     style="
-                      font-size:14px;
-                      color:#5b6b8c;
-                      line-height:1.5;
+                      font-family:Arial,sans-serif;
+                      font-size:13px;
+                      color:#6c7ea6;
                     "
                   >
                     arnaudcrestey.com
