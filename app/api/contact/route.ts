@@ -105,30 +105,41 @@ function buildAutoReplyHtml(firstName?: string) {
                     Chaque demande est analysée avec attention afin d’apporter une réponse réellement utile.
                   </p>
 
-                  <p style="margin:0 0 14px 0;color:#5b6b8c;">
+                  <p style="margin:0 0 14px 0;color:#5b6b8c;text-align:center;">
                     Bien à vous,
                   </p>
 
-                  <div
-                    style="
-                      font-family:Georgia,'Times New Roman',serif;
-                      font-size:36px;
-                      line-height:0.95;
-                      color:#1f4a8a;
-                      margin-bottom:8px;
-                    "
-                  >
-                    <span style="display:inline-block;">A</span><span style="display:inline-block;margin-left:-7px;">C</span>
-                  </div>
+                  <div style="text-align:center;">
+                    <div
+                      style="
+                        display:inline-block;
+                        text-align:center;
+                      "
+                    >
+                      <div
+                        style="
+                          font-family:Georgia,'Times New Roman',serif;
+                          font-size:44px;
+                          line-height:0.9;
+                          color:#1f4a8a;
+                          margin-bottom:6px;
+                        "
+                      >
+                        <span style="display:inline-block;">A</span><span style="display:inline-block;margin-left:-10px;">C</span>
+                      </div>
 
-                  <div
-                    style="
-                      font-family:Arial,sans-serif;
-                      font-size:13px;
-                      color:#6c7ea6;
-                    "
-                  >
-                    arnaudcrestey.com
+                      <div
+                        style="
+                          font-family:Georgia,'Times New Roman',serif;
+                          font-size:16px;
+                          line-height:1.2;
+                          color:#1f4a8a;
+                          text-align:center;
+                        "
+                      >
+                        arnaudcrestey.com
+                      </div>
+                    </div>
                   </div>
                 </td>
               </tr>
