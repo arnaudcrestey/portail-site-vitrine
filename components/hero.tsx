@@ -15,8 +15,9 @@ export function HomeHero() {
             transforment vos visiteurs en clients.
           </h1>
 
-     <p className="mt-6 max-w-xl text-base leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-xl lg:text-justify">
-  Je conçois des points d’entrée qui captent l’attention et génèrent des prises de contact qualifiées pour les professionnels de l’accompagnement, du conseil et du secteur&nbsp;juridique.
+     <p className="mt-6 max-w-xl text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-[1.15rem] lg:leading-8">
+  J’aide les professionnels de l’accompagnement, du conseil et du secteur juridique à rendre leur activité claire, compréhensible et attractive, afin de générer des prises de contact qualifiées.
+  Je conçois pour cela des points d’entrée, des parcours utilisateurs et des systèmes numériques adaptés à leur activité.
 </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
