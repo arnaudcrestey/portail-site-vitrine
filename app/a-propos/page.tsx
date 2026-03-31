@@ -29,7 +29,7 @@ export default function AboutPage() {
             </p>
 
             <p className="mt-2 text-base font-medium leading-7 text-ink sm:leading-8">
-              Je conçois des points d’entrée.
+              Je conçois des systèmes numériques.
             </p>
 
             <p className="mt-3 text-base leading-7 text-slate sm:leading-8">
