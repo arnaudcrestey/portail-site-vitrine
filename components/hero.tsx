@@ -24,7 +24,7 @@ export function HomeHero() {
 
           <dl className="mt-6 grid gap-3 sm:grid-cols-3">
             {[
-              ['1 284', 'Visiteurs sur 30 jours'],
+              ['1 284', 'Visiteurs sur les 30 derniers jours'],
               ['37', 'Prises de contact générées'],
               ['6', 'Points d’entrée actifs'],
             ].map(([value, label]) => (
