@@ -5,7 +5,7 @@ import { siteMetrics } from '@/lib/site-metrics';
 export function HomeHero() {
   return (
     <section className="relative overflow-hidden">
-      <div className="container-layout section-spacing grid items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
+      <div className="container-layout section-spacing grid items-start gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
         <div>
           <span className="inline-flex max-w-full whitespace-nowrap rounded-full border border-[#cfd7ff] bg-[#eef2ff] px-3 py-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[#4f67ff] sm:px-4 sm:text-xs">
             Concepteur de systèmes numériques
@@ -78,8 +78,31 @@ export function HomeHero() {
               Diagnostics interactifs • Parcours utilisateurs • Systèmes automatisés
             </span>
           </p>
+        </div>
 
-          <dl className="mt-10 grid gap-4 sm:grid-cols-3">
+        <div className="flex flex-col gap-5 lg:gap-6">
+          <Surface className="relative overflow-hidden rounded-[32px] border border-[#d9def8] bg-[#f7f8fe] p-4 shadow-[0_12px_40px_rgba(15,23,42,0.05)] sm:p-5 lg:p-6">
+            <div className="relative overflow-hidden rounded-[28px] border border-[#e7eafb] bg-[#f7f8fe]">
+              <div className="relative aspect-[4/5] bg-[#f3f4fb]">
+                <SmartImage
+                  src="/arnaud-crestey-photo.png"
+                  alt="Portrait d’Arnaud Crestey"
+                  fallbackTitle="Photo principale à ajouter"
+                  fallbackLabel="Ajoutez votre portrait dans public/arnaud-crestey-photo.png pour afficher votre photo ici."
+                  priority
+                  sizes="(min-width: 1024px) 42vw, 100vw"
+                />
+              </div>
+
+              <div className="border-t border-[#e7eafb] bg-[#f7f8fe] px-5 py-5 sm:px-6 sm:py-6">
+                <p className="text-[15px] font-medium tracking-[0.04em] text-ink sm:text-[16px]">
+                  Arnaud Crestey
+                </p>
+              </div>
+            </div>
+          </Surface>
+
+          <dl className="grid gap-4 sm:grid-cols-3">
             {[
               ['Clarté', 'Votre offre comprise en quelques secondes'],
               ['Structure', 'Un parcours qui guide naturellement vos visiteurs'],
@@ -97,27 +120,6 @@ export function HomeHero() {
             ))}
           </dl>
         </div>
-
-        <Surface className="relative overflow-hidden rounded-[32px] border border-[#d9def8] bg-[#f7f8fe] p-4 shadow-[0_12px_40px_rgba(15,23,42,0.05)] sm:p-5 lg:p-6">
-          <div className="relative overflow-hidden rounded-[28px] border border-[#e7eafb] bg-[#f7f8fe]">
-            <div className="relative aspect-[4/5] bg-[#f3f4fb]">
-              <SmartImage
-                src="/arnaud-crestey-photo.png"
-                alt="Portrait d’Arnaud Crestey"
-                fallbackTitle="Photo principale à ajouter"
-                fallbackLabel="Ajoutez votre portrait dans public/arnaud-crestey-photo.png pour afficher votre photo ici."
-                priority
-                sizes="(min-width: 1024px) 42vw, 100vw"
-              />
-            </div>
-
-            <div className="border-t border-[#e7eafb] bg-[#f7f8fe] px-5 py-5 sm:px-6 sm:py-6">
-              <p className="text-[15px] font-medium tracking-[0.04em] text-ink sm:text-[16px]">
-                Arnaud Crestey
-              </p>
-            </div>
-          </div>
-        </Surface>
       </div>
     </section>
   );
