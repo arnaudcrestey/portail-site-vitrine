@@ -1,5 +1,6 @@
 import { SmartImage } from '@/components/smart-image';
 import { ButtonLink, Surface } from '@/components/ui';
+import { siteMetrics } from '@/lib/site-metrics';
 
 export function HomeHero() {
   return (
@@ -24,9 +25,18 @@ export function HomeHero() {
 
           <dl className="mt-6 grid gap-3 sm:grid-cols-3">
             {[
-              ['1 284', 'Visiteurs sur les 30 derniers jours'],
-              ['37', 'Prises de contact générées'],
-              ['6', 'Points d’entrée actifs'],
+              [
+                siteMetrics.visitors30d.toLocaleString('fr-FR'),
+                'Visiteurs sur les 30 derniers jours',
+              ],
+              [
+                siteMetrics.leadsGenerated.toLocaleString('fr-FR'),
+                'Prises de contact générées',
+              ],
+              [
+                siteMetrics.activeEntryPoints.toLocaleString('fr-FR'),
+                'Points d’entrée actifs',
+              ],
             ].map(([value, label]) => (
               <div
                 key={label}
