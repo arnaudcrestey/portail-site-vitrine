@@ -23,8 +23,8 @@ export function HomeHero() {
             utilisateurs et des systèmes numériques adaptés à leur activité.
           </p>
 
-          <div className="mt-6 flex justify-center lg:justify-start">
-            <dl className="grid w-full max-w-[540px] overflow-hidden rounded-[22px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_12px_28px_rgba(15,23,42,0.045)] sm:grid-cols-3 lg:max-w-[500px]">
+          <div className="mt-5 flex justify-center lg:justify-start">
+            <dl className="grid w-full max-w-[460px] overflow-hidden rounded-[20px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px]">
               {[
                 [
                   siteMetrics.visitors30d.toLocaleString('fr-FR'),
@@ -44,18 +44,19 @@ export function HomeHero() {
               ].map(([value, label, detail], index) => (
                 <div
                   key={label}
-                  className={`px-4 py-4 text-center sm:px-4 sm:py-4 lg:px-5 lg:py-4 ${
+                  className={`px-3 py-3 text-center sm:px-4 sm:py-3.5 lg:px-4 lg:py-3.5 ${
                     index < 2 ? 'border-b border-[#e6eafb] sm:border-b-0 sm:border-r' : ''
                   }`}
                 >
-                  <dt className="text-[1.7rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.5rem] lg:text-[1.65rem]">
+                  <dt className="text-[1.45rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.42rem] lg:text-[1.5rem]">
                     {value}
                   </dt>
-                  <dd className="mt-2 leading-5">
-                    <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-[#5c6f98] sm:text-[10px] lg:text-[10.5px]">
+
+                  <dd className="mt-1.5 leading-4">
+                    <span className="block text-[10px] font-semibold uppercase tracking-[0.15em] text-[#5c6f98] lg:text-[10.5px]">
                       {label}
                     </span>
-                    <span className="mt-1 block text-[12px] text-slate/82 sm:text-[11.5px] lg:text-[12px]">
+                    <span className="mt-1 block text-[11px] text-slate/82 sm:text-[11px] lg:text-[11.5px]">
                       {detail}
                     </span>
                   </dd>
@@ -64,7 +65,7 @@ export function HomeHero() {
             </dl>
           </div>
 
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
 
             <ButtonLink href="/systeme" variant="secondary">
@@ -72,7 +73,7 @@ export function HomeHero() {
             </ButtonLink>
           </div>
 
-          <p className="mt-4 text-sm leading-6 text-slate/80 sm:text-[15px] sm:leading-7">
+          <p className="mt-3 text-sm leading-6 text-slate/80 sm:text-[14px] sm:leading-6 lg:text-[14px]">
             <span className="block text-center sm:hidden">
               <span className="inline-block text-center">
                 <span className="block">Diagnostics interactifs · Parcours utilisateurs</span>
