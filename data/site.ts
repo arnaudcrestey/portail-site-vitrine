@@ -118,7 +118,7 @@ export const conceptProjects: ProjectCard[] = [
       'Découvrez vos traits dominants, vos forces et vos zones de tension en quelques minutes.',
     proof: 'Simple • Rapide • Immédiat',
     image: '/projects/personality-scan.jpg',
-    href: 'https://personnality-scan.vercel.app/',
+    href: 'https://personality.cabinet-astrae.fr/',
     cta: 'Découvrir',
   },
   {
@@ -154,7 +154,7 @@ export const conceptProjects: ProjectCard[] = [
       'Transformez un texte libre en première lecture structurée, claire et exploitable.',
     proof: 'Expression libre • Retour instantané',
     image: '/projects/miroir-intuition.jpg',
-    href: 'https://parlez-moi-de-votre-situation.vercel.app/',
+    href: 'https://intuition.cabinet-astrae.fr/',
     cta: 'Commencer',
   },
   {
