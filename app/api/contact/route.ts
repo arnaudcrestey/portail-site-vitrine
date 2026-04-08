@@ -3,9 +3,15 @@ import nodemailer from "nodemailer";
 import { createClient } from "@supabase/supabase-js";
 
 /* ========= SUPABASE ========= */
-const supabase = createClient(
+const supabaseAdmin = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
+  process.env.SUPABASE_SERVICE_ROLE_KEY!,
+  {
+    auth: {
+      persistSession: false,
+      autoRefreshToken: false,
+    },
+  }
 );
 
 function escapeHtml(value: string) {
@@ -228,11 +234,32 @@ arnaudcrestey.com`,
     });
 
     /* ========= INCREMENT ========= */
-    await supabase.rpc("increment_leads");
+    console.log("[CONTACT] Tentative increment_leads");
+    console.log("[CONTACT] SUPABASE URL présente :", !!process.env.NEXT_PUBLIC_SUPABASE_URL);
+    console.log("[CONTACT] SERVICE ROLE présente :", !!process.env.SUPABASE_SERVICE_ROLE_KEY);
+    console.log(
+      "[CONTACT] SERVICE ROLE préfixe :",
+      process.env.SUPABASE_SERVICE_ROLE_KEY?.slice(0, 12)
+    );
+
+    const { data: metricData, error: metricError } = await supabaseAdmin.rpc("increment_leads");
+
+    if (metricError) {
+      console.error("[CONTACT] Erreur increment_leads :", {
+        message: metricError.message,
+        details: metricError.details,
+        hint: metricError.hint,
+        code: metricError.code,
+      });
+    } else {
+      console.log("[CONTACT] increment_leads OK :", metricData);
+    }
+
+    console.log("[CONTACT] POST terminé avec succès");
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    console.error(error);
+    console.error("[CONTACT] Erreur globale route contact :", error);
     return NextResponse.json({ success: false }, { status: 500 });
   }
 }
