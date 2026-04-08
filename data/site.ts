@@ -106,7 +106,7 @@ export const conceptProjects: ProjectCard[] = [
       'Obtenez un score clair et une lecture immédiate de votre dynamique relationnelle.',
     proof: 'Test rapide • Résultat en 2 minutes',
     image: '/projects/love-scan.jpg',
-    href: 'https://love-scan-three.vercel.app/',
+    href: 'https://love.cabinet-astrae.fr/',
     cta: 'Faire le test',
   },
   {
