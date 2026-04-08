@@ -1,9 +1,16 @@
 import { AnimatedMetricNumber } from '@/components/animated-metric-number';
 import { SmartImage } from '@/components/smart-image';
 import { ButtonLink, Surface } from '@/components/ui';
-import { siteMetrics } from '@/lib/site-metrics';
 
-export function HomeHero() {
+type HomeHeroProps = {
+  metrics: {
+    visitors30d: number;
+    leadsGenerated: number;
+    activeEntryPoints: number;
+  };
+};
+
+export function HomeHero({ metrics }: HomeHeroProps) {
   return (
     <section className="relative overflow-hidden">
       <div className="container-layout section-spacing grid items-start gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
@@ -27,9 +34,9 @@ export function HomeHero() {
           <div className="mt-5 flex justify-center lg:justify-start">
             <dl className="grid w-full max-w-[320px] overflow-hidden rounded-[18px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_8px_20px_rgba(15,23,42,0.035)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px] lg:rounded-[20px] lg:shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
               {[
-                [siteMetrics.visitors30d, 'Visiteurs', '30 derniers jours'],
-                [siteMetrics.leadsGenerated, 'Prises de contact', 'générées'],
-                [siteMetrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
+                [metrics.visitors30d, 'Visiteurs', '30 derniers jours'],
+                [metrics.leadsGenerated, 'Prises de contact', 'générées'],
+                [metrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
               ].map(([value, label, detail], index) => (
                 <div
                   key={label}
