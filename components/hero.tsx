@@ -7,18 +7,40 @@ export function HomeHero() {
       <div className="container-layout section-spacing grid items-center gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
         <div>
           <span className="inline-flex max-w-full whitespace-nowrap rounded-full border border-[#cfd7ff] bg-[#eef2ff] px-3 py-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[#4f67ff] sm:px-4 sm:text-xs">
-        Concepteur de systèmes numériques
-      </span>
+            Concepteur de systèmes numériques
+          </span>
 
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-tight text-ink sm:text-5xl lg:text-6xl">
             Développez votre activité avec des dispositifs digitaux qui attirent, engagent et
             transforment vos visiteurs en clients.
           </h1>
 
-     <p className="mt-6 max-w-xl text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-[1.15rem] lg:leading-8">
-  J’aide les professionnels de l’accompagnement, du conseil et du secteur juridique à rendre leur activité claire, compréhensible et attractive, afin de générer des prises de contact qualifiées.
-  Je conçois pour cela des points d’entrée, des parcours utilisateurs et des systèmes numériques adaptés à leur activité.
-</p>
+          <p className="mt-6 max-w-xl text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-[1.15rem] lg:leading-8">
+            J’aide les professionnels de l’accompagnement, du conseil et du secteur juridique à
+            rendre leur activité claire, compréhensible et attractive, afin de générer des prises
+            de contact qualifiées. Je conçois pour cela des points d’entrée, des parcours
+            utilisateurs et des systèmes numériques adaptés à leur activité.
+          </p>
+
+          <dl className="mt-6 grid gap-3 sm:grid-cols-3">
+            {[
+              ['1 284', 'Visiteurs sur 30 jours'],
+              ['37', 'Prises de contact générées'],
+              ['6', 'Points d’entrée actifs'],
+            ].map(([value, label]) => (
+              <div
+                key={label}
+                className="rounded-[22px] border border-[#d9def8] bg-[#f7f8fe] px-4 py-4 shadow-[0_10px_30px_rgba(15,23,42,0.04)] sm:px-5 sm:py-5"
+              >
+                <dt className="text-[1.35rem] font-semibold leading-none tracking-tight text-[#20335f] sm:text-[1.55rem]">
+                  {value}
+                </dt>
+                <dd className="mt-2 text-[13px] leading-5 text-slate sm:text-sm sm:leading-6">
+                  {label}
+                </dd>
+              </div>
+            ))}
+          </dl>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
@@ -28,18 +50,18 @@ export function HomeHero() {
             </ButtonLink>
           </div>
 
-       <p className="mt-4 text-sm leading-6 text-slate/80 sm:text-[15px] sm:leading-7">
-  <span className="block text-center sm:hidden">
-    <span className="inline-block text-center">
-      <span className="block">Diagnostics interactifs · Parcours utilisateurs</span>
-      <span className="block">Systèmes automatisés</span>
-    </span>
-  </span>
+          <p className="mt-4 text-sm leading-6 text-slate/80 sm:text-[15px] sm:leading-7">
+            <span className="block text-center sm:hidden">
+              <span className="inline-block text-center">
+                <span className="block">Diagnostics interactifs · Parcours utilisateurs</span>
+                <span className="block">Systèmes automatisés</span>
+              </span>
+            </span>
 
-  <span className="hidden sm:block max-w-2xl">
-    Diagnostics interactifs • Parcours utilisateurs • Systèmes automatisés
-  </span>
-</p>
+            <span className="hidden sm:block max-w-2xl">
+              Diagnostics interactifs • Parcours utilisateurs • Systèmes automatisés
+            </span>
+          </p>
 
           <dl className="mt-10 grid gap-4 sm:grid-cols-3">
             {[
