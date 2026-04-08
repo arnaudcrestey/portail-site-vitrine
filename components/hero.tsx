@@ -24,7 +24,7 @@ export function HomeHero() {
           </p>
 
           <div className="mt-5 flex justify-center lg:justify-start">
-            <dl className="grid w-full max-w-[460px] overflow-hidden rounded-[20px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_10px_24px_rgba(15,23,42,0.04)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px]">
+            <dl className="grid w-full max-w-[320px] overflow-hidden rounded-[18px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_8px_20px_rgba(15,23,42,0.035)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px] lg:rounded-[20px] lg:shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
               {[
                 [
                   siteMetrics.visitors30d.toLocaleString('fr-FR'),
@@ -44,19 +44,19 @@ export function HomeHero() {
               ].map(([value, label, detail], index) => (
                 <div
                   key={label}
-                  className={`px-3 py-3 text-center sm:px-4 sm:py-3.5 lg:px-4 lg:py-3.5 ${
+                  className={`px-3 py-2.5 text-center sm:px-4 sm:py-3.5 lg:px-4 lg:py-3.5 ${
                     index < 2 ? 'border-b border-[#e6eafb] sm:border-b-0 sm:border-r' : ''
                   }`}
                 >
-                  <dt className="text-[1.45rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.42rem] lg:text-[1.5rem]">
+                  <dt className="text-[1.28rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.42rem] lg:text-[1.5rem]">
                     {value}
                   </dt>
 
-                  <dd className="mt-1.5 leading-4">
-                    <span className="block text-[10px] font-semibold uppercase tracking-[0.15em] text-[#5c6f98] lg:text-[10.5px]">
+                  <dd className="mt-1 leading-4 sm:mt-1.5">
+                    <span className="block text-[9px] font-semibold uppercase tracking-[0.14em] text-[#5c6f98] sm:text-[10px] lg:text-[10.5px]">
                       {label}
                     </span>
-                    <span className="mt-1 block text-[11px] text-slate/82 sm:text-[11px] lg:text-[11.5px]">
+                    <span className="mt-0.5 block text-[10px] text-slate/82 sm:mt-1 sm:text-[11px] lg:text-[11.5px]">
                       {detail}
                     </span>
                   </dd>
