@@ -8,7 +8,7 @@ export default function HomePage() {
     <>
       <HomeHero />
 
-      <section className="section-spacing pt-4 pb-6">
+      <section className="section-spacing pb-6 pt-4">
         <div className="container-layout">
           <div className="relative overflow-hidden rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-6 py-10 shadow-[0_25px_80px_rgba(15,23,42,0.06)] sm:px-8 sm:py-12 lg:px-10">
             <div className="relative max-w-3xl">
@@ -19,7 +19,8 @@ export default function HomePage() {
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                Mon travail consiste à structurer cette expertise pour la rendre lisible, visible et capable de créer un mouvement naturel vers vous.
+                Mon travail consiste à structurer cette expertise pour la rendre lisible, visible et
+                capable de créer un mouvement naturel vers vous.
               </p>
             </div>
           </div>
