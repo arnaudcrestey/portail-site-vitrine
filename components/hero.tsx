@@ -1,3 +1,4 @@
+import { AnimatedMetricNumber } from '@/components/animated-metric-number';
 import { SmartImage } from '@/components/smart-image';
 import { ButtonLink, Surface } from '@/components/ui';
 import { siteMetrics } from '@/lib/site-metrics';
@@ -26,21 +27,9 @@ export function HomeHero() {
           <div className="mt-5 flex justify-center lg:justify-start">
             <dl className="grid w-full max-w-[320px] overflow-hidden rounded-[18px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_8px_20px_rgba(15,23,42,0.035)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px] lg:rounded-[20px] lg:shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
               {[
-                [
-                  siteMetrics.visitors30d.toLocaleString('fr-FR'),
-                  'Visiteurs',
-                  '30 derniers jours',
-                ],
-                [
-                  siteMetrics.leadsGenerated.toLocaleString('fr-FR'),
-                  'Prises de contact',
-                  'générées',
-                ],
-                [
-                  siteMetrics.activeEntryPoints.toLocaleString('fr-FR'),
-                  'Dispositifs',
-                  'en ligne',
-                ],
+                [siteMetrics.visitors30d, 'Visiteurs', '30 derniers jours'],
+                [siteMetrics.leadsGenerated, 'Prises de contact', 'générées'],
+                [siteMetrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
               ].map(([value, label, detail], index) => (
                 <div
                   key={label}
@@ -49,7 +38,7 @@ export function HomeHero() {
                   }`}
                 >
                   <dt className="text-[1.28rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.42rem] lg:text-[1.5rem]">
-                    {value}
+                    <AnimatedMetricNumber value={value as number} />
                   </dt>
 
                   <dd className="mt-1 leading-4 sm:mt-1.5">
