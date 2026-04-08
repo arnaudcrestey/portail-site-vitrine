@@ -23,40 +23,46 @@ export function HomeHero() {
             utilisateurs et des systèmes numériques adaptés à leur activité.
           </p>
 
-          <dl className="mt-6 grid overflow-hidden rounded-[26px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(247,248,254,0.96)_0%,rgba(243,245,252,0.98)_100%)] shadow-[0_14px_36px_rgba(15,23,42,0.05)] sm:grid-cols-3">
-            {[
-              [
-                siteMetrics.visitors30d.toLocaleString('fr-FR'),
-                'Visiteurs',
-                'sur les 30 derniers jours',
-              ],
-              [
-                siteMetrics.leadsGenerated.toLocaleString('fr-FR'),
-                'Prises de contact',
-                'générées',
-              ],
-              [
-                siteMetrics.activeEntryPoints.toLocaleString('fr-FR'),
-                'Dispositifs',
-                'actuellement en ligne',
-              ],
-            ].map(([value, label, detail], index) => (
-              <div
-                key={label}
-                className={`px-5 py-5 sm:px-6 sm:py-6 ${
-                  index < 2 ? 'border-b border-[#e6eafb] sm:border-b-0 sm:border-r' : ''
-                }`}
-              >
-                <dt className="text-[1.55rem] font-semibold leading-none tracking-tight text-[#20335f] sm:text-[1.7rem]">
-                  {value}
-                </dt>
-                <dd className="mt-2 text-[13px] leading-5 text-slate sm:text-sm sm:leading-6">
-                  <span className="block font-medium text-[#31456f]">{label}</span>
-                  <span className="block text-slate/80">{detail}</span>
-                </dd>
-              </div>
-            ))}
-          </dl>
+          <div className="mt-6 flex justify-center lg:justify-start">
+            <dl className="grid w-full max-w-[540px] overflow-hidden rounded-[22px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_12px_28px_rgba(15,23,42,0.045)] sm:grid-cols-3 lg:max-w-[500px]">
+              {[
+                [
+                  siteMetrics.visitors30d.toLocaleString('fr-FR'),
+                  'Visiteurs',
+                  '30 derniers jours',
+                ],
+                [
+                  siteMetrics.leadsGenerated.toLocaleString('fr-FR'),
+                  'Prises de contact',
+                  'générées',
+                ],
+                [
+                  siteMetrics.activeEntryPoints.toLocaleString('fr-FR'),
+                  'Dispositifs',
+                  'en ligne',
+                ],
+              ].map(([value, label, detail], index) => (
+                <div
+                  key={label}
+                  className={`px-4 py-4 text-center sm:px-4 sm:py-4 lg:px-5 lg:py-4 ${
+                    index < 2 ? 'border-b border-[#e6eafb] sm:border-b-0 sm:border-r' : ''
+                  }`}
+                >
+                  <dt className="text-[1.7rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.5rem] lg:text-[1.65rem]">
+                    {value}
+                  </dt>
+                  <dd className="mt-2 leading-5">
+                    <span className="block text-[11px] font-semibold uppercase tracking-[0.16em] text-[#5c6f98] sm:text-[10px] lg:text-[10.5px]">
+                      {label}
+                    </span>
+                    <span className="mt-1 block text-[12px] text-slate/82 sm:text-[11.5px] lg:text-[12px]">
+                      {detail}
+                    </span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
