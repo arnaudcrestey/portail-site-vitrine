@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'Mentions légales | Arnaud Crestey',
+  title: "Mentions légales | Arnaud Crestey",
   description:
-    'Mentions légales du site arnaudcrestey.com : éditeur, hébergement, propriété intellectuelle, responsabilité et données personnelles.',
+    "Mentions légales du site arnaudcrestey.com : éditeur, hébergement, propriété intellectuelle, responsabilité, données personnelles et conditions d’utilisation.",
 };
 
 export default function MentionsLegalesPage() {
@@ -33,13 +33,18 @@ export default function MentionsLegalesPage() {
 
                 <div className="mt-4 space-y-3 text-[15px] leading-8 text-slate sm:text-base">
                   <p>
-                    <strong>Nom :</strong> Arnaud Crestey
+                    <strong>Nom / dénomination :</strong> SASU Arnaud Crestey
                   </p>
                   <p>
-                    <strong>Statut :</strong> [à compléter : entrepreneur individuel / micro-entreprise / EURL / SASU]
+                    <strong>Forme juridique :</strong> Société par Actions Simplifiée
+                    Unipersonnelle (SASU)
                   </p>
                   <p>
-                    <strong>Adresse :</strong> [adresse complète de l’entreprise]
+                    <strong>Capital social :</strong> 500 €
+                  </p>
+                  <p>
+                    <strong>Adresse :</strong> 36 route du coisel, la personnerie,
+                    14410 Valdallière – France
                   </p>
                   <p>
                     <strong>E-mail :</strong> demande@arnaudcrestey.com
@@ -48,7 +53,7 @@ export default function MentionsLegalesPage() {
                     <strong>Téléphone :</strong> +33 6 81 95 23 45
                   </p>
                   <p>
-                    <strong>SIREN / SIRET :</strong> [à compléter]
+                    <strong>SIREN / SIRET :</strong> à compléter dès immatriculation
                   </p>
                   <p>
                     <strong>Directeur de la publication :</strong> Arnaud Crestey
@@ -66,10 +71,11 @@ export default function MentionsLegalesPage() {
                     <strong>Hébergeur :</strong> Vercel Inc.
                   </p>
                   <p>
-                    <strong>Adresse :</strong> [à confirmer selon la source officielle Vercel que vous retenez]
+                    <strong>Adresse :</strong> 340 S Lemon Ave #4133, Walnut, CA
+                    91789, États-Unis
                   </p>
                   <p>
-                    <strong>Site web :</strong> https://vercel.com
+                    <strong>Site web :</strong> vercel.com
                   </p>
                 </div>
               </section>
@@ -169,6 +175,36 @@ export default function MentionsLegalesPage() {
 
               <section>
                 <h2 className="text-xl font-semibold text-ink sm:text-2xl">
+                  Conditions d’utilisation du site
+                </h2>
+
+                <div className="mt-4 space-y-4 text-[15px] leading-8 text-slate sm:text-base">
+                  <p>
+                    L’accès et l’utilisation du site arnaudcrestey.com impliquent
+                    l’acceptation pleine et entière des présentes conditions d’utilisation.
+                  </p>
+
+                  <p>
+                    Le site a pour objet de présenter les activités, services, contenus
+                    et dispositifs proposés par Arnaud Crestey.
+                  </p>
+
+                  <p>
+                    L’utilisateur s’engage à utiliser le site de manière loyale,
+                    conforme à sa finalité et dans le respect des lois et règlements
+                    en vigueur.
+                  </p>
+
+                  <p>
+                    L’éditeur ne pourra être tenu responsable des dommages directs ou
+                    indirects résultant de l’utilisation du site, d’une indisponibilité
+                    temporaire ou d’une mauvaise utilisation des informations diffusées.
+                  </p>
+                </div>
+              </section>
+
+              <section>
+                <h2 className="text-xl font-semibold text-ink sm:text-2xl">
                   Droit applicable
                 </h2>
 
@@ -179,7 +215,7 @@ export default function MentionsLegalesPage() {
 
               <section>
                 <p className="text-sm leading-7 text-slate/80">
-                  Dernière mise à jour : 27 mars 2026
+                  Dernière mise à jour : 13 avril 2026
                 </p>
               </section>
             </div>
