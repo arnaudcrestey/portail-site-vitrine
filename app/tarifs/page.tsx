@@ -85,14 +85,13 @@ export default function TarifsPage() {
           <span className="section-eyebrow">Formats & tarifs</span>
 
           <h1 className="mt-4 text-[2rem] font-semibold tracking-[-0.05em] text-ink sm:text-5xl lg:text-[60px] lg:leading-[1.04]">
-            Faire évoluer ce qui doit réellement l’être
+            Faire évoluer l'essentiel
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-[15px] leading-7 text-slate sm:text-lg sm:leading-8">
-            Du premier cadrage jusqu’à la mise en place d’un dispositif structuré, chaque format est
-            conçu pour clarifier votre situation et mettre en place ce qui doit réellement
-            fonctionner.
-          </p>
+  Du premier cadrage jusqu’à la mise en place d’un dispositif structuré, chaque format est
+  conçu pour clarifier votre situation et faire évoluer ce qui compte vraiment.
+</p>
         </div>
 
         <div className="mx-auto mt-12 grid max-w-7xl gap-6 md:mt-14 md:grid-cols-2 xl:grid-cols-3">
