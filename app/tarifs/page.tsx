@@ -24,7 +24,7 @@ const pricingItems: PricingItem[] = [
     ],
   },
   {
-    title: 'Point d’entrée stratégique sur mesure',
+    title: 'Point d’entrée sur mesure',
     subtitle: 'Le premier levier concret',
     amount: '2 500',
     description:
