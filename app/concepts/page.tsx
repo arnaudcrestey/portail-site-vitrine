@@ -14,6 +14,31 @@ export const metadata = {
     'Des points d’entrée conçus pour transformer une expertise en demandes qualifiées, en clarifiant une situation et en ouvrant naturellement vers un premier échange.',
 };
 
+function StatusDot({ variant = 'active' }: { variant?: 'active' | 'concept' }) {
+  const isActive = variant === 'active';
+
+  return (
+    <div className="pointer-events-none absolute right-4 top-4 z-20">
+      <span className="relative flex h-3 w-3">
+        <span
+          className={`absolute inline-flex h-full w-full rounded-full ${
+            isActive
+              ? 'animate-ping bg-emerald-400/75'
+              : 'animate-ping bg-slate-400/60'
+          }`}
+        />
+        <span
+          className={`relative inline-flex h-3 w-3 rounded-full ring-4 ${
+            isActive
+              ? 'bg-emerald-400 ring-emerald-300/25'
+              : 'bg-slate-400 ring-slate-300/20'
+          }`}
+        />
+      </span>
+    </div>
+  );
+}
+
 export default function ConceptsPage() {
   return (
     <>
@@ -41,7 +66,10 @@ export default function ConceptsPage() {
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {strategicEntryPoints.map((project) => (
-              <ProjectShowcaseCard key={project.slug} project={project} />
+              <div key={project.slug} className="relative">
+                <StatusDot variant="active" />
+                <ProjectShowcaseCard project={project} />
+              </div>
             ))}
           </div>
 
@@ -66,9 +94,19 @@ export default function ConceptsPage() {
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {conceptProjects.map((project) => (
-              <ProjectShowcaseCard key={project.slug} project={project} />
-            ))}
+            {conceptProjects.map((project) => {
+              const isHighlighted =
+                project.slug.includes('love') ||
+                project.slug.includes('personality') ||
+                project.slug.includes('intuition');
+
+              return (
+                <div key={project.slug} className="relative">
+                  {isHighlighted ? <StatusDot variant="active" /> : null}
+                  <ProjectShowcaseCard project={project} />
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -97,7 +135,10 @@ export default function ConceptsPage() {
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {reserveConcepts.map((concept) => (
-              <ReserveConceptCard key={concept.title} concept={concept} />
+              <div key={concept.title} className="relative">
+                <StatusDot variant="concept" />
+                <ReserveConceptCard concept={concept} />
+              </div>
             ))}
           </div>
         </div>
