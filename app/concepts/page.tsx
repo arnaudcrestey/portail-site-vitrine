@@ -30,12 +30,24 @@ function StatusDot({ variant = 'active' }: { variant?: 'active' | 'concept' }) {
         <span
           className={`relative inline-flex h-3 w-3 rounded-full ring-4 ${
             isActive
-              ? 'bg-emerald-400 ring-emerald-300/25'
+              ? 'bg-emerald-500 ring-emerald-300/25'
               : 'bg-slate-400 ring-slate-300/20'
           }`}
         />
       </span>
     </div>
+  );
+}
+
+function EyebrowLive() {
+  return (
+    <span className="inline-flex items-center gap-1.5">
+      EN LIGNE
+      <span className="relative flex h-2 w-2">
+        <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping" />
+        <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+      </span>
+    </span>
   );
 }
 
@@ -88,25 +100,19 @@ export default function ConceptsPage() {
       <section id="concepts-grid" className="section-spacing pt-4">
         <div className="container-layout">
           <SectionHeading
-            eyebrow={
-  <span className="inline-flex items-center gap-1.5">
-    EN LIGNE
-    <span className="relative flex h-2 w-2">
-      <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75 animate-ping"></span>
-      <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500"></span>
-    </span>
-  </span>
-}
+            eyebrow={<EyebrowLive />}
             title="Des dispositifs conçus pour susciter des demandes qualifiées"
             description="D’autres points d’entrée, mini-sites et démonstrateurs déjà conçus pour explorer différentes situations, usages et manières de faire émerger des demandes."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {conceptProjects.map((project) => {
+              const slug = project.slug.toLowerCase();
+
               const isHighlighted =
-                project.slug.includes('love') ||
-                project.slug.includes('personality') ||
-                project.slug.includes('intuition');
+                slug.includes('love') ||
+                slug.includes('personality') ||
+                slug.includes('intuition');
 
               return (
                 <div key={project.slug} className="relative">
