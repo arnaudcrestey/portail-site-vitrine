@@ -53,19 +53,17 @@ export default function TarifsPage() {
   return (
     <section className="section-spacing">
       <div className="container-layout">
-        <div className="mx-auto max-w-4xl text-center">
-          <span className="section-eyebrow">Formats & tarifs</span>
+        <div className="mx-auto max-w-3xl text-center">
+  <span className="section-eyebrow">Formats & tarifs</span>
 
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Des formats clairs selon votre besoin
-          </h1>
+  <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-[56px] lg:leading-[1.08]">
+    Des formats clairs selon votre besoin
+  </h1>
 
-          <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate sm:text-lg">
-            Vous n’avez pas forcément besoin de tout refaire.
-            <br className="hidden sm:block" />
-            Mais de structurer ce qui doit vraiment fonctionner.
-          </p>
-        </div>
+  <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate sm:text-lg">
+    Vous n’avez pas forcément besoin de tout refaire, mais de structurer ce qui doit vraiment fonctionner.
+  </p>
+</div>
 
         <div className="mx-auto mt-14 grid max-w-6xl gap-6 lg:grid-cols-3">
           {pricingItems.map((item) => (
