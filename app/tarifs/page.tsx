@@ -4,7 +4,7 @@ const pricingItems = [
   {
     title: 'Cadrage stratégique',
     subtitle: 'Pour clarifier avant de construire',
-    price: 'À partir de 490 €',
+    price: 'À partir de 490 € HT',
     description:
       'Un temps de travail structuré pour clarifier votre situation, faire ressortir les priorités et définir ce qui doit être mis en place en premier.',
     details: [
@@ -17,7 +17,7 @@ const pricingItems = [
   {
     title: 'Point d’entrée sur mesure',
     subtitle: 'Le format le plus demandé',
-    price: 'À partir de 2 500 €',
+    price: 'À partir de 2 500 € HT',
     description:
       'Un dispositif conçu pour attirer les bonnes personnes, structurer votre expertise et commencer à générer des prises de contact plus qualifiées.',
     details: [
@@ -31,7 +31,7 @@ const pricingItems = [
   {
     title: 'Système complet',
     subtitle: 'Pour une logique plus globale',
-    price: 'À partir de 4 500 €',
+    price: 'À partir de 6 500 € HT',
     description:
       'Une architecture plus large pour organiser durablement votre acquisition, votre parcours client et la cohérence d’ensemble de votre dispositif.',
     details: [
@@ -54,17 +54,16 @@ export default function TarifsPage() {
     <section className="section-spacing">
       <div className="container-layout">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="section-eyebrow">Tarifs & devis</span>
+          <span className="section-eyebrow">Formats & Tarifs</span>
 
           <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:whitespace-nowrap lg:text-6xl">
             Des formats clairs selon votre besoin
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate sm:text-lg">
-            Du cadrage initial au dispositif plus complet, chaque format est pensé pour vous
-            faire avancer avec clarté, cohérence et utilité réelle.
-          </p>
-        </div>
+  Vous n’avez pas forcément besoin de tout refaire. <br className="hidden sm:block" />
+  Mais de structurer ce qui doit vraiment fonctionner.
+</p>
 
         <div className="mt-14 grid gap-6 lg:grid-cols-3">
           {pricingItems.map((item) => (
