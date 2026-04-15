@@ -61,8 +61,8 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <SectionHeading
             eyebrow="En ligne"
-            title="Des dispositifs déjà utilisés pour capter et engager des situations réelles"
-            description="D’autres points d’entrée, mini-sites et démonstrateurs déjà conçus pour explorer différentes situations, usages et logiques d’acquisition."
+            title="Des dispositifs conçus pour susciter des demandes qualifiées"
+            description="D’autres points d’entrée, mini-sites et démonstrateurs déjà conçus pour explorer différentes situations, usages et manières de faire émerger des demandes."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
