@@ -1,7 +1,12 @@
 import { ProjectShowcaseCard, ReserveConceptCard } from '@/components/cards';
 import { PageHero } from '@/components/page-hero';
 import { SectionHeading, Surface } from '@/components/ui';
-import { conceptProjects, featuredLabProject, reserveConcepts } from '@/data/site';
+import {
+  conceptProjects,
+  featuredLabProject,
+  reserveConcepts,
+  strategicEntryPoints,
+} from '@/data/site';
 
 export const metadata = {
   title: 'Laboratoire de concepts',
@@ -16,16 +21,34 @@ export default function ConceptsPage() {
         eyebrow="Laboratoire"
         title="Des points d’entrée conçus pour transformer une expertise en demandes qualifiées"
         description="Conçus pour les professionnels de l’accompagnement, du conseil et du droit, ces points d’entrée permettent à leurs futurs clients de comprendre rapidement leur situation, puis de passer naturellement à un premier échange."
-        primaryCta={{ href: '#concepts-grid', label: 'Découvrir les concepts' }}
+        primaryCta={{ href: '#entry-points', label: 'Découvrir les points d’entrée' }}
         secondaryCta={{ href: '/contact', label: 'Me parler d’un projet digital' }}
       />
+
+      <section id="entry-points" className="section-spacing pt-4">
+        <div className="container-layout">
+          <SectionHeading
+            eyebrow="Point d’entrée"
+            title="Faire un point sur votre situation"
+            description="Trois angles pour comprendre plus clairement ce qui se joue aujourd’hui, identifier ce qui bloque et avancer avec plus de justesse."
+          />
+
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {strategicEntryPoints.map((project) => (
+              <ProjectShowcaseCard key={project.slug} project={project} />
+            ))}
+          </div>
+        </div>
+      </section>
 
       <section id="concepts-grid" className="section-spacing pt-4">
         <div className="container-layout">
           <SectionHeading
             eyebrow="En ligne"
             title="Déjà imaginés et mis en ligne"
+            description="D’autres points d’entrée, mini-sites et démonstrateurs déjà conçus pour explorer différentes situations, usages et logiques d’acquisition."
           />
+
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {conceptProjects.map((project) => (
               <ProjectShowcaseCard key={project.slug} project={project} />
@@ -34,19 +57,19 @@ export default function ConceptsPage() {
         </div>
       </section>
 
-     <section className="section-spacing pt-4">
-  <div className="container-layout">
-    <SectionHeading
-      eyebrow="Déclinaisons métier"
-      title="Une adaptation concrète à un métier"
-      description="Ces points d’entrée peuvent être adaptés à un métier, à ses contraintes et aux situations qu’il rencontre."
-    />
+      <section className="section-spacing pt-4">
+        <div className="container-layout">
+          <SectionHeading
+            eyebrow="Déclinaisons métier"
+            title="Une adaptation concrète à un métier"
+            description="Ces points d’entrée peuvent être adaptés à un métier, à ses contraintes et aux situations qu’il rencontre."
+          />
 
-    <div className="mt-12 max-w-sm">
-      <ProjectShowcaseCard project={featuredLabProject} />
-    </div>
-  </div>
-</section>
+          <div className="mt-12 max-w-sm">
+            <ProjectShowcaseCard project={featuredLabProject} />
+          </div>
+        </div>
+      </section>
 
       <section className="section-spacing pt-4">
         <div className="container-layout">
