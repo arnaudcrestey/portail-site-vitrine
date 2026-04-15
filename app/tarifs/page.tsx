@@ -33,7 +33,7 @@ const pricingItems = [
     subtitle: 'Pour une logique plus globale',
     price: 'À partir de 6 500 € HT',
     description:
-      'Une architecture plus large pour organiser durablement votre acquisition, votre parcours client et la cohérence d’ensemble de votre dispositif.',
+      'Un système structuré pour organiser durablement votre acquisition, votre parcours client et la cohérence d’ensemble de votre dispositif.',
     details: [
       'Point d’entrée + parcours complet',
       'Automatisations et continuité du suivi',
@@ -46,7 +46,7 @@ const pricingItems = [
 export const metadata = {
   title: 'Tarifs',
   description:
-    'Formats, repères de prix et accompagnements sur mesure pour la conception de systèmes numériques premium, pensés pour attirer, qualifier et convertir avec cohérence.',
+    'Formats, tarifs et accompagnements sur mesure pour la conception de systèmes numériques premium.',
 };
 
 export default function TarifsPage() {
@@ -54,18 +54,20 @@ export default function TarifsPage() {
     <section className="section-spacing">
       <div className="container-layout">
         <div className="mx-auto max-w-4xl text-center">
-          <span className="section-eyebrow">Formats & Tarifs</span>
+          <span className="section-eyebrow">Formats & tarifs</span>
 
-          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:whitespace-nowrap lg:text-6xl">
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-6xl">
             Des formats clairs selon votre besoin
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate sm:text-lg">
-  Vous n’avez pas forcément besoin de tout refaire. <br className="hidden sm:block" />
-  Mais de structurer ce qui doit vraiment fonctionner.
-</p>
+            Vous n’avez pas forcément besoin de tout refaire.
+            <br className="hidden sm:block" />
+            Mais de structurer ce qui doit vraiment fonctionner.
+          </p>
+        </div>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-3">
+        <div className="mx-auto mt-14 grid max-w-6xl gap-6 lg:grid-cols-3">
           {pricingItems.map((item) => (
             <div
               key={item.title}
@@ -139,7 +141,7 @@ export default function TarifsPage() {
                 href="/contact"
                 className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#2f6df6] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(59,99,243,0.28)] transition hover:translate-y-[-1px] hover:shadow-[0_20px_44px_rgba(59,99,243,0.34)] sm:px-7"
               >
-                Parler de votre projet
+                Faire un point sur votre situation
               </Link>
             </div>
           </div>
