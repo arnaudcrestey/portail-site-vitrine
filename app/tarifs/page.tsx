@@ -4,9 +4,9 @@ const pricingItems = [
   {
     title: 'Cadrage stratégique',
     subtitle: 'Pour clarifier avant de construire',
-    price: 'À partir de 290 €',
+    price: 'À partir de 490 €',
     description:
-      'Un échange structuré pour clarifier votre besoin, faire ressortir les priorités et identifier ce qui doit être mis en place en premier.',
+      'Un temps de travail structuré pour clarifier votre situation, faire ressortir les priorités et définir ce qui doit être mis en place en premier.',
     details: [
       'Analyse précise de votre situation',
       'Identification des priorités',
@@ -17,9 +17,9 @@ const pricingItems = [
   {
     title: 'Point d’entrée sur mesure',
     subtitle: 'Le format le plus demandé',
-    price: 'À partir de 1 200 €',
+    price: 'À partir de 2 500 €',
     description:
-      'Un dispositif conçu pour attirer les bonnes personnes, structurer votre expertise et commencer à générer des prises de contact qualifiées.',
+      'Un dispositif conçu pour attirer les bonnes personnes, structurer votre expertise et commencer à générer des prises de contact plus qualifiées.',
     details: [
       'Conception du point d’entrée',
       'Structure du parcours utilisateur',
@@ -31,7 +31,7 @@ const pricingItems = [
   {
     title: 'Système complet',
     subtitle: 'Pour une logique plus globale',
-    price: 'Sur devis',
+    price: 'À partir de 4 500 €',
     description:
       'Une architecture plus large pour organiser durablement votre acquisition, votre parcours client et la cohérence d’ensemble de votre dispositif.',
     details: [
@@ -46,7 +46,7 @@ const pricingItems = [
 export const metadata = {
   title: 'Tarifs',
   description:
-    'Formats, repères de prix et accompagnements sur devis pour la conception de systèmes numériques sur mesure.',
+    'Formats, repères de prix et accompagnements sur mesure pour la conception de systèmes numériques premium, pensés pour attirer, qualifier et convertir avec cohérence.',
 };
 
 export default function TarifsPage() {
@@ -61,8 +61,8 @@ export default function TarifsPage() {
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate sm:text-lg">
-            Du besoin le plus simple au dispositif complet, chaque format est pensé pour vous
-            faire avancer concrètement, avec clarté, cohérence et utilité réelle.
+            Du cadrage initial au dispositif plus complet, chaque format est pensé pour vous
+            faire avancer avec clarté, cohérence et utilité réelle.
           </p>
         </div>
 
@@ -131,7 +131,7 @@ export default function TarifsPage() {
               </p>
 
               <p className="mt-3 max-w-[620px] text-sm leading-7 text-slate sm:mt-4 sm:text-base sm:leading-8">
-                Un échange permet de clarifier votre situation et de définir la bonne direction.
+                Un échange permet de clarifier votre besoin et de définir la bonne direction.
               </p>
             </div>
 
