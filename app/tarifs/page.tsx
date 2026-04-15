@@ -1,10 +1,19 @@
 import Link from 'next/link';
 
-const pricingItems = [
+type PricingItem = {
+  title: string;
+  subtitle: string;
+  amount: string;
+  description: string;
+  details: string[];
+  featured?: boolean;
+};
+
+const pricingItems: PricingItem[] = [
   {
     title: 'Cadrage stratégique',
     subtitle: 'Pour clarifier avant de construire',
-    price: 'À partir de 490 € HT',
+    amount: '490',
     description:
       'Un temps de travail structuré pour clarifier votre situation, faire ressortir les priorités et définir ce qui doit être mis en place en premier.',
     details: [
@@ -17,7 +26,7 @@ const pricingItems = [
   {
     title: 'Point d’entrée sur mesure',
     subtitle: 'Le format le plus demandé',
-    price: 'À partir de 2 500 € HT',
+    amount: '2 500',
     description:
       'Un dispositif conçu pour attirer les bonnes personnes, structurer votre expertise et commencer à générer des prises de contact plus qualifiées.',
     details: [
@@ -31,7 +40,7 @@ const pricingItems = [
   {
     title: 'Système complet',
     subtitle: 'Pour une logique plus globale',
-    price: 'À partir de 6 500 € HT',
+    amount: '6 500',
     description:
       'Un système structuré pour organiser durablement votre acquisition, votre parcours client et la cohérence d’ensemble de votre dispositif.',
     details: [
@@ -49,27 +58,43 @@ export const metadata = {
     'Formats, tarifs et accompagnements sur mesure pour la conception de systèmes numériques premium.',
 };
 
+function PriceDisplay({ amount }: { amount: string }) {
+  return (
+    <div className="mt-6 flex items-end gap-2">
+      <span className="text-[30px] font-semibold tracking-tight text-ink sm:text-[34px]">
+        À partir de {amount} €
+      </span>
+      <span className="pb-[6px] text-[11px] font-semibold uppercase tracking-[0.18em] text-slate/70 sm:text-xs">
+        HT
+      </span>
+    </div>
+  );
+}
+
 export default function TarifsPage() {
   return (
     <section className="section-spacing">
       <div className="container-layout">
         <div className="mx-auto max-w-3xl text-center">
-  <span className="section-eyebrow">Formats & tarifs</span>
+          <span className="section-eyebrow">Formats & tarifs</span>
 
-  <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-[56px] lg:leading-[1.08]">
-    Des formats clairs selon votre besoin
-  </h1>
+          <h1 className="mt-4 text-4xl font-semibold tracking-tight text-ink sm:text-5xl lg:text-[48px] lg:leading-[1.12]">
+            Structurer ce qui doit
+            <br className="hidden sm:block" />
+            vraiment fonctionner
+          </h1>
 
-  <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate sm:text-lg">
-    Vous n’avez pas forcément besoin de tout refaire, mais de structurer ce qui doit vraiment fonctionner.
-  </p>
-</div>
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-8 text-slate sm:text-lg">
+            Du cadrage initial au dispositif plus complet, chaque format est pensé pour clarifier
+            votre situation et faire avancer ce qui compte vraiment.
+          </p>
+        </div>
 
         <div className="mx-auto mt-14 grid max-w-6xl gap-6 lg:grid-cols-3">
           {pricingItems.map((item) => (
-            <div
+            <article
               key={item.title}
-              className={`relative flex h-full flex-col overflow-hidden rounded-[30px] border px-6 py-7 sm:px-8 sm:py-8 ${
+              className={`relative flex h-full flex-col overflow-hidden rounded-[28px] border px-6 py-7 sm:px-8 sm:py-8 ${
                 item.featured
                   ? 'border-[#2f6df6]/20 bg-white shadow-[0_24px_80px_rgba(47,109,246,0.10)] ring-1 ring-[#2f6df6]/10'
                   : 'border-white/60 bg-white/80 shadow-[0_20px_60px_rgba(15,23,42,0.06)]'
@@ -90,15 +115,13 @@ export default function TarifsPage() {
                     </div>
 
                     {item.featured ? (
-                      <span className="inline-flex shrink-0 rounded-full bg-[#2f6df6]/10 px-3 py-1 text-xs font-semibold text-[#2f6df6]">
+                      <span className="inline-flex shrink-0 rounded-full bg-[#2f6df6]/10 px-3 py-1 text-[11px] font-semibold text-[#2f6df6] sm:text-xs">
                         Recommandé
                       </span>
                     ) : null}
                   </div>
 
-                  <p className="mt-6 text-3xl font-semibold tracking-tight text-ink">
-                    {item.price}
-                  </p>
+                  <PriceDisplay amount={item.amount} />
 
                   <p className="mt-5 text-sm leading-7 text-slate sm:text-base">
                     {item.description}
@@ -108,13 +131,13 @@ export default function TarifsPage() {
                 <ul className="mt-7 space-y-3.5 text-sm text-slate sm:text-base">
                   {item.details.map((detail) => (
                     <li key={detail} className="flex items-start gap-3">
-                      <span className="mt-[6px] h-2 w-2 shrink-0 rounded-full bg-[#2f6df6]" />
+                      <span className="mt-[7px] h-2 w-2 shrink-0 rounded-full bg-[#2f6df6]" />
                       <span>{detail}</span>
                     </li>
                   ))}
                 </ul>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
@@ -132,12 +155,17 @@ export default function TarifsPage() {
               <p className="mt-3 max-w-[620px] text-sm leading-7 text-slate sm:mt-4 sm:text-base sm:leading-8">
                 Un échange permet de clarifier votre besoin et de définir la bonne direction.
               </p>
+
+              <p className="mt-4 text-xs leading-6 text-slate/70 sm:text-sm">
+                Les montants indiqués constituent des repères de départ, selon la nature du besoin
+                et le niveau de structuration attendu.
+              </p>
             </div>
 
             <div className="flex justify-center lg:block lg:shrink-0">
               <Link
                 href="/contact"
-                className="inline-flex min-h-[48px] items-center justify-center rounded-full bg-[#2f6df6] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(59,99,243,0.28)] transition hover:translate-y-[-1px] hover:shadow-[0_20px_44px_rgba(59,99,243,0.34)] sm:px-7"
+                className="inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#2f6df6] px-6 py-3 text-sm font-semibold text-white shadow-[0_16px_40px_rgba(59,99,243,0.28)] transition hover:translate-y-[-1px] hover:shadow-[0_20px_44px_rgba(59,99,243,0.34)] sm:px-7"
               >
                 Faire un point sur votre situation
               </Link>
