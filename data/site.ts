@@ -96,6 +96,51 @@ export const deviceExamples: DeviceExample[] = [
   },
 ];
 
+
+// 🔥 NOUVEAU BLOC PREMIUM (TES 3 POINTS D’ENTRÉE)
+
+export const strategicEntryPoints: ProjectCard[] = [
+  {
+    slug: 'positionnement',
+    number: '01',
+    title: 'Positionnement',
+    hook: 'Pourquoi votre activité n’attire pas de clients aujourd’hui',
+    description:
+      'Une lecture claire pour comprendre ce qui freine la compréhension, l’attractivité ou la lisibilité de votre activité.',
+    proof: 'Lecture directe • Point de friction • Première clarté',
+    image: '/projects/positionnement.jpg',
+    href: 'https://positionnement.arnaudcrestey.com',
+    cta: 'Faire un point',
+  },
+  {
+    slug: 'projection',
+    number: '02',
+    title: 'Projection',
+    hook: 'Expliquez clairement ce que vous faites',
+    description:
+      'Un point d’entrée conçu pour aider à formuler plus clairement une activité, une offre ou une direction.',
+    proof: 'Expression guidée • Clarification • Utilité immédiate',
+    image: '/projects/projection.jpg',
+    href: 'https://projection.arnaudcrestey.com',
+    cta: 'Explorer',
+  },
+  {
+    slug: 'audit',
+    number: '03',
+    title: 'Audit',
+    hook: 'Voyez ce que votre activité laisse réellement percevoir',
+    description:
+      'Une lecture structurée pour repérer les écarts entre ce que vous proposez, ce qui est perçu et ce qui bloque.',
+    proof: 'Perception • Lisibilité • Ajustement',
+    image: '/projects/audit.jpg',
+    href: 'https://audit.arnaudcrestey.com',
+    cta: 'Découvrir',
+  },
+];
+
+
+// 👇 LE RESTE NE CHANGE PAS
+
 export const conceptProjects: ProjectCard[] = [
   {
     slug: 'love-scan',
@@ -212,4 +257,3 @@ export const contactDetails = {
   phone: '+33 6 81 95 23 45',
   location: 'Vire, Normandie, France',
 };
-
