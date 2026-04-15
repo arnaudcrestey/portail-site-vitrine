@@ -60,13 +60,15 @@ export const metadata = {
 
 function PriceDisplay({ amount }: { amount: string }) {
   return (
-    <div className="mt-6 flex items-end gap-2 sm:gap-2.5">
-      <span className="text-[30px] font-semibold tracking-[-0.04em] text-ink sm:text-[36px] lg:text-[40px]">
-        À partir de {amount} €
-      </span>
-      <span className="pb-[7px] text-[10px] font-semibold uppercase tracking-[0.22em] text-slate/60 sm:pb-[8px] sm:text-[11px]">
-        HT
-      </span>
+    <div className="mt-6 flex items-end">
+      <div className="flex min-w-0 flex-wrap items-end gap-x-2 gap-y-1">
+        <span className="whitespace-nowrap text-[31px] font-semibold tracking-[-0.045em] text-ink sm:text-[34px] lg:text-[35px]">
+          À partir de {amount} €
+        </span>
+        <span className="pb-[6px] text-[10px] font-semibold uppercase tracking-[0.18em] text-slate/60 sm:text-[11px]">
+          HT
+        </span>
+      </div>
     </div>
   );
 }
@@ -85,20 +87,20 @@ export default function TarifsPage() {
           <span className="section-eyebrow">Formats & tarifs</span>
 
           <h1 className="mt-4 text-[2rem] font-semibold tracking-[-0.05em] text-ink sm:text-5xl lg:text-[60px] lg:leading-[1.04]">
-            Faire évoluer l'essentiel
+            Faire évoluer l’essentiel
           </h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-[15px] leading-7 text-slate sm:text-lg sm:leading-8">
-  Du premier cadrage jusqu’à la mise en place d’un dispositif structuré, chaque format est
-  conçu pour clarifier votre situation et faire évoluer ce qui compte vraiment.
-</p>
+            Du premier cadrage jusqu’à la mise en place d’un dispositif structuré, chaque format est
+            conçu pour clarifier votre situation et faire évoluer ce qui compte vraiment.
+          </p>
         </div>
 
         <div className="mx-auto mt-12 grid max-w-7xl gap-6 md:mt-14 md:grid-cols-2 xl:grid-cols-3">
           {pricingItems.map((item) => (
             <article
               key={item.title}
-              className={`group relative flex h-full flex-col overflow-hidden rounded-[28px] border px-5 py-6 transition duration-300 sm:px-7 sm:py-8 lg:px-8 ${
+              className={`group relative flex h-full min-w-0 flex-col overflow-hidden rounded-[28px] border px-5 py-6 transition duration-300 sm:px-7 sm:py-8 lg:px-8 ${
                 item.featured
                   ? 'border-[#2f6df6]/20 bg-white shadow-[0_20px_70px_rgba(47,109,246,0.12)] ring-1 ring-[#2f6df6]/12'
                   : 'border-white/70 bg-white/82 shadow-[0_18px_50px_rgba(15,23,42,0.05)] backdrop-blur'
@@ -115,19 +117,20 @@ export default function TarifsPage() {
 
               <div className="relative flex h-full flex-col">
                 <div>
-                  <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-                    <div className="min-w-0">
-                      <p className="text-sm font-medium text-[#2f6df6]">{item.subtitle}</p>
-                      <h2 className="mt-2 text-[28px] font-semibold tracking-[-0.04em] text-ink sm:text-[30px] lg:text-[32px]">
-                        {item.title}
-                      </h2>
+                  <div className="flex flex-col gap-3">
+                    <div className="flex items-start justify-between gap-3">
+                      <p className="pr-2 text-sm font-medium text-[#2f6df6]">{item.subtitle}</p>
+
+                      {item.featured ? (
+                        <span className="inline-flex shrink-0 whitespace-nowrap rounded-full bg-[#2f6df6]/10 px-3 py-1 text-[11px] font-semibold text-[#2f6df6] sm:text-xs">
+                          Recommandé
+                        </span>
+                      ) : null}
                     </div>
 
-                    {item.featured ? (
-                      <span className="inline-flex w-fit shrink-0 rounded-full bg-[#2f6df6]/10 px-3 py-1 text-[11px] font-semibold text-[#2f6df6] sm:mt-1 sm:text-xs">
-                        Recommandé
-                      </span>
-                    ) : null}
+                    <h2 className="max-w-[16ch] text-[28px] font-semibold leading-[1.08] tracking-[-0.04em] text-ink sm:text-[30px] lg:text-[32px]">
+                      {item.title}
+                    </h2>
                   </div>
 
                   <PriceDisplay amount={item.amount} />
@@ -148,7 +151,7 @@ export default function TarifsPage() {
                   ))}
                 </ul>
 
-                <div className="mt-8" />
+                <div className="mt-8 grow" />
               </div>
             </article>
           ))}
