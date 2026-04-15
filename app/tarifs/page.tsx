@@ -24,7 +24,7 @@ const pricingItems: PricingItem[] = [
     ],
   },
   {
-    title: 'Point d’entrée sur mesure',
+    title: 'Point d’entrée stratégique sur mesure',
     subtitle: 'Le premier levier concret',
     amount: '2 500',
     description:
@@ -44,6 +44,7 @@ const pricingItems: PricingItem[] = [
     description:
       'Un système plus global pour organiser votre acquisition, votre parcours client et la cohérence d’ensemble de votre dispositif.',
     details: [
+      'Pilotage global du dispositif',
       'Point d’entrée + parcours complet',
       'Automatisations et continuité du suivi',
       'Adaptation à votre activité',
@@ -165,7 +166,7 @@ export default function TarifsPage() {
             <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between lg:gap-12">
               <div className="max-w-[760px]">
                 <h3 className="text-[30px] font-semibold tracking-[-0.04em] text-ink sm:text-[34px] lg:text-[38px]">
-                  Parlons de votre situation
+                  Parlons de votre situation 
                 </h3>
 
                 <p className="mt-4 max-w-[620px] text-sm leading-7 text-slate sm:text-base sm:leading-8">
