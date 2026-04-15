@@ -82,11 +82,9 @@ export default function TarifsPage() {
         <div className="mx-auto max-w-4xl text-center">
           <span className="section-eyebrow">Formats & tarifs</span>
 
-          <h1 className="mt-4 text-[2.2rem] font-semibold tracking-[-0.05em] text-ink sm:text-5xl lg:text-[60px] lg:leading-[1.04]">
-            Structurer ce qui doit
-            <br className="hidden sm:block" />
-            vraiment fonctionner
-          </h1>
+          <h<h1 className="mt-4 text-[2rem] font-semibold tracking-[-0.05em] text-ink sm:text-5xl lg:text-[60px] lg:leading-[1.04]">
+  Faire évoluer ce qui doit réellement l’être
+</h1>
 
           <p className="mx-auto mt-6 max-w-3xl text-[15px] leading-7 text-slate sm:text-lg sm:leading-8">
             Du premier cadrage jusqu’à la mise en place d’un dispositif structuré, chaque format est
