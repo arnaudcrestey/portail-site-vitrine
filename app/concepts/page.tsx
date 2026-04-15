@@ -20,7 +20,7 @@ export default function ConceptsPage() {
       <PageHero
         eyebrow="Laboratoire"
         title="Des points d’entrée conçus pour transformer une expertise en demandes qualifiées"
-        description="Pensés pour les professionnels de l’accompagnement, du conseil et du droit, ces dispositifs aident leurs futurs clients à comprendre plus clairement leur situation, puis à avancer naturellement vers un premier échange."
+        description="Pensés pour les professionnels de l’accompagnement, du conseil et du droit, ces dispositifs aident à clarifier une situation, structurer une activité et ouvrir plus naturellement vers un premier échange."
         primaryCta={{
           href: '#entry-points',
           label: 'Découvrir les points d’entrée',
@@ -35,7 +35,7 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <SectionHeading
             eyebrow="Points d’entrée"
-            title="Trois points d’entrée pour clarifier une situation"
+            title="Trois points d’entrée conçus pour structurer et clarifier une activité"
             description="Trois angles complémentaires pour mieux comprendre ce qui se joue aujourd’hui, identifier ce qui freine et ouvrir une suite plus lisible."
           />
 
@@ -61,7 +61,7 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <SectionHeading
             eyebrow="En ligne"
-            title="Déjà imaginés et mis en ligne"
+            title="Des dispositifs déjà utilisés pour capter et engager des situations réelles"
             description="D’autres points d’entrée, mini-sites et démonstrateurs déjà conçus pour explorer différentes situations, usages et logiques d’acquisition."
           />
 
