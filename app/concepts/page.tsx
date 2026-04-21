@@ -270,4 +270,28 @@ export default function ConceptsPage() {
             <div className="relative mx-auto max-w-4xl text-center">
               <span className="section-eyebrow">Projet digital</span>
 
-              <h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5
+              <h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
+                Vous avez une expertise à transformer en dispositif concret ?
+              </h2>
+
+              <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
+                Point d’entrée, mini-site, logique de parcours, structure de
+                conversion : chaque dispositif est pensé pour rendre votre
+                activité plus claire, plus lisible et plus engageante.
+              </p>
+
+              <div className="mt-8 flex justify-center">
+                <Link
+                  href="/contact"
+                  className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
+                >
+                  Parler de votre projet
+                </Link>
+              </div>
+            </div>
+          </Surface>
+        </div>
+      </section>
+    </>
+  );
+}
