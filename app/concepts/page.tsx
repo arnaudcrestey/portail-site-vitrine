@@ -61,6 +61,65 @@ function normalize(value: string | undefined) {
     .replace(/[\u0300-\u036f]/g, '');
 }
 
+function ViabilityPocketCard() {
+  return (
+    <div className="relative overflow-hidden rounded-[22px] border border-[#cfd7ff] bg-white shadow-[0_18px_50px_rgba(15,23,42,0.05)] transition duration-300 ease-out hover:-translate-y-1">
+      <StatusDot variant="active" />
+
+      <div className="grid min-h-[420px] grid-cols-1 lg:grid-cols-[1.02fr_0.98fr]">
+        <div className="flex flex-col justify-between border-b border-[#d9e1ff] p-5 sm:p-6 lg:border-b-0 lg:border-r">
+          <div>
+            <div className="inline-flex rounded-full border border-[#d8def7] bg-[#f8faff] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#6d7fcc]">
+              Point d’entrée initial
+            </div>
+
+            <h3 className="mt-4 max-w-[16ch] text-3xl font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[2.15rem]">
+              Votre activité peut-elle réellement devenir viable ?
+            </h3>
+
+            <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600 sm:text-[15px]">
+              Une lecture structurée pour voir ce qui, dans votre activité,
+              repose déjà sur une base réelle, ce qui fragilise encore
+              l’ensemble, et ce qu’il faudrait clarifier pour construire
+              quelque chose de plus stable, de plus lisible et de plus durable.
+            </p>
+
+            <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400">
+              Gratuit • Sans engagement • En quelques minutes
+            </p>
+          </div>
+
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+            <Link
+              href="https://viabilite.arnaudcrestey.com"
+              className="inline-flex items-center justify-center rounded-full bg-[#a57a3b] px-4 py-2.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#916a31]"
+            >
+              Commencer la lecture
+            </Link>
+
+            <Link
+              href="https://viabilite.arnaudcrestey.com"
+              className="inline-flex items-center justify-center rounded-full border border-[#ddd6c7] bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition duration-300 hover:-translate-y-0.5 hover:bg-[#faf8f3]"
+            >
+              Comprendre la démarche
+            </Link>
+          </div>
+        </div>
+
+        <div className="relative min-h-[240px] bg-[#f6f1e8]">
+          <Image
+            src="/images/projects/viabilite-activite.jpg"
+            alt="Point d’entrée viabilité d’activité"
+            fill
+            className="object-cover object-center"
+            priority
+          />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function ConceptsPage() {
   const btocProjects = conceptProjects.filter((project) => {
     const slug = normalize(project.slug);
@@ -93,59 +152,8 @@ export default function ConceptsPage() {
             description="Un premier point d’entrée pensé pour les personnes qui n’ont pas encore structuré leur activité, ou qui sont encore au début. L’objectif : clarifier la base avant de vouloir accélérer le reste."
           />
 
-          <div className="mt-12">
-            <div className="group relative overflow-hidden rounded-[28px] border border-black/8 bg-[#f6f1e8] shadow-[0_20px_60px_rgba(15,23,42,0.06)] transition duration-300 ease-out hover:-translate-y-1">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.65),transparent_45%)]" />
-
-              <div className="relative grid gap-0 lg:grid-cols-[1.08fr_0.92fr]">
-                <div className="flex flex-col justify-center px-6 py-8 sm:px-8 sm:py-10 lg:px-10 lg:py-12">
-                  <span className="inline-flex w-fit rounded-full border border-[#b08a52]/18 bg-white/65 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#8d6a36]">
-                    Lecture stratégique
-                  </span>
-
-                  <h2 className="mt-6 max-w-3xl text-balance text-3xl font-semibold leading-[1.05] tracking-[-0.03em] text-[#1f2937] sm:text-4xl lg:text-5xl xl:text-[3.8rem]">
-                    Votre activité peut-elle réellement devenir viable ?
-                  </h2>
-
-                  <p className="mt-6 max-w-2xl text-sm leading-7 text-[#4b5563] sm:text-base">
-                    Une lecture structurée pour voir ce qui, dans votre activité,
-                    repose déjà sur une base réelle, ce qui fragilise encore
-                    l’ensemble, et ce qu’il faudrait clarifier pour construire
-                    quelque chose de plus stable, de plus lisible et de plus durable.
-                  </p>
-
-                  <p className="mt-5 text-sm text-[#6b7280]">
-                    Gratuit • Sans engagement • En quelques minutes
-                  </p>
-
-                  <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-                    <Link
-                      href="https://viabilite.arnaudcrestey.com"
-                      className="inline-flex items-center justify-center rounded-full bg-[#a57a3b] px-5 py-3 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#916a31]"
-                    >
-                      Commencer la lecture
-                    </Link>
-
-                    <Link
-                      href="https://viabilite.arnaudcrestey.com"
-                      className="inline-flex items-center justify-center rounded-full border border-[#d8c7ad] bg-white/70 px-5 py-3 text-sm font-semibold text-[#374151] transition duration-300 hover:-translate-y-0.5 hover:bg-white"
-                    >
-                      Comprendre la démarche
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="relative min-h-[280px] border-t border-black/6 lg:min-h-full lg:border-l lg:border-t-0">
-                  <Image
-                    src="/images/projects/viabilite-activite.jpg"
-                    alt="Point d’entrée viabilité d’activité"
-                    fill
-                    className="object-cover object-center"
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
+          <div className="mt-12 max-w-[980px]">
+            <ViabilityPocketCard />
           </div>
 
           <div className="mt-8">
