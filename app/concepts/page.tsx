@@ -90,7 +90,7 @@ export default function ConceptsPage() {
               />
             </div>
 
-            <div className="mt-12 mx-auto max-w-sm">
+            <div className="mt-12 mx-auto max-w-md">
               <div className="relative">
                 <StatusDot variant="active" />
                 <ProjectShowcaseCard project={viabilityProject} />
