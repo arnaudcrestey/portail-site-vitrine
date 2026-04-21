@@ -52,6 +52,13 @@ function EyebrowLive() {
 }
 
 export default function ConceptsPage() {
+  const viabilityProject =
+    strategicEntryPoints.find((project) => project.slug === 'viabilite') ?? null;
+
+  const btobProjects = strategicEntryPoints.filter(
+    (project) => project.slug !== 'viabilite'
+  );
+
   return (
     <>
       <PageHero
@@ -59,7 +66,7 @@ export default function ConceptsPage() {
         title="Structurer une activité, la rendre viable, puis générer des demandes qualifiées"
         description="Trois niveaux d’entrée pour accompagner chaque étape : clarifier une activité au début, structurer une offre déjà implantée, puis activer des demandes concrètes avec des dispositifs conçus pour engager."
         primaryCta={{
-          href: '#entry-points',
+          href: '#viabilite',
           label: 'Découvrir les points d’entrée',
         }}
         secondaryCta={{
@@ -68,28 +75,45 @@ export default function ConceptsPage() {
         }}
       />
 
+      {viabilityProject ? (
+        <section id="viabilite" className="section-spacing pt-4">
+          <div className="container-layout">
+            <SectionHeading
+              eyebrow="Point d’entrée initial"
+              title="Pour les personnes qui n’ont pas encore créé, ou qui sont tout au début de leur activité"
+              description="Avant de parler visibilité, acquisition ou conversion, il faut parfois vérifier si l’activité repose déjà sur une base suffisamment claire, crédible et viable."
+            />
+
+            <div className="mt-12 max-w-sm">
+              <div className="relative">
+                <StatusDot variant="active" />
+                <ProjectShowcaseCard project={viabilityProject} />
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <Surface className="px-5 py-5 sm:px-6 sm:py-6">
+                <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
+                  Ce premier point d’entrée sert de base. Il aide à voir si
+                  l’activité peut réellement tenir, sur quoi elle repose déjà,
+                  et ce qu’il faudrait clarifier avant d’aller plus loin.
+                </p>
+              </Surface>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       <section id="entry-points" className="section-spacing pt-4">
         <div className="container-layout">
           <SectionHeading
-            eyebrow="Points d’entrée"
-            title="Des points d’entrée conçus pour accompagner trois niveaux de maturité"
-            description="Commencer par vérifier la viabilité d’une activité, clarifier ensuite sa structure, puis activer des dispositifs capables d’attirer et qualifier des demandes."
+            eyebrow="BtoB • Structuration"
+            title="Trois points d’entrée conçus pour les activités déjà implantées"
+            description="Pour les professionnels déjà en activité qui cherchent à rendre leur offre plus lisible, leur positionnement plus clair et leur fonctionnement plus structuré."
           />
 
-          <div className="mt-8">
-            <Surface className="px-5 py-5 sm:px-6 sm:py-6">
-              <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
-                Le premier point d’entrée s’adresse aux personnes qui n’ont pas
-                encore réellement structuré leur activité ou qui en sont au début.
-                Les suivants concernent davantage des activités déjà implantées,
-                qui cherchent à devenir plus lisibles, plus cohérentes et plus
-                capables d’ouvrir naturellement vers une demande.
-              </p>
-            </Surface>
-          </div>
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {strategicEntryPoints.map((project) => (
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+            {btobProjects.map((project) => (
               <div key={project.slug} className="relative">
                 <StatusDot variant="active" />
                 <ProjectShowcaseCard project={project} />
@@ -100,9 +124,10 @@ export default function ConceptsPage() {
           <div className="mt-8">
             <Surface className="px-5 py-5 sm:px-6 sm:py-6">
               <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
-                Ces points d’entrée peuvent être utilisés comme étapes
-                successives ou comme portes d’entrée distinctes selon le niveau
-                de clarté, la maturité de l’activité et le type de besoin.
+                Une fois la base clarifiée, ces points d’entrée permettent
+                d’identifier plus finement ce qui freine la lisibilité de
+                l’activité, la cohérence du positionnement ou la capacité à
+                ouvrir un premier échange.
               </p>
             </Surface>
           </div>
