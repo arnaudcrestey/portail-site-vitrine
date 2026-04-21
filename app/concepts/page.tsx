@@ -78,13 +78,19 @@ export default function ConceptsPage() {
       {viabilityProject ? (
         <section id="viabilite" className="section-spacing pt-4">
           <div className="container-layout">
-            <SectionHeading
-              eyebrow="Point d’entrée initial"
-              title="Pour les personnes qui n’ont pas encore créé, ou qui sont tout au début de leur activité"
-              description="Avant de parler visibilité, acquisition ou conversion, il faut parfois vérifier si l’activité repose déjà sur une base suffisamment claire, crédible et viable."
-            />
+            <div className="mx-auto max-w-4xl text-center">
+              <SectionHeading
+                eyebrow={
+                  <span className="block text-center">
+                    Point d’entrée initial
+                  </span>
+                }
+                title="Pour les personnes qui n’ont pas encore créé, ou qui sont tout au début de leur activité"
+                description="Avant de parler visibilité, acquisition ou conversion, il faut parfois vérifier si l’activité repose déjà sur une base suffisamment claire, crédible et viable."
+              />
+            </div>
 
-            <div className="mt-12 max-w-sm">
+            <div className="mt-12 mx-auto max-w-sm">
               <div className="relative">
                 <StatusDot variant="active" />
                 <ProjectShowcaseCard project={viabilityProject} />
@@ -92,8 +98,8 @@ export default function ConceptsPage() {
             </div>
 
             <div className="mt-8">
-              <Surface className="px-5 py-5 sm:px-6 sm:py-6">
-                <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
+              <Surface className="mx-auto max-w-3xl px-5 py-5 text-center sm:px-6 sm:py-6">
+                <p className="text-sm leading-7 text-muted-foreground sm:text-[15px]">
                   Ce premier point d’entrée sert de base. Il aide à voir si
                   l’activité peut réellement tenir, sur quoi elle repose déjà,
                   et ce qu’il faudrait clarifier avant d’aller plus loin.
