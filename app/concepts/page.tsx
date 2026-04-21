@@ -98,7 +98,7 @@ export default function ConceptsPage() {
             </div>
 
             <div className="mt-8">
-              <Surface className="mx-auto max-w-3xl px-5 py-5 text-center sm:px-6 sm:py-6">
+              <Surface className="mx-auto max-w-2xl px-5 py-5 text-center sm:px-6 sm:py-6">
                 <p className="text-sm leading-7 text-muted-foreground sm:text-[15px]">
                   Ce premier point d’entrée sert de base. Il aide à voir si
                   l’activité peut réellement tenir, sur quoi elle repose déjà,
