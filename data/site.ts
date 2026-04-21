@@ -100,6 +100,20 @@ export const deviceExamples: DeviceExample[] = [
 // 🔥 NOUVEAU BLOC PREMIUM (TES 3 POINTS D’ENTRÉE)
 
 export const strategicEntryPoints: ProjectCard[] = [
+
+  {
+  slug: 'viabilite',
+  number: '00',
+  title: 'Viabilité',
+  hook: 'Votre activité peut-elle réellement devenir viable ?',
+  description:
+    'Une lecture structurée pour voir ce qui repose déjà sur une base réelle, ce qui fragilise encore l’ensemble, et ce qu’il faudrait clarifier pour construire quelque chose de plus stable.',
+  proof: 'Lecture stratégique • Base réelle • Clarté initiale',
+  image: '/projects/viabilite-activite.jpg',
+  href: 'https://viabilite.arnaudcrestey.com',
+  cta: 'Commencer',
+},
+  
   {
     slug: 'positionnement',
     number: '01',
