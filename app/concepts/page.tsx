@@ -137,7 +137,7 @@ export default function ConceptsPage() {
 
                 <div className="relative min-h-[280px] border-t border-black/6 lg:min-h-full lg:border-l lg:border-t-0">
                   <Image
-                    src="/images/concepts/viabilite-activite.jpg"
+                    src="/images/projects/viabilite-activite.jpg"
                     alt="Point d’entrée viabilité d’activité"
                     fill
                     className="object-cover object-center"
