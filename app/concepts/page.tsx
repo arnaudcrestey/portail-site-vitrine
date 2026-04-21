@@ -1,6 +1,3 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
 import { ProjectShowcaseCard, ReserveConceptCard } from '@/components/cards';
 import { PageHero } from '@/components/page-hero';
 import { SectionHeading, Surface } from '@/components/ui';
@@ -54,80 +51,7 @@ function EyebrowLive() {
   );
 }
 
-function normalize(value: string | undefined) {
-  return (value ?? '')
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[\u0300-\u036f]/g, '');
-}
-
-function ViabilityPocketCard() {
-  return (
-    <div className="relative overflow-hidden rounded-[22px] border border-[#cfd7ff] bg-white shadow-[0_18px_50px_rgba(15,23,42,0.05)] transition duration-300 ease-out hover:-translate-y-1">
-      <StatusDot variant="active" />
-
-      <div className="grid min-h-[420px] grid-cols-1 lg:grid-cols-[1.02fr_0.98fr]">
-        <div className="flex flex-col justify-between border-b border-[#d9e1ff] p-5 sm:p-6 lg:border-b-0 lg:border-r">
-          <div>
-            <div className="inline-flex rounded-full border border-[#d8def7] bg-[#f8faff] px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-[#6d7fcc]">
-              Point d’entrée initial
-            </div>
-
-            <h3 className="mt-4 max-w-[16ch] text-3xl font-semibold leading-[1.02] tracking-[-0.03em] text-[#0f172a] sm:text-[2.15rem]">
-              Votre activité peut-elle réellement devenir viable ?
-            </h3>
-
-            <p className="mt-4 max-w-xl text-sm leading-7 text-slate-600 sm:text-[15px]">
-              Une lecture structurée pour voir ce qui, dans votre activité,
-              repose déjà sur une base réelle, ce qui fragilise encore
-              l’ensemble, et ce qu’il faudrait clarifier pour construire
-              quelque chose de plus stable, de plus lisible et de plus durable.
-            </p>
-
-            <p className="mt-4 text-[11px] font-medium uppercase tracking-[0.16em] text-slate-400">
-              Gratuit • Sans engagement • En quelques minutes
-            </p>
-          </div>
-
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Link
-              href="https://viabilite.arnaudcrestey.com"
-              className="inline-flex items-center justify-center rounded-full bg-[#a57a3b] px-4 py-2.5 text-sm font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#916a31]"
-            >
-              Commencer la lecture
-            </Link>
-
-            <Link
-              href="https://viabilite.arnaudcrestey.com"
-              className="inline-flex items-center justify-center rounded-full border border-[#ddd6c7] bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 transition duration-300 hover:-translate-y-0.5 hover:bg-[#faf8f3]"
-            >
-              Comprendre la démarche
-            </Link>
-          </div>
-        </div>
-
-        <div className="relative min-h-[240px] bg-[#f6f1e8]">
-          <Image
-            src="/images/projects/viabilite-activite.jpg"
-            alt="Point d’entrée viabilité d’activité"
-            fill
-            className="object-cover object-center"
-            priority
-          />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function ConceptsPage() {
-  const btocProjects = conceptProjects.filter((project) => {
-    const slug = normalize(project.slug);
-    const title = normalize((project as { title?: string }).title);
-
-    return !slug.includes('viabilite') && !title.includes('viabilite');
-  });
-
   return (
     <>
       <PageHero
@@ -135,7 +59,7 @@ export default function ConceptsPage() {
         title="Structurer une activité, la rendre viable, puis générer des demandes qualifiées"
         description="Trois niveaux d’entrée pour accompagner chaque étape : clarifier une activité au début, structurer une offre déjà implantée, puis activer des demandes concrètes avec des dispositifs conçus pour engager."
         primaryCta={{
-          href: '#viabilite',
+          href: '#entry-points',
           label: 'Découvrir les points d’entrée',
         }}
         secondaryCta={{
@@ -144,40 +68,27 @@ export default function ConceptsPage() {
         }}
       />
 
-      <section id="viabilite" className="section-spacing pt-4">
+      <section id="entry-points" className="section-spacing pt-4">
         <div className="container-layout">
           <SectionHeading
-            eyebrow="Point d’entrée initial"
-            title="Avant de chercher des clients, une question essentielle : votre activité peut-elle réellement devenir viable ?"
-            description="Un premier point d’entrée pensé pour les personnes qui n’ont pas encore structuré leur activité, ou qui sont encore au début. L’objectif : clarifier la base avant de vouloir accélérer le reste."
+            eyebrow="Points d’entrée"
+            title="Des points d’entrée conçus pour accompagner trois niveaux de maturité"
+            description="Commencer par vérifier la viabilité d’une activité, clarifier ensuite sa structure, puis activer des dispositifs capables d’attirer et qualifier des demandes."
           />
-
-          <div className="mt-12 max-w-[980px]">
-            <ViabilityPocketCard />
-          </div>
 
           <div className="mt-8">
             <Surface className="px-5 py-5 sm:px-6 sm:py-6">
               <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
-                Ce premier bloc s’adresse aux personnes qui doivent d’abord
-                vérifier si leur activité repose sur une base suffisamment claire,
-                crédible et soutenable avant d’essayer d’améliorer leur visibilité
-                ou leur acquisition.
+                Le premier point d’entrée s’adresse aux personnes qui n’ont pas
+                encore réellement structuré leur activité ou qui en sont au début.
+                Les suivants concernent davantage des activités déjà implantées,
+                qui cherchent à devenir plus lisibles, plus cohérentes et plus
+                capables d’ouvrir naturellement vers une demande.
               </p>
             </Surface>
           </div>
-        </div>
-      </section>
 
-      <section id="entry-points" className="section-spacing pt-4">
-        <div className="container-layout">
-          <SectionHeading
-            eyebrow="BtoB • Structuration"
-            title="Trois points d’entrée conçus pour les activités déjà implantées"
-            description="Trois angles complémentaires pour les professionnels déjà en activité, qui cherchent à rendre leur offre plus lisible, leur positionnement plus clair et leur fonctionnement plus structuré."
-          />
-
-          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
             {strategicEntryPoints.map((project) => (
               <div key={project.slug} className="relative">
                 <StatusDot variant="active" />
@@ -189,10 +100,9 @@ export default function ConceptsPage() {
           <div className="mt-8">
             <Surface className="px-5 py-5 sm:px-6 sm:py-6">
               <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
-                Une fois la base clarifiée, ces trois points d’entrée permettent
-                d’identifier ce qui freine encore la lisibilité de l’activité,
-                la cohérence du positionnement ou la capacité à ouvrir un premier
-                échange plus naturellement.
+                Ces points d’entrée peuvent être utilisés comme étapes
+                successives ou comme portes d’entrée distinctes selon le niveau
+                de clarté, la maturité de l’activité et le type de besoin.
               </p>
             </Surface>
           </div>
@@ -204,11 +114,11 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow={<EyebrowLive />}
             title="Des points d’entrée conçus pour attirer, qualifier et engager des clients"
-            description="Des dispositifs BtoC, mini-sites et démonstrateurs pensés pour faire émerger une prise de conscience, susciter l’intérêt et ouvrir plus facilement vers une demande."
+            description="D’autres dispositifs, mini-sites et démonstrateurs déjà conçus pour explorer différentes situations, usages et manières de faire émerger des demandes."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {btocProjects.map((project) => {
+            {conceptProjects.map((project) => {
               const slug = project.slug.toLowerCase();
 
               const isHighlighted =
@@ -223,16 +133,6 @@ export default function ConceptsPage() {
                 </div>
               );
             })}
-          </div>
-
-          <div className="mt-8">
-            <Surface className="px-5 py-5 sm:px-6 sm:py-6">
-              <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
-                Une fois l’activité clarifiée et mieux structurée, ces dispositifs
-                permettent d’ouvrir une logique d’acquisition plus ciblée, plus
-                engageante et plus adaptée au sujet traité.
-              </p>
-            </Surface>
           </div>
         </div>
       </section>
@@ -289,12 +189,12 @@ export default function ConceptsPage() {
               </p>
 
               <div className="mt-8 flex justify-center">
-                <Link
+                <a
                   href="/contact"
                   className="inline-flex items-center justify-center rounded-full bg-primary px-5 py-3 text-sm font-semibold text-white transition duration-300 ease-premium hover:-translate-y-0.5 hover:bg-primary/90"
                 >
                   Parler de votre projet
-                </Link>
+                </a>
               </div>
             </div>
           </Surface>
