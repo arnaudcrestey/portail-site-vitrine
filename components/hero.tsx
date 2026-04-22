@@ -15,49 +15,50 @@ export function HomeHero({ metrics }: HomeHeroProps) {
     <section className="relative overflow-hidden">
       <div className="container-layout section-spacing grid items-start gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:gap-20">
         <div>
-          <span className="inline-flex max-w-full whitespace-nowrap rounded-full border border-[#cfd7ff] bg-[#eef2ff] px-3 py-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[#4f67ff] sm:px-4 sm:text-xs">
+          <span className="mx-auto inline-flex max-w-full whitespace-nowrap rounded-full border border-[#cfd7ff] bg-[#eef2ff] px-3 py-2 text-[11px] font-medium uppercase tracking-[0.22em] text-[#4f67ff] sm:px-4 sm:text-xs lg:mx-0">
             Concepteur de systèmes numériques
           </span>
-<h1 className="mt-6 max-w-[13.5ch] text-4xl font-semibold leading-[1.02] tracking-[-0.045em] text-ink sm:text-5xl lg:text-[4.8rem] lg:leading-[0.97]">
-  Structurer une activité
-  et concevoir ce qui permet réellement de générer des demandes.
-</h1>
 
-<p className="mt-6 max-w-xl text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-[1.15rem] lg:leading-8">
-  J’aide les professionnels dont l’activité repose sur une expertise
-  à la clarifier, la structurer dans la durée,
-  puis à concevoir les dispositifs digitaux adaptés
-  pour attirer et engager les bons clients.
-</p>
+          <h1 className="mx-auto mt-6 max-w-[13.5ch] text-center text-4xl font-semibold leading-[1.02] tracking-[-0.045em] text-ink sm:text-5xl lg:mx-0 lg:text-left lg:text-[4.8rem] lg:leading-[0.97]">
+            Structurer une activité
+            et concevoir ce qui permet réellement de générer des demandes.
+          </h1>
+
+          <p className="mx-auto mt-6 max-w-xl text-center text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:mx-0 lg:text-left lg:text-[1.15rem] lg:leading-8">
+            J’aide les professionnels dont l’activité repose sur une expertise à la
+            clarifier, la structurer dans la durée, puis à concevoir les dispositifs
+            digitaux adaptés pour attirer et engager les bons clients.
+          </p>
+
           <div className="mt-4 flex justify-center lg:justify-start">
-  <dl className="grid w-full max-w-[230px] grid-cols-3 overflow-hidden rounded-[12px] border border-[#e2e6fb] bg-white/70 text-center shadow-[0_4px_10px_rgba(15,23,42,0.02)] sm:max-w-[420px] lg:max-w-[460px]">
-    {[
-      [metrics.visitors30d, 'Visiteurs', '30 jours'],
-      [metrics.leadsGenerated, 'Contacts', 'générées'],
-      [metrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
-    ].map(([value, label, detail], index) => (
-      <div
-        key={label}
-        className={`px-2 py-2 ${
-          index < 2 ? 'border-r border-[#eef1fd]' : ''
-        }`}
-      >
-        <dt className="text-[0.95rem] font-semibold leading-none text-[#22345f] sm:text-[1.2rem]">
-          <AnimatedMetricNumber value={value as number} />
-        </dt>
+            <dl className="grid w-full max-w-[230px] grid-cols-3 overflow-hidden rounded-[12px] border border-[#e2e6fb] bg-white/70 text-center shadow-[0_4px_10px_rgba(15,23,42,0.02)] sm:max-w-[420px] lg:max-w-[460px]">
+              {[
+                [metrics.visitors30d, 'Visiteurs', '30 jours'],
+                [metrics.leadsGenerated, 'Contacts', 'générées'],
+                [metrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
+              ].map(([value, label, detail], index) => (
+                <div
+                  key={label}
+                  className={`px-2 py-2 ${
+                    index < 2 ? 'border-r border-[#eef1fd]' : ''
+                  }`}
+                >
+                  <dt className="text-[0.95rem] font-semibold leading-none text-[#22345f] sm:text-[1.2rem]">
+                    <AnimatedMetricNumber value={value as number} />
+                  </dt>
 
-        <dd className="mt-1 leading-tight">
-          <span className="block text-[7px] uppercase tracking-[0.12em] text-[#6b7aa6] sm:text-[9px]">
-            {label}
-          </span>
-          <span className="block text-[8px] text-slate/70 sm:text-[10px]">
-            {detail}
-          </span>
-        </dd>
-      </div>
-    ))}
-  </dl>
-</div>
+                  <dd className="mt-1 leading-tight">
+                    <span className="block text-[7px] uppercase tracking-[0.12em] text-[#6b7aa6] sm:text-[9px]">
+                      {label}
+                    </span>
+                    <span className="block text-[8px] text-slate/70 sm:text-[10px]">
+                      {detail}
+                    </span>
+                  </dd>
+                </div>
+              ))}
+            </dl>
+          </div>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
