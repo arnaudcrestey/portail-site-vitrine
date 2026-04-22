@@ -19,10 +19,11 @@ export function HomeHero({ metrics }: HomeHeroProps) {
             Concepteur de systèmes numériques
           </span>
 
-          <h1 className="mt-6 max-w-[15ch] text-4xl font-semibold leading-[1.02] tracking-[-0.04em] text-ink sm:text-5xl lg:text-[4.2rem] lg:leading-[0.98]">
-  Structurer une activité
-  et concevoir ce qui permet réellement de générer des demandes.
-</h1>
+          <p className="mt-5 max-w-[34rem] text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:mt-5 lg:text-[1rem] lg:leading-[1.9]">
+  J’aide les professionnels dont l’activité repose sur une expertise à la
+  clarifier, la structurer dans la durée, puis à concevoir les dispositifs
+  digitaux adaptés pour attirer et engager les bons clients.
+</p>
 
 <p className="mt-6 max-w-xl text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-[1.15rem] lg:leading-8">
   J’aide les professionnels dont l’activité repose sur une expertise
