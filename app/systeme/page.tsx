@@ -94,7 +94,7 @@ export default function SystemePage() {
                 href="/concepts#concepts-grid"
                 className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
               >
-                Voir les points d'entrée
+                Voir les points d’entrée
               </Link>
             </div>
           </div>
