@@ -22,18 +22,19 @@ const astraeBlocks = [
       'Des points d’entrée ciblés pour attirer différentes personnes selon leur situation, leur besoin ou leur question.',
   },
   {
-  number: '03',
-  title: 'Engager et qualifier',
-  description:
-    'Chaque dispositif capte l’attention, implique la personne et permet de mieux comprendre sa situation.',
-},
-{
-  number: '04',
-  title: 'Fluidifier le suivi',
-  description:
-    'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et fluide.',
-},
+    number: '03',
+    title: 'Engager et qualifier',
+    description:
+      'Chaque dispositif capte l’attention, implique la personne et permet de mieux comprendre sa situation.',
+  },
+  {
+    number: '04',
+    title: 'Fluidifier le suivi',
+    description:
+      'Les demandes et les informations sont organisées pour permettre un suivi simple, clair et fluide.',
+  },
 ];
+
 export default function SystemePage() {
   return (
     <>
@@ -42,26 +43,28 @@ export default function SystemePage() {
           <div className="relative overflow-hidden rounded-[36px] border border-[#d9def8] bg-[linear-gradient(180deg,#f7f8fe_0%,#f2f5ff_100%)] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10 lg:py-14">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(59,99,243,0.06),transparent_38%)]" />
 
-            <span className="section-eyebrow">
-  Exemple concret <br className="sm:hidden" />
-  Cabinet Astraé
-</span>
+            <div className="relative text-center">
+              <span className="section-eyebrow">
+                Exemple concret <br className="sm:hidden" />
+                Cabinet Astraé
+              </span>
 
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-  Un système complet conçu autour d’une activité
-</h1>
+                Un système complet conçu autour d’une activité
+              </h1>
 
-<p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
-  Pour le Cabinet Astraé, j’ai conçu un ensemble structuré allant de la clarification
-  de l’activité jusqu’à la mise en place de dispositifs concrets pensés pour fonctionner ensemble.
-</p>
+              <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
+                Pour le Cabinet Astraé, j’ai conçu un ensemble structuré allant de la
+                clarification de l’activité jusqu’à la mise en place de dispositifs
+                concrets pensés pour fonctionner ensemble.
+              </p>
 
-<p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
-  Positionnement, site, points d’entrée, assistants et automatisations :
-  chaque élément a été conçu pour structurer l’ensemble
-et soutenir le développement d’une activité capable
-d’attirer et d’engager les bons clients dans la durée.
-</p>
+              <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
+                Positionnement, site, points d’entrée, assistants et
+                automatisations : chaque élément a été conçu pour structurer
+                l’ensemble et soutenir le développement d’une activité capable
+                d’attirer et d’engager les bons clients dans la durée.
+              </p>
             </div>
 
             <div className="relative mt-14">
@@ -79,20 +82,24 @@ d’attirer et d’engager les bons clients dans la durée.
 
             <div className="relative mx-auto mt-10 max-w-3xl rounded-[24px] border border-[#d9def8] bg-white/75 px-6 py-5 text-center shadow-[0_10px_30px_rgba(15,23,42,0.04)]">
               <p className="text-sm leading-7 text-slate sm:text-[15px]">
-                Dans le cas d’Astraé, ces points d’entrée conduisent progressivement vers
-                la mission du cabinet&nbsp;: aider les personnes à y voir plus clair quand quelque chose reste flou, pour avancer plus sereinement.
+                Dans le cas d’Astraé, ces points d’entrée conduisent
+                progressivement vers la mission du cabinet&nbsp;: aider les
+                personnes à y voir plus clair quand quelque chose reste flou,
+                pour avancer plus sereinement.
               </p>
             </div>
 
             <div className="mt-8 flex justify-center">
-  <Link
-    href="/concepts#concepts-grid"
-    className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
-  >
-    Voir les points d'entrée
-  </Link>
-</div>
-        </section>
+              <Link
+                href="/concepts#concepts-grid"
+                className="inline-flex items-center justify-center rounded-full bg-primary px-7 py-3.5 text-sm font-semibold text-white shadow-[0_14px_32px_rgba(59,99,243,0.24)] transition hover:-translate-y-0.5"
+              >
+                Voir les points d'entrée
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section id="exemple" className="pb-8 pt-2">
         <div className="container-layout">
@@ -105,7 +112,10 @@ d’attirer et d’engager les bons clients dans la durée.
               </h2>
 
               <p className="mt-4 text-lg leading-8 text-slate">
-                Comme pour le Cabinet Astraé, chaque activité d’accompagnement et de conseil peut s’appuyer sur un système structuré, avec des points d’entrée et une automatisation adaptés.
+                Comme pour le Cabinet Astraé, chaque activité
+                d’accompagnement et de conseil peut s’appuyer sur un système
+                structuré, avec des points d’entrée et une automatisation
+                adaptés.
               </p>
             </div>
 
@@ -139,7 +149,8 @@ d’attirer et d’engager les bons clients dans la durée.
             <span className="section-eyebrow">Passer à l’action</span>
 
             <h2 className="mx-auto mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Votre expertise existe déjà. Mais elle ne travaille pas encore pour vous.
+              Votre expertise existe déjà. Mais elle ne travaille pas encore
+              pour vous.
             </h2>
 
             <div className="mt-8 flex justify-center">
