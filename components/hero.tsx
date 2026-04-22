@@ -31,34 +31,34 @@ export function HomeHero({ metrics }: HomeHeroProps) {
   pour attirer et engager les bons clients.
 </p>
           <div className="mt-5 flex justify-center lg:justify-start">
-            <dl className="grid w-full max-w-[320px] overflow-hidden rounded-[18px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_8px_20px_rgba(15,23,42,0.035)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px] lg:rounded-[20px] lg:shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
-              {[
-                [metrics.visitors30d, 'Visiteurs', '30 derniers jours'],
-                [metrics.leadsGenerated, 'Prises de contact', 'générées'],
-                [metrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
-              ].map(([value, label, detail], index) => (
-                <div
-                  key={label}
-                  className={`px-3 py-2.5 text-center sm:px-4 sm:py-3.5 lg:px-4 lg:py-3.5 ${
-                    index < 2 ? 'border-b border-[#e6eafb] sm:border-b-0 sm:border-r' : ''
-                  }`}
-                >
-                  <dt className="text-[1.28rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.42rem] lg:text-[1.5rem]">
-                    <AnimatedMetricNumber value={value as number} />
-                  </dt>
+  <dl className="grid w-full max-w-[268px] overflow-hidden rounded-[16px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_6px_16px_rgba(15,23,42,0.03)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px] lg:rounded-[20px] lg:shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
+    {[
+      [metrics.visitors30d, 'Visiteurs', '30 derniers jours'],
+      [metrics.leadsGenerated, 'Prises de contact', 'générées'],
+      [metrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
+    ].map(([value, label, detail], index) => (
+      <div
+        key={label}
+        className={`px-3 py-2 text-center sm:px-4 sm:py-3.5 lg:px-4 lg:py-3.5 ${
+          index < 2 ? 'border-b border-[#e6eafb] sm:border-b-0 sm:border-r' : ''
+        }`}
+      >
+        <dt className="text-[1.08rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.42rem] lg:text-[1.5rem]">
+          <AnimatedMetricNumber value={value as number} />
+        </dt>
 
-                  <dd className="mt-1 leading-4 sm:mt-1.5">
-                    <span className="block text-[9px] font-semibold uppercase tracking-[0.14em] text-[#5c6f98] sm:text-[10px] lg:text-[10.5px]">
-                      {label}
-                    </span>
-                    <span className="mt-0.5 block text-[10px] text-slate/82 sm:mt-1 sm:text-[11px] lg:text-[11.5px]">
-                      {detail}
-                    </span>
-                  </dd>
-                </div>
-              ))}
-            </dl>
-          </div>
+        <dd className="mt-1 leading-4 sm:mt-1.5">
+          <span className="block text-[8.5px] font-semibold uppercase tracking-[0.12em] text-[#5c6f98] sm:text-[10px] lg:text-[10.5px]">
+            {label}
+          </span>
+          <span className="mt-0.5 block text-[9.5px] text-slate/80 sm:mt-1 sm:text-[11px] lg:text-[11.5px]">
+            {detail}
+          </span>
+        </dd>
+      </div>
+    ))}
+  </dl>
+</div>
 
           <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
             <ButtonLink href="/contact">Parler de votre projet</ButtonLink>
