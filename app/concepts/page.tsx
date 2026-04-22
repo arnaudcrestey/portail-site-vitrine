@@ -136,6 +136,22 @@ export default function ConceptsPage() {
         </div>
       </section>
 
+      <section className="section-spacing pt-0">
+  <div className="container-layout">
+    <div className="mx-auto max-w-3xl text-center">
+      <p className="text-sm font-medium tracking-wide text-primary/70 uppercase">
+        Étape suivante
+      </p>
+
+      <p className="mt-4 text-base leading-relaxed text-muted-foreground sm:text-lg">
+        À ce stade, il ne s’agit plus d’analyser ou d’ajuster.
+        L’enjeu devient de rendre l’activité visible et de créer
+        les conditions pour attirer des demandes concrètes.
+      </p>
+    </div>
+  </div>
+</section>
+
       <section id="concepts-grid" className="section-spacing pt-4">
         <div className="container-layout">
           <SectionHeading
