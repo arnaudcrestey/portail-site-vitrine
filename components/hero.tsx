@@ -20,17 +20,16 @@ export function HomeHero({ metrics }: HomeHeroProps) {
           </span>
 
           <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-tight text-ink sm:text-5xl lg:text-6xl">
-            Développez votre activité avec des dispositifs digitaux qui attirent, engagent et
-            transforment vos visiteurs en clients.
-          </h1>
+  Structurer une activité
+  et concevoir ce qui permet réellement de générer des demandes.
+</h1>
 
-          <p className="mt-6 max-w-xl text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-[1.15rem] lg:leading-8">
-            J’aide les professionnels de l’accompagnement, du conseil et du secteur juridique à
-            rendre leur activité claire, compréhensible et attractive, afin de générer des prises
-            de contact qualifiées. Je conçois pour cela des points d’entrée, des parcours
-            utilisateurs et des systèmes numériques adaptés à leur activité.
-          </p>
-
+<p className="mt-6 max-w-xl text-[15px] leading-7 text-slate sm:max-w-2xl sm:text-lg sm:leading-8 lg:text-[1.15rem] lg:leading-8">
+  J’aide les professionnels dont l’activité repose sur une expertise
+  à la clarifier, la structurer dans la durée,
+  puis à concevoir les dispositifs digitaux adaptés
+  pour attirer et engager les bons clients.
+</p>
           <div className="mt-5 flex justify-center lg:justify-start">
             <dl className="grid w-full max-w-[320px] overflow-hidden rounded-[18px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_8px_20px_rgba(15,23,42,0.035)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px] lg:rounded-[20px] lg:shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
               {[
