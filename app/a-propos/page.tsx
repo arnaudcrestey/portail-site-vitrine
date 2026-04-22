@@ -153,21 +153,18 @@ export default function AboutPage() {
               </h2>
 
               <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                J’interviens principalement auprès de professionnels dont l’activité
-                repose sur l’humain : accompagnement, conseil, juridique, formation,
-                orientation.
-              </p>
+  J’interviens auprès de professionnels dont l’activité repose sur une expertise réelle.
+</p>
 
-              <p className="mt-4 text-base leading-7 text-slate sm:leading-8">
-                Des métiers où la valeur est réelle, mais pas toujours facile à présenter
-                de façon claire, solide et différenciante.
-              </p>
+<p className="mt-4 text-base leading-7 text-slate sm:leading-8">
+  Des métiers où cette valeur est parfois difficile à structurer, à rendre lisible
+  et à présenter de façon claire et différenciante.
+</p>
 
-              <p className="mt-6 text-base font-medium leading-7 text-ink sm:leading-8">
-                Si vous sentez qu’il y a un écart entre la valeur de votre activité et la
-                manière dont elle est perçue, c’est probablement le bon moment pour en
-                parler.
-              </p>
+<p className="mt-6 text-base font-medium leading-7 text-ink sm:leading-8">
+  Si vous sentez un écart entre la valeur de votre activité et la manière dont elle est perçue,
+  c’est souvent le signe qu’un travail de clarification devient nécessaire.
+</p>
             </div>
           </Surface>
         </div>
