@@ -48,17 +48,19 @@ export default function SystemePage() {
 </span>
 
               <h1 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-                Un système structuré autour de points d’entrée ciblés
-              </h1>
+  Un système complet conçu autour d’une activité
+</h1>
 
-              <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
-                Pour le Cabinet Astraé, j’ai conçu plusieurs points d’entrée adaptés à son activité
-                et aux problématiques que ses visiteurs rencontrent.
-              </p>
+<p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
+  Pour le Cabinet Astraé, j’ai conçu un ensemble structuré allant de la clarification
+  de l’activité jusqu’à la mise en place de dispositifs concrets pensés pour fonctionner ensemble.
+</p>
 
-              <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
-               Un point d’entrée est un dispositif conçu pour capter une situation précise, engager la personne et l’orienter vers une solution adaptée.
-              </p>
+<p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
+  Positionnement, site, points d’entrée, assistants et automatisations :
+  chaque élément a été conçu pour rendre l’activité plus lisible, plus cohérente
+  et plus opérationnelle dans la durée.
+</p>
             </div>
 
             <div className="relative mt-14">
