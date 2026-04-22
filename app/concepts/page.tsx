@@ -9,9 +9,9 @@ import {
 } from '@/data/site';
 
 export const metadata = {
-  title: 'Laboratoire de concepts',
+  title: 'Structuration d’activité et dispositifs digitaux',
   description:
-    'Des points d’entrée conçus pour clarifier une activité, la rendre viable, la structurer puis générer des demandes qualifiées.',
+    'Clarifier une activité, structurer ce qui bloque, puis concevoir des points d’entrée capables d’attirer des demandes qualifiées.',
 };
 
 function StatusDot({ variant = 'active' }: { variant?: 'active' | 'concept' }) {
@@ -55,18 +55,18 @@ export default function ConceptsPage() {
   const viabilityProject =
     strategicEntryPoints.find((project) => project.slug === 'viabilite') ?? null;
 
-  const btobProjects = strategicEntryPoints.filter(
+  const structuringProjects = strategicEntryPoints.filter(
     (project) => project.slug !== 'viabilite'
   );
 
   return (
     <>
       <PageHero
-        eyebrow="Laboratoire"
-        title="Structurer une activité, la rendre viable, puis générer des demandes qualifiées"
-        description="Trois niveaux d’entrée pour accompagner chaque étape : clarifier une activité au début, structurer une offre déjà implantée, puis activer des demandes concrètes avec des dispositifs conçus pour engager."
+        eyebrow="Structuration d’activité"
+        title="Clarifier une activité, la structurer, puis concevoir les dispositifs capables de générer des demandes"
+        description="Cette page distingue trois niveaux : faire un premier point sur une activité encore naissante, comprendre ce qui freine une activité déjà en place, puis concevoir des points d’entrée capables d’attirer, qualifier et engager les bons clients."
         primaryCta={{
-          href: '#viabilite',
+          href: '#concepts-grid',
           label: 'Découvrir les points d’entrée',
         }}
         secondaryCta={{
@@ -80,17 +80,13 @@ export default function ConceptsPage() {
           <div className="container-layout">
             <div className="mx-auto max-w-4xl text-center">
               <SectionHeading
-                eyebrow={
-                  <span className="block text-center">
-                    Point d’entrée initial
-                  </span>
-                }
-                title="Pour les personnes qui n’ont pas encore créé, ou qui sont tout au début de leur activité"
-                description="Avant de parler visibilité, acquisition ou conversion, il faut parfois vérifier si l’activité repose déjà sur une base suffisamment claire, crédible et viable."
+                eyebrow={<span className="block text-center">Premier niveau</span>}
+                title="Faire un premier point sur une activité en cours de création"
+                description="Avant de parler visibilité, acquisition ou conversion, il faut parfois vérifier si l’activité repose déjà sur une base suffisamment claire, cohérente et viable."
               />
             </div>
 
-            <div className="mt-12 mx-auto max-w-md">
+            <div className="mx-auto mt-12 max-w-md">
               <div className="relative">
                 <StatusDot variant="active" />
                 <ProjectShowcaseCard project={viabilityProject} />
@@ -100,9 +96,9 @@ export default function ConceptsPage() {
             <div className="mt-8">
               <Surface className="mx-auto max-w-2xl px-5 py-5 text-center sm:px-6 sm:py-6">
                 <p className="text-sm leading-7 text-muted-foreground sm:text-[15px]">
-                  Ce premier point d’entrée sert de base. Il aide à voir si
-                  l’activité peut réellement tenir, sur quoi elle repose déjà,
-                  et ce qu’il faudrait clarifier avant d’aller plus loin.
+                  Ce premier travail aide à vérifier si l’activité peut réellement
+                  être construite, sur quoi elle repose déjà, et ce qu’il faudrait
+                  encore clarifier avant d’aller plus loin.
                 </p>
               </Surface>
             </div>
@@ -110,16 +106,16 @@ export default function ConceptsPage() {
         </section>
       ) : null}
 
-      <section id="entry-points" className="section-spacing pt-4">
+      <section id="structuration" className="section-spacing pt-4">
         <div className="container-layout">
           <SectionHeading
-            eyebrow="BtoB • Structuration"
-            title="Trois points d’entrée conçus pour les activités déjà implantées"
+            eyebrow="Deuxième niveau"
+            title="Comprendre ce qui freine une activité déjà en place"
             description="Pour les professionnels déjà en activité qui cherchent à rendre leur offre plus lisible, leur positionnement plus clair et leur fonctionnement plus structuré."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-            {btobProjects.map((project) => (
+            {structuringProjects.map((project) => (
               <div key={project.slug} className="relative">
                 <StatusDot variant="active" />
                 <ProjectShowcaseCard project={project} />
@@ -130,10 +126,10 @@ export default function ConceptsPage() {
           <div className="mt-8">
             <Surface className="px-5 py-5 sm:px-6 sm:py-6">
               <p className="max-w-3xl text-sm leading-7 text-muted-foreground sm:text-[15px]">
-                Une fois la base clarifiée, ces points d’entrée permettent
+                Une fois la base posée, ces dispositifs d’analyse permettent
                 d’identifier plus finement ce qui freine la lisibilité de
                 l’activité, la cohérence du positionnement ou la capacité à
-                ouvrir un premier échange.
+                ouvrir un premier échange dans de bonnes conditions.
               </p>
             </Surface>
           </div>
@@ -145,7 +141,7 @@ export default function ConceptsPage() {
           <SectionHeading
             eyebrow={<EyebrowLive />}
             title="Des points d’entrée conçus pour attirer, qualifier et engager des clients"
-            description="D’autres dispositifs, mini-sites et démonstrateurs déjà conçus pour explorer différentes situations, usages et manières de faire émerger des demandes."
+            description="Une fois l’activité clarifiée et structurée, certains points d’entrée peuvent être conçus pour attirer les bonnes personnes, qualifier les situations et transformer les visites en demandes concrètes."
           />
 
           <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
@@ -172,8 +168,8 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <SectionHeading
             eyebrow="Déclinaisons métier"
-            title="Une adaptation concrète à un métier"
-            description="Ces points d’entrée peuvent être adaptés à un métier, à ses contraintes, à ses publics et aux situations qu’il rencontre le plus souvent."
+            title="Des dispositifs adaptés à une réalité métier précise"
+            description="Ces points d’entrée peuvent ensuite être ajustés à un métier, à ses contraintes, à ses publics et aux situations qu’il rencontre le plus souvent."
           />
 
           <div className="mt-12 max-w-sm">
@@ -186,8 +182,8 @@ export default function ConceptsPage() {
         <div className="container-layout">
           <SectionHeading
             eyebrow="Réserve créative"
-            title="Concepts en cours de développement"
-            description="Des pistes déjà structurées pour prolonger le laboratoire, tester d’autres angles d’entrée et enrichir progressivement le système."
+            title="Pistes complémentaires en cours de développement"
+            description="Des concepts déjà structurés pour prolonger le système, explorer d’autres angles d’entrée et enrichir progressivement les possibilités."
           />
 
           <div className="mt-8 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
@@ -210,13 +206,15 @@ export default function ConceptsPage() {
               <span className="section-eyebrow">Projet digital</span>
 
               <h2 className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl lg:text-5xl">
-                Vous avez une expertise à transformer en dispositif concret ?
+                Vous avez une activité à clarifier, structurer ou transformer en
+                dispositif concret ?
               </h2>
 
               <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-muted-foreground sm:text-base">
-                Point d’entrée, mini-site, logique de parcours, structure de
-                conversion : chaque dispositif est pensé pour rendre votre
-                activité plus claire, plus lisible et plus engageante.
+                Cadrage, clarification, structuration, point d’entrée, mini-site,
+                logique de parcours ou système plus complet : chaque intervention
+                vise à rendre votre activité plus lisible, plus cohérente et plus
+                capable de générer des demandes pertinentes.
               </p>
 
               <div className="mt-8 flex justify-center">
