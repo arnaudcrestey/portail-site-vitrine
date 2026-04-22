@@ -30,28 +30,28 @@ export function HomeHero({ metrics }: HomeHeroProps) {
   puis à concevoir les dispositifs digitaux adaptés
   pour attirer et engager les bons clients.
 </p>
-          <div className="mt-5 flex justify-center lg:justify-start">
-  <dl className="grid w-full max-w-[268px] overflow-hidden rounded-[16px] border border-[#d9def8] bg-[linear-gradient(180deg,rgba(248,249,255,0.96)_0%,rgba(244,246,253,0.98)_100%)] shadow-[0_6px_16px_rgba(15,23,42,0.03)] sm:max-w-[500px] sm:grid-cols-3 lg:max-w-[470px] lg:rounded-[20px] lg:shadow-[0_10px_24px_rgba(15,23,42,0.04)]">
+          <div className="mt-4 flex justify-center lg:justify-start">
+  <dl className="grid w-full max-w-[230px] grid-cols-3 overflow-hidden rounded-[12px] border border-[#e2e6fb] bg-white/70 text-center shadow-[0_4px_10px_rgba(15,23,42,0.02)] sm:max-w-[420px] lg:max-w-[460px]">
     {[
-      [metrics.visitors30d, 'Visiteurs', '30 derniers jours'],
-      [metrics.leadsGenerated, 'Prises de contact', 'générées'],
+      [metrics.visitors30d, 'Visiteurs', '30 jours'],
+      [metrics.leadsGenerated, 'Contacts', 'générées'],
       [metrics.activeEntryPoints, 'Dispositifs', 'en ligne'],
     ].map(([value, label, detail], index) => (
       <div
         key={label}
-        className={`px-3 py-2 text-center sm:px-4 sm:py-3.5 lg:px-4 lg:py-3.5 ${
-          index < 2 ? 'border-b border-[#e6eafb] sm:border-b-0 sm:border-r' : ''
+        className={`px-2 py-2 ${
+          index < 2 ? 'border-r border-[#eef1fd]' : ''
         }`}
       >
-        <dt className="text-[1.08rem] font-semibold leading-none tracking-[-0.03em] text-[#20335f] sm:text-[1.42rem] lg:text-[1.5rem]">
+        <dt className="text-[0.95rem] font-semibold leading-none text-[#22345f] sm:text-[1.2rem]">
           <AnimatedMetricNumber value={value as number} />
         </dt>
 
-        <dd className="mt-1 leading-4 sm:mt-1.5">
-          <span className="block text-[8.5px] font-semibold uppercase tracking-[0.12em] text-[#5c6f98] sm:text-[10px] lg:text-[10.5px]">
+        <dd className="mt-1 leading-tight">
+          <span className="block text-[7px] uppercase tracking-[0.12em] text-[#6b7aa6] sm:text-[9px]">
             {label}
           </span>
-          <span className="mt-0.5 block text-[9.5px] text-slate/80 sm:mt-1 sm:text-[11px] lg:text-[11.5px]">
+          <span className="block text-[8px] text-slate/70 sm:text-[10px]">
             {detail}
           </span>
         </dd>
