@@ -58,8 +58,9 @@ export default function SystemePage() {
 
 <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
   Positionnement, site, points d’entrée, assistants et automatisations :
-  chaque élément a été conçu pour rendre l’activité plus lisible, plus cohérente
-  et plus opérationnelle dans la durée.
+  chaque élément a été conçu pour structurer l’ensemble
+et soutenir le développement d’une activité capable
+d’attirer et d’engager les bons clients dans la durée.
 </p>
             </div>
 
