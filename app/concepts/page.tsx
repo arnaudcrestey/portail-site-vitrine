@@ -140,7 +140,7 @@ export default function ConceptsPage() {
   <div className="container-layout">
     <div className="mx-auto max-w-2xl text-center">
       
-      <span className="inline-flex items-center justify-center rounded-full border border-primary/20 bg-primary/10 px-4 py-1 text-[11px] font-medium tracking-[0.12em] text-primary/80 uppercase">
+      <span className="inline-flex items-center justify-center rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
   Niveau suivant
 </span>
 
