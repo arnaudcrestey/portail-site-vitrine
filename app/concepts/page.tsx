@@ -140,9 +140,9 @@ export default function ConceptsPage() {
   <div className="container-layout">
     <div className="mx-auto max-w-2xl text-center">
       
-      <span className="inline-flex items-center justify-center rounded-full border border-border bg-muted px-3 py-1 text-xs font-medium text-muted-foreground">
-  Niveau suivant
-</span>
+      <span className="inline-flex items-center rounded-full border border-[#cfd7ff] bg-[#eef2ff] px-3 py-1 text-xs font-medium uppercase tracking-[0.22em] text-[#4f67ff]">
+        Niveau suivant
+      </span>
 
       <p className="mt-6 text-base leading-relaxed text-muted-foreground sm:text-lg">
         À ce stade, il ne s’agit plus d’analyser ou d’ajuster.
