@@ -19,7 +19,7 @@ export function HomeHero({ metrics }: HomeHeroProps) {
             Concepteur de systèmes numériques
           </span>
 
-          <h1 className="mt-6 max-w-3xl text-4xl font-semibold leading-[1.02] tracking-tight text-ink sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 max-w-[13ch] text-4xl font-semibold leading-[1.02] tracking-[-0.045em] text-ink sm:text-5xl lg:text-[5.3rem] lg:leading-[0.96]">
   Structurer une activité
   et concevoir ce qui permet réellement de générer des demandes.
 </h1>
