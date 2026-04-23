@@ -64,7 +64,7 @@ function buildAdminEmail({
               <td style="padding:24px 28px 32px 28px;">
                 <table role="presentation" width="100%" cellPadding="0" cellSpacing="0" style="border-collapse:collapse;">
                   <tr>
-                    <td style="padding:0 0 14px 0; font-size:14px; color:#6b7a90;">Prénom</td>
+                    <td style="padding:0 0 14px 0; font-size:14px; color:#6b7a90;">Nom et prénom</td>
                     <td style="padding:0 0 14px 0; font-size:15px; color:#14213d; font-weight:600;">${safeFirstName}</td>
                   </tr>
                   <tr>
@@ -199,7 +199,7 @@ export async function POST(req: Request) {
       subject: "Nouveau message",
       text: `Nouveau message reçu
 
-Prénom : ${safeFirstName || "Non renseigné"}
+Nom et prénom : ${safeFirstName || "Non renseigné"}
 Email : ${safeEmail}
 
 Message :
