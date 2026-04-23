@@ -23,16 +23,26 @@ function escapeHtml(value: string) {
     .replace(/'/g, "&#039;");
 }
 
+function extractFirstName(fullName?: string) {
+  const cleaned = String(fullName ?? "").trim().replace(/\s+/g, " ");
+  if (!cleaned) return "";
+
+  const parts = cleaned.split(" ").filter(Boolean);
+  if (parts.length === 0) return "";
+
+  return parts[0];
+}
+
 function buildAdminEmail({
-  firstName,
+  fullName,
   email,
   message,
 }: {
-  firstName?: string;
+  fullName?: string;
   email: string;
   message: string;
 }) {
-  const safeFirstName = escapeHtml(firstName?.trim() || "Non renseigné");
+  const safeFullName = escapeHtml(fullName?.trim() || "Non renseigné");
   const safeEmail = escapeHtml(email.trim());
   const safeMessage = escapeHtml(message.trim()).replace(/\n/g, "<br />");
 
@@ -65,7 +75,7 @@ function buildAdminEmail({
                 <table role="presentation" width="100%" cellPadding="0" cellSpacing="0" style="border-collapse:collapse;">
                   <tr>
                     <td style="padding:0 0 14px 0; font-size:14px; color:#6b7a90;">Nom et prénom</td>
-                    <td style="padding:0 0 14px 0; font-size:15px; color:#14213d; font-weight:600;">${safeFirstName}</td>
+                    <td style="padding:0 0 14px 0; font-size:15px; color:#14213d; font-weight:600;">${safeFullName}</td>
                   </tr>
                   <tr>
                     <td style="padding:0 0 14px 0; font-size:14px; color:#6b7a90;">Email</td>
@@ -176,7 +186,8 @@ export async function POST(req: Request) {
 
     const safeMessage = String(message ?? "").trim();
     const safeEmail = String(email ?? "").trim();
-    const safeFirstName = String(firstName ?? "").trim();
+    const safeFullName = String(firstName ?? "").trim();
+    const safeFirstName = extractFirstName(safeFullName);
 
     if (!safeMessage || !safeEmail) {
       return NextResponse.json({ success: false }, { status: 400 });
@@ -199,13 +210,13 @@ export async function POST(req: Request) {
       subject: "Nouveau message",
       text: `Nouveau message reçu
 
-Nom et prénom : ${safeFirstName || "Non renseigné"}
+Nom et prénom : ${safeFullName || "Non renseigné"}
 Email : ${safeEmail}
 
 Message :
 ${safeMessage}`,
       html: buildAdminEmail({
-        firstName: safeFirstName,
+        fullName: safeFullName,
         email: safeEmail,
         message: safeMessage,
       }),
