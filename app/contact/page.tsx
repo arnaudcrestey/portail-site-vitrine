@@ -324,14 +324,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
                   className="break-words transition-colors duration-200 hover:text-ink"
                 >
                   {contactDetails.email}
-                </a>
-                <span className="hidden text-[#9db4ee] sm:inline"> · </span>
-                <a
-                  href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}
-                  className="block transition-colors duration-200 hover:text-ink sm:inline"
-                >
-                  {contactDetails.phone}
-                </a>
+                </a>                
               </div>
             </div>
           </div>
