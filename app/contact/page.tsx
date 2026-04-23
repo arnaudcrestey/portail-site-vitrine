@@ -7,7 +7,7 @@ import { Surface } from '@/components/ui';
 
 type ContactType =
   | 'point-entree'
-  | 'refonte-site'
+  | 'structurer-activite'
   | 'automatisation'
   | 'clarification'
   | 'autre';
@@ -57,16 +57,16 @@ Le résultat attendu :
 Contexte ou éléments utiles :`,
   },
   {
-    label: 'Refondre mon site',
-    type: 'refonte-site',
+    label: 'Structurer mon activité',
+    type: 'structurer-activite',
     content: `Bonjour Arnaud,
 
-Je souhaite refondre ou améliorer mon site.
+Je souhaite structurer mon activité.
 
 Mon activité :
 Mon rôle / statut :
-Mon site actuel :
-Ce que je souhaite améliorer :
+Ma situation actuelle :
+Ce que je souhaite clarifier ou structurer :
 Contexte ou éléments utiles :`,
   },
 ];
@@ -74,7 +74,7 @@ Contexte ou éléments utiles :`,
 export default function ContactPage() {
   const router = useRouter();
 
-  const [firstName, setFirstName] = useState('');
+  const [fullName, setFullName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [selectedType, setSelectedType] = useState<ContactType>('autre');
@@ -119,9 +119,9 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
   };
 
   const handleSendEmail = async () => {
-    if (!firstName.trim()) {
+    if (!fullName.trim()) {
       setStatus('error');
-      setErrorMessage('Merci de renseigner votre prénom.');
+      setErrorMessage('Merci de renseigner votre nom et prénom.');
       return;
     }
 
@@ -149,7 +149,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          firstName: firstName.trim(),
+          firstName: fullName.trim(),
           email: email.trim(),
           message: message.trim(),
           type: selectedType,
@@ -173,7 +173,7 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
   };
 
   const isDisabled =
-    isSending || !firstName.trim() || !email.trim() || !message.trim();
+    isSending || !fullName.trim() || !email.trim() || !message.trim();
 
   return (
     <section className="section-spacing">
@@ -199,23 +199,23 @@ Vous pouvez préciser votre activité, votre besoin, le contexte et votre délai
               <div className="mt-8 grid gap-4 sm:mt-10 sm:grid-cols-2">
                 <div>
                   <label
-                    htmlFor="contact-first-name"
+                    htmlFor="contact-full-name"
                     className="mb-2 block text-sm font-medium text-ink"
                   >
-                    Votre prénom
+                    Nom et prénom
                   </label>
                   <input
-                    id="contact-first-name"
+                    id="contact-full-name"
                     type="text"
-                    value={firstName}
+                    value={fullName}
                     onChange={(e) => {
-                      setFirstName(e.target.value);
+                      setFullName(e.target.value);
                       if (status !== 'idle') {
                         setStatus('idle');
                         setErrorMessage('');
                       }
                     }}
-                    placeholder="Votre prénom"
+                    placeholder="Votre nom et prénom"
                     className="w-full rounded-[18px] border border-[#cddcff] bg-white/90 px-4 py-3 text-[15px] text-ink outline-none transition-all duration-200 placeholder:text-[#97a3bf] focus:border-[#9ebcff] focus:bg-white focus:ring-4 focus:ring-[#2563eb]/10"
                   />
                 </div>
