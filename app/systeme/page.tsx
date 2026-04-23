@@ -240,12 +240,11 @@ export default function SystemePage() {
               encore fonctionner réellement.
             </h2>
 
-            <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
-              Ce n’est pas toujours une question de compétence, mais souvent de
-              structure, de clarté et de système. Quand l’enjeu n’est pas
-              seulement de “faire un site”, mais de poser une base solide, c’est
-              tout l’ensemble qu’il faut concevoir avec méthode.
-            </p>
+            <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-slate sm:text-lg">
+  Ce n’est pas toujours une question de compétence. C’est souvent une
+  question de structure, de clarté et de système. Quand l’enjeu dépasse
+  le simple site, c’est tout l’ensemble qu’il faut concevoir.
+</p>
 
             <div className="mt-8 flex justify-center">
               <Link
