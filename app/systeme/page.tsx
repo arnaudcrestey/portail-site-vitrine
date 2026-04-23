@@ -13,19 +13,19 @@ const proofBlocks = [
     number: '01',
     title: 'Demande initiale',
     description:
-      "Le point de départ n’était pas un simple besoin de site, mais la volonté de donner une forme claire, cohérente et crédible à une activité d’accompagnement portée par Virginie.",
+      "Le point de départ n’était pas un simple besoin de site, mais la volonté de donner une forme claire, cohérente et crédible à une activité d’accompagnement qui devait pouvoir être présentée, comprise et développée dans de bonnes conditions.",
   },
   {
     number: '02',
     title: 'Système conçu',
     description:
-      "À partir de cette demande, j’ai conçu un ensemble structuré : positionnement, site principal, trois points d’entrée, logique de parcours, automatisations et supports d’usage.",
+      "À partir de cette demande, un ensemble structuré a été conçu : positionnement, site principal, trois points d’entrée, logique de parcours, automatisations et supports d’usage.",
   },
   {
     number: '03',
     title: 'Organisation interne',
     description:
-      "Le travail ne s’est pas arrêté à la façade visible. J’ai également structuré des assistants GPT, des protocoles d’utilisation, des mails et une logique de traitement pour soutenir le fonctionnement dans la durée.",
+      "Le travail ne s’est pas arrêté à la façade visible. Des assistants GPT, des protocoles d’utilisation, des mails et une logique de traitement ont également été mis en place pour soutenir le fonctionnement dans la durée.",
   },
   {
     number: '04',
@@ -65,7 +65,7 @@ export default function SystemePage() {
                 pour structurer et lancer Cabinet Astraé
               </h1>
 
-              <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
+              <p className="mx-auto mt-5 max-w-3xl px-2 text-base leading-7 text-slate sm:text-lg">
                 Cabinet Astraé n’a pas été pensé comme un simple site vitrine.
                 Le travail a consisté à transformer une intention de départ en
                 un ensemble cohérent, capable de présenter l’activité, créer un
@@ -73,12 +73,24 @@ export default function SystemePage() {
                 développement dans la durée.
               </p>
 
-              <p className="mx-auto mt-3 max-w-3xl text-sm leading-7 text-slate sm:text-base">
+              <p className="mx-auto mt-3 max-w-3xl px-2 text-sm leading-7 text-slate sm:text-base">
                 Site principal, points d’entrée, assistants, mails,
                 automatisations et protocole d’usage&nbsp;: chaque élément a été
-                conçu pour servir une activité réelle, portée ensuite par
-                Virginie dans la relation avec les clients.
+                conçu pour servir une activité réelle, puis soutenir un
+                accompagnement porté au sein du Cabinet Astraé dans la relation
+                avec les clients.
               </p>
+
+              <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+                <a
+                  href="https://www.cabinet-astrae.fr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-[#d9def8] bg-white/80 px-5 py-2.5 text-sm font-medium text-ink transition hover:-translate-y-0.5 hover:bg-white"
+                >
+                  Découvrir le site du Cabinet Astraé
+                </a>
+              </div>
             </div>
 
             <div className="relative mt-14">
@@ -119,7 +131,9 @@ export default function SystemePage() {
         <div className="container-layout">
           <div className="rounded-[36px] border border-[#d9def8] bg-[#f7f8fe] px-6 py-10 shadow-[0_20px_60px_rgba(15,23,42,0.04)] sm:px-8 sm:py-12 lg:px-10">
             <div className="max-w-3xl">
-              <span className="section-eyebrow">Lecture de la transformation</span>
+              <span className="section-eyebrow">
+                Lecture de la transformation
+              </span>
 
               <h2 className="mt-4 text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
                 Ce que ce cas montre concrètement
@@ -168,19 +182,30 @@ export default function SystemePage() {
                 </h2>
 
                 <p className="mt-4 text-base leading-7 text-slate sm:text-lg">
-                  À partir de la commande initiale formulée par mail, j’ai conçu
-                  et déployé un univers complet destiné à structurer l’activité,
+                  À partir de la commande initiale formulée par mail, un univers
+                  complet a été conçu et déployé pour structurer l’activité,
                   faciliter les échanges et créer une continuité entre la
                   découverte, le premier contact et le suivi.
                 </p>
 
                 <p className="mt-4 text-base leading-7 text-slate">
-                  Virginie porte ensuite la relation humaine et les échanges avec
-                  les clients. Mon rôle, ici, a consisté à concevoir
-                  l’architecture, les outils, les supports et les logiques qui
-                  permettent à l’activité de fonctionner avec plus de clarté,
-                  de cohérence et de solidité.
+                  La relation avec les clients est ensuite portée au sein du
+                  Cabinet Astraé. Le rôle d’Arnaud Crestey, ici, a consisté à
+                  concevoir l’architecture, les outils, les supports et les
+                  logiques qui permettent à l’activité de fonctionner avec plus
+                  de clarté, de cohérence et de solidité.
                 </p>
+
+                <div className="mt-6">
+                  <a
+                    href="https://www.cabinet-astrae.fr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center justify-center rounded-full border border-[#d9def8] bg-[#f7f8fe] px-5 py-2.5 text-sm font-medium text-ink transition hover:-translate-y-0.5 hover:bg-white"
+                  >
+                    Accéder au site du Cabinet Astraé
+                  </a>
+                </div>
               </div>
 
               <div className="rounded-[28px] border border-[#d9def8] bg-[linear-gradient(180deg,#f8faff_0%,#f2f5ff_100%)] px-5 py-6 shadow-[0_16px_40px_rgba(15,23,42,0.04)]">
@@ -209,14 +234,15 @@ export default function SystemePage() {
             <span className="section-eyebrow">Passer à l’action</span>
 
             <h2 className="mx-auto mt-4 max-w-4xl text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
-              Une activité peut avoir de la valeur sans encore disposer du
-              système qui lui permet de travailler vraiment.
+              Une activité peut exister, avoir de la valeur, et pourtant ne pas
+              encore fonctionner réellement.
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-base leading-7 text-slate sm:text-lg">
-              Quand l’enjeu n’est pas seulement de “faire un site”, mais de
-              structurer une activité, clarifier son parcours et poser une base
-              solide, c’est tout l’ensemble qu’il faut concevoir avec méthode.
+              Ce n’est pas toujours une question de compétence, mais souvent de
+              structure, de clarté et de système. Quand l’enjeu n’est pas
+              seulement de “faire un site”, mais de poser une base solide, c’est
+              tout l’ensemble qu’il faut concevoir avec méthode.
             </p>
 
             <div className="mt-8 flex justify-center">
