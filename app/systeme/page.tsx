@@ -73,7 +73,7 @@ export default function SystemePage() {
                 Le travail a consisté à transformer une intention de départ en
                 un ensemble cohérent, capable de présenter l’activité, créer un
                 premier lien, structurer les échanges et soutenir son
-                développement dans la durée.
+                développement dans la&nbsp;durée.
               </p>
 
               <p className="mx-auto mt-3 max-w-3xl px-2 text-sm leading-7 text-slate sm:text-base">
